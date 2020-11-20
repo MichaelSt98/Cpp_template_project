@@ -34,7 +34,7 @@ extensions = [
 ]
 
 # Add any paths that contain templates here, relative to this directory.
-templates_path = ['_templates']
+templates_path = []
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
@@ -57,4 +57,4 @@ html_static_path = ['_static']
 import subprocess
 subprocess.call("make doc", shell=True)
 
-html_extra_path = ["doc/html"]
+html_extra_path = ["doc/html/"]
