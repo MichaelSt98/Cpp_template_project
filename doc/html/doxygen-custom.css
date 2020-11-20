@@ -416,8 +416,8 @@ div.navpath ul {
 
 div.tabs ul.tablist li, div.tabs2 ul.tablist li, div.tabs3 ul.tablist li {
 	display: inline;
-	margin: 0px;
-	padding: 0px;
+	margin: 0;
+	padding: 0;
 	font-size: 0.8em;
 }
 
