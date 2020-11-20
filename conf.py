@@ -57,4 +57,6 @@ html_static_path = ['_static']
 import subprocess
 subprocess.call("make doc", shell=True)
 
+
 html_extra_path = ["doc/html/"]
+master_doc = "doc/html/index.html"
