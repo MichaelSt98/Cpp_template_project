@@ -102,6 +102,8 @@ doxyfile.inc: #Makefile
 doc: doxyfile.inc
 	$(DOXY) $(DOXYFILE) &> $(DOCDIR)/doxygen.log
 	@$(MAKE) -C $(DOCDIR)/latex/ &> $(DOCDIR)/latex/latex.log
+	@mkdir -p "./docs"
+	cp -r "./doc/html/" "./docs/"
 
 #Non-File Targets
 .PHONY: all remake clean cleaner resources sources directories ideas tester doc
