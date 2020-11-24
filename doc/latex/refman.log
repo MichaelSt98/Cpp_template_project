@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.3.30)  20 NOV 2020 17:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.3.30)  24 NOV 2020 22:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1238,6 +1238,28 @@ LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
 (Font)              scaled to size 6.29996pt on input line 43.
 ) [2]
 Chapter 2.
+LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
+(Font)              scaled to size 6.29996pt on input line 177.
+(./md_documents__c_make_introduction.tex
+LaTeX Font Info:    Try loading font information for TS1+pcr on input line 14.
+(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ts1pcr.fd
+File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
+) [3
+
+] [4] [5] [6]
+Overfull \hbox (48.75552pt too wide) in paragraph at lines 261--261
+\T1/pcr/m/n/7 "$<$<BUILD_INTERFACE:$<COMPILE_LANGUAGE:CXX>>:-fopenmp>$<$<BUILD_
+INTERFACE:$<COMPILE_LANGUAGE:CUDA>>:-Xcompiler=-fopenmp>"  
+ []
+
+
+Overfull \hbox (115.95547pt too wide) in paragraph at lines 274--274
+\T1/pcr/m/n/7 "$<$<BUILD_INTERFACE:$<COMPILE_LANGUAGE:CXX>>:${old_flags}>$<$<BU
+ILD_INTERFACE:$<COMPILE_LANGUAGE:CUDA>>:-Xcompiler=${CUDA_flags}>"  
+ []
+
+[7] [8] [9] [10] [11]) [12]
+Chapter 3.
 (./md_documents__markdown.tex
 LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <10> not available
 (Font)              Font shape `T1/phv/b/it' tried instead on input line 12.
@@ -1305,54 +1327,48 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[3
+[13
 
-]
-LaTeX Font Info:    Try loading font information for TS1+pcr on input line 39.
-(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ts1pcr.fd
-File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
-) [4] [5]) [6]
-Chapter 3.
-(./md_documents_structure.tex) [7
-
-] [8
-
-]
+] [14] [15]) [16]
 Chapter 4.
-LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
-(Font)              scaled to size 6.29996pt on input line 185.
-(./md_documents__unit-_tests.tex) [9] [10
+(./md_documents_structure.tex [17
 
-]
+]) [18]
 Chapter 5.
-(./annotated.tex
+(./md_documents__unit-_tests.tex) [19
 
-LaTeX Warning: Reference `class_concept_class' on page 11 undefined on input li
-ne 3.
-
-) [11] [12
+] [20
 
 ]
 Chapter 6.
-(./files.tex
+(./annotated.tex
 
-LaTeX Warning: Reference `_concept_class_8h' on page 13 undefined on input line
- 3.
+LaTeX Warning: Reference `class_concept_class' on page 21 undefined on input li
+ne 3.
 
-
-LaTeX Warning: Reference `_concept_class_8cpp' on page 13 undefined on input li
-ne 4.
-
-
-LaTeX Warning: Reference `_main_8cpp' on page 13 undefined on input line 5.
-
-
-LaTeX Warning: Reference `tester_8cpp' on page 13 undefined on input line 6.
-
-) [13] [14
+) [21] [22
 
 ]
 Chapter 7.
+(./files.tex
+
+LaTeX Warning: Reference `_concept_class_8h' on page 23 undefined on input line
+ 3.
+
+
+LaTeX Warning: Reference `_concept_class_8cpp' on page 23 undefined on input li
+ne 4.
+
+
+LaTeX Warning: Reference `_main_8cpp' on page 23 undefined on input line 5.
+
+
+LaTeX Warning: Reference `tester_8cpp' on page 23 undefined on input line 6.
+
+) [23] [24
+
+]
+Chapter 8.
 (./class_concept_class.tex
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 7.19995pt on input line 33.
@@ -1360,64 +1376,64 @@ LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <8> not available
 (Font)              Font shape `T1/pcr/m/sl' tried instead on input line 33.
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 7.1 on input line 43.
+(longtable)                in table 8.1 on input line 43.
 
-[15]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 7.2 on input line 69.
-
+[25]
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 7.3 on input line 84.
+(longtable)                in table 8.2 on input line 69.
 
-) [16]
-Chapter 8.
-(./_markdown_8md.tex) (./structure_8md.tex) (./_unit-_tests_8md.tex) (./_concep
-t_class_8h.tex <./_concept_class_8h__dep__incl.pdf
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 8.3 on input line 84.
+
+) [26]
+Chapter 9.
+(./_c_make_introduction_8md.tex) (./_markdown_8md.tex) (./structure_8md.tex) (.
+/_unit-_tests_8md.tex) (./_concept_class_8h.tex <./_concept_class_8h__dep__incl
+.pdf
 
 pdfTeX warning: pdflatex (file ./_concept_class_8h__dep__incl.pdf): PDF inclusi
 on: multiple pdfs with page group included in a single page
-> <_concept_class_8h__dep__incl.pdf, id=238, 201.75375pt x 156.585pt>
+> <_concept_class_8h__dep__incl.pdf, id=434, 201.75375pt x 156.585pt>
 File: _concept_class_8h__dep__incl.pdf Graphic file (type pdf)
 <use _concept_class_8h__dep__incl.pdf>
 Package pdftex.def Info: _concept_class_8h__dep__incl.pdf used on input line 7.
 
 (pdftex.def)             Requested size: 201.0pt x 156.00162pt.
-) (./_concept_class_8h_source.tex) (./_r_e_a_d_m_e_8md.tex) (./_concept_class_8
-cpp.tex <./_concept_class_8cpp__incl.pdf
+) (./_concept_class_8h_source.tex) (./_r_e_a_d_m_e_8md.tex [27
 
-pdfTeX warning: pdflatex (file ./_concept_class_8cpp__incl.pdf): PDF inclusion:
- multiple pdfs with page group included in a single page
-> <_concept_class_8cpp__incl.pdf, id=254, 210.7875pt x 156.585pt>
+]) (./_concept_class_8cpp.tex <./_concept_class_8cpp__incl.pdf> <_concept_class
+_8cpp__incl.pdf, id=469, 210.7875pt x 156.585pt>
 File: _concept_class_8cpp__incl.pdf Graphic file (type pdf)
 <use _concept_class_8cpp__incl.pdf>
 Package pdftex.def Info: _concept_class_8cpp__incl.pdf used on input line 8.
 (pdftex.def)             Requested size: 210.0pt x 156.004pt.
-[17
+) (./_concept_class_8cpp_source.tex) (./_main_8cpp.tex <./_main_8cpp__incl.pdf
 
-]) (./_concept_class_8cpp_source.tex) (./_main_8cpp.tex <./_main_8cpp__incl.pdf
-> <_main_8cpp__incl.pdf, id=284, 194.7275pt x 156.585pt>
+pdfTeX warning: pdflatex (file ./_main_8cpp__incl.pdf): PDF inclusion: multiple
+ pdfs with page group included in a single page
+> <_main_8cpp__incl.pdf, id=481, 194.7275pt x 156.585pt>
 File: _main_8cpp__incl.pdf Graphic file (type pdf)
 <use _main_8cpp__incl.pdf>
 Package pdftex.def Info: _main_8cpp__incl.pdf used on input line 9.
 (pdftex.def)             Requested size: 194.0pt x 156.0064pt.
-[18]) (./_main_8cpp_source.tex) (./tester_8cpp.tex <./tester_8cpp__incl.pdf> <t
-ester_8cpp__incl.pdf, id=312, 159.59625pt x 156.585pt>
+[28]) (./_main_8cpp_source.tex) (./tester_8cpp.tex <./tester_8cpp__incl.pdf> <t
+ester_8cpp__incl.pdf, id=508, 159.59625pt x 156.585pt>
 File: tester_8cpp__incl.pdf Graphic file (type pdf)
 <use tester_8cpp__incl.pdf>
 Package pdftex.def Info: tester_8cpp__incl.pdf used on input line 8.
 (pdftex.def)             Requested size: 159.0pt x 156.00162pt.
-) (./tester_8cpp_source.tex [19]) [20]
+) (./tester_8cpp_source.tex [29]) [30]
 No file refman.ind.
 
 Package longtable Warning: Table widths have changed. Rerun LaTeX.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 218.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 218.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 223.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 223.
 (./refman.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 218.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 218.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 223.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 223.
 
 Package rerunfilecheck Warning: File `refman.out' has changed.
 (rerunfilecheck)                Rerun to get outlines right
@@ -1425,7 +1441,7 @@ Package rerunfilecheck Warning: File `refman.out' has changed.
 
 Package rerunfilecheck Info: Checksums for `refman.out':
 (rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  254FB99695FBA62ABC78C9283CB3B725;9968.
+(rerunfilecheck)             After:  CCFD7240CF7DD40055A94175E0ACF072;21858.
 
 LaTeX Warning: There were undefined references.
 
@@ -1434,13 +1450,13 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 16434 strings out of 493014
- 235247 string characters out of 6133351
- 332740 words of memory out of 5000000
- 19498 multiletter control sequences out of 15000+600000
+ 16654 strings out of 493014
+ 242933 string characters out of 6133351
+ 333740 words of memory out of 5000000
+ 19568 multiletter control sequences out of 15000+600000
  57974 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 53i,16n,92p,881b,629s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 53i,16n,92p,2061b,629s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
 xlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
@@ -1453,10 +1469,10 @@ s/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1
 elvetic/uhvbo8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/helveti
 c/uhvr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/helvetic/uhvro
 8a.pfb>
-Output written on refman.pdf (22 pages, 149348 bytes).
+Output written on refman.pdf (32 pages, 173070 bytes).
 PDF statistics:
- 421 PDF objects out of 1000 (max. 8388607)
- 369 compressed objects within 4 object streams
- 163 named destinations out of 1000 (max. 500000)
+ 648 PDF objects out of 1000 (max. 8388607)
+ 584 compressed objects within 6 object streams
+ 307 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -15,3 +15,32 @@
 
 * **Makefile**: Makefile
 * **README.md**: Readme file in markdown syntax
+
+[CMake introduction: project structure](https://cliutils.gitlab.io/modern-cmake/chapters/basics/structure.html)
+
+- project
+  - .gitignore
+  - README.md
+  - LICENCE.md
+  - CMakeLists.txt
+  - cmake
+    - FindSomeLib.cmake
+    - something_else.cmake
+  - include
+    - project
+      - lib.hpp
+  - src
+    - CMakeLists.txt
+    - lib.cpp
+  - apps
+    - CMakeLists.txt
+    - app.cpp
+  - tests
+    - CMakeLists.txt
+    - testlib.cpp
+  - docs
+    - CMakeLists.txt
+  - extern
+    - googletest
+  - scripts
+    - helper.py
