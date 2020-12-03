@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['cmakeintroduction_2emd_19',['CMakeIntroduction.md',['../_c_make_introduction_8md.html',1,'']]],
-  ['conceptclass_2ecpp_20',['ConceptClass.cpp',['../_concept_class_8cpp.html',1,'']]],
-  ['conceptclass_2eh_21',['ConceptClass.h',['../_concept_class_8h.html',1,'']]]
+  ['basics_2ecpp_35',['Basics.cpp',['../_basics_8cpp.html',1,'']]],
+  ['bitmanipulation_2ecpp_36',['BitManipulation.cpp',['../_bit_manipulation_8cpp.html',1,'']]]
 ];

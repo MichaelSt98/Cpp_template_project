@@ -6,6 +6,7 @@
 #include <cstdint>
 #include <chrono>
 #include <thread>
+#include <array>
 
 /** Global variables */
 // global variables have file scope
@@ -136,12 +137,12 @@ int main() {
 
     /** Namespaces */
     // define a namespace
-    namespace namespace_1 {
-        //nested namespace
-        namespace namespace_1_nested {
+    //namespace namespace_1 {
+    //    //nested namespace
+    //    namespace namespace_1_nested {
 
-        }
-    }
+    //    }
+    //}
     // accessible using "::"
 
     // namespace alias
@@ -177,10 +178,176 @@ int main() {
     // convert an int to a float so we get floating point division rather than integer division
     float f { static_cast<float>(i1) / i2 };
 
-
     /** */
 
+    /** Enumerations */
+    enum Color
+    {
+        color_black, // assigned 0
+        color_red, // assigned 1
+        color_blue, // assigned 2
+        color_green, // assigned 3
+        color_white, // assigned 4
+        color_cyan, // assigned 5
+        color_yellow, // assigned 6
+        color_magenta // assigned 7
+    };
+    Color paint{ color_white };
+    std::cout << paint;
 
+    // enum classes (scoped enumerations)
+    enum class Fruit
+    {
+        banana, // banana is inside the scope of Fruit
+        apple
+    };
+    Fruit fruit{ Fruit::banana }; // note: banana is not directly accessible any more, we have to use Fruit::banana
+    /** */
+
+    /** Structs */
+    struct Employee
+    {
+        short id;
+        int age;
+        double wage;
+    };
+
+    Employee joe{ 1, 32, 60000.0 }; // joe.id = 1, joe.age = 32, joe.wage = 60000.0
+    Employee frank{ 2, 28 }; // frank.id = 2, frank.age = 28, frank.wage = 0.0 (default initialization)
+
+    //Employee joe; // create an Employee struct for Joe
+    //joe.id = 14; // assign a value to member id within struct joe
+    //joe.age = 32; // assign a value to member age within struct joe
+    //joe.wage = 24.15; // assign a value to member wage within struct joe
+
+    //Employee frank; // create an Employee struct for Frank
+    //frank.id = 15; // assign a value to member id within struct frank
+    //frank.age = 28; // assign a value to member age within struct frank
+    //frank.wage = 18.27; // assign a value to member wage within struct frank
+
+    // nested structs
+    struct Company
+    {
+        Employee CEO; // Employee is a struct within the Company struct
+        int numberOfEmployees;
+    };
+    Company myCompany{{ 1, 42, 60000.0 }, 5 };
+    /** */
+
+    /** Control flows */
+    // halt (using <cstdlib>)
+    //std::exit(0); // terminate and return 0 to operating system
+    // ATTENTION: be aware of leaking resources
+
+    // Conditional branches
+    if (true) {
+
+    } else if (false) {
+
+    } else {
+
+    }
+    // init statements
+    //    if (std::string fullName{ firstName + ' ' + lastName }; fullName.length() > 20)
+    //    {
+    //        std::cout << '"' << fullName << "\"is too long!\n";
+    //    }
+    //    else
+    //    {
+    //        std::cout << "Your name is " << fullName << '\n';
+    //    }
+
+    // Switch statements
+    Color color {color_black};
+    switch (color)
+    {
+        case Color::color_black:
+            std::cout << "Black";
+            break;
+        case Color::color_white:
+            std::cout << "White";
+            break;
+        case Color::color_red:
+            std::cout << "Red";
+            break;
+            //[[fallthrough]];
+        case Color::color_green:
+            std::cout << "Green";
+            break;
+        case Color::color_blue:
+            std::cout << "Blue";
+            break;
+        default:
+            std::cout << "Unknown";
+            break;
+    }
+    //[[fallthrough]] attribute can be added to indicate that the fall-through is intentional.
+
+    // Goto statements
+    //tryAgain:
+    //    goto tryAgain;
+
+    // While statements
+    int while_counter{ 5 };
+    while (while_counter < 10) {
+        std::cout << "while_counter: " << while_counter << std::endl;
+        ++while_counter;
+    }
+
+    // Do wile statements
+    do {
+        std::cout << "while_counter: " << while_counter << std::endl;
+        ++while_counter;
+    }
+    while (while_counter < 15);
+
+    // For statements
+    for (int count{ 0 }; count < 10; ++count)
+        std::cout << count << ' ';
+    int iii{};
+    int jjj{};
+    for (iii = 0, jjj = 9; iii < 10; ++iii, --jjj)
+        std::cout << iii << ' ' << jjj << '\n';
+    // return statement terminates the entire function the loop is within
+    // break terminates the loop
+    // continue jumps to the end of the loop body for the current iteration
+    /** */
+
+    /** Arrays */
+    //int prime[5]{}; // hold the first 5 prime numbers
+    //prime[0] = 2; // The first element has index 0
+    //prime[1] = 3;
+    //prime[2] = 5;
+    //prime[3] = 7;
+    //prime[4] = 11; // The last element has index 4 (array length-1)
+    int prime[5]{ 2, 3, 5, 7, 11 }; // use initializer list to initialize the fixed array
+    //int prime[]{ 2, 3, 5, 7, 11 }; // works as well
+    //std::cout << "The array has: " << std::size(prime) << " elements\n"; // C++17
+    //sizeof() gives the array length multiplied by element size
+
+    // Multidimensional arrays
+    int num_rows{3};
+    int num_cols{5};
+    int multi_dim_array[3][5] // cannot use num_rows or num_cols --> see dynamic memory allocation
+            {
+                    { 1, 2, 3, 4, 5 }, // row 0
+                    { 6, 7, 8, 9, 10 }, // row 1
+                    { 11, 12, 13, 14, 15 } // row 2
+            };
+    for (int row{ 0 }; row < num_rows; ++row) // step through the rows in the array
+    {
+        for (int col{ 0 }; col < num_cols; ++col) // step through each element in the row
+        {
+            std::cout << multi_dim_array[row][col];
+        }
+    }
+
+    // foreach loop
+    for (auto &element: prime)
+    {
+        std::cout <<  element << std::endl;
+    }
+    /** */
 
     return 0; // 0, EXIT_SUCCESS, EXIT_FAILURE
 }
