@@ -98,87 +98,90 @@
 \contentsline {subsection}{\numberline {5.1.2}Catch}{19}{subsection.5.1.2}
 \contentsline {subsection}{\numberline {5.1.3}Boost.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Test}{19}{subsection.5.1.3}
 \contentsline {subsection}{\numberline {5.1.4}Doctest}{19}{subsection.5.1.4}
-\contentsline {chapter}{\numberline {6}Namespace Index}{21}{chapter.6}
-\contentsline {section}{\numberline {6.1}Namespace List}{21}{section.6.1}
-\contentsline {chapter}{\numberline {7}Class Index}{23}{chapter.7}
-\contentsline {section}{\numberline {7.1}Class List}{23}{section.7.1}
-\contentsline {chapter}{\numberline {8}File Index}{25}{chapter.8}
-\contentsline {section}{\numberline {8.1}File List}{25}{section.8.1}
-\contentsline {chapter}{\numberline {9}Namespace Documentation}{27}{chapter.9}
-\contentsline {section}{\numberline {9.1}constants Namespace Reference}{27}{section.9.1}
-\contentsline {subsection}{\numberline {9.1.1}Variable Documentation}{27}{subsection.9.1.1}
-\contentsline {subsubsection}{\numberline {9.1.1.1}avogadro}{27}{subsubsection.9.1.1.1}
-\contentsline {subsubsection}{\numberline {9.1.1.2}pi}{27}{subsubsection.9.1.1.2}
-\contentsline {chapter}{\numberline {10}Class Documentation}{29}{chapter.10}
-\contentsline {section}{\numberline {10.1}Concept\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Class Class Reference}{29}{section.10.1}
-\contentsline {subsection}{\numberline {10.1.1}Detailed Description}{29}{subsection.10.1.1}
-\contentsline {subsection}{\numberline {10.1.2}Constructor \& Destructor Documentation}{29}{subsection.10.1.2}
-\contentsline {subsubsection}{\numberline {10.1.2.1}ConceptClass()}{29}{subsubsection.10.1.2.1}
-\contentsline {subsection}{\numberline {10.1.3}Member Data Documentation}{29}{subsection.10.1.3}
-\contentsline {subsubsection}{\numberline {10.1.3.1}member\_a}{30}{subsubsection.10.1.3.1}
-\contentsline {subsubsection}{\numberline {10.1.3.2}member\_b}{30}{subsubsection.10.1.3.2}
-\contentsline {chapter}{\numberline {11}File Documentation}{31}{chapter.11}
-\contentsline {section}{\numberline {11.1}documents/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}C\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Make\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Introduction.md File Reference}{31}{section.11.1}
-\contentsline {section}{\numberline {11.2}documents/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Markdown.md File Reference}{31}{section.11.2}
-\contentsline {section}{\numberline {11.3}documents/structure.md File Reference}{31}{section.11.3}
-\contentsline {section}{\numberline {11.4}documents/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Unit-\/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Tests.md File Reference}{31}{section.11.4}
-\contentsline {section}{\numberline {11.5}include/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Concept\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Class.h File Reference}{31}{section.11.5}
-\contentsline {section}{\numberline {11.6}Concept\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Class.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}h}{31}{section.11.6}
-\contentsline {section}{\numberline {11.7}R\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}A\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}D\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}M\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}E.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}md File Reference}{32}{section.11.7}
-\contentsline {section}{\numberline {11.8}src/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Basics.cpp File Reference}{32}{section.11.8}
-\contentsline {subsection}{\numberline {11.8.1}Function Documentation}{32}{subsection.11.8.1}
-\contentsline {subsubsection}{\numberline {11.8.1.1}main()}{32}{subsubsection.11.8.1.1}
-\contentsline {subsection}{\numberline {11.8.2}Variable Documentation}{36}{subsection.11.8.2}
-\contentsline {subsubsection}{\numberline {11.8.2.1}g\_global\_integer}{36}{subsubsection.11.8.2.1}
-\contentsline {subsubsection}{\numberline {11.8.2.2}g\_x\_1}{36}{subsubsection.11.8.2.2}
-\contentsline {subsubsection}{\numberline {11.8.2.3}g\_x\_2}{36}{subsubsection.11.8.2.3}
-\contentsline {section}{\numberline {11.9}Basics.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp}{36}{section.11.9}
-\contentsline {section}{\numberline {11.10}src/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Bit\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Manipulation.cpp File Reference}{40}{section.11.10}
-\contentsline {subsection}{\numberline {11.10.1}Function Documentation}{40}{subsection.11.10.1}
-\contentsline {subsubsection}{\numberline {11.10.1.1}main()}{40}{subsubsection.11.10.1.1}
-\contentsline {section}{\numberline {11.11}Bit\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Manipulation.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp}{41}{section.11.11}
-\contentsline {section}{\numberline {11.12}src/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Concept\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Class.cpp File Reference}{42}{section.11.12}
-\contentsline {section}{\numberline {11.13}Concept\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Class.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp}{42}{section.11.13}
-\contentsline {section}{\numberline {11.14}src/constants.h File Reference}{42}{section.11.14}
-\contentsline {section}{\numberline {11.15}constants.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}h}{42}{section.11.15}
-\contentsline {section}{\numberline {11.16}src/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Iterators.cpp File Reference}{43}{section.11.16}
-\contentsline {subsection}{\numberline {11.16.1}Function Documentation}{43}{subsection.11.16.1}
-\contentsline {subsubsection}{\numberline {11.16.1.1}main()}{43}{subsubsection.11.16.1.1}
-\contentsline {section}{\numberline {11.17}Iterators.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp}{44}{section.11.17}
-\contentsline {section}{\numberline {11.18}src/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Macros.cpp File Reference}{45}{section.11.18}
-\contentsline {subsection}{\numberline {11.18.1}Macro Definition Documentation}{46}{subsection.11.18.1}
-\contentsline {subsubsection}{\numberline {11.18.1.1}EULER}{46}{subsubsection.11.18.1.1}
-\contentsline {subsubsection}{\numberline {11.18.1.2}PI}{46}{subsubsection.11.18.1.2}
-\contentsline {subsection}{\numberline {11.18.2}Function Documentation}{46}{subsection.11.18.2}
-\contentsline {subsubsection}{\numberline {11.18.2.1}main()}{46}{subsubsection.11.18.2.1}
-\contentsline {section}{\numberline {11.19}Macros.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp}{47}{section.11.19}
-\contentsline {section}{\numberline {11.20}src/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Main.cpp File Reference}{47}{section.11.20}
-\contentsline {subsection}{\numberline {11.20.1}Function Documentation}{47}{subsection.11.20.1}
-\contentsline {subsubsection}{\numberline {11.20.1.1}main()}{47}{subsubsection.11.20.1.1}
-\contentsline {section}{\numberline {11.21}Main.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp}{48}{section.11.21}
-\contentsline {section}{\numberline {11.22}src/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Pointers.cpp File Reference}{48}{section.11.22}
-\contentsline {subsection}{\numberline {11.22.1}Function Documentation}{48}{subsection.11.22.1}
-\contentsline {subsubsection}{\numberline {11.22.1.1}main()}{48}{subsubsection.11.22.1.1}
-\contentsline {subsection}{\numberline {11.22.2}Introduction to Pointers}{48}{subsection.11.22.2}
-\contentsline {subsubsection}{\numberline {11.22.2.1}Address operator \&}{49}{subsubsection.11.22.2.1}
-\contentsline {subsubsection}{\numberline {11.22.2.2}Indirection operator $\ast $}{49}{subsubsection.11.22.2.2}
-\contentsline {subsubsection}{\numberline {11.22.2.3}Pointers}{49}{subsubsection.11.22.2.3}
-\contentsline {paragraph}{\numberline {11.22.2.3.1}pointer}{49}{paragraph.11.22.2.3.1}
-\contentsline {paragraph}{\numberline {11.22.2.3.2}Pointers}{49}{paragraph.11.22.2.3.2}
-\contentsline {paragraph}{\numberline {11.22.2.3.3}arithmetic}{49}{paragraph.11.22.2.3.3}
-\contentsline {paragraph}{\numberline {11.22.2.3.4}memory allocation}{49}{paragraph.11.22.2.3.4}
-\contentsline {paragraph}{\numberline {11.22.2.3.5}pointers (generic pointer)}{49}{paragraph.11.22.2.3.5}
-\contentsline {paragraph}{\numberline {11.22.2.3.6}Pointers}{49}{paragraph.11.22.2.3.6}
-\contentsline {section}{\numberline {11.23}Pointers.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp}{50}{section.11.23}
-\contentsline {section}{\numberline {11.24}src/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Reference\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Variables.cpp File Reference}{51}{section.11.24}
-\contentsline {subsection}{\numberline {11.24.1}Function Documentation}{52}{subsection.11.24.1}
-\contentsline {subsubsection}{\numberline {11.24.1.1}main()}{52}{subsubsection.11.24.1.1}
-\contentsline {section}{\numberline {11.25}Reference\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Variables.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp}{52}{section.11.25}
-\contentsline {section}{\numberline {11.26}src/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}S\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}L\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Basics.cpp File Reference}{53}{section.11.26}
-\contentsline {subsection}{\numberline {11.26.1}Function Documentation}{53}{subsection.11.26.1}
-\contentsline {subsubsection}{\numberline {11.26.1.1}main()}{53}{subsubsection.11.26.1.1}
-\contentsline {section}{\numberline {11.27}S\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}L\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Basics.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp}{54}{section.11.27}
-\contentsline {section}{\numberline {11.28}test/tester.cpp File Reference}{54}{section.11.28}
-\contentsline {subsection}{\numberline {11.28.1}Function Documentation}{55}{subsection.11.28.1}
-\contentsline {subsubsection}{\numberline {11.28.1.1}main()}{55}{subsubsection.11.28.1.1}
-\contentsline {section}{\numberline {11.29}tester.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp}{55}{section.11.29}
+\contentsline {chapter}{\numberline {6}Bug List}{21}{chapter.6}
+\contentsline {chapter}{\numberline {7}Todo List}{23}{chapter.7}
+\contentsline {chapter}{\numberline {8}Test List}{25}{chapter.8}
+\contentsline {chapter}{\numberline {9}Namespace Index}{27}{chapter.9}
+\contentsline {section}{\numberline {9.1}Namespace List}{27}{section.9.1}
+\contentsline {chapter}{\numberline {10}Class Index}{29}{chapter.10}
+\contentsline {section}{\numberline {10.1}Class List}{29}{section.10.1}
+\contentsline {chapter}{\numberline {11}File Index}{31}{chapter.11}
+\contentsline {section}{\numberline {11.1}File List}{31}{section.11.1}
+\contentsline {chapter}{\numberline {12}Namespace Documentation}{33}{chapter.12}
+\contentsline {section}{\numberline {12.1}constants Namespace Reference}{33}{section.12.1}
+\contentsline {subsection}{\numberline {12.1.1}Variable Documentation}{33}{subsection.12.1.1}
+\contentsline {subsubsection}{\numberline {12.1.1.1}avogadro}{33}{subsubsection.12.1.1.1}
+\contentsline {subsubsection}{\numberline {12.1.1.2}pi}{33}{subsubsection.12.1.1.2}
+\contentsline {chapter}{\numberline {13}Class Documentation}{35}{chapter.13}
+\contentsline {section}{\numberline {13.1}Concept\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Class Class Reference}{35}{section.13.1}
+\contentsline {subsection}{\numberline {13.1.1}Detailed Description}{35}{subsection.13.1.1}
+\contentsline {subsection}{\numberline {13.1.2}Constructor \& Destructor Documentation}{35}{subsection.13.1.2}
+\contentsline {subsubsection}{\numberline {13.1.2.1}ConceptClass()}{35}{subsubsection.13.1.2.1}
+\contentsline {subsection}{\numberline {13.1.3}Member Data Documentation}{35}{subsection.13.1.3}
+\contentsline {subsubsection}{\numberline {13.1.3.1}member\_a}{36}{subsubsection.13.1.3.1}
+\contentsline {subsubsection}{\numberline {13.1.3.2}member\_b}{36}{subsubsection.13.1.3.2}
+\contentsline {chapter}{\numberline {14}File Documentation}{37}{chapter.14}
+\contentsline {section}{\numberline {14.1}documents/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}C\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Make\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Introduction.md File Reference}{37}{section.14.1}
+\contentsline {section}{\numberline {14.2}documents/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Markdown.md File Reference}{37}{section.14.2}
+\contentsline {section}{\numberline {14.3}documents/structure.md File Reference}{37}{section.14.3}
+\contentsline {section}{\numberline {14.4}documents/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Unit-\/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Tests.md File Reference}{37}{section.14.4}
+\contentsline {section}{\numberline {14.5}include/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Concept\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Class.h File Reference}{37}{section.14.5}
+\contentsline {section}{\numberline {14.6}Concept\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Class.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}h}{37}{section.14.6}
+\contentsline {section}{\numberline {14.7}R\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}A\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}D\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}M\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}E.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}md File Reference}{38}{section.14.7}
+\contentsline {section}{\numberline {14.8}src/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Basics.cpp File Reference}{38}{section.14.8}
+\contentsline {subsection}{\numberline {14.8.1}Function Documentation}{38}{subsection.14.8.1}
+\contentsline {subsubsection}{\numberline {14.8.1.1}main()}{38}{subsubsection.14.8.1.1}
+\contentsline {subsection}{\numberline {14.8.2}Variable Documentation}{42}{subsection.14.8.2}
+\contentsline {subsubsection}{\numberline {14.8.2.1}g\_global\_integer}{42}{subsubsection.14.8.2.1}
+\contentsline {subsubsection}{\numberline {14.8.2.2}g\_x\_1}{42}{subsubsection.14.8.2.2}
+\contentsline {subsubsection}{\numberline {14.8.2.3}g\_x\_2}{42}{subsubsection.14.8.2.3}
+\contentsline {section}{\numberline {14.9}Basics.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp}{42}{section.14.9}
+\contentsline {section}{\numberline {14.10}src/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Bit\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Manipulation.cpp File Reference}{46}{section.14.10}
+\contentsline {subsection}{\numberline {14.10.1}Function Documentation}{46}{subsection.14.10.1}
+\contentsline {subsubsection}{\numberline {14.10.1.1}main()}{46}{subsubsection.14.10.1.1}
+\contentsline {section}{\numberline {14.11}Bit\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Manipulation.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp}{47}{section.14.11}
+\contentsline {section}{\numberline {14.12}src/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Concept\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Class.cpp File Reference}{48}{section.14.12}
+\contentsline {section}{\numberline {14.13}Concept\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Class.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp}{48}{section.14.13}
+\contentsline {section}{\numberline {14.14}src/constants.h File Reference}{48}{section.14.14}
+\contentsline {section}{\numberline {14.15}constants.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}h}{48}{section.14.15}
+\contentsline {section}{\numberline {14.16}src/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Iterators.cpp File Reference}{49}{section.14.16}
+\contentsline {subsection}{\numberline {14.16.1}Function Documentation}{49}{subsection.14.16.1}
+\contentsline {subsubsection}{\numberline {14.16.1.1}main()}{49}{subsubsection.14.16.1.1}
+\contentsline {section}{\numberline {14.17}Iterators.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp}{50}{section.14.17}
+\contentsline {section}{\numberline {14.18}src/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Macros.cpp File Reference}{51}{section.14.18}
+\contentsline {subsection}{\numberline {14.18.1}Macro Definition Documentation}{52}{subsection.14.18.1}
+\contentsline {subsubsection}{\numberline {14.18.1.1}EULER}{52}{subsubsection.14.18.1.1}
+\contentsline {subsubsection}{\numberline {14.18.1.2}PI}{52}{subsubsection.14.18.1.2}
+\contentsline {subsection}{\numberline {14.18.2}Function Documentation}{52}{subsection.14.18.2}
+\contentsline {subsubsection}{\numberline {14.18.2.1}main()}{52}{subsubsection.14.18.2.1}
+\contentsline {section}{\numberline {14.19}Macros.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp}{53}{section.14.19}
+\contentsline {section}{\numberline {14.20}src/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Main.cpp File Reference}{53}{section.14.20}
+\contentsline {subsection}{\numberline {14.20.1}Function Documentation}{53}{subsection.14.20.1}
+\contentsline {subsubsection}{\numberline {14.20.1.1}main()}{53}{subsubsection.14.20.1.1}
+\contentsline {section}{\numberline {14.21}Main.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp}{54}{section.14.21}
+\contentsline {section}{\numberline {14.22}src/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Pointers.cpp File Reference}{54}{section.14.22}
+\contentsline {subsection}{\numberline {14.22.1}Function Documentation}{54}{subsection.14.22.1}
+\contentsline {subsubsection}{\numberline {14.22.1.1}main()}{54}{subsubsection.14.22.1.1}
+\contentsline {subsection}{\numberline {14.22.2}Introduction to Pointers}{54}{subsection.14.22.2}
+\contentsline {subsubsection}{\numberline {14.22.2.1}Address operator \&}{56}{subsubsection.14.22.2.1}
+\contentsline {subsubsection}{\numberline {14.22.2.2}Indirection operator $\ast $}{56}{subsubsection.14.22.2.2}
+\contentsline {subsubsection}{\numberline {14.22.2.3}Pointers}{56}{subsubsection.14.22.2.3}
+\contentsline {paragraph}{\numberline {14.22.2.3.1}pointer}{56}{paragraph.14.22.2.3.1}
+\contentsline {paragraph}{\numberline {14.22.2.3.2}Pointers}{56}{paragraph.14.22.2.3.2}
+\contentsline {paragraph}{\numberline {14.22.2.3.3}arithmetic}{56}{paragraph.14.22.2.3.3}
+\contentsline {paragraph}{\numberline {14.22.2.3.4}memory allocation}{56}{paragraph.14.22.2.3.4}
+\contentsline {paragraph}{\numberline {14.22.2.3.5}pointers (generic pointer)}{57}{paragraph.14.22.2.3.5}
+\contentsline {paragraph}{\numberline {14.22.2.3.6}Pointers}{57}{paragraph.14.22.2.3.6}
+\contentsline {section}{\numberline {14.23}Pointers.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp}{58}{section.14.23}
+\contentsline {section}{\numberline {14.24}src/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Reference\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Variables.cpp File Reference}{59}{section.14.24}
+\contentsline {subsection}{\numberline {14.24.1}Function Documentation}{59}{subsection.14.24.1}
+\contentsline {subsubsection}{\numberline {14.24.1.1}main()}{60}{subsubsection.14.24.1.1}
+\contentsline {section}{\numberline {14.25}Reference\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Variables.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp}{60}{section.14.25}
+\contentsline {section}{\numberline {14.26}src/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}S\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}L\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Basics.cpp File Reference}{60}{section.14.26}
+\contentsline {subsection}{\numberline {14.26.1}Function Documentation}{61}{subsection.14.26.1}
+\contentsline {subsubsection}{\numberline {14.26.1.1}main()}{61}{subsubsection.14.26.1.1}
+\contentsline {section}{\numberline {14.27}S\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}L\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Basics.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp}{61}{section.14.27}
+\contentsline {section}{\numberline {14.28}test/tester.cpp File Reference}{62}{section.14.28}
+\contentsline {subsection}{\numberline {14.28.1}Function Documentation}{62}{subsection.14.28.1}
+\contentsline {subsubsection}{\numberline {14.28.1.1}main()}{62}{subsubsection.14.28.1.1}
+\contentsline {section}{\numberline {14.29}tester.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp}{63}{section.14.29}

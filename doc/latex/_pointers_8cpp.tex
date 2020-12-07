@@ -12,7 +12,7 @@ Include dependency graph for Pointers.\+cpp\+:\nopagebreak
 \begin{DoxyCompactItemize}
 \item 
 int \mbox{\hyperlink{_pointers_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Brief description. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Function Documentation}
@@ -22,10 +22,95 @@ int \mbox{\hyperlink{_pointers_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
 \doxysubsubsection{\texorpdfstring{main()}{main()}}
 {\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-\hypertarget{_pointers_8cpp_sec1}{}\doxysubsection{Introduction to Pointers}\label{_pointers_8cpp_sec1}
-See \href{https://www.learncpp.com/cpp-tutorial/introduction-to-standard-library-algorithms/}{\texttt{ Learn\+Cpp}}
 
-Pointers are\+:
+
+Brief description. 
+
+\label{_pointers_8cpp_top}%
+\Hypertarget{_pointers_8cpp_top}%
+\hypertarget{_pointers_8cpp_sec1}{}\doxysubsection{Introduction to Pointers}\label{_pointers_8cpp_sec1}
+More detailed description \begin{DoxyAuthor}{Author}
+Autor 1 
+
+Autor 2 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+Version number 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+Date 
+\end{DoxyDate}
+\begin{DoxyPrecond}{Precondition}
+Preconditions ... 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Postconditions ... 
+\end{DoxyPostcond}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000001}{Bug}}]Bugs ... \end{DoxyRefDesc}
+\begin{DoxyWarning}{Warning}
+This is a warning ... 
+\end{DoxyWarning}
+\begin{DoxyAttention}{Attention}
+Attenzione Attenzione ... 
+\end{DoxyAttention}
+\begin{DoxyNote}{Note}
+This is a note 
+\end{DoxyNote}
+\begin{DoxyRemark}{Remarks}
+This is a remark 
+\end{DoxyRemark}
+\begin{DoxyCopyright}{Copyright}
+G\+NU Public License. 
+\end{DoxyCopyright}
+\begin{DoxySince}{Since}
+Since when ... 
+\end{DoxySince}
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000001}{Todo}}]
+\begin{DoxyItemize}
+\item add a
+\item add b
+\item add c 
+\end{DoxyItemize}\end{DoxyRefDesc}
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000001}{Test}}]Describing test case ...\end{DoxyRefDesc}
+
+
+\begin{DoxyParagraph}{User defined paragraph}
+Contents of the paragraph.
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{}
+New paragraph under the same heading
+\end{DoxyParagraph}
+Example of a param command with a description consisting of two paragraphs 
+\begin{DoxyParams}{Parameters}
+{\em p} & First paragraph of the param description.
+
+Second paragraph of the param description. \\
+\hline
+\end{DoxyParams}
+Rest of the comment block continues.
+
+\begin{DoxyVerb}* Verbatim
+* ...
+* ...
+* \end{DoxyVerb}
+
+
+The receiver will acknowledge the command by calling Ack(). 
+\begin{DoxyImageNoCaption}
+  \mbox{\includegraphics[width=\textwidth,height=\textheight/2,keepaspectratio=true]{inline_mscgraph_1}}
+\end{DoxyImageNoCaption}
+
+
+formula example \[ x_s = \frac{2}{3} \cdot 2^{4} \]
+
+{\bfseries{Some Markdown}}
+
+See url-\/refernce\+: \href{https://www.learncpp.com/cpp-tutorial/introduction-to-standard-library-algorithms/}{\texttt{ Learn\+Cpp}}
+
+List\+:
 \begin{DoxyItemize}
 \item a
 \item b
@@ -100,92 +185,95 @@ Pointers are\+:
 \end{DoxyCode}
 
 
-Definition at line \mbox{\hyperlink{_pointers_8cpp_source_l00018}{18}} of file \mbox{\hyperlink{_pointers_8cpp_source}{Pointers.\+cpp}}.
+\mbox{\hyperlink{_pointers_8cpp_top}{top}} \mbox{[}(\char`\"{}go to the top\char`\"{})\mbox{]}
+
+Definition at line \mbox{\hyperlink{_pointers_8cpp_source_l00076}{76}} of file \mbox{\hyperlink{_pointers_8cpp_source}{Pointers.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00018            \{}
-\DoxyCodeLine{00019 }
-\DoxyCodeLine{00020     \textcolor{keywordtype}{int} x\{ 5 \};}
-\DoxyCodeLine{00021     std::cout << \textcolor{stringliteral}{"{}    x = "{}} << x << \textcolor{charliteral}{'\(\backslash\)n'}; \textcolor{comment}{// print the value of variable x}}
-\DoxyCodeLine{00022 }
-\DoxyCodeLine{00024     std::cout << \textcolor{stringliteral}{"{}   \&x = "{}} << \&x << \textcolor{charliteral}{'\(\backslash\)n'}; \textcolor{comment}{// print the memory address of variable x}}
-\DoxyCodeLine{00028 \textcolor{comment}{}    std::cout << \textcolor{stringliteral}{"{}*(\&x) = "{}} << *(\&x) << \textcolor{charliteral}{'\(\backslash\)n'}; \textcolor{comment}{// print the memory address of variable x}}
-\DoxyCodeLine{00032 \textcolor{comment}{}    \textcolor{comment}{//int *iPtr\{\}; // a pointer to an integer value}}
-\DoxyCodeLine{00033     \textcolor{comment}{//double *dPtr\{\}; // a pointer to a double value}}
-\DoxyCodeLine{00034     \textcolor{comment}{//int* iPtr2\{\}; // also valid syntax (acceptable, but not favored)}}
-\DoxyCodeLine{00035     \textcolor{comment}{//int * iPtr3\{\}; // also valid syntax (but don't do this, it looks like multiplication)}}
-\DoxyCodeLine{00036     \textcolor{comment}{//int *iPtr4\{\}, *iPtr5\{\}; // declare two pointers to integer variables (not recommended)}}
-\DoxyCodeLine{00037 }
-\DoxyCodeLine{00038     \textcolor{keywordtype}{int} var\{ 5 \};}
-\DoxyCodeLine{00039     \textcolor{keywordtype}{int} *ptr\{ \&var \}; \textcolor{comment}{// initialize ptr with address of variable v}}
-\DoxyCodeLine{00040     std::cout << \textcolor{stringliteral}{"{}var = "{}} << var << \textcolor{charliteral}{'\(\backslash\)n'}; \textcolor{comment}{// print the address of variable v}}
-\DoxyCodeLine{00041     std::cout << \textcolor{stringliteral}{"{}var = "{}} << \&var << \textcolor{charliteral}{'\(\backslash\)n'}; \textcolor{comment}{// print the address of variable v}}
-\DoxyCodeLine{00042     std::cout << \textcolor{stringliteral}{"{}ptr = "{}} << ptr << \textcolor{charliteral}{'\(\backslash\)n'}; \textcolor{comment}{// print the address that ptr is holding}}
-\DoxyCodeLine{00043     std::cout << \textcolor{stringliteral}{"{}*ptr = "{}} << *ptr << \textcolor{charliteral}{'\(\backslash\)n'};}
-\DoxyCodeLine{00044 }
-\DoxyCodeLine{00045     \textcolor{comment}{//    Pointers are good for:}}
-\DoxyCodeLine{00046     \textcolor{comment}{//    * dynamic arrays}}
-\DoxyCodeLine{00047     \textcolor{comment}{//    * dynamically allocate memory}}
-\DoxyCodeLine{00048     \textcolor{comment}{//    * pass large amount of data to a function (without copying)}}
-\DoxyCodeLine{00049     \textcolor{comment}{//    * pass a function as a parameter to another function}}
-\DoxyCodeLine{00050     \textcolor{comment}{//    * achieve polymorphism when dealing with inheritance}}
-\DoxyCodeLine{00051     \textcolor{comment}{//    * useful for advanced data structures}}
-\DoxyCodeLine{00055 \textcolor{comment}{}    \textcolor{comment}{//assigning it to the literal 0}}
-\DoxyCodeLine{00056     \textcolor{keywordtype}{float} *null\_ptr \{ 0 \};  \textcolor{comment}{// ptr is now a null pointer}}
-\DoxyCodeLine{00057     \textcolor{keywordtype}{float} *null\_ptr2; \textcolor{comment}{// ptr2 is uninitialized}}
-\DoxyCodeLine{00058     null\_ptr2 = 0; \textcolor{comment}{// ptr2 is now a null pointer}}
-\DoxyCodeLine{00059     \textcolor{keywordtype}{float} *null\_ptr3 \{\textcolor{keyword}{nullptr}\}; \textcolor{comment}{// C++11}}
-\DoxyCodeLine{00063 \textcolor{comment}{}    \textcolor{keywordtype}{int} array[5]\{ 9, 7, 5, 3, 1 \};}
-\DoxyCodeLine{00064     std::cout << *array << \textcolor{charliteral}{'\(\backslash\)n'}; \textcolor{comment}{// will print 9}}
-\DoxyCodeLine{00065     \textcolor{keywordtype}{int} *ptr\_for\_array\{ array \};}
-\DoxyCodeLine{00066     std::cout << *ptr\_for\_array << \textcolor{charliteral}{'\(\backslash\)n'}; \textcolor{comment}{// will print 9}}
-\DoxyCodeLine{00067 }
-\DoxyCodeLine{00068     \textcolor{comment}{// ARRAYS DECAY INTO POINTERS WHEN PASSED TO FUNCTIONS !!!}}
-\DoxyCodeLine{00075 \textcolor{comment}{}    std::cout << \&array[1] << \textcolor{charliteral}{'\(\backslash\)n'}; \textcolor{comment}{// print memory address of array element 1}}
-\DoxyCodeLine{00076     std::cout << array+1 << \textcolor{charliteral}{'\(\backslash\)n'}; \textcolor{comment}{// print memory address of array pointer + 1}}
-\DoxyCodeLine{00077     std::cout << array[1] << \textcolor{charliteral}{'\(\backslash\)n'}; \textcolor{comment}{// prints 7}}
-\DoxyCodeLine{00078     std::cout << *(array+1) << \textcolor{charliteral}{'\(\backslash\)n'}; \textcolor{comment}{// prints 7 (note the parenthesis required here)}}
-\DoxyCodeLine{00087 \textcolor{comment}{}    \textcolor{comment}{//new int; // dynamically allocate an integer (and discard the result)}}
-\DoxyCodeLine{00088     \textcolor{keywordtype}{int} *ptr\_dyn\{ \textcolor{keyword}{new} \textcolor{keywordtype}{int} \}; \textcolor{comment}{// dynamically allocate an integer and assign the address to ptr so we can access it later}}
-\DoxyCodeLine{00089     *ptr\_dyn = 7;}
-\DoxyCodeLine{00090     \textcolor{comment}{// equivalent: int *ptr\_dyn\{ new int \{ 7 \}\}}}
-\DoxyCodeLine{00091     std::cout << \textcolor{stringliteral}{"{}ptr\_dyn = "{}} << ptr\_dyn << std::endl;}
-\DoxyCodeLine{00092     std::cout << \textcolor{stringliteral}{"{}*ptr\_dyn = "{}} << *ptr\_dyn << std::endl;}
-\DoxyCodeLine{00093 }
-\DoxyCodeLine{00094     \textcolor{comment}{// delete}}
-\DoxyCodeLine{00095     \textcolor{keyword}{delete} ptr\_dyn; \textcolor{comment}{// return the memory pointed to by ptr to the operating system}}
-\DoxyCodeLine{00096     ptr\_dyn = 0; \textcolor{comment}{// set ptr to be a null pointer (use nullptr instead of 0 in C++11)}}
-\DoxyCodeLine{00097 }
-\DoxyCodeLine{00098 }
-\DoxyCodeLine{00099     \textcolor{comment}{// Dynamically allocating arrays}}
-\DoxyCodeLine{00100     \textcolor{keywordtype}{int} *dyn\_array\{ \textcolor{keyword}{new} \textcolor{keywordtype}{int}[5]\{ 9, 7, 5, 3, 1 \} \}; \textcolor{comment}{// initialize a dynamic array since C++11}}
-\DoxyCodeLine{00101     \textcolor{comment}{// To prevent writing the type twice, we can use auto. This is often done for types with long names.}}
-\DoxyCodeLine{00102     \textcolor{comment}{//auto *array\{ new int[5]\{ 9, 7, 5, 3, 1 \} \};}}
-\DoxyCodeLine{00103     \textcolor{keyword}{delete} [] dyn\_array;}
-\DoxyCodeLine{00113     \textcolor{keywordtype}{int} nValue;}
-\DoxyCodeLine{00114     \textcolor{keywordtype}{float} fValue;}
-\DoxyCodeLine{00115     \textcolor{keyword}{struct }Something}
-\DoxyCodeLine{00116     \{}
-\DoxyCodeLine{00117         \textcolor{keywordtype}{int} n;}
-\DoxyCodeLine{00118         \textcolor{keywordtype}{float} f;}
-\DoxyCodeLine{00119     \};}
-\DoxyCodeLine{00120     Something sValue;}
-\DoxyCodeLine{00121     \textcolor{keywordtype}{void} *void\_ptr;}
-\DoxyCodeLine{00122     void\_ptr = \&nValue; \textcolor{comment}{// valid}}
-\DoxyCodeLine{00123     void\_ptr = \&fValue; \textcolor{comment}{// valid}}
-\DoxyCodeLine{00124     void\_ptr = \&sValue; \textcolor{comment}{// valid}}
-\DoxyCodeLine{00125     \textcolor{comment}{// ATTENTION: indirection is only possible using a cast}}
-\DoxyCodeLine{00134 \textcolor{comment}{}    \textcolor{keywordtype}{int} value\_for\_pointer = 5;}
-\DoxyCodeLine{00135 }
-\DoxyCodeLine{00136     \textcolor{keywordtype}{int} *primary\_ptr = \&value\_for\_pointer;}
-\DoxyCodeLine{00137     std::cout << \textcolor{stringliteral}{"{}ptr = "{}} << *primary\_ptr << std::endl; \textcolor{comment}{// Indirection through pointer to int to get int value}}
-\DoxyCodeLine{00138 }
-\DoxyCodeLine{00139     \textcolor{keywordtype}{int} **ptrptr = \&primary\_ptr;}
-\DoxyCodeLine{00140     std::cout << \textcolor{stringliteral}{"{}ptrptr = "{}} << **ptrptr << std::endl; \textcolor{comment}{// first indirection to get pointer to int, second indirection to get int value}}
-\DoxyCodeLine{00141 }
-\DoxyCodeLine{00142     \textcolor{keywordtype}{int} **pointer\_array = \textcolor{keyword}{new} \textcolor{keywordtype}{int}*[10]; \textcolor{comment}{// allocate an array of 10 int pointers}}
-\DoxyCodeLine{00147 \textcolor{comment}{}    \textcolor{keywordflow}{return} 0;}
-\DoxyCodeLine{00148 \}}
+\DoxyCodeLine{00076            \{}
+\DoxyCodeLine{00077 }
+\DoxyCodeLine{00078     \textcolor{keywordtype}{int} x\{ 5 \};}
+\DoxyCodeLine{00079     std::cout << \textcolor{stringliteral}{"{}    x = "{}} << x << \textcolor{charliteral}{'\(\backslash\)n'}; \textcolor{comment}{// print the value of variable x}}
+\DoxyCodeLine{00080 }
+\DoxyCodeLine{00082     std::cout << \textcolor{stringliteral}{"{}   \&x = "{}} << \&x << \textcolor{charliteral}{'\(\backslash\)n'}; \textcolor{comment}{// print the memory address of variable x}}
+\DoxyCodeLine{00086 \textcolor{comment}{}    std::cout << \textcolor{stringliteral}{"{}*(\&x) = "{}} << *(\&x) << \textcolor{charliteral}{'\(\backslash\)n'}; \textcolor{comment}{// print the memory address of variable x}}
+\DoxyCodeLine{00090 \textcolor{comment}{}    \textcolor{comment}{//int *iPtr\{\}; // a pointer to an integer value}}
+\DoxyCodeLine{00091     \textcolor{comment}{//double *dPtr\{\}; // a pointer to a double value}}
+\DoxyCodeLine{00092     \textcolor{comment}{//int* iPtr2\{\}; // also valid syntax (acceptable, but not favored)}}
+\DoxyCodeLine{00093     \textcolor{comment}{//int * iPtr3\{\}; // also valid syntax (but don't do this, it looks like multiplication)}}
+\DoxyCodeLine{00094     \textcolor{comment}{//int *iPtr4\{\}, *iPtr5\{\}; // declare two pointers to integer variables (not recommended)}}
+\DoxyCodeLine{00095 }
+\DoxyCodeLine{00096     \textcolor{keywordtype}{int} var\{ 5 \};}
+\DoxyCodeLine{00097     \textcolor{keywordtype}{int} *ptr\{ \&var \}; \textcolor{comment}{// initialize ptr with address of variable v}}
+\DoxyCodeLine{00098     std::cout << \textcolor{stringliteral}{"{}var = "{}} << var << \textcolor{charliteral}{'\(\backslash\)n'}; \textcolor{comment}{// print the address of variable v}}
+\DoxyCodeLine{00099     std::cout << \textcolor{stringliteral}{"{}var = "{}} << \&var << \textcolor{charliteral}{'\(\backslash\)n'}; \textcolor{comment}{// print the address of variable v}}
+\DoxyCodeLine{00100     std::cout << \textcolor{stringliteral}{"{}ptr = "{}} << ptr << \textcolor{charliteral}{'\(\backslash\)n'}; \textcolor{comment}{// print the address that ptr is holding}}
+\DoxyCodeLine{00101     std::cout << \textcolor{stringliteral}{"{}*ptr = "{}} << *ptr << \textcolor{charliteral}{'\(\backslash\)n'};}
+\DoxyCodeLine{00102 }
+\DoxyCodeLine{00103     \textcolor{comment}{//    Pointers are good for:}}
+\DoxyCodeLine{00104     \textcolor{comment}{//    * dynamic arrays}}
+\DoxyCodeLine{00105     \textcolor{comment}{//    * dynamically allocate memory}}
+\DoxyCodeLine{00106     \textcolor{comment}{//    * pass large amount of data to a function (without copying)}}
+\DoxyCodeLine{00107     \textcolor{comment}{//    * pass a function as a parameter to another function}}
+\DoxyCodeLine{00108     \textcolor{comment}{//    * achieve polymorphism when dealing with inheritance}}
+\DoxyCodeLine{00109     \textcolor{comment}{//    * useful for advanced data structures}}
+\DoxyCodeLine{00113 \textcolor{comment}{}    \textcolor{comment}{//assigning it to the literal 0}}
+\DoxyCodeLine{00114     \textcolor{keywordtype}{float} *null\_ptr \{ 0 \};  \textcolor{comment}{// ptr is now a null pointer}}
+\DoxyCodeLine{00115     \textcolor{keywordtype}{float} *null\_ptr2; \textcolor{comment}{// ptr2 is uninitialized}}
+\DoxyCodeLine{00116     null\_ptr2 = 0; \textcolor{comment}{// ptr2 is now a null pointer}}
+\DoxyCodeLine{00117     \textcolor{keywordtype}{float} *null\_ptr3 \{\textcolor{keyword}{nullptr}\}; \textcolor{comment}{// C++11}}
+\DoxyCodeLine{00121 \textcolor{comment}{}    \textcolor{keywordtype}{int} array[5]\{ 9, 7, 5, 3, 1 \};}
+\DoxyCodeLine{00122     std::cout << *array << \textcolor{charliteral}{'\(\backslash\)n'}; \textcolor{comment}{// will print 9}}
+\DoxyCodeLine{00123     \textcolor{keywordtype}{int} *ptr\_for\_array\{ array \};}
+\DoxyCodeLine{00124     std::cout << *ptr\_for\_array << \textcolor{charliteral}{'\(\backslash\)n'}; \textcolor{comment}{// will print 9}}
+\DoxyCodeLine{00125 }
+\DoxyCodeLine{00126     \textcolor{comment}{// ARRAYS DECAY INTO POINTERS WHEN PASSED TO FUNCTIONS !!!}}
+\DoxyCodeLine{00133 \textcolor{comment}{}    std::cout << \&array[1] << \textcolor{charliteral}{'\(\backslash\)n'}; \textcolor{comment}{// print memory address of array element 1}}
+\DoxyCodeLine{00134     std::cout << array+1 << \textcolor{charliteral}{'\(\backslash\)n'}; \textcolor{comment}{// print memory address of array pointer + 1}}
+\DoxyCodeLine{00135     std::cout << array[1] << \textcolor{charliteral}{'\(\backslash\)n'}; \textcolor{comment}{// prints 7}}
+\DoxyCodeLine{00136     std::cout << *(array+1) << \textcolor{charliteral}{'\(\backslash\)n'}; \textcolor{comment}{// prints 7 (note the parenthesis required here)}}
+\DoxyCodeLine{00145 \textcolor{comment}{}    \textcolor{comment}{//new int; // dynamically allocate an integer (and discard the result)}}
+\DoxyCodeLine{00146     \textcolor{keywordtype}{int} *ptr\_dyn\{ \textcolor{keyword}{new} \textcolor{keywordtype}{int} \}; \textcolor{comment}{// dynamically allocate an integer and assign the address to ptr so we can access it later}}
+\DoxyCodeLine{00147     *ptr\_dyn = 7;}
+\DoxyCodeLine{00148     \textcolor{comment}{// equivalent: int *ptr\_dyn\{ new int \{ 7 \}\}}}
+\DoxyCodeLine{00149     std::cout << \textcolor{stringliteral}{"{}ptr\_dyn = "{}} << ptr\_dyn << std::endl;}
+\DoxyCodeLine{00150     std::cout << \textcolor{stringliteral}{"{}*ptr\_dyn = "{}} << *ptr\_dyn << std::endl;}
+\DoxyCodeLine{00151 }
+\DoxyCodeLine{00152     \textcolor{comment}{// delete}}
+\DoxyCodeLine{00153     \textcolor{keyword}{delete} ptr\_dyn; \textcolor{comment}{// return the memory pointed to by ptr to the operating system}}
+\DoxyCodeLine{00154     ptr\_dyn = 0; \textcolor{comment}{// set ptr to be a null pointer (use nullptr instead of 0 in C++11)}}
+\DoxyCodeLine{00155 }
+\DoxyCodeLine{00156 }
+\DoxyCodeLine{00157     \textcolor{comment}{// Dynamically allocating arrays}}
+\DoxyCodeLine{00158     \textcolor{keywordtype}{int} *dyn\_array\{ \textcolor{keyword}{new} \textcolor{keywordtype}{int}[5]\{ 9, 7, 5, 3, 1 \} \}; \textcolor{comment}{// initialize a dynamic array since C++11}}
+\DoxyCodeLine{00159     \textcolor{comment}{// To prevent writing the type twice, we can use auto. This is often done for types with long names.}}
+\DoxyCodeLine{00160     \textcolor{comment}{//auto *array\{ new int[5]\{ 9, 7, 5, 3, 1 \} \};}}
+\DoxyCodeLine{00161     \textcolor{keyword}{delete} [] dyn\_array;}
+\DoxyCodeLine{00171     \textcolor{keywordtype}{int} nValue;}
+\DoxyCodeLine{00172     \textcolor{keywordtype}{float} fValue;}
+\DoxyCodeLine{00173     \textcolor{keyword}{struct }Something}
+\DoxyCodeLine{00174     \{}
+\DoxyCodeLine{00175         \textcolor{keywordtype}{int} n;}
+\DoxyCodeLine{00176         \textcolor{keywordtype}{float} f;}
+\DoxyCodeLine{00177     \};}
+\DoxyCodeLine{00178     Something sValue;}
+\DoxyCodeLine{00179     \textcolor{keywordtype}{void} *void\_ptr;}
+\DoxyCodeLine{00180     void\_ptr = \&nValue; \textcolor{comment}{// valid}}
+\DoxyCodeLine{00181     void\_ptr = \&fValue; \textcolor{comment}{// valid}}
+\DoxyCodeLine{00182     void\_ptr = \&sValue; \textcolor{comment}{// valid}}
+\DoxyCodeLine{00183     \textcolor{comment}{// ATTENTION: indirection is only possible using a cast}}
+\DoxyCodeLine{00192 \textcolor{comment}{}    \textcolor{keywordtype}{int} value\_for\_pointer = 5;}
+\DoxyCodeLine{00193 }
+\DoxyCodeLine{00194     \textcolor{keywordtype}{int} *primary\_ptr = \&value\_for\_pointer;}
+\DoxyCodeLine{00195     std::cout << \textcolor{stringliteral}{"{}ptr = "{}} << *primary\_ptr << std::endl; \textcolor{comment}{// Indirection through pointer to int to get int value}}
+\DoxyCodeLine{00196 }
+\DoxyCodeLine{00197     \textcolor{keywordtype}{int} **ptrptr = \&primary\_ptr;}
+\DoxyCodeLine{00198     std::cout << \textcolor{stringliteral}{"{}ptrptr = "{}} << **ptrptr << std::endl; \textcolor{comment}{// first indirection to get pointer to int, second indirection to get int value}}
+\DoxyCodeLine{00199 }
+\DoxyCodeLine{00200     \textcolor{keywordtype}{int} **pointer\_array = \textcolor{keyword}{new} \textcolor{keywordtype}{int}*[10]; \textcolor{comment}{// allocate an array of 10 int pointers}}
+\DoxyCodeLine{00205 \textcolor{comment}{}    \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{00206 }
+\DoxyCodeLine{00210 \}}
 
 \end{DoxyCode}

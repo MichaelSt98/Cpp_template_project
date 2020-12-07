@@ -7,7 +7,7 @@ var indexSectionsWithContent =
   4: "cm",
   5: "agmp",
   6: "ep",
-  7: "cmpu"
+  7: "bcmptu"
 };
 
 var indexSectionNames =

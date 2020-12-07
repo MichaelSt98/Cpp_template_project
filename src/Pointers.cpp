@@ -5,14 +5,72 @@
 #include <iostream>
 
 /**
- * \section sec1 Introduction to Pointers
+ * \anchor    top
+ * \section   sec1 Introduction to Pointers
  *
- * See [LearnCpp](https://www.learncpp.com/cpp-tutorial/introduction-to-standard-library-algorithms/)
+ * \brief     Brief description
+ * \details   More detailed description
+ * \author    Autor 1
+ * \author    Autor 2
+ * \version   Version number
+ * \date      Date
+ * \pre       Preconditions ...
+ * \post      Postconditions ...
+ * \bug       Bugs ...
+ * \warning   This is a warning ...
+ * \attention Attenzione Attenzione ...
+ * \note      This is a note
+ * \remark    This is a remark
+ * \copyright GNU Public License.
+ * \since     Since when ...
+ * \todo
+ * * add a
+ * * add b
+ * * add c
+ * \test      Describing test case ...
  *
- * Pointers are:
+ * \par User defined paragraph
+ * Contents of the paragraph.
+ *
+ * \par
+ * New paragraph under the same heading
+ *
+ * Example of a param command with a description consisting of two paragraphs
+ *  \param p
+ *  \parblock
+ *  First paragraph of the param description.
+ *
+ *  Second paragraph of the param description.
+ *  \endparblock
+ *  Rest of the comment block continues.
+ *
+ * \verbatim
+ * Verbatim
+ * ...
+ * ...
+ * \endverbatim
+ *
+ * The receiver will acknowledge the command by calling Ack().
+ *  \msc
+ *    Sender,Receiver;
+ *    Sender->Receiver [label="Command()", URL="\ref Receiver::Command()"];
+ *    Sender<-Receiver [label="Ack()", URL="\ref Ack()", ID="1"];
+ *  \endmsc
+ *
+ *  formula example
+ *  \f[
+ *  x_s = \frac{2}{3} \cdot 2^{4}
+ *  \f]
+ *
+ * **Some Markdown**
+ *
+ * See url-refernce: [LearnCpp](https://www.learncpp.com/cpp-tutorial/introduction-to-standard-library-algorithms/)
+ *
+ * List:
  * * a
  * * b
  * * c
+ *
  * */
 
 int main() {
@@ -70,7 +128,7 @@ int main() {
 
     /**
      * \subsubsection Pointer arithmetic
-     *  \code
+     *  \code{.cpp}
      * */
     std::cout << &array[1] << '\n'; // print memory address of array element 1
     std::cout << array+1 << '\n'; // print memory address of array pointer + 1
@@ -145,5 +203,11 @@ int main() {
      * */
 
     return 0;
+
+    /**
+     * \ref top [("go to the top")]
+     */
 }
+
+
 
