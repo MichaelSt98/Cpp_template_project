@@ -214,7 +214,7 @@ h4 a:hover, a:active, h5 a:hover, a:active, h6 a:hover, a:active {
 }
 
 #banner div.logo {
-	background: url('https://upload.wikimedia.org/wikipedia/de/9/9c/UniversitaetTuebingen_WortBildMarke.png') no-repeat scroll 0 0 transparent;
+	/* background: url('https://de.wikipedia.org/wiki/C%2B%2B#/media/Datei:ISO_C++_Logo.svg') no-repeat scroll 0 0 transparent; */
 	/*background-repeat: no-repeat;*/
 	background-size: auto 80%;
 	/*min-width: 19em;
