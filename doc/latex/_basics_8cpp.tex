@@ -1,0 +1,380 @@
+\hypertarget{_basics_8cpp}{}\doxysection{src/\+Basics.cpp File Reference}
+\label{_basics_8cpp}\index{src/Basics.cpp@{src/Basics.cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$cstdint$>$}\newline
+{\ttfamily \#include $<$chrono$>$}\newline
+{\ttfamily \#include $<$thread$>$}\newline
+{\ttfamily \#include $<$array$>$}\newline
+Include dependency graph for Basics.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_basics_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{_basics_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{_basics_8cpp_a0eacdc6dd9eae4f7c2d1ae3ee54dddf0}{g\+\_\+global\+\_\+integer}} \{ 1 \}
+\item 
+static int \mbox{\hyperlink{_basics_8cpp_a58945424d64a983997ee60f652d29fcb}{g\+\_\+x\+\_\+1}}
+\item 
+const int \mbox{\hyperlink{_basics_8cpp_a5464bb17928b0e02cbfa419c2b9d0fbf}{g\+\_\+x\+\_\+2}} \{ 2 \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_basics_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{_basics_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{Basics.cpp@{Basics.cpp}!main@{main}}
+\index{main@{main}!Basics.cpp@{Basics.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+include order Initialization
+
+Fundamental data types
+
+escape sequences
+
+Conditional operator
+
+Namespaces
+
+Static local variables
+
+Typedefs and type aliases
+
+Type conversion
+
+Enumerations
+
+Structs
+
+Control flows
+
+Arrays
+
+Definition at line \mbox{\hyperlink{_basics_8cpp_source_l00031}{31}} of file \mbox{\hyperlink{_basics_8cpp_source}{Basics.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00031            \{}
+\DoxyCodeLine{00032 }
+\DoxyCodeLine{00034     \textcolor{comment}{// copy initialization}}
+\DoxyCodeLine{00035     \textcolor{keywordtype}{int} a = 1;}
+\DoxyCodeLine{00036     \textcolor{comment}{// direct initialization}}
+\DoxyCodeLine{00037     \textcolor{keywordtype}{int} b(1);}
+\DoxyCodeLine{00038     \textcolor{comment}{// list (uniform/brace) initialization}}
+\DoxyCodeLine{00039     \textcolor{comment}{//direct}}
+\DoxyCodeLine{00040     \textcolor{keywordtype}{int} c\_1\{1\};}
+\DoxyCodeLine{00041     \textcolor{comment}{//copy}}
+\DoxyCodeLine{00042     \textcolor{keywordtype}{int} c\_2 = \{1\};}
+\DoxyCodeLine{00046     \textcolor{comment}{// floating point}}
+\DoxyCodeLine{00047     \textcolor{keywordtype}{float} float\_a = 3.14159; \textcolor{comment}{// at least 4 bytes}}
+\DoxyCodeLine{00048     \textcolor{keywordtype}{double} float\_b = 3.14159; \textcolor{comment}{// at least 8 bytes}}
+\DoxyCodeLine{00049     \textcolor{keywordtype}{long} \textcolor{keywordtype}{double} float\_c = 3.14159; \textcolor{comment}{// at least 8 bytes}}
+\DoxyCodeLine{00050     \textcolor{comment}{// Inf represents Infinity}}
+\DoxyCodeLine{00051     \textcolor{comment}{// NaN represents Not a Number}}
+\DoxyCodeLine{00052 }
+\DoxyCodeLine{00053     \textcolor{comment}{// integral characters}}
+\DoxyCodeLine{00054     \textcolor{keywordtype}{char} char\_a = \textcolor{charliteral}{'c'}; \textcolor{comment}{// always 1 byte}}
+\DoxyCodeLine{00055     \textcolor{keywordtype}{wchar\_t} char\_b = \textcolor{charliteral}{'c'}; \textcolor{comment}{// at least 1 byte}}
+\DoxyCodeLine{00056     \textcolor{comment}{//char8\_t char\_c = 'c'; // C++20}}
+\DoxyCodeLine{00057     \textcolor{comment}{//char16\_t char\_d = 'c'; // C++11 // at least 2 bytes}}
+\DoxyCodeLine{00058     \textcolor{comment}{//char32\_t char\_e = 'c'; // C++11 // at least 4 bytes}}
+\DoxyCodeLine{00059 }
+\DoxyCodeLine{00060     \textcolor{comment}{// 0b12 -\/-\/> binary}}
+\DoxyCodeLine{00061     \textcolor{comment}{// 012 -\/-\/> octal}}
+\DoxyCodeLine{00062     \textcolor{comment}{// 0x12 -\/-\/> hexadecimal}}
+\DoxyCodeLine{00063     \textcolor{comment}{// use std::dec , std::oct , std::hex}}
+\DoxyCodeLine{00064 }
+\DoxyCodeLine{00065     \textcolor{comment}{// Integers}}
+\DoxyCodeLine{00066     \textcolor{keywordtype}{short} int\_a = 1; \textcolor{comment}{// at least 2 bytes}}
+\DoxyCodeLine{00067     \textcolor{keywordtype}{int} int\_b = 1; \textcolor{comment}{// at least 2 bytes}}
+\DoxyCodeLine{00068     \textcolor{keywordtype}{long} int\_c = 1; \textcolor{comment}{// at least 4 bytes}}
+\DoxyCodeLine{00069     \textcolor{comment}{//long long int\_d = 1; // C++11}}
+\DoxyCodeLine{00070 }
+\DoxyCodeLine{00071     \textcolor{comment}{// Boolean}}
+\DoxyCodeLine{00072     \textcolor{keywordtype}{bool} bool\_a = \textcolor{keyword}{true}; \textcolor{comment}{// or false}}
+\DoxyCodeLine{00073 }
+\DoxyCodeLine{00074     \textcolor{comment}{// Null pointer}}
+\DoxyCodeLine{00075     \textcolor{comment}{//std::nullptr\_t null\_pointer = nullptr;}}
+\DoxyCodeLine{00076 }
+\DoxyCodeLine{00077     \textcolor{comment}{// void}}
+\DoxyCodeLine{00078 }
+\DoxyCodeLine{00079     \textcolor{comment}{// using cstdint}}
+\DoxyCodeLine{00080     \textcolor{comment}{//std::int8\_t}}
+\DoxyCodeLine{00081     \textcolor{comment}{//std::uint8\_t}}
+\DoxyCodeLine{00082     \textcolor{comment}{//std::int16\_t}}
+\DoxyCodeLine{00083     \textcolor{comment}{//std::uint16\_t}}
+\DoxyCodeLine{00084     \textcolor{comment}{//std::int32\_t}}
+\DoxyCodeLine{00085     \textcolor{comment}{//std::uint32\_t}}
+\DoxyCodeLine{00086     \textcolor{comment}{//std::int64\_t}}
+\DoxyCodeLine{00087     \textcolor{comment}{//std::uint64\_t}}
+\DoxyCodeLine{00088 }
+\DoxyCodeLine{00089     \textcolor{comment}{// there is also the std::int\_fast\#\_t providing the fastest signed integer with at least \# bits}}
+\DoxyCodeLine{00090     \textcolor{comment}{// there is also the std::int\_least\#\_t providing the smallest signed integer with at least \# bits}}
+\DoxyCodeLine{00091 }
+\DoxyCodeLine{00092     std::cout << \textcolor{stringliteral}{"{}bool:\(\backslash\)t\(\backslash\)t"{}} << \textcolor{keyword}{sizeof}(bool) << \textcolor{stringliteral}{"{} bytes\(\backslash\)n"{}};}
+\DoxyCodeLine{00093     std::cout << \textcolor{stringliteral}{"{}char:\(\backslash\)t\(\backslash\)t"{}} << \textcolor{keyword}{sizeof}(char) << \textcolor{stringliteral}{"{} bytes\(\backslash\)n"{}};}
+\DoxyCodeLine{00094     std::cout << \textcolor{stringliteral}{"{}wchar\_t:\(\backslash\)t"{}} << \textcolor{keyword}{sizeof}(wchar\_t) << \textcolor{stringliteral}{"{} bytes\(\backslash\)n"{}};}
+\DoxyCodeLine{00095     std::cout << \textcolor{stringliteral}{"{}char16\_t:\(\backslash\)t"{}} << \textcolor{keyword}{sizeof}(char16\_t) << \textcolor{stringliteral}{"{} bytes\(\backslash\)n"{}}; \textcolor{comment}{// C++11 only}}
+\DoxyCodeLine{00096     std::cout << \textcolor{stringliteral}{"{}char32\_t:\(\backslash\)t"{}} << \textcolor{keyword}{sizeof}(char32\_t) << \textcolor{stringliteral}{"{} bytes\(\backslash\)n"{}}; \textcolor{comment}{// C++11 only}}
+\DoxyCodeLine{00097     std::cout << \textcolor{stringliteral}{"{}short:\(\backslash\)t\(\backslash\)t"{}} << \textcolor{keyword}{sizeof}(short) << \textcolor{stringliteral}{"{} bytes\(\backslash\)n"{}};}
+\DoxyCodeLine{00098     std::cout << \textcolor{stringliteral}{"{}int:\(\backslash\)t\(\backslash\)t"{}} << \textcolor{keyword}{sizeof}(int) << \textcolor{stringliteral}{"{} bytes\(\backslash\)n"{}};}
+\DoxyCodeLine{00099     std::cout << \textcolor{stringliteral}{"{}long:\(\backslash\)t\(\backslash\)t"{}} << \textcolor{keyword}{sizeof}(long) << \textcolor{stringliteral}{"{} bytes\(\backslash\)n"{}};}
+\DoxyCodeLine{00100     std::cout << \textcolor{stringliteral}{"{}long long:\(\backslash\)t"{}} << \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{long} long) << \textcolor{stringliteral}{"{} bytes\(\backslash\)n"{}}; \textcolor{comment}{// C++11 only}}
+\DoxyCodeLine{00101     std::cout << \textcolor{stringliteral}{"{}float:\(\backslash\)t\(\backslash\)t"{}} << \textcolor{keyword}{sizeof}(float) << \textcolor{stringliteral}{"{} bytes\(\backslash\)n"{}};}
+\DoxyCodeLine{00102     std::cout << \textcolor{stringliteral}{"{}double:\(\backslash\)t\(\backslash\)t"{}} << \textcolor{keyword}{sizeof}(double) << \textcolor{stringliteral}{"{} bytes\(\backslash\)n"{}};}
+\DoxyCodeLine{00103     std::cout << \textcolor{stringliteral}{"{}long double:\(\backslash\)t"{}} << \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{long} double) << \textcolor{stringliteral}{"{} bytes\(\backslash\)n"{}};}
+\DoxyCodeLine{00104 }
+\DoxyCodeLine{00105     \textcolor{comment}{// use const}}
+\DoxyCodeLine{00106     \textcolor{comment}{//const int const\_int = 1;}}
+\DoxyCodeLine{00107     \textcolor{comment}{// for variables that should not be modifiable after initialization}}
+\DoxyCodeLine{00108     \textcolor{comment}{// and whose initializer is NOT known at compile-\/time}}
+\DoxyCodeLine{00109 }
+\DoxyCodeLine{00110     \textcolor{comment}{// use constexpr}}
+\DoxyCodeLine{00111     \textcolor{comment}{//constexpr int constexpr\_int = 1;}}
+\DoxyCodeLine{00112     \textcolor{comment}{// for variables that should not be modifiable after initialization}}
+\DoxyCodeLine{00113     \textcolor{comment}{// and whose initializer is known at compile-\/time}}
+\DoxyCodeLine{00117 \textcolor{comment}{}    \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < 5; i++) \{}
+\DoxyCodeLine{00118         std::this\_thread::sleep\_for(std::chrono::milliseconds(250));}
+\DoxyCodeLine{00119         std::cout << \textcolor{stringliteral}{"{}\(\backslash\)a"{}}; \textcolor{comment}{// makes an alert}}
+\DoxyCodeLine{00120     \}}
+\DoxyCodeLine{00121     std::cout << \textcolor{stringliteral}{"{}Backspace \(\backslash\)b"{}} << std::endl;}
+\DoxyCodeLine{00122     std::cout << \textcolor{stringliteral}{"{}Formfeed \(\backslash\)f"{}} << std::endl;}
+\DoxyCodeLine{00123     std::cout << \textcolor{stringliteral}{"{}Newline \(\backslash\)n"{}} << std::endl;}
+\DoxyCodeLine{00124     std::cout << \textcolor{stringliteral}{"{}Carriage return \(\backslash\)r"{}} << std::endl;}
+\DoxyCodeLine{00125     std::cout << \textcolor{stringliteral}{"{}Horizontal \(\backslash\)t tab"{}} << std::endl;}
+\DoxyCodeLine{00126     std::cout << \textcolor{stringliteral}{"{}Vertical tab \(\backslash\)v"{}} << std::endl;}
+\DoxyCodeLine{00127     std::cout << \textcolor{stringliteral}{"{}Single quote \(\backslash\)' or double quote \(\backslash\)"{}"{}} << std::endl;}
+\DoxyCodeLine{00128     std::cout << \textcolor{stringliteral}{"{}Octal number \(\backslash\)12"{}} << std::endl;}
+\DoxyCodeLine{00129     std::cout << \textcolor{stringliteral}{"{}Hex number \(\backslash\)x14"{}} << std::endl;}
+\DoxyCodeLine{00133     \textcolor{keywordtype}{int} x\_1 = 2;}
+\DoxyCodeLine{00134     \textcolor{keywordtype}{int} x\_2 = 3;}
+\DoxyCodeLine{00135     \textcolor{keywordtype}{int} max\_x = (x\_1 > x\_2) ? x\_1 : x\_2;}
+\DoxyCodeLine{00139     \textcolor{comment}{// define a namespace}}
+\DoxyCodeLine{00140     \textcolor{comment}{//namespace namespace\_1 \{}}
+\DoxyCodeLine{00141     \textcolor{comment}{//    //nested namespace}}
+\DoxyCodeLine{00142     \textcolor{comment}{//    namespace namespace\_1\_nested \{}}
+\DoxyCodeLine{00143 }
+\DoxyCodeLine{00144     \textcolor{comment}{//    \}}}
+\DoxyCodeLine{00145     \textcolor{comment}{//\}}}
+\DoxyCodeLine{00146     \textcolor{comment}{// accessible using "{}::"{}}}
+\DoxyCodeLine{00147 }
+\DoxyCodeLine{00148     \textcolor{comment}{// namespace alias}}
+\DoxyCodeLine{00149     \textcolor{comment}{// namespace nested\_namespace = namespace\_1::namespace\_1\_nested;}}
+\DoxyCodeLine{00154 \textcolor{comment}{}    \textcolor{comment}{// static local variables are not destroyed when out of scope (in contrast to automatic)}}
+\DoxyCodeLine{00155     \textcolor{keyword}{static} \textcolor{keywordtype}{int} var\_1 \{ 1 \};}
+\DoxyCodeLine{00156     \textcolor{comment}{// AVOID using static variables unless the variable never needs to be reset}}
+\DoxyCodeLine{00161 \textcolor{comment}{}    \textcolor{keyword}{typedef} \textcolor{keywordtype}{double} distance\_t; \textcolor{comment}{// define distance\_t as an alias for type double}}
+\DoxyCodeLine{00162     \textcolor{comment}{//which is equivalent to: using distance\_t = double;}}
+\DoxyCodeLine{00163     \textcolor{comment}{// The following two statements are equivalent:}}
+\DoxyCodeLine{00164     \textcolor{comment}{// double howFar; //equivalent to}}
+\DoxyCodeLine{00165     distance\_t howFar;}
+\DoxyCodeLine{00171     \textcolor{comment}{// IMPLICIT type conversion (coercion)}}
+\DoxyCodeLine{00172     \textcolor{keywordtype}{float} f\_int \{ 3 \}; \textcolor{comment}{// initializing floating point variable with int 3}}
+\DoxyCodeLine{00173 }
+\DoxyCodeLine{00174     \textcolor{comment}{// EXPLICIT type conversion}}
+\DoxyCodeLine{00175     \textcolor{comment}{// static\_cast}}
+\DoxyCodeLine{00176     \textcolor{keywordtype}{int} i1 \{ 10 \};}
+\DoxyCodeLine{00177     \textcolor{keywordtype}{int} i2 \{ 4 \};}
+\DoxyCodeLine{00178     \textcolor{comment}{// convert an int to a float so we get floating point division rather than integer division}}
+\DoxyCodeLine{00179     \textcolor{keywordtype}{float} f \{ \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{float}\textcolor{keyword}{>}(i1) / i2 \};}
+\DoxyCodeLine{00180 }
+\DoxyCodeLine{00184     \textcolor{keyword}{enum} Color}
+\DoxyCodeLine{00185     \{}
+\DoxyCodeLine{00186         color\_black, \textcolor{comment}{// assigned 0}}
+\DoxyCodeLine{00187         color\_red, \textcolor{comment}{// assigned 1}}
+\DoxyCodeLine{00188         color\_blue, \textcolor{comment}{// assigned 2}}
+\DoxyCodeLine{00189         color\_green, \textcolor{comment}{// assigned 3}}
+\DoxyCodeLine{00190         color\_white, \textcolor{comment}{// assigned 4}}
+\DoxyCodeLine{00191         color\_cyan, \textcolor{comment}{// assigned 5}}
+\DoxyCodeLine{00192         color\_yellow, \textcolor{comment}{// assigned 6}}
+\DoxyCodeLine{00193         color\_magenta \textcolor{comment}{// assigned 7}}
+\DoxyCodeLine{00194     \};}
+\DoxyCodeLine{00195     Color paint\{ color\_white \};}
+\DoxyCodeLine{00196     std::cout << paint;}
+\DoxyCodeLine{00197 }
+\DoxyCodeLine{00198     \textcolor{comment}{// enum classes (scoped enumerations)}}
+\DoxyCodeLine{00199     \textcolor{keyword}{enum class} Fruit}
+\DoxyCodeLine{00200     \{}
+\DoxyCodeLine{00201         banana, \textcolor{comment}{// banana is inside the scope of Fruit}}
+\DoxyCodeLine{00202         apple}
+\DoxyCodeLine{00203     \};}
+\DoxyCodeLine{00204     Fruit fruit\{ Fruit::banana \}; \textcolor{comment}{// note: banana is not directly accessible any more, we have to use Fruit::banana}}
+\DoxyCodeLine{00208 \textcolor{comment}{}    \textcolor{keyword}{struct }Employee}
+\DoxyCodeLine{00209     \{}
+\DoxyCodeLine{00210         \textcolor{keywordtype}{short} id;}
+\DoxyCodeLine{00211         \textcolor{keywordtype}{int} age;}
+\DoxyCodeLine{00212         \textcolor{keywordtype}{double} wage;}
+\DoxyCodeLine{00213     \};}
+\DoxyCodeLine{00214 }
+\DoxyCodeLine{00215     Employee joe\{ 1, 32, 60000.0 \}; \textcolor{comment}{// joe.id = 1, joe.age = 32, joe.wage = 60000.0}}
+\DoxyCodeLine{00216     Employee frank\{ 2, 28 \}; \textcolor{comment}{// frank.id = 2, frank.age = 28, frank.wage = 0.0 (default initialization)}}
+\DoxyCodeLine{00217 }
+\DoxyCodeLine{00218     \textcolor{comment}{//Employee joe; // create an Employee struct for Joe}}
+\DoxyCodeLine{00219     \textcolor{comment}{//joe.id = 14; // assign a value to member id within struct joe}}
+\DoxyCodeLine{00220     \textcolor{comment}{//joe.age = 32; // assign a value to member age within struct joe}}
+\DoxyCodeLine{00221     \textcolor{comment}{//joe.wage = 24.15; // assign a value to member wage within struct joe}}
+\DoxyCodeLine{00222 }
+\DoxyCodeLine{00223     \textcolor{comment}{//Employee frank; // create an Employee struct for Frank}}
+\DoxyCodeLine{00224     \textcolor{comment}{//frank.id = 15; // assign a value to member id within struct frank}}
+\DoxyCodeLine{00225     \textcolor{comment}{//frank.age = 28; // assign a value to member age within struct frank}}
+\DoxyCodeLine{00226     \textcolor{comment}{//frank.wage = 18.27; // assign a value to member wage within struct frank}}
+\DoxyCodeLine{00227 }
+\DoxyCodeLine{00228     \textcolor{comment}{// nested structs}}
+\DoxyCodeLine{00229     \textcolor{keyword}{struct }Company}
+\DoxyCodeLine{00230     \{}
+\DoxyCodeLine{00231         Employee CEO; \textcolor{comment}{// Employee is a struct within the Company struct}}
+\DoxyCodeLine{00232         \textcolor{keywordtype}{int} numberOfEmployees;}
+\DoxyCodeLine{00233     \};}
+\DoxyCodeLine{00234     Company myCompany\{\{ 1, 42, 60000.0 \}, 5 \};}
+\DoxyCodeLine{00238     \textcolor{comment}{// halt (using <cstdlib>)}}
+\DoxyCodeLine{00239     \textcolor{comment}{//std::exit(0); // terminate and return 0 to operating system}}
+\DoxyCodeLine{00240     \textcolor{comment}{// ATTENTION: be aware of leaking resources}}
+\DoxyCodeLine{00241 }
+\DoxyCodeLine{00242     \textcolor{comment}{// Conditional branches}}
+\DoxyCodeLine{00243     \textcolor{keywordflow}{if} (\textcolor{keyword}{true}) \{}
+\DoxyCodeLine{00244 }
+\DoxyCodeLine{00245     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\textcolor{keyword}{false}) \{}
+\DoxyCodeLine{00246 }
+\DoxyCodeLine{00247     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{00248 }
+\DoxyCodeLine{00249     \}}
+\DoxyCodeLine{00250     \textcolor{comment}{// init statements}}
+\DoxyCodeLine{00251     \textcolor{comment}{//    if (std::string fullName\{ firstName + ' ' + lastName \}; fullName.length() > 20)}}
+\DoxyCodeLine{00252     \textcolor{comment}{//    \{}}
+\DoxyCodeLine{00253     \textcolor{comment}{//        std::cout << '"{}' << fullName << "{}\(\backslash\)"{}is too long!\(\backslash\)n"{};}}
+\DoxyCodeLine{00254     \textcolor{comment}{//    \}}}
+\DoxyCodeLine{00255     \textcolor{comment}{//    else}}
+\DoxyCodeLine{00256     \textcolor{comment}{//    \{}}
+\DoxyCodeLine{00257     \textcolor{comment}{//        std::cout << "{}Your name is "{} << fullName << '\(\backslash\)n';}}
+\DoxyCodeLine{00258     \textcolor{comment}{//    \}}}
+\DoxyCodeLine{00259 }
+\DoxyCodeLine{00260     \textcolor{comment}{// Switch statements}}
+\DoxyCodeLine{00261     Color color \{color\_black\};}
+\DoxyCodeLine{00262     \textcolor{keywordflow}{switch} (color)}
+\DoxyCodeLine{00263     \{}
+\DoxyCodeLine{00264         \textcolor{keywordflow}{case} Color::color\_black:}
+\DoxyCodeLine{00265             std::cout << \textcolor{stringliteral}{"{}Black"{}};}
+\DoxyCodeLine{00266             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00267         \textcolor{keywordflow}{case} Color::color\_white:}
+\DoxyCodeLine{00268             std::cout << \textcolor{stringliteral}{"{}White"{}};}
+\DoxyCodeLine{00269             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00270         \textcolor{keywordflow}{case} Color::color\_red:}
+\DoxyCodeLine{00271             std::cout << \textcolor{stringliteral}{"{}Red"{}};}
+\DoxyCodeLine{00272             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00273             \textcolor{comment}{//[[fallthrough]];}}
+\DoxyCodeLine{00274         \textcolor{keywordflow}{case} Color::color\_green:}
+\DoxyCodeLine{00275             std::cout << \textcolor{stringliteral}{"{}Green"{}};}
+\DoxyCodeLine{00276             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00277         \textcolor{keywordflow}{case} Color::color\_blue:}
+\DoxyCodeLine{00278             std::cout << \textcolor{stringliteral}{"{}Blue"{}};}
+\DoxyCodeLine{00279             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00280         \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{00281             std::cout << \textcolor{stringliteral}{"{}Unknown"{}};}
+\DoxyCodeLine{00282             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00283     \}}
+\DoxyCodeLine{00284     \textcolor{comment}{//[[fallthrough]] attribute can be added to indicate that the fall-\/through is intentional.}}
+\DoxyCodeLine{00285 }
+\DoxyCodeLine{00286     \textcolor{comment}{// Goto statements}}
+\DoxyCodeLine{00287     \textcolor{comment}{//tryAgain:}}
+\DoxyCodeLine{00288     \textcolor{comment}{//    goto tryAgain;}}
+\DoxyCodeLine{00289 }
+\DoxyCodeLine{00290     \textcolor{comment}{// While statements}}
+\DoxyCodeLine{00291     \textcolor{keywordtype}{int} while\_counter\{ 5 \};}
+\DoxyCodeLine{00292     \textcolor{keywordflow}{while} (while\_counter < 10) \{}
+\DoxyCodeLine{00293         std::cout << \textcolor{stringliteral}{"{}while\_counter: "{}} << while\_counter << std::endl;}
+\DoxyCodeLine{00294         ++while\_counter;}
+\DoxyCodeLine{00295     \}}
+\DoxyCodeLine{00296 }
+\DoxyCodeLine{00297     \textcolor{comment}{// Do wile statements}}
+\DoxyCodeLine{00298     \textcolor{keywordflow}{do} \{}
+\DoxyCodeLine{00299         std::cout << \textcolor{stringliteral}{"{}while\_counter: "{}} << while\_counter << std::endl;}
+\DoxyCodeLine{00300         ++while\_counter;}
+\DoxyCodeLine{00301     \}}
+\DoxyCodeLine{00302     \textcolor{keywordflow}{while} (while\_counter < 15);}
+\DoxyCodeLine{00303 }
+\DoxyCodeLine{00304     \textcolor{comment}{// For statements}}
+\DoxyCodeLine{00305     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} count\{ 0 \}; count < 10; ++count)}
+\DoxyCodeLine{00306         std::cout << count << \textcolor{charliteral}{' '};}
+\DoxyCodeLine{00307     \textcolor{keywordtype}{int} iii\{\};}
+\DoxyCodeLine{00308     \textcolor{keywordtype}{int} jjj\{\};}
+\DoxyCodeLine{00309     \textcolor{keywordflow}{for} (iii = 0, jjj = 9; iii < 10; ++iii, -\/-\/jjj)}
+\DoxyCodeLine{00310         std::cout << iii << \textcolor{charliteral}{' '} << jjj << \textcolor{charliteral}{'\(\backslash\)n'};}
+\DoxyCodeLine{00311     \textcolor{comment}{// return statement terminates the entire function the loop is within}}
+\DoxyCodeLine{00312     \textcolor{comment}{// break terminates the loop}}
+\DoxyCodeLine{00313     \textcolor{comment}{// continue jumps to the end of the loop body for the current iteration}}
+\DoxyCodeLine{00317 \textcolor{comment}{}    \textcolor{comment}{//int prime[5]\{\}; // hold the first 5 prime numbers}}
+\DoxyCodeLine{00318     \textcolor{comment}{//prime[0] = 2; // The first element has index 0}}
+\DoxyCodeLine{00319     \textcolor{comment}{//prime[1] = 3;}}
+\DoxyCodeLine{00320     \textcolor{comment}{//prime[2] = 5;}}
+\DoxyCodeLine{00321     \textcolor{comment}{//prime[3] = 7;}}
+\DoxyCodeLine{00322     \textcolor{comment}{//prime[4] = 11; // The last element has index 4 (array length-\/1)}}
+\DoxyCodeLine{00323     \textcolor{keywordtype}{int} prime[5]\{ 2, 3, 5, 7, 11 \}; \textcolor{comment}{// use initializer list to initialize the fixed array}}
+\DoxyCodeLine{00324     \textcolor{comment}{//int prime[]\{ 2, 3, 5, 7, 11 \}; // works as well}}
+\DoxyCodeLine{00325     \textcolor{comment}{//std::cout << "{}The array has: "{} << std::size(prime) << "{} elements\(\backslash\)n"{}; // C++17}}
+\DoxyCodeLine{00326     \textcolor{comment}{//sizeof() gives the array length multiplied by element size}}
+\DoxyCodeLine{00327 }
+\DoxyCodeLine{00328     \textcolor{comment}{// Multidimensional arrays}}
+\DoxyCodeLine{00329     \textcolor{keywordtype}{int} num\_rows\{3\};}
+\DoxyCodeLine{00330     \textcolor{keywordtype}{int} num\_cols\{5\};}
+\DoxyCodeLine{00331     \textcolor{keywordtype}{int} multi\_dim\_array[3][5] \textcolor{comment}{// cannot use num\_rows or num\_cols -\/-\/> see dynamic memory allocation}}
+\DoxyCodeLine{00332             \{}
+\DoxyCodeLine{00333                     \{ 1, 2, 3, 4, 5 \}, \textcolor{comment}{// row 0}}
+\DoxyCodeLine{00334                     \{ 6, 7, 8, 9, 10 \}, \textcolor{comment}{// row 1}}
+\DoxyCodeLine{00335                     \{ 11, 12, 13, 14, 15 \} \textcolor{comment}{// row 2}}
+\DoxyCodeLine{00336             \};}
+\DoxyCodeLine{00337     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} row\{ 0 \}; row < num\_rows; ++row) \textcolor{comment}{// step through the rows in the array}}
+\DoxyCodeLine{00338     \{}
+\DoxyCodeLine{00339         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} col\{ 0 \}; col < num\_cols; ++col) \textcolor{comment}{// step through each element in the row}}
+\DoxyCodeLine{00340         \{}
+\DoxyCodeLine{00341             std::cout << multi\_dim\_array[row][col];}
+\DoxyCodeLine{00342         \}}
+\DoxyCodeLine{00343     \}}
+\DoxyCodeLine{00344 }
+\DoxyCodeLine{00345     \textcolor{comment}{// foreach loop}}
+\DoxyCodeLine{00346     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} \&element: prime)}
+\DoxyCodeLine{00347     \{}
+\DoxyCodeLine{00348         std::cout <<  element << std::endl;}
+\DoxyCodeLine{00349     \}}
+\DoxyCodeLine{00352     \textcolor{keywordflow}{return} 0; \textcolor{comment}{// 0, EXIT\_SUCCESS, EXIT\_FAILURE}}
+\DoxyCodeLine{00353 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{_basics_8cpp_a0eacdc6dd9eae4f7c2d1ae3ee54dddf0}\label{_basics_8cpp_a0eacdc6dd9eae4f7c2d1ae3ee54dddf0}} 
+\index{Basics.cpp@{Basics.cpp}!g\_global\_integer@{g\_global\_integer}}
+\index{g\_global\_integer@{g\_global\_integer}!Basics.cpp@{Basics.cpp}}
+\doxysubsubsection{\texorpdfstring{g\_global\_integer}{g\_global\_integer}}
+{\footnotesize\ttfamily int g\+\_\+global\+\_\+integer \{ 1 \}}
+
+Global variables 
+
+Definition at line \mbox{\hyperlink{_basics_8cpp_source_l00013}{13}} of file \mbox{\hyperlink{_basics_8cpp_source}{Basics.\+cpp}}.
+
+\mbox{\Hypertarget{_basics_8cpp_a58945424d64a983997ee60f652d29fcb}\label{_basics_8cpp_a58945424d64a983997ee60f652d29fcb}} 
+\index{Basics.cpp@{Basics.cpp}!g\_x\_1@{g\_x\_1}}
+\index{g\_x\_1@{g\_x\_1}!Basics.cpp@{Basics.cpp}}
+\doxysubsubsection{\texorpdfstring{g\_x\_1}{g\_x\_1}}
+{\footnotesize\ttfamily int g\+\_\+x\+\_\+1\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \mbox{\hyperlink{_basics_8cpp_source_l00018}{18}} of file \mbox{\hyperlink{_basics_8cpp_source}{Basics.\+cpp}}.
+
+\mbox{\Hypertarget{_basics_8cpp_a5464bb17928b0e02cbfa419c2b9d0fbf}\label{_basics_8cpp_a5464bb17928b0e02cbfa419c2b9d0fbf}} 
+\index{Basics.cpp@{Basics.cpp}!g\_x\_2@{g\_x\_2}}
+\index{g\_x\_2@{g\_x\_2}!Basics.cpp@{Basics.cpp}}
+\doxysubsubsection{\texorpdfstring{g\_x\_2}{g\_x\_2}}
+{\footnotesize\ttfamily const int g\+\_\+x\+\_\+2 \{ 2 \}\hspace{0.3cm}{\ttfamily [extern]}}
+
