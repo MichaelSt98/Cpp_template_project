@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.3.30)  7 DEC 2020 21:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.3.30)  7 DEC 2020 21:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1458,7 +1458,7 @@ on: multiple pdfs with page group included in a single page
 > <_concept_class_8h__dep__incl.pdf, id=531, 201.75375pt x 156.585pt>
 File: _concept_class_8h__dep__incl.pdf Graphic file (type pdf)
 <use _concept_class_8h__dep__incl.pdf>
-Package pdftex.def Info: _concept_class_8h__dep__incl.pdf used on input line 7.
+Package pdftex.def Info: _concept_class_8h__dep__incl.pdf used on input line 8.
 
 (pdftex.def)             Requested size: 201.0pt x 156.00162pt.
 ) (./_concept_class_8h_source.tex) (./_r_e_a_d_m_e_8md.tex [37
@@ -1467,7 +1467,7 @@ Package pdftex.def Info: _concept_class_8h__dep__incl.pdf used on input line 7.
 65, 381.425pt x 156.585pt>
 File: _basics_8cpp__incl.pdf Graphic file (type pdf)
 <use _basics_8cpp__incl.pdf>
-Package pdftex.def Info: _basics_8cpp__incl.pdf used on input line 12.
+Package pdftex.def Info: _basics_8cpp__incl.pdf used on input line 13.
 (pdftex.def)             Requested size: 350.0pt x 143.68959pt.
 [38]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1494,7 +1494,7 @@ on: multiple pdfs with page group included in a single page
 > <_bit_manipulation_8cpp__incl.pdf, id=646, 199.74625pt x 156.585pt>
 File: _bit_manipulation_8cpp__incl.pdf Graphic file (type pdf)
 <use _bit_manipulation_8cpp__incl.pdf>
-Package pdftex.def Info: _bit_manipulation_8cpp__incl.pdf used on input line 8.
+Package pdftex.def Info: _bit_manipulation_8cpp__incl.pdf used on input line 9.
 
 (pdftex.def)             Requested size: 199.0pt x 156.00879pt.
 [46]) (./_bit_manipulation_8cpp_source.tex [47]) (./_concept_class_8cpp.tex <./
@@ -1505,14 +1505,14 @@ pdfTeX warning: pdflatex (file ./_concept_class_8cpp__incl.pdf): PDF inclusion:
 > <_concept_class_8cpp__incl.pdf, id=678, 210.7875pt x 156.585pt>
 File: _concept_class_8cpp__incl.pdf Graphic file (type pdf)
 <use _concept_class_8cpp__incl.pdf>
-Package pdftex.def Info: _concept_class_8cpp__incl.pdf used on input line 8.
+Package pdftex.def Info: _concept_class_8cpp__incl.pdf used on input line 9.
 (pdftex.def)             Requested size: 210.0pt x 156.004pt.
 ) (./_concept_class_8cpp_source.tex) (./constants_8h.tex) (./constants_8h_sourc
 e.tex [48]) (./_iterators_8cpp.tex <./_iterators_8cpp__incl.pdf> <_iterators_8c
 pp__incl.pdf, id=711, 325.215pt x 156.585pt>
 File: _iterators_8cpp__incl.pdf Graphic file (type pdf)
 <use _iterators_8cpp__incl.pdf>
-Package pdftex.def Info: _iterators_8cpp__incl.pdf used on input line 11.
+Package pdftex.def Info: _iterators_8cpp__incl.pdf used on input line 12.
 (pdftex.def)             Requested size: 324.0pt x 156.01117pt.
 [49]) (./_iterators_8cpp_source.tex [50]) (./_macros_8cpp.tex <./_macros_8cpp__
 incl.pdf
@@ -1522,7 +1522,7 @@ le pdfs with page group included in a single page
 > <_macros_8cpp__incl.pdf, id=744, 164.615pt x 156.585pt>
 File: _macros_8cpp__incl.pdf Graphic file (type pdf)
 <use _macros_8cpp__incl.pdf>
-Package pdftex.def Info: _macros_8cpp__incl.pdf used on input line 8.
+Package pdftex.def Info: _macros_8cpp__incl.pdf used on input line 9.
 (pdftex.def)             Requested size: 164.0pt x 156.004pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1531,120 +1531,120 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 f> <_main_8cpp__incl.pdf, id=792, 194.7275pt x 156.585pt>
 File: _main_8cpp__incl.pdf Graphic file (type pdf)
 <use _main_8cpp__incl.pdf>
-Package pdftex.def Info: _main_8cpp__incl.pdf used on input line 9.
+Package pdftex.def Info: _main_8cpp__incl.pdf used on input line 10.
 (pdftex.def)             Requested size: 194.0pt x 156.0064pt.
 [53]) (./_main_8cpp_source.tex) (./_pointers_8cpp.tex <./_pointers_8cpp__incl.p
 df> <_pointers_8cpp__incl.pdf, id=818, 168.63pt x 156.585pt>
 File: _pointers_8cpp__incl.pdf Graphic file (type pdf)
 <use _pointers_8cpp__incl.pdf>
-Package pdftex.def Info: _pointers_8cpp__incl.pdf used on input line 8.
+Package pdftex.def Info: _pointers_8cpp__incl.pdf used on input line 9.
 (pdftex.def)             Requested size: 168.0pt x 156.004pt.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.09995pt on input line 15.
+(Font)              scaled to size 8.09995pt on input line 16.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 15.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 16.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 8.09995pt on input line 15.
+(Font)              scaled to size 8.09995pt on input line 16.
 
-Underfull \hbox (badness 10000) detected at line 32
+Underfull \hbox (badness 10000) detected at line 33
 [][][]
  []
 
 [54]
-Underfull \hbox (badness 10000) detected at line 37
+Underfull \hbox (badness 10000) detected at line 38
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 40
+Underfull \hbox (badness 10000) detected at line 41
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 43
+Underfull \hbox (badness 10000) detected at line 44
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 46
+Underfull \hbox (badness 10000) detected at line 47
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 51
+Underfull \hbox (badness 10000) detected at line 52
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 54
+Underfull \hbox (badness 10000) detected at line 55
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 57
+Underfull \hbox (badness 10000) detected at line 58
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 60
+Underfull \hbox (badness 10000) detected at line 61
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 63
+Underfull \hbox (badness 10000) detected at line 64
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 66
+Underfull \hbox (badness 10000) detected at line 67
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 80
+Underfull \hbox (badness 10000) detected at line 81
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 83
+Underfull \hbox (badness 10000) detected at line 84
 [][][]
  []
 
 [55]
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 14.1 on input line 92.
+(longtable)                in table 14.1 on input line 93.
 
  <./inline_mscgraph_1.pdf> <inline_mscgraph_1.pdf, id=851, 421.575pt x 55.20625
 pt>
 File: inline_mscgraph_1.pdf Graphic file (type pdf)
 <use inline_mscgraph_1.pdf>
-Package pdftex.def Info: inline_mscgraph_1.pdf used on input line 103.
+Package pdftex.def Info: inline_mscgraph_1.pdf used on input line 104.
 (pdftex.def)             Requested size: 455.25562pt x 59.61679pt.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 119.
+(hyperref)                removing `math shift' on input line 120.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 119.
+(hyperref)                removing `\ast' on input line 120.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 119.
+(hyperref)                removing `math shift' on input line 120.
 
 [56pdfTeX warning (ext4): destination with the same identifier (name{Pointers.c
 pp_Pointers}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.163 ...ne{    \textcolor{keywordtype}{float} f;}
+l.164 ...ne{    \textcolor{keywordtype}{float} f;}
                                                   ]pdfTeX warning (ext4): desti
 nation with the same identifier (name{Pointers.cpp_Pointers}) has been already 
 used, duplicate ignored
 <to be read again> 
                    \relax 
-l.172 \hypertarget{Pointers.cpp_Pointers}{}
+l.173 \hypertarget{Pointers.cpp_Pointers}{}
                                            \doxyparagraph{Pointers}\label{Po...
 [57]) (./_pointers_8cpp_source.tex [58]) (./_reference_variables_8cpp.tex <./_r
 eference_variables_8cpp__incl.pdf
@@ -1655,14 +1655,14 @@ usion: multiple pdfs with page group included in a single page
 File: _reference_variables_8cpp__incl.pdf Graphic file (type pdf)
 <use _reference_variables_8cpp__incl.pdf>
 Package pdftex.def Info: _reference_variables_8cpp__incl.pdf used on input line
- 8.
+ 9.
 (pdftex.def)             Requested size: 217.0pt x 155.99922pt.
 [59]) (./_reference_variables_8cpp_source.tex) (./_s_l___basics_8cpp.tex <./_s_
 l___basics_8cpp__incl.pdf> <_s_l___basics_8cpp__incl.pdf, id=922, 313.17pt x 15
 6.585pt>
 File: _s_l___basics_8cpp__incl.pdf Graphic file (type pdf)
 <use _s_l___basics_8cpp__incl.pdf>
-Package pdftex.def Info: _s_l___basics_8cpp__incl.pdf used on input line 11.
+Package pdftex.def Info: _s_l___basics_8cpp__incl.pdf used on input line 12.
 (pdftex.def)             Requested size: 312.0pt x 156.0064pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1671,7 +1671,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 _incl.pdf> <tester_8cpp__incl.pdf, id=958, 159.59625pt x 156.585pt>
 File: tester_8cpp__incl.pdf Graphic file (type pdf)
 <use tester_8cpp__incl.pdf>
-Package pdftex.def Info: tester_8cpp__incl.pdf used on input line 8.
+Package pdftex.def Info: tester_8cpp__incl.pdf used on input line 9.
 (pdftex.def)             Requested size: 159.0pt x 156.00162pt.
 ) (./tester_8cpp_source.tex [62]) [63] [64
 
@@ -1722,7 +1722,7 @@ s/type1/urw/courier/ucrro8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1
 lvetic/uhvb8ac.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/helvetic
 /uhvbo8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/helvetic/uhvr8
 a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (66 pages, 307850 bytes).
+Output written on refman.pdf (66 pages, 307821 bytes).
 PDF statistics:
  1142 PDF objects out of 1200 (max. 8388607)
  1006 compressed objects within 11 object streams

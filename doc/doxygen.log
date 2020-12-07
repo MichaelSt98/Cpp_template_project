@@ -32,7 +32,6 @@ Searching for files in directory /Users/Michi/Desktop/Cpp_template_project/bin
 Searching for files in directory /Users/Michi/Desktop/Cpp_template_project/build
 Searching for files in directory /Users/Michi/Desktop/Cpp_template_project/doc
 Searching for files in directory /Users/Michi/Desktop/Cpp_template_project/docs
-Searching for files in directory /Users/Michi/Desktop/Cpp_template_project/docs/search
 Searching for files in directory /Users/Michi/Desktop/Cpp_template_project/documents
 Searching for files in directory /Users/Michi/Desktop/Cpp_template_project/doxygen-theme
 Searching for files in directory /Users/Michi/Desktop/Cpp_template_project/ideas
@@ -81,13 +80,13 @@ Building directory list...
 Building namespace list...
 Building file list...
 Building class list...
-Computing nesti<unknown>:63: warning: unable to resolve reference to 'Receiver::Command()' for \ref command
+Computing nesting relations for classes...
+Associating documentation with classes...
+Building example <unknown>:63: warning: unable to resolve reference to 'Receiver::Command()' for \ref command
 <unknown>:63: warning: unable to resolve reference to 'Ack()' for \ref command
 /Users/Michi/Desktop/Cpp_template_project/src/Pointers.cpp:82: warning: found subsection command (id: 'ssec1') outside of section context!
 /Users/Michi/Desktop/Cpp_template_project/documents/Markdown.md:174: warning: explicit link request to 'bugID' could not be resolved
-ng relations for classes...
-Associating documentation with classes...
-Building example list...
+list...
 Searching for enumerations...
 Searching for documented typedefs...
 Searching for members imported via using declarations...
@@ -204,5 +203,55 @@ finalizing index lists...
 writing tag file...
 Running plantuml with JAVA...
 Running dot...
+Generating dot graphs using 5 parallel threads...
+Running dot for graph 1/25
+Running dot for graph 2/25
+Running dot for graph 3/25
+Running dot for graph 4/25
+Running dot for graph 5/25
+Running dot for graph 6/25
+Running dot for graph 7/25
+Running dot for graph 8/25
+Running dot for graph 9/25
+Running dot for graph 10/25
+Running dot for graph 11/25
+Running dot for graph 12/25
+Running dot for graph 13/25
+Running dot for graph 14/25
+Running dot for graph 15/25
+Running dot for graph 16/25
+Running dot for graph 17/25
+Running dot for graph 18/25
+Running dot for graph 19/25
+Running dot for graph 20/25
+Running dot for graph 21/25
+Running dot for graph 22/25
+Running dot for graph 23/25
+Running dot for graph 24/25
+Running dot for graph 25/25
+Patching output file 1/24
+Patching output file 2/24
+Patching output file 3/24
+Patching output file 4/24
+Patching output file 5/24
+Patching output file 6/24
+Patching output file 7/24
+Patching output file 8/24
+Patching output file 9/24
+Patching output file 10/24
+Patching output file 11/24
+Patching output file 12/24
+Patching output file 13/24
+Patching output file 14/24
+Patching output file 15/24
+Patching output file 16/24
+Patching output file 17/24
+Patching output file 18/24
+Patching output file 19/24
+Patching output file 20/24
+Patching output file 21/24
+Patching output file 22/24
+Patching output file 23/24
+Patching output file 24/24
 lookup cache used 21/65536 hits=62 misses=21
 finished...
