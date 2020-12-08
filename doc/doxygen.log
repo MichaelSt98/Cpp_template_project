@@ -31,6 +31,7 @@ Searching for files in directory /Users/Michi/Desktop/Cpp_template_project
 Searching for files in directory /Users/Michi/Desktop/Cpp_template_project/bin
 Searching for files in directory /Users/Michi/Desktop/Cpp_template_project/build
 Searching for files in directory /Users/Michi/Desktop/Cpp_template_project/doc
+Searching for files in directory /Users/Michi/Desktop/Cpp_template_project/docs
 Searching for files in directory /Users/Michi/Desktop/Cpp_template_project/documents
 Searching for files in directory /Users/Michi/Desktop/Cpp_template_project/doxygen-theme
 Searching for files in directory /Users/Michi/Desktop/Cpp_template_project/ideas
@@ -73,11 +74,12 @@ Parsing file /Users/Michi/Desktop/Cpp_template_project/learningCpp/Pointers.cpp.
 Preprocessing /Users/Michi/Desktop/Cpp_template_project/learningCpp/ReferenceVariables.cpp...
 Parsing file /Users/Michi/Desktop/Cpp_template_project/learningCpp/ReferenceVariables.cpp...
 Preprocessing /Users/Michi/Desktop/Cpp_template_project/learningCpp/SL_Basics.cpp...
-Parsing file /Users/Michi/Desktop/Cpp_template_project/learningCpp/SL_Basics.cpp...
-Preprocessing /Users/Michi/Desktop/Cpp_template_project/src/Main.<unknown>:63: warning: unable to resolve reference to 'Receiver::Command()' for \ref command
+Parsing file /Users/Michi/Desktop/Cpp_template_project/learningCpp/SL/Users/Michi/Desktop/Cpp_template_project/learningCpp/Functions.h:38: warning: documented symbol 'Function passing argument by value' was not declared or defined.
+<unknown>:63: warning: unable to resolve reference to 'Receiver::Command()' for \ref command
 <unknown>:63: warning: unable to resolve reference to 'Ack()' for \ref command
 /Users/Michi/Desktop/Cpp_template_project/learningCpp/Pointers.cpp:82: warning: found subsection command (id: 'ssec1') outside of section context!
-cpp...
+_Basics.cpp...
+Preprocessing /Users/Michi/Desktop/Cpp_template_project/src/Main.cpp...
 Parsing file /Users/Michi/Desktop/Cpp_template_project/src/Main.cpp...
 Preprocessing /Users/Michi/Desktop/Cpp_template_project/test/tester.cpp...
 Parsing file /Users/Michi/Desktop/Cpp_template_project/test/tester.cpp...
@@ -175,10 +177,10 @@ Generating docs for file learningCpp/Macros.cpp...
 Generating docs for file learningCpp/Pointers.cpp...
 Generating docs for file learningCpp/ReferenceVariables.cpp...
 Generating docs for file learningCpp/SL_Basics.cpp...
-Generating docs for file README.md...
+Gener/Users/Michi/Desktop/Cpp_template_project/documents/Markdown.md:174: warning: explicit link request to 'bugID' could not be resolved
+ating docs for file README.md...
 Generating docs for file src/Main.cpp...
-Genera/Users/Michi/Desktop/Cpp_template_project/documents/Markdown.md:174: warning: explicit link request to 'bugID' could not be resolved
-ting docs for file test/tester.cpp...
+Generating docs for file test/tester.cpp...
 Generating page documentation...
 Generating docs for page md_documents_CMakeIntroduction...
 Generating docs for page md_documents_Markdown...
@@ -213,64 +215,35 @@ writing tag file...
 Running plantuml with JAVA...
 Running dot...
 Generating dot graphs using 5 parallel threads...
-Running dot for graph 1/31
-Running dot for graph 2/31
-Running dot for graph 3/31
-Running dot for graph 4/31
-Running dot for graph 5/31
-Running dot for graph 6/31
-Running dot for graph 7/31
-Running dot for graph 8/31
-Running dot for graph 9/31
-Running dot for graph 10/31
-Running dot for graph 11/31
-Running dot for graph 12/31
-Running dot for graph 13/31
-Running dot for graph 14/31
-Running dot for graph 15/31
-Running dot for graph 16/31
-Running dot for graph 17/31
-Running dot for graph 18/31
-Running dot for graph 19/31
-Running dot for graph 20/31
-Running dot for graph 21/31
-Running dot for graph 22/31
-Running dot for graph 23/31
-Running dot for graph 24/31
-Running dot for graph 25/31
-Running dot for graph 26/31
-Running dot for graph 27/31
-Running dot for graph 28/31
-Running dot for graph 29/31
-Running dot for graph 30/31
-Running dot for graph 31/31
-Patching output file 1/28
-Patching output file 2/28
-Patching output file 3/28
-Patching output file 4/28
-Patching output file 5/28
-Patching output file 6/28
-Patching output file 7/28
-Patching output file 8/28
-Patching output file 9/28
-Patching output file 10/28
-Patching output file 11/28
-Patching output file 12/28
-Patching output file 13/28
-Patching output file 14/28
-Patching output file 15/28
-Patching output file 16/28
-Patching output file 17/28
-Patching output file 18/28
-Patching output file 19/28
-Patching output file 20/28
-Patching output file 21/28
-Patching output file 22/28
-Patching output file 23/28
-Patching output file 24/28
-Patching output file 25/28
-Patching output file 26/28
-Patching output file 27/28
-Patching output file 28/28
+Running dot for graph 1/16
+Running dot for graph 2/16
+Running dot for graph 3/16
+Running dot for graph 4/16
+Running dot for graph 5/16
+Running dot for graph 6/16
+Running dot for graph 7/16
+Running dot for graph 8/16
+Running dot for graph 9/16
+Running dot for graph 10/16
+Running dot for graph 11/16
+Running dot for graph 12/16
+Running dot for graph 13/16
+Running dot for graph 14/16
+Running dot for graph 15/16
+Running dot for graph 16/16
+Patching output file 1/14
+Patching output file 2/14
+Patching output file 3/14
+Patching output file 4/14
+Patching output file 5/14
+Patching output file 6/14
+Patching output file 7/14
+Patching output file 8/14
+Patching output file 9/14
+Patching output file 10/14
+Patching output file 11/14
+Patching output file 12/14
+Patching output file 13/14
+Patching output file 14/14
 lookup cache used 22/65536 hits=65 misses=22
 finished...

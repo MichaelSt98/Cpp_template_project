@@ -34,8 +34,8 @@
  *
  */
 
-/**
- * Function passing argument by value
+/*!
+ * \fn Function passing argument by value
  */
 void pass_by_value(int);
 
