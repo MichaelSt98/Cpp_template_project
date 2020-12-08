@@ -147,27 +147,22 @@
 \contentsline {subsection}{\numberline {14.15.1}Function Documentation}{49}{subsection.14.15.1}
 \contentsline {subsubsection}{\numberline {14.15.1.1}main()}{49}{subsubsection.14.15.1.1}
 \contentsline {subsubsection}{\numberline {14.15.1.2}pass\_by\_value()}{50}{subsubsection.14.15.1.2}
-\contentsline {subsection}{\numberline {14.15.2}Function parameters and arguments}{50}{subsection.14.15.2}
-\contentsline {subsubsection}{\numberline {14.15.2.1}Pass by value}{50}{subsubsection.14.15.2.1}
-\contentsline {paragraph}{\numberline {14.15.2.1.1}Pros}{50}{paragraph.14.15.2.1.1}
-\contentsline {paragraph}{\numberline {14.15.2.1.2}Cons}{50}{paragraph.14.15.2.1.2}
-\contentsline {paragraph}{\numberline {14.15.2.1.3}When to use}{50}{paragraph.14.15.2.1.3}
-\contentsline {paragraph}{\numberline {14.15.2.1.4}When not to use}{50}{paragraph.14.15.2.1.4}
 \contentsline {section}{\numberline {14.16}Functions.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp}{50}{section.14.16}
 \contentsline {section}{\numberline {14.17}learning\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Cpp/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Functions.h File Reference}{51}{section.14.17}
-\contentsline {subsection}{\numberline {14.17.1}Function Documentation}{51}{subsection.14.17.1}
-\contentsline {subsubsection}{\numberline {14.17.1.1}pass\_by\_value()}{51}{subsubsection.14.17.1.1}
+\contentsline {subsection}{\numberline {14.17.1}Detailed Description}{51}{subsection.14.17.1}
 \contentsline {subsection}{\numberline {14.17.2}Function parameters and arguments}{51}{subsection.14.17.2}
 \contentsline {subsubsection}{\numberline {14.17.2.1}Pass by value}{51}{subsubsection.14.17.2.1}
 \contentsline {paragraph}{\numberline {14.17.2.1.1}Pros}{51}{paragraph.14.17.2.1.1}
-\contentsline {paragraph}{\numberline {14.17.2.1.2}Cons}{52}{paragraph.14.17.2.1.2}
-\contentsline {paragraph}{\numberline {14.17.2.1.3}When to use}{52}{paragraph.14.17.2.1.3}
-\contentsline {paragraph}{\numberline {14.17.2.1.4}When not to use}{52}{paragraph.14.17.2.1.4}
+\contentsline {paragraph}{\numberline {14.17.2.1.2}Cons}{51}{paragraph.14.17.2.1.2}
+\contentsline {paragraph}{\numberline {14.17.2.1.3}When to use}{51}{paragraph.14.17.2.1.3}
+\contentsline {paragraph}{\numberline {14.17.2.1.4}When not to use}{51}{paragraph.14.17.2.1.4}
+\contentsline {subsection}{\numberline {14.17.3}Function Documentation}{51}{subsection.14.17.3}
+\contentsline {subsubsection}{\numberline {14.17.3.1}pass\_by\_value()}{52}{subsubsection.14.17.3.1}
 \contentsline {section}{\numberline {14.18}Functions.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}h}{52}{section.14.18}
 \contentsline {section}{\numberline {14.19}learning\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Cpp/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Iterators.cpp File Reference}{52}{section.14.19}
 \contentsline {subsection}{\numberline {14.19.1}Function Documentation}{52}{subsection.14.19.1}
-\contentsline {subsubsection}{\numberline {14.19.1.1}main()}{53}{subsubsection.14.19.1.1}
-\contentsline {section}{\numberline {14.20}Iterators.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp}{54}{section.14.20}
+\contentsline {subsubsection}{\numberline {14.19.1.1}main()}{52}{subsubsection.14.19.1.1}
+\contentsline {section}{\numberline {14.20}Iterators.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp}{53}{section.14.20}
 \contentsline {section}{\numberline {14.21}learning\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Cpp/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Macros.cpp File Reference}{55}{section.14.21}
 \contentsline {subsection}{\numberline {14.21.1}Macro Definition Documentation}{55}{subsection.14.21.1}
 \contentsline {subsubsection}{\numberline {14.21.1.1}EULER}{55}{subsubsection.14.21.1.1}
@@ -184,7 +179,7 @@
 \contentsline {subsubsection}{\numberline {14.23.2.3}Pointers}{58}{subsubsection.14.23.2.3}
 \contentsline {paragraph}{\numberline {14.23.2.3.1}pointer}{58}{paragraph.14.23.2.3.1}
 \contentsline {paragraph}{\numberline {14.23.2.3.2}Pointers}{58}{paragraph.14.23.2.3.2}
-\contentsline {paragraph}{\numberline {14.23.2.3.3}arithmetic}{59}{paragraph.14.23.2.3.3}
+\contentsline {paragraph}{\numberline {14.23.2.3.3}arithmetic}{58}{paragraph.14.23.2.3.3}
 \contentsline {paragraph}{\numberline {14.23.2.3.4}memory allocation}{59}{paragraph.14.23.2.3.4}
 \contentsline {paragraph}{\numberline {14.23.2.3.5}pointers (generic pointer)}{59}{paragraph.14.23.2.3.5}
 \contentsline {paragraph}{\numberline {14.23.2.3.6}Pointers}{59}{paragraph.14.23.2.3.6}

@@ -6,10 +6,9 @@
 #define CPP_TEMPLATE_PROJECT_FUNCTIONS_H
 
 /**
+ * \file Functions.h
  * # Function parameters and arguments
- */
-
-/**
+ *
  * ## Pass by value
  *
  * By default, non-pointer arguments in C++ are passed by value.
@@ -34,9 +33,9 @@
  *
  */
 
+// \fn void pass_by_value(int)
 
 /**
- * \fn void pass_by_value(int)
  * \brief Function passing argument by value
  */
 void pass_by_value(int);
