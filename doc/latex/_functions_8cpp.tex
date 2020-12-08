@@ -1,0 +1,88 @@
+\hypertarget{_functions_8cpp}{}\doxysection{learning\+Cpp/\+Functions.cpp File Reference}
+\label{_functions_8cpp}\index{learningCpp/Functions.cpp@{learningCpp/Functions.cpp}}
+{\ttfamily \#include \char`\"{}Functions.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+Include dependency graph for Functions.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{_functions_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_functions_8cpp_af889c468d4cc52789ef37bf08716b68a}{pass\+\_\+by\+\_\+value}} (int x)
+\item 
+int \mbox{\hyperlink{_functions_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_functions_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{_functions_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{Functions.cpp@{Functions.cpp}!main@{main}}
+\index{main@{main}!Functions.cpp@{Functions.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_functions_8cpp_source_l00014}{14}} of file \mbox{\hyperlink{_functions_8cpp_source}{Functions.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00014            \{}
+\DoxyCodeLine{00015 }
+\DoxyCodeLine{00016     \textcolor{keywordtype}{int} x = 5;}
+\DoxyCodeLine{00017     \mbox{\hyperlink{_functions_8cpp_af889c468d4cc52789ef37bf08716b68a}{pass\_by\_value}}(x);}
+\DoxyCodeLine{00018 }
+\DoxyCodeLine{00019     \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{00020 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{_functions_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_functions_8cpp_af889c468d4cc52789ef37bf08716b68a}\label{_functions_8cpp_af889c468d4cc52789ef37bf08716b68a}} 
+\index{Functions.cpp@{Functions.cpp}!pass\_by\_value@{pass\_by\_value}}
+\index{pass\_by\_value@{pass\_by\_value}!Functions.cpp@{Functions.cpp}}
+\doxysubsubsection{\texorpdfstring{pass\_by\_value()}{pass\_by\_value()}}
+{\footnotesize\ttfamily void pass\+\_\+by\+\_\+value (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})}
+
+\hypertarget{_functions_8h_autotoc_md101}{}\doxysubsection{Function parameters and arguments}\label{_functions_8h_autotoc_md101}
+\hypertarget{_functions_8h_autotoc_md102}{}\doxysubsubsection{Pass by value}\label{_functions_8h_autotoc_md102}
+By default, non-\/pointer arguments in C++ are passed by value. When an argument is {\bfseries{passed by value}}, the argument\textquotesingle{}s value is copied into the value of the corresponding function parameter. Therefore the original argument can not be modified by the function!\hypertarget{_functions_8h_autotoc_md103}{}\doxyparagraph{Pros}\label{_functions_8h_autotoc_md103}
+
+\begin{DoxyItemize}
+\item Arguments can be anything
+\item Arguments are never
+\end{DoxyItemize}\hypertarget{_functions_8h_autotoc_md104}{}\doxyparagraph{Cons}\label{_functions_8h_autotoc_md104}
+
+\begin{DoxyItemize}
+\item Copying classes and structs can incur a significant performance penalty
+\end{DoxyItemize}\hypertarget{_functions_8h_autotoc_md105}{}\doxyparagraph{When to use}\label{_functions_8h_autotoc_md105}
+
+\begin{DoxyItemize}
+\item When passing fundamental data type and enumerators, and the function does not need to change the argument.
+\end{DoxyItemize}\hypertarget{_functions_8h_autotoc_md106}{}\doxyparagraph{When not to use}\label{_functions_8h_autotoc_md106}
+
+\begin{DoxyItemize}
+\item When passing structs or classes (including std\+::array, std\+::vector, and std\+::string) Function passing argument by value 
+\end{DoxyItemize}
+
+Definition at line \mbox{\hyperlink{_functions_8cpp_source_l00009}{9}} of file \mbox{\hyperlink{_functions_8cpp_source}{Functions.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00009                           \{}
+\DoxyCodeLine{00010     std::cout << \textcolor{stringliteral}{"{}func: pass\_by\_value(int x)"{}} << std::endl;}
+\DoxyCodeLine{00011     std::cout << \textcolor{stringliteral}{"{}x = "{}} << x << std::endl;}
+\DoxyCodeLine{00012 \}}
+
+\end{DoxyCode}

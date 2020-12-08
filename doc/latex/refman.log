@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.3.30)  7 DEC 2020 22:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.3.30)  8 DEC 2020 15:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1396,29 +1396,36 @@ ne 6.
 LaTeX Warning: Reference `constants_8h' on page 31 undefined on input line 7.
 
 
-LaTeX Warning: Reference `_iterators_8cpp' on page 31 undefined on input line 8
+LaTeX Warning: Reference `_functions_8cpp' on page 31 undefined on input line 8
 .
 
 
-LaTeX Warning: Reference `_macros_8cpp' on page 31 undefined on input line 9.
+LaTeX Warning: Reference `_functions_8h' on page 31 undefined on input line 9.
 
 
-LaTeX Warning: Reference `_main_8cpp' on page 31 undefined on input line 10.
+LaTeX Warning: Reference `_iterators_8cpp' on page 31 undefined on input line 1
+0.
 
 
-LaTeX Warning: Reference `_pointers_8cpp' on page 31 undefined on input line 11
+LaTeX Warning: Reference `_macros_8cpp' on page 31 undefined on input line 11.
+
+
+LaTeX Warning: Reference `_pointers_8cpp' on page 31 undefined on input line 12
 .
 
 
 LaTeX Warning: Reference `_reference_variables_8cpp' on page 31 undefined on in
-put line 12.
+put line 13.
 
 
 LaTeX Warning: Reference `_s_l___basics_8cpp' on page 31 undefined on input lin
-e 13.
+e 14.
 
 
-LaTeX Warning: Reference `tester_8cpp' on page 31 undefined on input line 14.
+LaTeX Warning: Reference `_main_8cpp' on page 31 undefined on input line 15.
+
+
+LaTeX Warning: Reference `tester_8cpp' on page 31 undefined on input line 16.
 
 ) [31] [32
 
@@ -1455,16 +1462,16 @@ Chapter 14.
 
 pdfTeX warning: pdflatex (file ./_concept_class_8h__dep__incl.pdf): PDF inclusi
 on: multiple pdfs with page group included in a single page
-> <_concept_class_8h__dep__incl.pdf, id=531, 201.75375pt x 156.585pt>
+> <_concept_class_8h__dep__incl.pdf, id=535, 232.87pt x 156.585pt>
 File: _concept_class_8h__dep__incl.pdf Graphic file (type pdf)
 <use _concept_class_8h__dep__incl.pdf>
 Package pdftex.def Info: _concept_class_8h__dep__incl.pdf used on input line 8.
 
-(pdftex.def)             Requested size: 201.0pt x 156.00162pt.
-) (./_concept_class_8h_source.tex) (./_r_e_a_d_m_e_8md.tex [37
+(pdftex.def)             Requested size: 232.0pt x 156.0064pt.
+) (./_concept_class_8h_source.tex) (./_basics_8cpp.tex [37
 
-]) (./_basics_8cpp.tex <./_basics_8cpp__incl.pdf> <_basics_8cpp__incl.pdf, id=5
-65, 381.425pt x 156.585pt>
+] <./_basics_8cpp__incl.pdf> <_basics_8cpp__incl.pdf, id=569, 381.425pt x 156.5
+85pt>
 File: _basics_8cpp__incl.pdf Graphic file (type pdf)
 <use _basics_8cpp__incl.pdf>
 Package pdftex.def Info: _basics_8cpp__incl.pdf used on input line 13.
@@ -1491,56 +1498,117 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 pdfTeX warning: pdflatex (file ./_bit_manipulation_8cpp__incl.pdf): PDF inclusi
 on: multiple pdfs with page group included in a single page
-> <_bit_manipulation_8cpp__incl.pdf, id=646, 199.74625pt x 156.585pt>
+> <_bit_manipulation_8cpp__incl.pdf, id=649, 237.88875pt x 156.585pt>
 File: _bit_manipulation_8cpp__incl.pdf Graphic file (type pdf)
 <use _bit_manipulation_8cpp__incl.pdf>
 Package pdftex.def Info: _bit_manipulation_8cpp__incl.pdf used on input line 9.
 
-(pdftex.def)             Requested size: 199.0pt x 156.00879pt.
+(pdftex.def)             Requested size: 237.0pt x 156.0064pt.
 [46]) (./_bit_manipulation_8cpp_source.tex [47]) (./_concept_class_8cpp.tex <./
 _concept_class_8cpp__incl.pdf
 
 pdfTeX warning: pdflatex (file ./_concept_class_8cpp__incl.pdf): PDF inclusion:
  multiple pdfs with page group included in a single page
-> <_concept_class_8cpp__incl.pdf, id=678, 210.7875pt x 156.585pt>
+> <_concept_class_8cpp__incl.pdf, id=681, 232.87pt x 156.585pt>
 File: _concept_class_8cpp__incl.pdf Graphic file (type pdf)
 <use _concept_class_8cpp__incl.pdf>
 Package pdftex.def Info: _concept_class_8cpp__incl.pdf used on input line 9.
-(pdftex.def)             Requested size: 210.0pt x 156.004pt.
+(pdftex.def)             Requested size: 232.0pt x 156.0064pt.
 ) (./_concept_class_8cpp_source.tex) (./constants_8h.tex) (./constants_8h_sourc
-e.tex [48]) (./_iterators_8cpp.tex <./_iterators_8cpp__incl.pdf> <_iterators_8c
-pp__incl.pdf, id=711, 325.215pt x 156.585pt>
+e.tex [48]) (./_functions_8cpp.tex <./_functions_8cpp__incl.pdf> <_functions_8c
+pp__incl.pdf, id=716, 220.825pt x 156.585pt>
+File: _functions_8cpp__incl.pdf Graphic file (type pdf)
+<use _functions_8cpp__incl.pdf>
+Package pdftex.def Info: _functions_8cpp__incl.pdf used on input line 10.
+(pdftex.def)             Requested size: 220.0pt x 156.0064pt.
+ <./_functions_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.pdf
+
+pdfTeX warning: pdflatex (file ./_functions_8cpp_ae66f6b31b5ad750f1fe042a706a4e
+3d4_cgraph.pdf): PDF inclusion: multiple pdfs with page group included in a sin
+gle page
+>
+<_functions_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.pdf, id=729, 236.885p
+t x 100.375pt>
+File: _functions_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.pdf Graphic file
+ (type pdf)
+<use _functions_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.pdf>
+Package pdftex.def Info: _functions_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgra
+ph.pdf used on input line 49.
+(pdftex.def)             Requested size: 236.0pt x 100.00255pt.
+
+Underfull \vbox (badness 3417) has occurred while \output is active []
+
+[49]) (./_functions_8cpp_source.tex [50]) (./_functions_8h.tex <./_functions_8h
+__dep__incl.pdf> <_functions_8h__dep__incl.pdf, id=780, 213.79875pt x 156.585pt
+>
+File: _functions_8h__dep__incl.pdf Graphic file (type pdf)
+<use _functions_8h__dep__incl.pdf>
+Package pdftex.def Info: _functions_8h__dep__incl.pdf used on input line 8.
+(pdftex.def)             Requested size: 213.0pt x 155.99922pt.
+pdfTeX warning (ext4): destination with the same identifier (name{_functions_8h
+_autotoc_md101}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.25 \hypertarget{_functions_8h_autotoc_md101}{}
+                                                \doxysubsection{Function par...
+pdfTeX warning (ext4): destination with the same identifier (name{_functions_8h
+_autotoc_md102}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.26 \hypertarget{_functions_8h_autotoc_md102}{}
+                                                \doxysubsubsection{Pass by v...
+pdfTeX warning (ext4): destination with the same identifier (name{_functions_8h
+_autotoc_md103}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.27 ...hypertarget{_functions_8h_autotoc_md103}{}
+                                                  \doxyparagraph{Pros}\label...
+pdfTeX warning (ext4): destination with the same identifier (name{_functions_8h
+_autotoc_md104}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.32 ...hypertarget{_functions_8h_autotoc_md104}{}
+                                                  \doxyparagraph{Cons}\label...
+pdfTeX warning (ext4): destination with the same identifier (name{_functions_8h
+_autotoc_md105}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.36 ...hypertarget{_functions_8h_autotoc_md105}{}
+                                                  \doxyparagraph{When to use...
+[51]pdfTeX warning (ext4): destination with the same identifier (name{_function
+s_8h_autotoc_md106}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.40 ...hypertarget{_functions_8h_autotoc_md106}{}
+                                                  \doxyparagraph{When not to...
+) (./_functions_8h_source.tex) (./_iterators_8cpp.tex <./_iterators_8cpp__incl.
+pdf> <_iterators_8cpp__incl.pdf, id=807, 325.215pt x 156.585pt>
 File: _iterators_8cpp__incl.pdf Graphic file (type pdf)
 <use _iterators_8cpp__incl.pdf>
 Package pdftex.def Info: _iterators_8cpp__incl.pdf used on input line 12.
 (pdftex.def)             Requested size: 324.0pt x 156.01117pt.
-[49]) (./_iterators_8cpp_source.tex [50]) (./_macros_8cpp.tex <./_macros_8cpp__
-incl.pdf
+[52]) (./_iterators_8cpp_source.tex [53] [54]) (./_macros_8cpp.tex <./_macros_8
+cpp__incl.pdf
 
 pdfTeX warning: pdflatex (file ./_macros_8cpp__incl.pdf): PDF inclusion: multip
 le pdfs with page group included in a single page
-> <_macros_8cpp__incl.pdf, id=744, 164.615pt x 156.585pt>
+> <_macros_8cpp__incl.pdf, id=848, 202.7575pt x 156.585pt>
 File: _macros_8cpp__incl.pdf Graphic file (type pdf)
 <use _macros_8cpp__incl.pdf>
 Package pdftex.def Info: _macros_8cpp__incl.pdf used on input line 9.
-(pdftex.def)             Requested size: 164.0pt x 156.004pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[51]) (./_macros_8cpp_source.tex [52]) (./_main_8cpp.tex <./_main_8cpp__incl.pd
-f> <_main_8cpp__incl.pdf, id=792, 194.7275pt x 156.585pt>
-File: _main_8cpp__incl.pdf Graphic file (type pdf)
-<use _main_8cpp__incl.pdf>
-Package pdftex.def Info: _main_8cpp__incl.pdf used on input line 10.
-(pdftex.def)             Requested size: 194.0pt x 156.0064pt.
-[53]) (./_main_8cpp_source.tex) (./_pointers_8cpp.tex <./_pointers_8cpp__incl.p
-df> <_pointers_8cpp__incl.pdf, id=818, 168.63pt x 156.585pt>
+(pdftex.def)             Requested size: 202.0pt x 156.004pt.
+[55]) (./_macros_8cpp_source.tex) (./_pointers_8cpp.tex <./_pointers_8cpp__incl
+.pdf> <_pointers_8cpp__incl.pdf, id=892, 206.7725pt x 156.585pt>
 File: _pointers_8cpp__incl.pdf Graphic file (type pdf)
 <use _pointers_8cpp__incl.pdf>
 Package pdftex.def Info: _pointers_8cpp__incl.pdf used on input line 9.
-(pdftex.def)             Requested size: 168.0pt x 156.004pt.
+(pdftex.def)             Requested size: 206.0pt x 156.004pt.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 8.09995pt on input line 16.
+
+Underfull \vbox (badness 2181) has occurred while \output is active []
+
+[56]
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
 (Font)              Font shape `T1/phv/m/sl' tried instead on input line 16.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
@@ -1550,7 +1618,7 @@ Underfull \hbox (badness 10000) detected at line 33
 [][][]
  []
 
-[54]
+
 Underfull \hbox (badness 10000) detected at line 38
 [][][]
  []
@@ -1600,7 +1668,7 @@ Underfull \hbox (badness 10000) detected at line 67
 [][][]
  []
 
-
+[57]
 Underfull \hbox (badness 10000) detected at line 81
 [][][]
  []
@@ -1610,12 +1678,11 @@ Underfull \hbox (badness 10000) detected at line 84
 [][][]
  []
 
-[55]
 
 Package longtable Warning: Column widths have changed
 (longtable)                in table 14.1 on input line 93.
 
- <./inline_mscgraph_1.pdf> <inline_mscgraph_1.pdf, id=851, 421.575pt x 55.20625
+ <./inline_mscgraph_1.pdf> <inline_mscgraph_1.pdf, id=922, 421.575pt x 55.20625
 pt>
 File: inline_mscgraph_1.pdf Graphic file (type pdf)
 <use inline_mscgraph_1.pdf>
@@ -1633,12 +1700,12 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 120.
 
-[56pdfTeX warning (ext4): destination with the same identifier (name{Pointers.c
+[58pdfTeX warning (ext4): destination with the same identifier (name{Pointers.c
 pp_Pointers}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.164 ...ne{    \textcolor{keywordtype}{float} f;}
+l.130 ...h\)n'}; \textcolor{comment}{// prints 7}}
                                                   ]pdfTeX warning (ext4): desti
 nation with the same identifier (name{Pointers.cpp_Pointers}) has been already 
 used, duplicate ignored
@@ -1646,20 +1713,23 @@ used, duplicate ignored
                    \relax 
 l.173 \hypertarget{Pointers.cpp_Pointers}{}
                                            \doxyparagraph{Pointers}\label{Po...
-[57]) (./_pointers_8cpp_source.tex [58]) (./_reference_variables_8cpp.tex <./_r
+[59]) (./_pointers_8cpp_source.tex [60]) (./_reference_variables_8cpp.tex <./_r
 eference_variables_8cpp__incl.pdf
 
 pdfTeX warning: pdflatex (file ./_reference_variables_8cpp__incl.pdf): PDF incl
 usion: multiple pdfs with page group included in a single page
-> <_reference_variables_8cpp__incl.pdf, id=898, 217.81375pt x 156.585pt>
+> <_reference_variables_8cpp__incl.pdf, id=971, 255.95625pt x 156.585pt>
 File: _reference_variables_8cpp__incl.pdf Graphic file (type pdf)
 <use _reference_variables_8cpp__incl.pdf>
 Package pdftex.def Info: _reference_variables_8cpp__incl.pdf used on input line
  9.
-(pdftex.def)             Requested size: 217.0pt x 155.99922pt.
-[59]) (./_reference_variables_8cpp_source.tex) (./_s_l___basics_8cpp.tex <./_s_
-l___basics_8cpp__incl.pdf> <_s_l___basics_8cpp__incl.pdf, id=922, 313.17pt x 15
-6.585pt>
+(pdftex.def)             Requested size: 255.0pt x 155.99922pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[61]) (./_reference_variables_8cpp_source.tex [62]) (./_s_l___basics_8cpp.tex <
+./_s_l___basics_8cpp__incl.pdf> <_s_l___basics_8cpp__incl.pdf, id=1002, 313.17p
+t x 156.585pt>
 File: _s_l___basics_8cpp__incl.pdf Graphic file (type pdf)
 <use _s_l___basics_8cpp__incl.pdf>
 Package pdftex.def Info: _s_l___basics_8cpp__incl.pdf used on input line 12.
@@ -1667,24 +1737,35 @@ Package pdftex.def Info: _s_l___basics_8cpp__incl.pdf used on input line 12.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[60]) (./_s_l___basics_8cpp_source.tex [61]) (./tester_8cpp.tex <./tester_8cpp_
-_incl.pdf> <tester_8cpp__incl.pdf, id=958, 159.59625pt x 156.585pt>
+[63]) (./_s_l___basics_8cpp_source.tex) (./_r_e_a_d_m_e_8md.tex) (./_main_8cpp.
+tex <./_main_8cpp__incl.pdf> <_main_8cpp__incl.pdf, id=1027, 194.7275pt x 156.5
+85pt>
+File: _main_8cpp__incl.pdf Graphic file (type pdf)
+<use _main_8cpp__incl.pdf>
+Package pdftex.def Info: _main_8cpp__incl.pdf used on input line 10.
+(pdftex.def)             Requested size: 194.0pt x 156.0064pt.
+[64]) (./_main_8cpp_source.tex) (./tester_8cpp.tex <./tester_8cpp__incl.pdf
+
+pdfTeX warning: pdflatex (file ./tester_8cpp__incl.pdf): PDF inclusion: multipl
+e pdfs with page group included in a single page
+> <tester_8cpp__incl.pdf, id=1059, 159.59625pt x 156.585pt>
 File: tester_8cpp__incl.pdf Graphic file (type pdf)
 <use tester_8cpp__incl.pdf>
 Package pdftex.def Info: tester_8cpp__incl.pdf used on input line 9.
 (pdftex.def)             Requested size: 159.0pt x 156.00162pt.
-) (./tester_8cpp_source.tex [62]) [63] [64
 
-]
+Underfull \vbox (badness 7238) has occurred while \output is active []
+
+[65]) (./tester_8cpp_source.tex) [66]
 No file refman.ind.
 
 Package longtable Warning: Table widths have changed. Rerun LaTeX.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 255.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 255.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 259.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 259.
 (./refman.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 255.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 255.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 259.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 259.
 
 Package rerunfilecheck Warning: File `refman.out' has changed.
 (rerunfilecheck)                Rerun to get outlines right
@@ -1692,7 +1773,7 @@ Package rerunfilecheck Warning: File `refman.out' has changed.
 
 Package rerunfilecheck Info: Checksums for `refman.out':
 (rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  AD248E154EDAA7AB1997E5F1D6F7D916;31861.
+(rerunfilecheck)             After:  0C5E27C935E754F423E61A69B180CB39;36145.
 
 LaTeX Warning: There were undefined references.
 
@@ -1701,13 +1782,13 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 16965 strings out of 493014
- 249698 string characters out of 6133351
+ 17060 strings out of 493014
+ 252253 string characters out of 6133351
  337740 words of memory out of 5000000
- 19650 multiletter control sequences out of 15000+600000
+ 19680 multiletter control sequences out of 15000+600000
  62726 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 53i,16n,92p,2061b,635s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 53i,16n,92p,2061b,629s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
 xlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texl
@@ -1722,10 +1803,10 @@ s/type1/urw/courier/ucrro8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1
 lvetic/uhvb8ac.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/helvetic
 /uhvbo8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/helvetic/uhvr8
 a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (66 pages, 307829 bytes).
+Output written on refman.pdf (68 pages, 340001 bytes).
 PDF statistics:
- 1142 PDF objects out of 1200 (max. 8388607)
- 1006 compressed objects within 11 object streams
- 478 named destinations out of 1000 (max. 500000)
- 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1259 PDF objects out of 1440 (max. 8388607)
+ 1109 compressed objects within 12 object streams
+ 531 named destinations out of 1000 (max. 500000)
+ 76 words of extra memory for PDF output out of 10000 (max. 10000000)
 
