@@ -13,7 +13,7 @@ Include dependency graph for Functions.\+cpp\+:\nopagebreak
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{_functions_8cpp_af889c468d4cc52789ef37bf08716b68a}{pass\+\_\+by\+\_\+value}} (int x)
-\item 
+\begin{DoxyCompactList}\small\item\em Function passing argument by value. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{_functions_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
 \end{DoxyCompactItemize}
 
@@ -40,7 +40,8 @@ Definition at line \mbox{\hyperlink{_functions_8cpp_source_l00014}{14}} of file 
 \DoxyCodeLine{00020 \}}
 
 \end{DoxyCode}
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -54,6 +55,29 @@ Here is the call graph for this function\+:\nopagebreak
 {\footnotesize\ttfamily void pass\+\_\+by\+\_\+value (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})}
 
 
+
+Function passing argument by value. 
+
+\hypertarget{_functions_8h_autotoc_md101}{}\doxysubsection{Function parameters and arguments}\label{_functions_8h_autotoc_md101}
+\hypertarget{_functions_8h_autotoc_md102}{}\doxysubsubsection{Pass by value}\label{_functions_8h_autotoc_md102}
+By default, non-\/pointer arguments in C++ are passed by value. When an argument is {\bfseries{passed by value}}, the argument\textquotesingle{}s value is copied into the value of the corresponding function parameter. Therefore the original argument can not be modified by the function!\hypertarget{_functions_8h_autotoc_md103}{}\doxyparagraph{Pros}\label{_functions_8h_autotoc_md103}
+
+\begin{DoxyItemize}
+\item Arguments can be anything
+\item Arguments are never changed by the function (prevents possibly unwanted side effects)
+\end{DoxyItemize}\hypertarget{_functions_8h_autotoc_md104}{}\doxyparagraph{Cons}\label{_functions_8h_autotoc_md104}
+
+\begin{DoxyItemize}
+\item Copying classes and structs can incur a significant performance penalty
+\end{DoxyItemize}\hypertarget{_functions_8h_autotoc_md105}{}\doxyparagraph{When to use}\label{_functions_8h_autotoc_md105}
+
+\begin{DoxyItemize}
+\item When passing fundamental data type and enumerators, and the function does not need to change the argument.
+\end{DoxyItemize}\hypertarget{_functions_8h_autotoc_md106}{}\doxyparagraph{When not to use}\label{_functions_8h_autotoc_md106}
+
+\begin{DoxyItemize}
+\item When passing structs or classes (including std\+::array, std\+::vector, and std\+::string) 
+\end{DoxyItemize}
 
 Definition at line \mbox{\hyperlink{_functions_8cpp_source_l00009}{9}} of file \mbox{\hyperlink{_functions_8cpp_source}{Functions.\+cpp}}.
 

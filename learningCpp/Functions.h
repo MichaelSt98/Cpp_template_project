@@ -19,7 +19,7 @@
  *
  * ### Pros
  * * Arguments can be anything
- * * Arguments are never
+ * * Arguments are never changed by the function (prevents possibly unwanted side effects)
  *
  * ### Cons
  * * Copying classes and structs can incur a significant performance penalty
@@ -34,8 +34,10 @@
  *
  */
 
-/*!
- * \fn Function passing argument by value
+
+/**
+ * \fn void pass_by_value(int)
+ * \brief Function passing argument by value
  */
 void pass_by_value(int);
 
