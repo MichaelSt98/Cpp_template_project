@@ -2,6 +2,9 @@
 // Created by Michael Staneker on 08.12.20.
 //
 
+#include <array>
+#include <iostream>
+
 #ifndef CPP_TEMPLATE_PROJECT_FUNCTIONS_H
 #define CPP_TEMPLATE_PROJECT_FUNCTIONS_H
 
@@ -231,6 +234,38 @@
  *
  * Recursive functions are functions that call themselves.
  *
+ *
+ * # Variable number of parameters - Ellipsis
+ *
+ * All parameters a function will take must be known in advance (even if they have default values).
+ * However, there are certain cases where it can be useful to be able to pass a variable number of
+ * parameters to a function. C++ provides a special specifier known as ellipsis *...*.
+ *
+ * **Avoid using ellipsis, for many reasons ... !**
+ *
+ *
+ * # Lambdas - anonymous functions
+ *
+ * See [Lambdas](https://www.learncpp.com/cpp-tutorial/introduction-to-lambdas-anonymous-functions/) for reference!
+ *
+ * A **lambda expression** (also *lambda* or *closure*) allows to define an anonymous function inside another function.
+ *
+ * The syntax is:
+ * ```C++
+ * [ captureClause ] ( parameters ) -> returnType
+ * {
+ *     statements;
+ * }
+ * ```
+ * Consequently a trivial lambda looks like: ```[]() {}```.
+ *
+ * In actuality, lambdas aren’t functions (which is part of how they avoid
+ * the limitation of C++ not supporting nested functions). They’re a special kind of object called a **functor**.
+ * **Functors** are objects that contain an overloaded operator() that make them callable like a function.
+ *
+ * **Use auto when initializing variables with lambdas, and std::function
+ * if you can’t initialize the variable with the lambda.**
+ *
  */
 
 // \fn void pass_by_value(int)
@@ -286,6 +321,13 @@ void func_default_arg(int x, int y=10);
  * \brief A simple recursive function.
  */
 void countDown(int count);
+
+/**
+ * \brief A simple function using ellipsis.
+ */
+void ellipsis_example(int count, ...);
+
+void lambda_example(std::array<std::string_view, 4> arr);
 
 
 

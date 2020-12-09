@@ -1,0 +1,41 @@
+\hypertarget{_macros_8cpp_source}{}\doxysection{Macros.\+cpp}
+\label{_macros_8cpp_source}\index{src/Macros.cpp@{src/Macros.cpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001 \textcolor{comment}{//}}
+\DoxyCodeLine{00002 \textcolor{comment}{// Created by Michael Staneker on 01.12.20.}}
+\DoxyCodeLine{00003 \textcolor{comment}{//}}
+\DoxyCodeLine{00004 }
+\DoxyCodeLine{00005 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{00006 }
+\DoxyCodeLine{00008 \textcolor{comment}{//\#ifnedf SOME\_UNIQUE\_NAME\_HERE}}
+\DoxyCodeLine{00009 \textcolor{comment}{//\#define SOME\_UNIQUE\_NAME\_HERE}}
+\DoxyCodeLine{00010 \textcolor{comment}{//}}
+\DoxyCodeLine{00011 \textcolor{comment}{//\#endif}}
+\DoxyCodeLine{00012 }
+\DoxyCodeLine{00013 \textcolor{comment}{// or alternatively use, but bit supported by all compilers}}
+\DoxyCodeLine{00014 \textcolor{comment}{//\#pragma once}}
+\DoxyCodeLine{00017 \textcolor{comment}{}\textcolor{comment}{// define macro (with substitution text)}}
+\DoxyCodeLine{\Hypertarget{_macros_8cpp_source_l00018}\mbox{\hyperlink{_macros_8cpp_a598a3330b3c21701223ee0ca14316eca}{00018}} \textcolor{preprocessor}{\#define PI 3.1415}}
+\DoxyCodeLine{00019 }
+\DoxyCodeLine{00020 \textcolor{comment}{// empty substitution text}}
+\DoxyCodeLine{\Hypertarget{_macros_8cpp_source_l00021}\mbox{\hyperlink{_macros_8cpp_a7f4ee7567f891560bb62dfbda5f93088}{00021}} \textcolor{preprocessor}{\#define EULER}}
+\DoxyCodeLine{00022 }
+\DoxyCodeLine{00023 }
+\DoxyCodeLine{00024 }
+\DoxyCodeLine{\Hypertarget{_macros_8cpp_source_l00025}\mbox{\hyperlink{_macros_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{00025}} \textcolor{keywordtype}{int} \mbox{\hyperlink{_macros_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}}() \{}
+\DoxyCodeLine{00026 }
+\DoxyCodeLine{00027 \textcolor{preprocessor}{\#ifdef PI // or if not defined use \#ifndef}}
+\DoxyCodeLine{00028     std::cout << \textcolor{stringliteral}{"{}PI is: "{}} << \mbox{\hyperlink{_macros_8cpp_a598a3330b3c21701223ee0ca14316eca}{PI}} << std::endl}
+\DoxyCodeLine{00029 \textcolor{comment}{//\#elif}}
+\DoxyCodeLine{00030 \textcolor{comment}{//\#else}}
+\DoxyCodeLine{00031 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00032 }
+\DoxyCodeLine{00033 \textcolor{preprocessor}{\#ifdef EULER}}
+\DoxyCodeLine{00034     std::cout << \textcolor{stringliteral}{"{}EULER is defined, but not replaceable, or rather replaceable by empty"{}}}
+\DoxyCodeLine{00035 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00036 }
+\DoxyCodeLine{00037     \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{00038 \}}
+
+\end{DoxyCode}

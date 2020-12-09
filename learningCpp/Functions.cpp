@@ -4,8 +4,6 @@
 
 #include "Functions.h"
 
-#include <iostream>
-
 void pass_by_value(int x) {
     std::cout << "func: pass_by_value(int x)" << std::endl;
     std::cout << "x = " << x << std::endl;
@@ -66,6 +64,48 @@ void countDown(int count)
     std::cout << "pop " << count << '\n';
 }
 
+void lambda_example(std::array<std::string_view, 4> arr) {
+    const auto found{ std::find_if(arr.begin(), arr.end(),
+                                   [](std::string_view str) // here's our lambda, no capture clause
+                                   {
+                                       return (str.find("nut") != std::string_view::npos);
+                                   }) };
+
+    if (found == arr.end())
+    {
+        std::cout << "No nuts\n";
+    }
+    else {
+        std::cout << "Found " << *found << '\n';
+    }
+}
+
+void ellipsis_example(int count, ...) {
+    double sum{ 0 };
+
+    // We access the ellipsis through a va_list, so let's declare one
+    va_list list;
+
+    // We initialize the va_list using va_start.  The first parameter is
+    // the list to initialize.  The second parameter is the last non-ellipsis
+    // parameter.
+    va_start(list, count);
+
+    // Loop through all the ellipsis arguments
+    for (int arg{ 0 }; arg < count; ++arg)
+    {
+        // We use va_arg to get parameters out of our ellipsis
+        // The first parameter is the va_list we're using
+        // The second parameter is the type of the parameter
+        sum += va_arg(list, int);
+    }
+
+    // Cleanup the va_list when we're done.
+    va_end(list);
+
+    std::cout << "average = " << sum / count << std::endl;
+}
+
 
 int main() {
 
@@ -116,6 +156,17 @@ int main() {
      */
     std::cout << "Calling a recursive function" << std::endl;
     countDown(5);
+
+    std::cout << "ellipsis_example(2, 1, 5)" << std::endl;
+    ellipsis_example(2, 1, 5);
+
+    std::cout << "ellipsis_example(4, 1, 5, 7, 10)" << std::endl;
+    ellipsis_example(4, 1, 5, 7, 10);
+
+
+    std::cout << "lambda_example()" << std::endl;
+    std::array<std::string_view, 4> arr{ "apple", "banana", "walnut", "lemon" };
+    lambda_example(arr);
 
     return 0;
 }
