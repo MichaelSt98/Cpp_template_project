@@ -48,8 +48,8 @@ int \mbox{\hyperlink{class_base_a928485c705e04c94b4cd111fab11e9aa}{m\+\_\+privat
 
 
 \doxysubsection{Detailed Description}
-\hypertarget{class_base_autotoc_md148}{}\doxysubsection{Inheritance}\label{class_base_autotoc_md148}
-\hypertarget{class_base_autotoc_md149}{}\doxysubsubsection{Access specifiers}\label{class_base_autotoc_md149}
+\hypertarget{class_base_autotoc_md173}{}\doxysubsection{Inheritance}\label{class_base_autotoc_md173}
+\hypertarget{class_base_autotoc_md174}{}\doxysubsubsection{Access specifiers}\label{class_base_autotoc_md174}
 There are three access specifiers
 
 
@@ -61,46 +61,45 @@ There are three access specifiers
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{ \{C++\}}
 \DoxyCodeLine{\textcolor{keyword}{class }\mbox{\hyperlink{class_derived}{Derived}}: <access specifier> \mbox{\hyperlink{class_base}{Base}}}
 \DoxyCodeLine{\{}
 \DoxyCodeLine{\}}
 \end{DoxyCode}
-\hypertarget{class_base_autotoc_md150}{}\doxyparagraph{Public inheritance}\label{class_base_autotoc_md150}
+\hypertarget{class_base_autotoc_md175}{}\doxyparagraph{Public inheritance}\label{class_base_autotoc_md175}
 
 \begin{DoxyItemize}
 \item public -\/-\/$>$ public
 \item protected -\/-\/$>$ protected
 \item private -\/-\/$>$ inaccessible
-\end{DoxyItemize}\hypertarget{class_base_autotoc_md151}{}\doxyparagraph{Protected inheritance}\label{class_base_autotoc_md151}
+\end{DoxyItemize}\hypertarget{class_base_autotoc_md176}{}\doxyparagraph{Protected inheritance}\label{class_base_autotoc_md176}
 
 \begin{DoxyItemize}
 \item public -\/-\/$>$ protected
 \item protected -\/-\/$>$ protected
 \item private -\/-\/$>$ inaccessible
-\end{DoxyItemize}\hypertarget{class_base_autotoc_md152}{}\doxyparagraph{Private Inheritance}\label{class_base_autotoc_md152}
+\end{DoxyItemize}\hypertarget{class_base_autotoc_md177}{}\doxyparagraph{Private Inheritance}\label{class_base_autotoc_md177}
 
 \begin{DoxyItemize}
 \item public -\/-\/$>$ private
 \item protected -\/-\/$>$ private
 \item private -\/-\/$>$ inaccessible
-\end{DoxyItemize}\hypertarget{class_base_autotoc_md153}{}\doxysubsubsection{Multiple inheritance}\label{class_base_autotoc_md153}
+\end{DoxyItemize}\hypertarget{class_base_autotoc_md178}{}\doxysubsubsection{Multiple inheritance}\label{class_base_autotoc_md178}
 C++ supports {\bfseries{multiple inheritance}}, but many problems can occur. Since most of the problems solvable with multiple inheritance can be solved without multiple inheritance, prefer solutions without multiple inheritance.
 
-{\bfseries{Avoid multiple inheritance unless alternatives lead to more complexity.}}\hypertarget{class_base_autotoc_md154}{}\doxysubsubsection{Virtual functions and Polymorphism}\label{class_base_autotoc_md154}
+{\bfseries{Avoid multiple inheritance unless alternatives lead to more complexity.}}\hypertarget{class_base_autotoc_md179}{}\doxysubsubsection{Virtual functions and Polymorphism}\label{class_base_autotoc_md179}
 A {\bfseries{virtual function}} is a special type of function that, when called, resolves to the most-\/derived version of the function that exists between the base and derived class. This capability is known as {\bfseries{polymorphism}}.
 
 {\bfseries{Attention}}\+: Resolving a virtual function call takes longer than resolving a regular one. Furthermore, the compiler also has to allocate an extra pointer for each class object that has one or more virtual functions.
 
-When dealing with inheritance, (overwritten) {\bfseries{destructors}} should always be virtual!\hypertarget{class_base_autotoc_md155}{}\doxysubsubsection{Override and final specifiers}\label{class_base_autotoc_md155}
+When dealing with inheritance, (overwritten) {\bfseries{destructors}} should always be virtual!\hypertarget{class_base_autotoc_md180}{}\doxysubsubsection{Override and final specifiers}\label{class_base_autotoc_md180}
 To help address the issue of functions that are meant to be overrides but aren’t, C++11 introduced the {\bfseries{override}} specifier. The override specifier can be applied to any override function by placing the specifier in the same place const would go.
 
-There may be cases where you don’t want someone to be able to override a virtual function, or inherit from a class. The {\bfseries{final}} specifier can be used to tell the compiler to enforce this. If the user tries to override a function or inherit from a class that has been specified as final, the compiler will give a compile error.\hypertarget{class_base_autotoc_md156}{}\doxysubsubsection{Pure virtual functions, abstract base classes and interface classes}\label{class_base_autotoc_md156}
-\hypertarget{class_base_autotoc_md157}{}\doxyparagraph{Pure virtual functions}\label{class_base_autotoc_md157}
+There may be cases where you don’t want someone to be able to override a virtual function, or inherit from a class. The {\bfseries{final}} specifier can be used to tell the compiler to enforce this. If the user tries to override a function or inherit from a class that has been specified as final, the compiler will give a compile error.\hypertarget{class_base_autotoc_md181}{}\doxysubsubsection{Pure virtual functions, abstract base classes and interface classes}\label{class_base_autotoc_md181}
+\hypertarget{class_base_autotoc_md182}{}\doxyparagraph{Pure virtual functions}\label{class_base_autotoc_md182}
 C++ allows to create a special kind of virtual function called a pure virtual function (or abstract function) that has no body at all! A pure virtual function simply acts as a placeholder that is meant to be redefined by derived classes.
 
-{\bfseries{Any class with at least one pure virtual function becomes an abstract base class and cannot be instantiated}}\hypertarget{class_base_autotoc_md158}{}\doxyparagraph{Abstract base classes}\label{class_base_autotoc_md158}
-{\bfseries{Abstract base classes}} can not be instantiated!\hypertarget{class_base_autotoc_md159}{}\doxyparagraph{Interface classes}\label{class_base_autotoc_md159}
+{\bfseries{Any class with at least one pure virtual function becomes an abstract base class and cannot be instantiated}}\hypertarget{class_base_autotoc_md183}{}\doxyparagraph{Abstract base classes}\label{class_base_autotoc_md183}
+{\bfseries{Abstract base classes}} can not be instantiated!\hypertarget{class_base_autotoc_md184}{}\doxyparagraph{Interface classes}\label{class_base_autotoc_md184}
 An {\bfseries{interface class}} has no member variables and only pure virtual (member) functions. Thus, interface classes are pure definitions and have no actual implementations. 
 
 Definition at line \mbox{\hyperlink{_inheritance_8h_source_l00099}{99}} of file \mbox{\hyperlink{_inheritance_8h_source}{Inheritance.\+h}}.

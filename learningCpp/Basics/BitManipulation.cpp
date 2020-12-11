@@ -2,6 +2,12 @@
 // Created by Michael Staneker on 01.12.20.
 //
 
+/**
+ * # Basic Bit Manipulation
+ *
+ * C++ supports bit manipulation using the standard bit operators.
+ */
+
 #include <bitset>
 
 int main() {
@@ -15,21 +21,25 @@ int main() {
     std::cout << "Bit 3 has value: " << bits.test(3) << '\n';
     std::cout << "Bit 4 has value: " << bits.test(4) << '\n';
 
-    /** Bitwise operators */
-    // x << y // left shift
-    // x >> y // right shift
-    // ~x // bitwise NOT
-    // x & y // bitwise AND
-    // x | y // bitwise OR
-    // x ^ y // bitwise XOR
-    // x <<= < // left shift assignment
-    // x >>= y // right shift assignment
-    // x |= y // bitwise OR assignment
-    // x &= y // bitwise AND assignment
-    // x ^= y // bitwise XOR assignment
-    /** */
+    /** ## Bitwise operators
+     * ```cpp
+     * x << y // left shift
+     * x >> y // right shift
+     * ~x // bitwise NOT
+     * x & y // bitwise AND
+     * x | y // bitwise OR
+     * x ^ y // bitwise XOR
+     * x <<= < // left shift assignment
+     * x >>= y // right shift assignment
+     * x |= y // bitwise OR assignment
+     * x &= y // bitwise AND assignment
+     * x ^= y // bitwise XOR assignment
+     * ```
+     */
 
-    /** Bit masks */
+    /** ## Bit masks
+     * \code
+     * */
     // since C++14
     constexpr std::uint_fast8_t mask0{ 0b0000'0001 }; // represents bit 0
     constexpr std::uint_fast8_t mask1{ 0b0000'0010 }; // represents bit 1
@@ -57,7 +67,9 @@ int main() {
     //    constexpr std::uint_fast8_t mask5{ 1 << 5 }; // 0010 0000
     //    constexpr std::uint_fast8_t mask6{ 1 << 6 }; // 0100 0000
     //    constexpr std::uint_fast8_t mask7{ 1 << 7 }; // 1000 0000
-    /** */
+    /**
+     * \endcode
+     * */
 
     return 0;
 }

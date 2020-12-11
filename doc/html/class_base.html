@@ -21,7 +21,7 @@
 	<div id="banner">
 		<div class="logo">
 			<span class="subtitle">
-				API Documentation for Base Class Reference
+				API Documentation for C++ template project
 			</span>
 			<!-- <span class="search">
 				<input type="text" placeholder="Search" onkeydown="search(this,event);">
@@ -128,9 +128,9 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a928485c705e04c94b4cd111fab11e9aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h1><a class="anchor" id="autotoc_md148"></a>
+<div class="textblock"><h1><a class="anchor" id="autotoc_md173"></a>
 Inheritance</h1>
-<h2><a class="anchor" id="autotoc_md149"></a>
+<h2><a class="anchor" id="autotoc_md174"></a>
 Access specifiers</h2>
 <p>There are three access specifiers</p>
 <ul>
@@ -138,54 +138,53 @@ Access specifiers</h2>
 <li><b>protected</b>: accessible from base class and derived class</li>
 <li><b>private</b>: accessible from base class</li>
 </ul>
-<div class="fragment"><div class="line"> {C++}</div>
-<div class="line"><span class="keyword">class </span><a class="code" href="class_derived.html">Derived</a>: &lt;access specifier&gt; <a class="code" href="class_base.html">Base</a></div>
+<div class="fragment"><div class="line"><span class="keyword">class </span><a class="code" href="class_derived.html">Derived</a>: &lt;access specifier&gt; <a class="code" href="class_base.html">Base</a></div>
 <div class="line">{</div>
 <div class="line">}</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md150"></a>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md175"></a>
 Public inheritance</h3>
 <ul>
 <li>public --&gt; public</li>
 <li>protected --&gt; protected</li>
 <li>private --&gt; inaccessible</li>
 </ul>
-<h3><a class="anchor" id="autotoc_md151"></a>
+<h3><a class="anchor" id="autotoc_md176"></a>
 Protected inheritance</h3>
 <ul>
 <li>public --&gt; protected</li>
 <li>protected --&gt; protected</li>
 <li>private --&gt; inaccessible</li>
 </ul>
-<h3><a class="anchor" id="autotoc_md152"></a>
+<h3><a class="anchor" id="autotoc_md177"></a>
 Private Inheritance</h3>
 <ul>
 <li>public --&gt; private</li>
 <li>protected --&gt; private</li>
 <li>private --&gt; inaccessible</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md153"></a>
+<h2><a class="anchor" id="autotoc_md178"></a>
 Multiple inheritance</h2>
 <p>C++ supports <b>multiple inheritance</b>, but many problems can occur. Since most of the problems solvable with multiple inheritance can be solved without multiple inheritance, prefer solutions without multiple inheritance.</p>
 <p><b>Avoid multiple inheritance unless alternatives lead to more complexity.</b></p>
-<h2><a class="anchor" id="autotoc_md154"></a>
+<h2><a class="anchor" id="autotoc_md179"></a>
 Virtual functions and Polymorphism</h2>
 <p>A <b>virtual function</b> is a special type of function that, when called, resolves to the most-derived version of the function that exists between the base and derived class. This capability is known as <b>polymorphism</b>.</p>
 <p><b>Attention</b>: Resolving a virtual function call takes longer than resolving a regular one. Furthermore, the compiler also has to allocate an extra pointer for each class object that has one or more virtual functions.</p>
 <p>When dealing with inheritance, (overwritten) <b>destructors</b> should always be virtual!</p>
-<h2><a class="anchor" id="autotoc_md155"></a>
+<h2><a class="anchor" id="autotoc_md180"></a>
 Override and final specifiers</h2>
 <p>To help address the issue of functions that are meant to be overrides but aren’t, C++11 introduced the <b>override</b> specifier. The override specifier can be applied to any override function by placing the specifier in the same place const would go.</p>
 <p>There may be cases where you don’t want someone to be able to override a virtual function, or inherit from a class. The <b>final</b> specifier can be used to tell the compiler to enforce this. If the user tries to override a function or inherit from a class that has been specified as final, the compiler will give a compile error.</p>
-<h2><a class="anchor" id="autotoc_md156"></a>
+<h2><a class="anchor" id="autotoc_md181"></a>
 Pure virtual functions, abstract base classes and interface classes</h2>
-<h3><a class="anchor" id="autotoc_md157"></a>
+<h3><a class="anchor" id="autotoc_md182"></a>
 Pure virtual functions</h3>
 <p>C++ allows to create a special kind of virtual function called a pure virtual function (or abstract function) that has no body at all! A pure virtual function simply acts as a placeholder that is meant to be redefined by derived classes.</p>
 <p><b>Any class with at least one pure virtual function becomes an abstract base class and cannot be instantiated</b></p>
-<h3><a class="anchor" id="autotoc_md158"></a>
+<h3><a class="anchor" id="autotoc_md183"></a>
 Abstract base classes</h3>
 <p><b>Abstract base classes</b> can not be instantiated!</p>
-<h3><a class="anchor" id="autotoc_md159"></a>
+<h3><a class="anchor" id="autotoc_md184"></a>
 Interface classes</h3>
 <p>An <b>interface class</b> has no member variables and only pure virtual (member) functions. Thus, interface classes are pure definitions and have no actual implementations. </p>
 
@@ -427,7 +426,7 @@ Interface classes</h3>
 <!-- start footer part -->
   <hr class="footer"/><address class="footer"><small>
     Cpp concept project  - Base Class Reference<br />
-    Generated on Fri Dec 11 2020 11:06:57 by <a href="http://www.doxygen.org/index.html">Doxygen</a> 1.8.20
+    Generated on Fri Dec 11 2020 12:03:32 by <a href="http://www.doxygen.org/index.html">Doxygen</a> 1.8.20
   </small></address>
 </body>
 </html>

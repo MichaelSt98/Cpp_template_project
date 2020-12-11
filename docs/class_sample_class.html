@@ -21,7 +21,7 @@
 	<div id="banner">
 		<div class="logo">
 			<span class="subtitle">
-				API Documentation for SampleClass Class Reference
+				API Documentation for C++ template project
 			</span>
 			<!-- <span class="search">
 				<input type="text" placeholder="Search" onkeydown="search(this,event);">
@@ -150,10 +150,10 @@ Friends</h2></td></tr>
 <tr class="separator:a733f5b8fc64b6863c3b1354166a88a74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h1><a class="anchor" id="autotoc_md160"></a>
+<div class="textblock"><h1><a class="anchor" id="autotoc_md185"></a>
 Classes - OOP</h1>
 <p><b>Use structs for data-only objects and classes otherwise!</b></p>
-<h2><a class="anchor" id="autotoc_md161"></a>
+<h2><a class="anchor" id="autotoc_md186"></a>
 Properties</h2>
 <ul>
 <li>member variables are private per default<ul>
@@ -164,7 +164,7 @@ Properties</h2>
 <li>getter should either return by value or reference</li>
 <li>const class objects can only call const member functions</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md162"></a>
+<h2><a class="anchor" id="autotoc_md187"></a>
 Friend functions and classes</h2>
 <p>See <a href="https://www.learncpp.com/cpp-tutorial/813-friend-functions-and-classes/">Friend functions and classes</a> for reference!</p>
 <p>Classes keep your data private and encapsulated. However, in some situations you need to have classes and functions outside of those classes that need to work closely together.</p>
@@ -175,10 +175,10 @@ Friend functions and classes</h2>
 <li>friend classes</li>
 <li>...</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md163"></a>
+<h2><a class="anchor" id="autotoc_md188"></a>
 Overloading operators</h2>
 <p><a href="https://www.learncpp.com/cpp-tutorial/9-14-overloading-the-assignment-operator/">Overloading assignment operator</a></p>
-<h2><a class="anchor" id="autotoc_md164"></a>
+<h2><a class="anchor" id="autotoc_md189"></a>
 Shallow vs. deep copy</h2>
 <p>The default copy mechanism for classes is <b>memberwise</b> copy (also called <b>shallow copy</b>), which works for simple classes, without dynamically reserved memory, very good.</p>
 <p>However, a <b>deep copy</b> allocates memory for the copy and then copies the actual value, so that the copy lives in distinct memory from the source. This requires to write copy constructors and overloaded assignment operators.</p>
@@ -187,11 +187,11 @@ Shallow vs. deep copy</h2>
 <li>Classes with dynamically allocated variables need to have a copy constructor and assignment operator that do a deep copy.</li>
 <li>Favor using classes in the standard library over doing your own memory management.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md165"></a>
+<h2><a class="anchor" id="autotoc_md190"></a>
 Object relations</h2>
 <table class="markdownTable">
 <tr class="markdownTableHead">
-<th class="markdownTableHeadNone">Property/type  </th><th class="markdownTableHeadNone">Composition  </th><th class="markdownTableHeadNone">Composition  </th><th class="markdownTableHeadNone">Composition  </th><th class="markdownTableHeadNone">Composition   </th></tr>
+<th class="markdownTableHeadNone">Property/type  </th><th class="markdownTableHeadNone">Composition  </th><th class="markdownTableHeadNone">Aggregation  </th><th class="markdownTableHeadNone">Association  </th><th class="markdownTableHeadNone">Dependency   </th></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">relationship  </td><td class="markdownTableBodyNone">whole/part  </td><td class="markdownTableBodyNone">whole/part  </td><td class="markdownTableBodyNone">unrelated  </td><td class="markdownTableBodyNone">unrelated   </td></tr>
 <tr class="markdownTableRowEven">
@@ -203,7 +203,7 @@ Object relations</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">relationship verb  </td><td class="markdownTableBodyNone">part-of  </td><td class="markdownTableBodyNone">has-a  </td><td class="markdownTableBodyNone">uses-a  </td><td class="markdownTableBodyNone">depends-on   </td></tr>
 </table>
-<h3><a class="anchor" id="autotoc_md166"></a>
+<h3><a class="anchor" id="autotoc_md191"></a>
 Composition</h3>
 <p>To qualify as a composition, an object and a part must have the following relationship:</p>
 <ul>
@@ -218,7 +218,7 @@ Composition</h3>
 <li>Can use pointer members if the class handles object allocation/deallocation itself</li>
 <li>Responsible for creation/destruction of parts</li>
 </ul>
-<h3><a class="anchor" id="autotoc_md167"></a>
+<h3><a class="anchor" id="autotoc_md192"></a>
 Aggregation</h3>
 <p>To qualify as an aggregation, a whole object and its parts must have the following relationship:</p>
 <ul>
@@ -232,7 +232,7 @@ Aggregation</h3>
 <li>Typically use pointer or reference members that point to or reference objects that live outside the scope of the aggregate class</li>
 <li>Not responsible for creating/destroying parts</li>
 </ul>
-<h3><a class="anchor" id="autotoc_md168"></a>
+<h3><a class="anchor" id="autotoc_md193"></a>
 Association</h3>
 <ul>
 <li>To qualify as an association, an object and another object must have the following relationship:</li>
@@ -241,7 +241,7 @@ Association</h3>
 <li>The associated object (member) does not have its existence managed by the object (class)*</li>
 <li>The associated object (member) may or may not know about the existence of the object (class)</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md169"></a>
+<h2><a class="anchor" id="autotoc_md194"></a>
 Container classes</h2>
 <p>See <a href="https://www.learncpp.com/cpp-tutorial/106-container-classes/">Container classes</a></p>
 <p>Container classes typically implement a fairly standardized minimal set of functionality. Most well-defined containers will include functions that:</p>
@@ -839,7 +839,7 @@ Container classes</h2>
 <!-- start footer part -->
   <hr class="footer"/><address class="footer"><small>
     Cpp concept project  - SampleClass Class Reference<br />
-    Generated on Fri Dec 11 2020 11:06:57 by <a href="http://www.doxygen.org/index.html">Doxygen</a> 1.8.20
+    Generated on Fri Dec 11 2020 12:03:32 by <a href="http://www.doxygen.org/index.html">Doxygen</a> 1.8.20
   </small></address>
 </body>
 </html>

@@ -57,7 +57,7 @@
  *
  * ## Object relations
  *
- * | Property/type                      | Composition   | Composition   | Composition   | Composition   |
+ * | Property/type                      | Composition   | Aggregation   | Association   | Dependency   |
  * | ---------------------------------- |---------------|---------------|---------------|---------------|
  * | relationship                       | whole/part    | whole/part    | unrelated     | unrelated     |
  * | members belong to multiple classes | No            | Yes           | Yes           | Yes           |

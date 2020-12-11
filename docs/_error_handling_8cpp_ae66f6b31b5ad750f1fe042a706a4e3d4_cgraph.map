@@ -1,6 +1,6 @@
 <map id="main" name="main">
 <area shape="rect" id="node1" title=" " alt="" coords="5,56,56,83"/>
-<area shape="rect" id="node2" href="$_error_handling_8cpp.html#a8e77321fc70d9d389fe05f0017da1f0b" title=" " alt="" coords="118,5,233,32"/>
-<area shape="rect" id="node3" href="$_error_handling_8cpp.html#ad15d37e61e932478e010a9ed80674249" title=" " alt="" coords="105,56,245,83"/>
-<area shape="rect" id="node4" href="$_error_handling_8cpp.html#a69f3e56d755ff37eee83d3397b512bf5" title=" " alt="" coords="104,107,247,133"/>
+<area shape="rect" id="node2" href="$_error_handling_8cpp.html#a8e77321fc70d9d389fe05f0017da1f0b" title="Example function ussing an assert." alt="" coords="118,5,233,32"/>
+<area shape="rect" id="node3" href="$_error_handling_8cpp.html#ad15d37e61e932478e010a9ed80674249" title="Example function returning an error code." alt="" coords="105,56,245,83"/>
+<area shape="rect" id="node4" href="$_error_handling_8cpp.html#a69f3e56d755ff37eee83d3397b512bf5" title="Example function writing an error message." alt="" coords="104,107,247,133"/>
 </map>

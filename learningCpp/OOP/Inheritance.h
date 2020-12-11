@@ -13,7 +13,7 @@
  * * **protected**: accessible from base class and derived class
  * * **private**: accessible from base class
  *
- * ```C++
+ * ```cpp
  * class Derived: <access specifier> Base
  * {
  * }

@@ -21,7 +21,7 @@
 	<div id="banner">
 		<div class="logo">
 			<span class="subtitle">
-				API Documentation for learningCpp/Basics/Iterators.cpp File Reference
+				API Documentation for C++ template project
 			</span>
 			<!-- <span class="search">
 				<input type="text" placeholder="Search" onkeydown="search(this,event);">
@@ -78,7 +78,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">Iterators.cpp File Reference</div>  </div>
 </div><!--header-->
@@ -102,118 +102,118 @@ Include dependency graph for Iterators.cpp:</div>
 </div>
 <p><a href="_iterators_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_iterators_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
-<tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a9717e7bbecb906637e86cef6da3d83c2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_iterators_8cpp.html#a9717e7bbecb906637e86cef6da3d83c2">return</a></td></tr>
+<tr class="separator:a9717e7bbecb906637e86cef6da3d83c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&nbsp;</a></span>main()</h2>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a9717e7bbecb906637e86cef6da3d83c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9717e7bbecb906637e86cef6da3d83c2">&#9670;&nbsp;</a></span>return</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int main </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="memname">return</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Iterators</p>
+<h1><a class="anchor" id="autotoc_md155"></a>
+Iterators in C++</h1>
+<div class="fragment"><div class="line">  /</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">int</span> <a class="code" href="_basics_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>()</div>
+<div class="line">{</div>
+<div class="line">    <span class="comment">// The type is automatically deduced to std::array&lt;int, 7&gt; (Requires C++17).</span></div>
+<div class="line">    <span class="comment">// Use the type std::array&lt;int, 7&gt; if your compiler doesn&#39;t support C++17.</span></div>
+<div class="line">    std::array&lt;int, 7&gt; data{ 0, 1, 2, 3, 4, 5, 6 };</div>
+<div class="line">    std::size_t length{ std::size(data) };</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// while-loop with explicit index</span></div>
+<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;While loop with explicit index&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line">    std::size_t index{ 0 };</div>
+<div class="line">    <span class="keywordflow">while</span> (index != length)</div>
+<div class="line">    {</div>
+<div class="line">        std::cout &lt;&lt; data[index] &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
+<div class="line">        ++index;</div>
+<div class="line">    }</div>
+<div class="line">    std::cout &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// for-loop with explicit index</span></div>
+<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;For loop with explicit index&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line">    <span class="keywordflow">for</span> (index = 0; index &lt; length; ++index)</div>
+<div class="line">    {</div>
+<div class="line">        std::cout &lt;&lt; data[index] &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
+<div class="line">    }</div>
+<div class="line">    std::cout &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// for-loop with pointer (Note: ptr can&#39;t be const, because we increment it)</span></div>
+<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;For loop with pointer&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line">    <span class="keywordflow">for</span> (<span class="keyword">auto</span> ptr{ &amp;data[0] }; ptr != (&amp;data[0] + length); ++ptr)</div>
+<div class="line">    {</div>
+<div class="line">        std::cout &lt;&lt; *ptr &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
+<div class="line">    }</div>
+<div class="line">    std::cout &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// ranged-based for loop</span></div>
+<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Range based for loop&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i : data)</div>
+<div class="line">    {</div>
+<div class="line">        std::cout &lt;&lt; i &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
+<div class="line">    }</div>
+<div class="line">    std::cout &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"> </div>
+<div class="line">    std::cout &lt;&lt; std::endl;</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// Pointers (simplest kind of Iterators)</span></div>
+<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Iterator: Pointer...&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line">    <span class="keyword">auto</span> begin{ &amp;data[0] };</div>
+<div class="line">    <span class="comment">// note that this points to one spot beyond the last element</span></div>
+<div class="line">    <span class="keyword">auto</span> end{ begin + std::size(data) };</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// for-loop with pointer</span></div>
+<div class="line">    <span class="keywordflow">for</span> (<span class="keyword">auto</span> ptr{ begin }; ptr != end; ++ptr) <span class="comment">// ++ to move to next element</span></div>
+<div class="line">    {</div>
+<div class="line">        std::cout &lt;&lt; *ptr &lt;&lt; <span class="charliteral">&#39; &#39;</span>; <span class="comment">// Indirection to get value of current element</span></div>
+<div class="line">    }</div>
+<div class="line">    std::cout &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// Standard library iterators</span></div>
+<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Standard library iterators...&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line">    <span class="comment">// Ask our array for the begin and end points (via the begin and end member functions).</span></div>
+<div class="line">    begin = { data.begin() };</div>
+<div class="line">    end = { data.end() };</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">for</span> (<span class="keyword">auto</span> p{ begin }; p != end; ++p) <span class="comment">// ++ to move to next element.</span></div>
+<div class="line">    {</div>
+<div class="line">        std::cout &lt;&lt; *p &lt;&lt; <span class="charliteral">&#39; &#39;</span>; <span class="comment">// Indirection to get value of current element.</span></div>
+<div class="line">    }</div>
+<div class="line">    std::cout &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">//</span></div>
+<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;or...&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"> </div>
+<div class="line">    begin = { std::begin(data) };</div>
+<div class="line">    end = { std::end(data) };</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">for</span> (<span class="keyword">auto</span> p{ begin }; p != end; ++p) <span class="comment">// ++ to move to next element</span></div>
+<div class="line">    {</div>
+<div class="line">        std::cout &lt;&lt; *p &lt;&lt; <span class="charliteral">&#39; &#39;</span>; <span class="comment">// Indirection to get value of current element</span></div>
+<div class="line">    }</div>
+<div class="line">    std::cout &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"> </div>
+</div><!-- fragment --> 
+<p class="definition">Definition at line <a class="el" href="_iterators_8cpp_source.html#l00097">97</a> of file <a class="el" href="_iterators_8cpp_source.html">Iterators.cpp</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_iterators_8cpp_source.html#l00006">6</a> of file <a class="el" href="_iterators_8cpp_source.html">Iterators.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <span class="comment">// The type is automatically deduced to std::array&lt;int, 7&gt; (Requires C++17).</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="comment">// Use the type std::array&lt;int, 7&gt; if your compiler doesn&#39;t support C++17.</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    std::array&lt;int, 7&gt; data{ 0, 1, 2, 3, 4, 5, 6 };</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    std::size_t length{ std::size(data) };</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="comment">// while-loop with explicit index</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;While loop with explicit index&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    std::size_t index{ 0 };</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordflow">while</span> (index != length)</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    {</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        std::cout &lt;&lt; data[index] &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        ++index;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    }</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    std::cout &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="comment">// for-loop with explicit index</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;For loop with explicit index&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordflow">for</span> (index = 0; index &lt; length; ++index)</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    {</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        std::cout &lt;&lt; data[index] &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    }</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    std::cout &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="comment">// for-loop with pointer (Note: ptr can&#39;t be const, because we increment it)</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;For loop with pointer&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> ptr{ &amp;data[0] }; ptr != (&amp;data[0] + length); ++ptr)</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        std::cout &lt;&lt; *ptr &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    std::cout &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">// ranged-based for loop</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;Range based for loop&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i : data)</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        std::cout &lt;&lt; i &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    }</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    std::cout &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    std::cout &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="comment">// Pointers (simplest kind of Iterators)</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;Iterator: Pointer...&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">auto</span> begin{ &amp;data[0] };</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="comment">// note that this points to one spot beyond the last element</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">auto</span> end{ begin + std::size(data) };</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="comment">// for-loop with pointer</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> ptr{ begin }; ptr != end; ++ptr) <span class="comment">// ++ to move to next element</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    {</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        std::cout &lt;&lt; *ptr &lt;&lt; <span class="charliteral">&#39; &#39;</span>; <span class="comment">// Indirection to get value of current element</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    std::cout &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">// Standard library iterators</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;Standard library iterators...&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">// Ask our array for the begin and end points (via the begin and end member functions).</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    begin = { data.begin() };</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    end = { data.end() };</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> p{ begin }; p != end; ++p) <span class="comment">// ++ to move to next element.</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    {</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        std::cout &lt;&lt; *p &lt;&lt; <span class="charliteral">&#39; &#39;</span>; <span class="comment">// Indirection to get value of current element.</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    }</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    std::cout &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;or...&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    begin = { std::begin(data) };</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    end = { std::end(data) };</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> p{ begin }; p != end; ++p) <span class="comment">// ++ to move to next element</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    {</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        std::cout &lt;&lt; *p &lt;&lt; <span class="charliteral">&#39; &#39;</span>; <span class="comment">// Indirection to get value of current element</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    }</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    std::cout &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;}</div>
-</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
+<div class="ttc" id="a_basics_8cpp_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="_basics_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdef"><b>Definition:</b> <a href="_basics_8cpp_source.html#l00037">Basics.cpp:37</a></div></div>
 <!-- start footer part -->
   <hr class="footer"/><address class="footer"><small>
     Cpp concept project  - learningCpp/Basics/Iterators.cpp File Reference<br />
-    Generated on Fri Dec 11 2020 11:06:56 by <a href="http://www.doxygen.org/index.html">Doxygen</a> 1.8.20
+    Generated on Fri Dec 11 2020 12:03:31 by <a href="http://www.doxygen.org/index.html">Doxygen</a> 1.8.20
   </small></address>
 </body>
 </html>

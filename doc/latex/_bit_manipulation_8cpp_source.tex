@@ -6,59 +6,48 @@
 \DoxyCodeLine{00002 \textcolor{comment}{// Created by Michael Staneker on 01.12.20.}}
 \DoxyCodeLine{00003 \textcolor{comment}{//}}
 \DoxyCodeLine{00004 }
-\DoxyCodeLine{00005 \textcolor{preprocessor}{\#include <bitset>}}
-\DoxyCodeLine{00006 }
-\DoxyCodeLine{\Hypertarget{_bit_manipulation_8cpp_source_l00007}\mbox{\hyperlink{_bit_manipulation_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{00007}} \textcolor{keywordtype}{int} \mbox{\hyperlink{_bit_manipulation_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}}() \{}
-\DoxyCodeLine{00008 }
-\DoxyCodeLine{00009     std::bitset<8> bits\{ 0b0000\textcolor{stringliteral}{'0101 \}; // we need 8 bits, start with bit pattern 0000 0101}}
-\DoxyCodeLine{00010 \textcolor{stringliteral}{    bits.set(3); // set bit position 3 to 1 (now we have 0000 1101)}}
-\DoxyCodeLine{00011 \textcolor{stringliteral}{    bits.flip(4); // flip bit 4 (now we have 0001 1101)}}
-\DoxyCodeLine{00012 \textcolor{stringliteral}{    bits.reset(4); // set bit 4 back to 0 (now we have 0000 1101)}}
-\DoxyCodeLine{00013 \textcolor{stringliteral}{}}
-\DoxyCodeLine{00014 \textcolor{stringliteral}{    std::cout << "{}All the bits: "{} << bits << '}\(\backslash\)n\textcolor{stringliteral}{';}}
-\DoxyCodeLine{00015 \textcolor{stringliteral}{    std::cout << "{}Bit 3 has value: "{} << bits.test(3) << '}\(\backslash\)n\textcolor{stringliteral}{';}}
-\DoxyCodeLine{00016 \textcolor{stringliteral}{    std::cout << "{}Bit 4 has value: "{} << bits.test(4) << '}\(\backslash\)n\textcolor{stringliteral}{';}}
-\DoxyCodeLine{00017 \textcolor{stringliteral}{}}
-\DoxyCodeLine{00019 \textcolor{stringliteral}{    // x << y // left shift}}
-\DoxyCodeLine{00020 \textcolor{stringliteral}{    // x >> y // right shift}}
-\DoxyCodeLine{00021 \textcolor{stringliteral}{    // \string~x // bitwise NOT}}
-\DoxyCodeLine{00022 \textcolor{stringliteral}{    // x \& y // bitwise AND}}
-\DoxyCodeLine{00023 \textcolor{stringliteral}{    // x | y // bitwise OR}}
-\DoxyCodeLine{00024 \textcolor{stringliteral}{    // x \string^ y // bitwise XOR}}
-\DoxyCodeLine{00025 \textcolor{stringliteral}{    // x <<= < // left shift assignment}}
-\DoxyCodeLine{00026 \textcolor{stringliteral}{    // x >>= y // right shift assignment}}
-\DoxyCodeLine{00027 \textcolor{stringliteral}{    // x |= y // bitwise OR assignment}}
-\DoxyCodeLine{00028 \textcolor{stringliteral}{    // x \&= y // bitwise AND assignment}}
-\DoxyCodeLine{00029 \textcolor{stringliteral}{    // x \string^= y // bitwise XOR assignment}}
-\DoxyCodeLine{00033 \textcolor{stringliteral}{    // since C++14}}
-\DoxyCodeLine{00034 \textcolor{stringliteral}{    constexpr std::uint\_fast8\_t mask0\{ 0b0000'}0001 \}; \textcolor{comment}{// represents bit 0}}
-\DoxyCodeLine{00035     constexpr std::uint\_fast8\_t mask1\{ 0b0000\textcolor{stringliteral}{'0010 \}; // represents bit 1}}
-\DoxyCodeLine{00036 \textcolor{stringliteral}{    constexpr std::uint\_fast8\_t mask2\{ 0b0000'}0100 \}; \textcolor{comment}{// represents bit 2}}
-\DoxyCodeLine{00037     constexpr std::uint\_fast8\_t mask3\{ 0b0000\textcolor{stringliteral}{'1000 \}; // represents bit 3}}
-\DoxyCodeLine{00038 \textcolor{stringliteral}{    constexpr std::uint\_fast8\_t mask4\{ 0b0001'}0000 \}; \textcolor{comment}{// represents bit 4}}
-\DoxyCodeLine{00039     constexpr std::uint\_fast8\_t mask5\{ 0b0010\textcolor{stringliteral}{'0000 \}; // represents bit 5}}
-\DoxyCodeLine{00040 \textcolor{stringliteral}{    constexpr std::uint\_fast8\_t mask6\{ 0b0100'}0000 \}; \textcolor{comment}{// represents bit 6}}
-\DoxyCodeLine{00041     constexpr std::uint\_fast8\_t mask7\{ 0b1000\textcolor{stringliteral}{'0000 \}; // represents bit 7}}
-\DoxyCodeLine{00042 \textcolor{stringliteral}{    // C++11 or earlier}}
-\DoxyCodeLine{00043 \textcolor{stringliteral}{    //    constexpr std::uint\_fast8\_t mask0\{ 0x1 \}; // hex for 0000 0001}}
-\DoxyCodeLine{00044 \textcolor{stringliteral}{    //    constexpr std::uint\_fast8\_t mask1\{ 0x2 \}; // hex for 0000 0010}}
-\DoxyCodeLine{00045 \textcolor{stringliteral}{    //    constexpr std::uint\_fast8\_t mask2\{ 0x4 \}; // hex for 0000 0100}}
-\DoxyCodeLine{00046 \textcolor{stringliteral}{    //    constexpr std::uint\_fast8\_t mask3\{ 0x8 \}; // hex for 0000 1000}}
-\DoxyCodeLine{00047 \textcolor{stringliteral}{    //    constexpr std::uint\_fast8\_t mask4\{ 0x10 \}; // hex for 0001 0000}}
-\DoxyCodeLine{00048 \textcolor{stringliteral}{    //    constexpr std::uint\_fast8\_t mask5\{ 0x20 \}; // hex for 0010 0000}}
-\DoxyCodeLine{00049 \textcolor{stringliteral}{    //    constexpr std::uint\_fast8\_t mask6\{ 0x40 \}; // hex for 0100 0000}}
-\DoxyCodeLine{00050 \textcolor{stringliteral}{    //    constexpr std::uint\_fast8\_t mask7\{ 0x80 \}; // hex for 1000 0000}}
-\DoxyCodeLine{00051 \textcolor{stringliteral}{    //    // or}}
-\DoxyCodeLine{00052 \textcolor{stringliteral}{    //    constexpr std::uint\_fast8\_t mask0\{ 1 << 0 \}; // 0000 0001}}
-\DoxyCodeLine{00053 \textcolor{stringliteral}{    //    constexpr std::uint\_fast8\_t mask1\{ 1 << 1 \}; // 0000 0010}}
-\DoxyCodeLine{00054 \textcolor{stringliteral}{    //    constexpr std::uint\_fast8\_t mask2\{ 1 << 2 \}; // 0000 0100}}
-\DoxyCodeLine{00055 \textcolor{stringliteral}{    //    constexpr std::uint\_fast8\_t mask3\{ 1 << 3 \}; // 0000 1000}}
-\DoxyCodeLine{00056 \textcolor{stringliteral}{    //    constexpr std::uint\_fast8\_t mask4\{ 1 << 4 \}; // 0001 0000}}
-\DoxyCodeLine{00057 \textcolor{stringliteral}{    //    constexpr std::uint\_fast8\_t mask5\{ 1 << 5 \}; // 0010 0000}}
-\DoxyCodeLine{00058 \textcolor{stringliteral}{    //    constexpr std::uint\_fast8\_t mask6\{ 1 << 6 \}; // 0100 0000}}
-\DoxyCodeLine{00059 \textcolor{stringliteral}{    //    constexpr std::uint\_fast8\_t mask7\{ 1 << 7 \}; // 1000 0000}}
-\DoxyCodeLine{00062 \textcolor{stringliteral}{    return 0;}}
-\DoxyCodeLine{00063 \textcolor{stringliteral}{\}}}
-\DoxyCodeLine{00064 \textcolor{stringliteral}{}}
+\DoxyCodeLine{00011 \textcolor{preprocessor}{\#include <bitset>}}
+\DoxyCodeLine{00012 }
+\DoxyCodeLine{\Hypertarget{_bit_manipulation_8cpp_source_l00013}\mbox{\hyperlink{_bit_manipulation_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{00013}} \textcolor{keywordtype}{int} \mbox{\hyperlink{_bit_manipulation_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}}() \{}
+\DoxyCodeLine{00014 }
+\DoxyCodeLine{00015     std::bitset<8> bits\{ 0b0000\textcolor{stringliteral}{'0101 \}; // we need 8 bits, start with bit pattern 0000 0101}}
+\DoxyCodeLine{00016 \textcolor{stringliteral}{    bits.set(3); // set bit position 3 to 1 (now we have 0000 1101)}}
+\DoxyCodeLine{00017 \textcolor{stringliteral}{    bits.flip(4); // flip bit 4 (now we have 0001 1101)}}
+\DoxyCodeLine{00018 \textcolor{stringliteral}{    bits.reset(4); // set bit 4 back to 0 (now we have 0000 1101)}}
+\DoxyCodeLine{00019 \textcolor{stringliteral}{}}
+\DoxyCodeLine{00020 \textcolor{stringliteral}{    std::cout << "{}All the bits: "{} << bits << '}\(\backslash\)n\textcolor{stringliteral}{';}}
+\DoxyCodeLine{00021 \textcolor{stringliteral}{    std::cout << "{}Bit 3 has value: "{} << bits.test(3) << '}\(\backslash\)n\textcolor{stringliteral}{';}}
+\DoxyCodeLine{00022 \textcolor{stringliteral}{    std::cout << "{}Bit 4 has value: "{} << bits.test(4) << '}\(\backslash\)n\textcolor{stringliteral}{';}}
+\DoxyCodeLine{00023 \textcolor{stringliteral}{}}
+\DoxyCodeLine{00043 \textcolor{stringliteral}{    // since C++14}}
+\DoxyCodeLine{00044 \textcolor{stringliteral}{    constexpr std::uint\_fast8\_t mask0\{ 0b0000'}0001 \}; \textcolor{comment}{// represents bit 0}}
+\DoxyCodeLine{00045     constexpr std::uint\_fast8\_t mask1\{ 0b0000\textcolor{stringliteral}{'0010 \}; // represents bit 1}}
+\DoxyCodeLine{00046 \textcolor{stringliteral}{    constexpr std::uint\_fast8\_t mask2\{ 0b0000'}0100 \}; \textcolor{comment}{// represents bit 2}}
+\DoxyCodeLine{00047     constexpr std::uint\_fast8\_t mask3\{ 0b0000\textcolor{stringliteral}{'1000 \}; // represents bit 3}}
+\DoxyCodeLine{00048 \textcolor{stringliteral}{    constexpr std::uint\_fast8\_t mask4\{ 0b0001'}0000 \}; \textcolor{comment}{// represents bit 4}}
+\DoxyCodeLine{00049     constexpr std::uint\_fast8\_t mask5\{ 0b0010\textcolor{stringliteral}{'0000 \}; // represents bit 5}}
+\DoxyCodeLine{00050 \textcolor{stringliteral}{    constexpr std::uint\_fast8\_t mask6\{ 0b0100'}0000 \}; \textcolor{comment}{// represents bit 6}}
+\DoxyCodeLine{00051     constexpr std::uint\_fast8\_t mask7\{ 0b1000\textcolor{stringliteral}{'0000 \}; // represents bit 7}}
+\DoxyCodeLine{00052 \textcolor{stringliteral}{    // C++11 or earlier}}
+\DoxyCodeLine{00053 \textcolor{stringliteral}{    //    constexpr std::uint\_fast8\_t mask0\{ 0x1 \}; // hex for 0000 0001}}
+\DoxyCodeLine{00054 \textcolor{stringliteral}{    //    constexpr std::uint\_fast8\_t mask1\{ 0x2 \}; // hex for 0000 0010}}
+\DoxyCodeLine{00055 \textcolor{stringliteral}{    //    constexpr std::uint\_fast8\_t mask2\{ 0x4 \}; // hex for 0000 0100}}
+\DoxyCodeLine{00056 \textcolor{stringliteral}{    //    constexpr std::uint\_fast8\_t mask3\{ 0x8 \}; // hex for 0000 1000}}
+\DoxyCodeLine{00057 \textcolor{stringliteral}{    //    constexpr std::uint\_fast8\_t mask4\{ 0x10 \}; // hex for 0001 0000}}
+\DoxyCodeLine{00058 \textcolor{stringliteral}{    //    constexpr std::uint\_fast8\_t mask5\{ 0x20 \}; // hex for 0010 0000}}
+\DoxyCodeLine{00059 \textcolor{stringliteral}{    //    constexpr std::uint\_fast8\_t mask6\{ 0x40 \}; // hex for 0100 0000}}
+\DoxyCodeLine{00060 \textcolor{stringliteral}{    //    constexpr std::uint\_fast8\_t mask7\{ 0x80 \}; // hex for 1000 0000}}
+\DoxyCodeLine{00061 \textcolor{stringliteral}{    //    // or}}
+\DoxyCodeLine{00062 \textcolor{stringliteral}{    //    constexpr std::uint\_fast8\_t mask0\{ 1 << 0 \}; // 0000 0001}}
+\DoxyCodeLine{00063 \textcolor{stringliteral}{    //    constexpr std::uint\_fast8\_t mask1\{ 1 << 1 \}; // 0000 0010}}
+\DoxyCodeLine{00064 \textcolor{stringliteral}{    //    constexpr std::uint\_fast8\_t mask2\{ 1 << 2 \}; // 0000 0100}}
+\DoxyCodeLine{00065 \textcolor{stringliteral}{    //    constexpr std::uint\_fast8\_t mask3\{ 1 << 3 \}; // 0000 1000}}
+\DoxyCodeLine{00066 \textcolor{stringliteral}{    //    constexpr std::uint\_fast8\_t mask4\{ 1 << 4 \}; // 0001 0000}}
+\DoxyCodeLine{00067 \textcolor{stringliteral}{    //    constexpr std::uint\_fast8\_t mask5\{ 1 << 5 \}; // 0010 0000}}
+\DoxyCodeLine{00068 \textcolor{stringliteral}{    //    constexpr std::uint\_fast8\_t mask6\{ 1 << 6 \}; // 0100 0000}}
+\DoxyCodeLine{00069 \textcolor{stringliteral}{    //    constexpr std::uint\_fast8\_t mask7\{ 1 << 7 \}; // 1000 0000}}
+\DoxyCodeLine{00074 \textcolor{stringliteral}{    return 0;}}
+\DoxyCodeLine{00075 \textcolor{stringliteral}{\}}}
+\DoxyCodeLine{00076 \textcolor{stringliteral}{}}
 
 \end{DoxyCode}

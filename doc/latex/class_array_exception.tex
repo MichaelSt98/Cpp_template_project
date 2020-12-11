@@ -39,7 +39,7 @@ std\+::string \mbox{\hyperlink{class_array_exception_ab0b4567e88f78f313e702eac00
 
 
 \doxysubsection{Detailed Description}
-\hypertarget{class_array_exception_autotoc_md138}{}\doxysubsection{Exceptions}\label{class_array_exception_autotoc_md138}
+\hypertarget{class_array_exception_autotoc_md162}{}\doxysubsection{Exceptions}\label{class_array_exception_autotoc_md162}
 \mbox{\hyperlink{class_exceptions}{Exceptions}} in C++ are implemented using three keywords that work in conjunction with each other\+:
 \begin{DoxyItemize}
 \item throw
@@ -53,60 +53,56 @@ Exception handling is best used when all of the following are true\+:
 \item the error is serious and execution could not continue otherwise.
 \item the error cannot be handled at the place where it occurs.
 \item there isn’t a good alternative way to return an error code back to the caller.
-\end{DoxyItemize}\hypertarget{class_array_exception_autotoc_md139}{}\doxysubsubsection{Throwing exceptions}\label{class_array_exception_autotoc_md139}
+\end{DoxyItemize}\hypertarget{class_array_exception_autotoc_md163}{}\doxysubsubsection{Throwing exceptions}\label{class_array_exception_autotoc_md163}
 A throw statement is used to signal that an exception or error case has occurred, e.\+g.\+:
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{ \{C++\}}
 \DoxyCodeLine{\textcolor{keywordflow}{throw} -\/1; \textcolor{comment}{// throw a literal integer value}}
 \DoxyCodeLine{\textcolor{keywordflow}{throw} ENUM\_INVALID\_INDEX; \textcolor{comment}{// throw an enum value}}
 \DoxyCodeLine{\textcolor{keywordflow}{throw} \textcolor{stringliteral}{"{}Can not take square root of negative number"{}}; \textcolor{comment}{// throw a literal C-\/style (const char*) string}}
 \DoxyCodeLine{\textcolor{keywordflow}{throw} dX; \textcolor{comment}{// throw a double variable that was previously defined}}
 \DoxyCodeLine{\textcolor{keywordflow}{throw} MyException(\textcolor{stringliteral}{"{}Fatal Error"{}}); \textcolor{comment}{// Throw an object of class MyException}}
 \end{DoxyCode}
-\hypertarget{class_array_exception_autotoc_md140}{}\doxysubsubsection{Try blocks}\label{class_array_exception_autotoc_md140}
+\hypertarget{class_array_exception_autotoc_md164}{}\doxysubsubsection{Try blocks}\label{class_array_exception_autotoc_md164}
 {\bfseries{Try blocks}} act as observers, looking for any exceptions that are thrown within the block, e.\+g.\+:
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{ \{C++\}}
 \DoxyCodeLine{\textcolor{keywordflow}{try}}
 \DoxyCodeLine{\{}
 \DoxyCodeLine{\textcolor{comment}{// Statements that may throw exceptions you want to handle go here}}
 \DoxyCodeLine{\textcolor{keywordflow}{throw} -\/1; \textcolor{comment}{// here's a trivial throw statement}}
 \DoxyCodeLine{\}}
 \end{DoxyCode}
-\hypertarget{class_array_exception_autotoc_md141}{}\doxysubsubsection{Handling exceptions}\label{class_array_exception_autotoc_md141}
+\hypertarget{class_array_exception_autotoc_md165}{}\doxysubsubsection{Handling exceptions}\label{class_array_exception_autotoc_md165}
 Actually handling exceptions is the job of the catch block(s). The catch keyword is used to define a block of code (called a catch block) that handles exceptions for a single data type, e.\+g.\+:
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{ \{C++\}}
 \DoxyCodeLine{\textcolor{keywordflow}{catch} (\textcolor{keywordtype}{int} x)}
 \DoxyCodeLine{\{}
 \DoxyCodeLine{\textcolor{comment}{// Handle an exception of type int here}}
 \DoxyCodeLine{std::cerr << \textcolor{stringliteral}{"{}We caught an int exception with value"{}} << x << \textcolor{charliteral}{'\(\backslash\)n'};}
 \DoxyCodeLine{\}}
 \end{DoxyCode}
-\hypertarget{class_array_exception_autotoc_md142}{}\doxysubsubsection{Throwing exceptions outside a try-\/block}\label{class_array_exception_autotoc_md142}
-...\hypertarget{class_array_exception_autotoc_md143}{}\doxysubsubsection{Catch all handler}\label{class_array_exception_autotoc_md143}
+\hypertarget{class_array_exception_autotoc_md166}{}\doxysubsubsection{Throwing exceptions outside a try-\/block}\label{class_array_exception_autotoc_md166}
+...\hypertarget{class_array_exception_autotoc_md167}{}\doxysubsubsection{Catch all handler}\label{class_array_exception_autotoc_md167}
 To catch uncaught exceptions, not regarding the type of exception\+:
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{ \{C++\}}
 \DoxyCodeLine{\textcolor{keywordflow}{catch} (...) \textcolor{comment}{// catch-\/all handler}}
 \DoxyCodeLine{\{}
 \DoxyCodeLine{    std::cout << \textcolor{stringliteral}{"{}We caught an exception of an undetermined type\(\backslash\)n"{}};}
 \DoxyCodeLine{\}}
 \end{DoxyCode}
-\hypertarget{class_array_exception_autotoc_md144}{}\doxysubsubsection{Exception classes}\label{class_array_exception_autotoc_md144}
-...\hypertarget{class_array_exception_autotoc_md145}{}\doxysubsubsection{std\+::exception}\label{class_array_exception_autotoc_md145}
+\hypertarget{class_array_exception_autotoc_md168}{}\doxysubsubsection{Exception classes}\label{class_array_exception_autotoc_md168}
+...\hypertarget{class_array_exception_autotoc_md169}{}\doxysubsubsection{std\+::exception}\label{class_array_exception_autotoc_md169}
 Many of the classes and operators in the standard library throw exception classes on failure. For example, operator new can throw std\+::bad\+\_\+alloc if it is unable to allocate enough memory. A failed dynamic\+\_\+cast will throw std\+::bad\+\_\+cast. And so on. As of C++17, there are 25 different exception classes that can be thrown, with more being added in each subsequent language standard.
 
-{\bfseries{It is possible to extend std\+::exception, by inheriting.}}\hypertarget{class_array_exception_autotoc_md146}{}\doxysubsubsection{Rethrowing}\label{class_array_exception_autotoc_md146}
-When rethrowing the same exception, use the {\itshape throw} keyword by itself.\hypertarget{class_array_exception_autotoc_md147}{}\doxysubsubsection{noexcept}\label{class_array_exception_autotoc_md147}
+{\bfseries{It is possible to extend std\+::exception, by inheriting.}}\hypertarget{class_array_exception_autotoc_md170}{}\doxysubsubsection{Rethrowing}\label{class_array_exception_autotoc_md170}
+When rethrowing the same exception, use the {\itshape throw} keyword by itself.\hypertarget{class_array_exception_autotoc_md171}{}\doxysubsubsection{noexcept}\label{class_array_exception_autotoc_md171}
 See \href{https://www.learncpp.com/cpp-tutorial/exception-specifications-and-noexcept/}{\texttt{ exception specifier}}.
 
 It is possible to declare functions non-\/throwing using the {\bfseries{noexcept}} specifier. 

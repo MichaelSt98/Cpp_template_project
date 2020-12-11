@@ -68,8 +68,8 @@ std\+::ostream \& \mbox{\hyperlink{class_sample_class_a733f5b8fc64b6863c3b135416
 
 
 \doxysubsection{Detailed Description}
-\hypertarget{class_sample_class_autotoc_md160}{}\doxysubsection{Classes -\/ O\+OP}\label{class_sample_class_autotoc_md160}
-{\bfseries{Use structs for data-\/only objects and classes otherwise!}}\hypertarget{class_sample_class_autotoc_md161}{}\doxysubsubsection{Properties}\label{class_sample_class_autotoc_md161}
+\hypertarget{class_sample_class_autotoc_md185}{}\doxysubsection{Classes -\/ O\+OP}\label{class_sample_class_autotoc_md185}
+{\bfseries{Use structs for data-\/only objects and classes otherwise!}}\hypertarget{class_sample_class_autotoc_md186}{}\doxysubsubsection{Properties}\label{class_sample_class_autotoc_md186}
 
 \begin{DoxyItemize}
 \item member variables are private per default
@@ -79,7 +79,7 @@ std\+::ostream \& \mbox{\hyperlink{class_sample_class_a733f5b8fc64b6863c3b135416
 \item if no constructor is given, a default constructor is created
 \item getter should either return by value or reference
 \item const class objects can only call const member functions
-\end{DoxyItemize}\hypertarget{class_sample_class_autotoc_md162}{}\doxysubsubsection{Friend functions and classes}\label{class_sample_class_autotoc_md162}
+\end{DoxyItemize}\hypertarget{class_sample_class_autotoc_md187}{}\doxysubsubsection{Friend functions and classes}\label{class_sample_class_autotoc_md187}
 See \href{https://www.learncpp.com/cpp-tutorial/813-friend-functions-and-classes/}{\texttt{ Friend functions and classes}} for reference!
 
 Classes keep your data private and encapsulated. However, in some situations you need to have classes and functions outside of those classes that need to work closely together.
@@ -92,8 +92,8 @@ It is possible to have
 \item friend member functions
 \item friend classes
 \item ...
-\end{DoxyItemize}\hypertarget{class_sample_class_autotoc_md163}{}\doxysubsubsection{Overloading operators}\label{class_sample_class_autotoc_md163}
-\href{https://www.learncpp.com/cpp-tutorial/9-14-overloading-the-assignment-operator/}{\texttt{ Overloading assignment operator}}\hypertarget{class_sample_class_autotoc_md164}{}\doxysubsubsection{Shallow vs. deep copy}\label{class_sample_class_autotoc_md164}
+\end{DoxyItemize}\hypertarget{class_sample_class_autotoc_md188}{}\doxysubsubsection{Overloading operators}\label{class_sample_class_autotoc_md188}
+\href{https://www.learncpp.com/cpp-tutorial/9-14-overloading-the-assignment-operator/}{\texttt{ Overloading assignment operator}}\hypertarget{class_sample_class_autotoc_md189}{}\doxysubsubsection{Shallow vs. deep copy}\label{class_sample_class_autotoc_md189}
 The default copy mechanism for classes is {\bfseries{memberwise}} copy (also called {\bfseries{shallow copy}}), which works for simple classes, without dynamically reserved memory, very good.
 
 However, a {\bfseries{deep copy}} allocates memory for the copy and then copies the actual value, so that the copy lives in distinct memory from the source. This requires to write copy constructors and overloaded assignment operators.
@@ -103,16 +103,16 @@ However, a {\bfseries{deep copy}} allocates memory for the copy and then copies 
 \item The default copy constructor and default assignment operators do shallow copies, which is fine for classes that contain no dynamically allocated variables.
 \item Classes with dynamically allocated variables need to have a copy constructor and assignment operator that do a deep copy.
 \item Favor using classes in the standard library over doing your own memory management.
-\end{DoxyItemize}\hypertarget{class_sample_class_autotoc_md165}{}\doxysubsubsection{Object relations}\label{class_sample_class_autotoc_md165}
+\end{DoxyItemize}\hypertarget{class_sample_class_autotoc_md190}{}\doxysubsubsection{Object relations}\label{class_sample_class_autotoc_md190}
 \tabulinesep=1mm
 \begin{longtabu}spread 0pt [c]{*{5}{|X[-1]}|}
 \hline
-\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Property/type  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Composition  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Composition  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Composition  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Composition   }\\\cline{1-5}
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Property/type  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Composition  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Aggregation  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Association  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Dependency   }\\\cline{1-5}
 \endfirsthead
 \hline
 \endfoot
 \hline
-\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Property/type  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Composition  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Composition  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Composition  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Composition   }\\\cline{1-5}
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Property/type  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Composition  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Aggregation  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Association  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Dependency   }\\\cline{1-5}
 \endhead
 relationship  &whole/part  &whole/part  &unrelated  &unrelated   \\\cline{1-5}
 members belong to multiple classes  &No  &Yes  &Yes  &Yes   \\\cline{1-5}
@@ -120,7 +120,7 @@ members existence managed by class  &Yes  &No  &No  &No   \\\cline{1-5}
 directionality  &Uni  &Uni  &Uni or bi  &Uni   \\\cline{1-5}
 relationship verb  &part-\/of  &has-\/a  &uses-\/a  &depends-\/on   \\\cline{1-5}
 \end{longtabu}
-\hypertarget{class_sample_class_autotoc_md166}{}\doxyparagraph{Composition}\label{class_sample_class_autotoc_md166}
+\hypertarget{class_sample_class_autotoc_md191}{}\doxyparagraph{Composition}\label{class_sample_class_autotoc_md191}
 To qualify as a composition, an object and a part must have the following relationship\+:
 
 
@@ -138,7 +138,7 @@ Therefore\+:
 \item Typically use normal member variables
 \item Can use pointer members if the class handles object allocation/deallocation itself
 \item Responsible for creation/destruction of parts
-\end{DoxyItemize}\hypertarget{class_sample_class_autotoc_md167}{}\doxyparagraph{Aggregation}\label{class_sample_class_autotoc_md167}
+\end{DoxyItemize}\hypertarget{class_sample_class_autotoc_md192}{}\doxyparagraph{Aggregation}\label{class_sample_class_autotoc_md192}
 To qualify as an aggregation, a whole object and its parts must have the following relationship\+:
 
 
@@ -155,7 +155,7 @@ Therefore\+:
 \begin{DoxyItemize}
 \item Typically use pointer or reference members that point to or reference objects that live outside the scope of the aggregate class
 \item Not responsible for creating/destroying parts
-\end{DoxyItemize}\hypertarget{class_sample_class_autotoc_md168}{}\doxyparagraph{Association}\label{class_sample_class_autotoc_md168}
+\end{DoxyItemize}\hypertarget{class_sample_class_autotoc_md193}{}\doxyparagraph{Association}\label{class_sample_class_autotoc_md193}
 
 \begin{DoxyItemize}
 \item To qualify as an association, an object and another object must have the following relationship\+:
@@ -163,7 +163,7 @@ Therefore\+:
 \item The associated object (member) can belong to more than one object (class) at a time
 \item The associated object (member) does not have its existence managed by the object (class)$\ast$
 \item The associated object (member) may or may not know about the existence of the object (class)
-\end{DoxyItemize}\hypertarget{class_sample_class_autotoc_md169}{}\doxysubsubsection{Container classes}\label{class_sample_class_autotoc_md169}
+\end{DoxyItemize}\hypertarget{class_sample_class_autotoc_md194}{}\doxysubsubsection{Container classes}\label{class_sample_class_autotoc_md194}
 See \href{https://www.learncpp.com/cpp-tutorial/106-container-classes/}{\texttt{ Container classes}}
 
 Container classes typically implement a fairly standardized minimal set of functionality. Most well-\/defined containers will include functions that\+:

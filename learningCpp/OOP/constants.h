@@ -2,6 +2,12 @@
 // Created by Michael Staneker on 01.12.20.
 //
 
+/**
+ * # Header (only) file for constants
+ *
+ * This can be achieved using a namespace and **const expressions**.
+ */
+
 #ifndef CPP_TEMPLATE_PROJECT_CONSTANTS_H
 #define CPP_TEMPLATE_PROJECT_CONSTANTS_H
 

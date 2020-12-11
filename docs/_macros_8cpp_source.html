@@ -21,7 +21,7 @@
 	<div id="banner">
 		<div class="logo">
 			<span class="subtitle">
-				API Documentation for learningCpp/Basics/Macros.cpp Source File
+				API Documentation for C++ template project
 			</span>
 			<!-- <span class="search">
 				<input type="text" placeholder="Search" onkeydown="search(this,event);">
@@ -85,44 +85,37 @@ $(function() {
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// Created by Michael Staneker on 01.12.20.</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">//#ifnedf SOME_UNIQUE_NAME_HERE</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">//#define SOME_UNIQUE_NAME_HERE</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">//#endif</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">// or alternatively use, but bit supported by all compilers</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">//#pragma once</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"></span><span class="comment">// define macro (with substitution text)</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="_macros_8cpp.html#a598a3330b3c21701223ee0ca14316eca">   18</a></span>&#160;<span class="preprocessor">#define PI 3.1415</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">// empty substitution text</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="_macros_8cpp.html#a7f4ee7567f891560bb62dfbda5f93088">   21</a></span>&#160;<span class="preprocessor">#define EULER</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="_macros_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">   25</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="_macros_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>() {</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#ifdef PI // or if not defined use #ifndef</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;PI is: &quot;</span> &lt;&lt; <a class="code" href="_macros_8cpp.html#a598a3330b3c21701223ee0ca14316eca">PI</a> &lt;&lt; std::endl</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">//#elif</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">//#else</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">// define macro (with substitution text)</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="_macros_8cpp.html#a598a3330b3c21701223ee0ca14316eca">   27</a></span>&#160;<span class="preprocessor">#define PI 3.1415</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">// empty substitution text</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="_macros_8cpp.html#a7f4ee7567f891560bb62dfbda5f93088">   30</a></span>&#160;<span class="preprocessor">#define EULER</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#ifdef EULER</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;EULER is defined, but not replaceable, or rather replaceable by empty&quot;</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="_macros_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">   34</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="_macros_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>() {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#ifdef PI // or if not defined use #ifndef</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;PI is: &quot;</span> &lt;&lt; <a class="code" href="_macros_8cpp.html#a598a3330b3c21701223ee0ca14316eca">PI</a> &lt;&lt; std::endl</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">//#elif</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">//#else</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#ifdef EULER</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;EULER is defined, but not replaceable, or rather replaceable by empty&quot;</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="a_macros_8cpp_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="_macros_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdef"><b>Definition:</b> <a href="_macros_8cpp_source.html#l00025">Macros.cpp:25</a></div></div>
-<div class="ttc" id="a_macros_8cpp_html_a598a3330b3c21701223ee0ca14316eca"><div class="ttname"><a href="_macros_8cpp.html#a598a3330b3c21701223ee0ca14316eca">PI</a></div><div class="ttdeci">#define PI</div><div class="ttdef"><b>Definition:</b> <a href="_macros_8cpp_source.html#l00018">Macros.cpp:18</a></div></div>
+<div class="ttc" id="a_macros_8cpp_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="_macros_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdef"><b>Definition:</b> <a href="_macros_8cpp_source.html#l00034">Macros.cpp:34</a></div></div>
+<div class="ttc" id="a_macros_8cpp_html_a598a3330b3c21701223ee0ca14316eca"><div class="ttname"><a href="_macros_8cpp.html#a598a3330b3c21701223ee0ca14316eca">PI</a></div><div class="ttdeci">#define PI</div><div class="ttdef"><b>Definition:</b> <a href="_macros_8cpp_source.html#l00027">Macros.cpp:27</a></div></div>
 <!-- start footer part -->
   <hr class="footer"/><address class="footer"><small>
     Cpp concept project  - learningCpp/Basics/Macros.cpp Source File<br />
-    Generated on Fri Dec 11 2020 11:06:56 by <a href="http://www.doxygen.org/index.html">Doxygen</a> 1.8.20
+    Generated on Fri Dec 11 2020 12:03:31 by <a href="http://www.doxygen.org/index.html">Doxygen</a> 1.8.20
   </small></address>
 </body>
 </html>

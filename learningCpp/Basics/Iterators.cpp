@@ -3,6 +3,12 @@
 #include <iostream>
 #include <iterator>
 
+/**
+ * # Iterators in C++
+ *
+ * \code
+ */
+
 int main()
 {
     // The type is automatically deduced to std::array<int, 7> (Requires C++17).
@@ -46,7 +52,7 @@ int main()
 
     std::cout << std::endl;
 
-    /** Iterators */
+    /** ## Iterators */
     // Pointers (simplest kind of Iterators)
     std::cout << "Iterator: Pointer..." << std::endl;
     auto begin{ &data[0] };
@@ -84,7 +90,9 @@ int main()
     }
     std::cout << '\n';
 
-    /** */
+    /**
+     * \endcode
+     * */
 
     return 0;
 }

@@ -23,36 +23,37 @@ int \mbox{\hyperlink{_reference_variables_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4
 \doxysubsubsection{\texorpdfstring{main()}{main()}}
 {\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Reference variables
+\hypertarget{_reference_variables_8cpp_autotoc_md157}{}\doxysubsection{Reference variables}\label{_reference_variables_8cpp_autotoc_md157}
+Reference variables are references to variables. Reference variables
 
-Definition at line \mbox{\hyperlink{_reference_variables_8cpp_source_l00007}{7}} of file \mbox{\hyperlink{_reference_variables_8cpp_source}{Reference\+Variables.\+cpp}}.
+Definition at line \mbox{\hyperlink{_reference_variables_8cpp_source_l00015}{15}} of file \mbox{\hyperlink{_reference_variables_8cpp_source}{Reference\+Variables.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00007            \{}
-\DoxyCodeLine{00008 }
-\DoxyCodeLine{00009     \textcolor{keywordtype}{int} value \{5\};}
-\DoxyCodeLine{00010 }
-\DoxyCodeLine{00012     \textcolor{keywordtype}{int} \&reference\{ value \}; \textcolor{comment}{// "{}reference to"{} value}}
-\DoxyCodeLine{00013     \textcolor{comment}{//int\& reference\{ value \}; // valid}}
-\DoxyCodeLine{00014     \textcolor{comment}{//int \& reference\{ value \}; // valid}}
-\DoxyCodeLine{00015 }
-\DoxyCodeLine{00016     \textcolor{keywordtype}{int} x\{ 5 \}; \textcolor{comment}{// normal integer}}
-\DoxyCodeLine{00017     \textcolor{keywordtype}{int} \&y\{ x \}; \textcolor{comment}{// y is a reference to x}}
-\DoxyCodeLine{00018     \textcolor{keywordtype}{int} \&z\{ y \}; \textcolor{comment}{// z is also a reference to x}}
-\DoxyCodeLine{00019 }
-\DoxyCodeLine{00020     std::cout << \textcolor{stringliteral}{"{} x = "{}} <<  x << std::endl;}
-\DoxyCodeLine{00021     std::cout << \textcolor{stringliteral}{"{} y = "{}} <<  y << std::endl;}
-\DoxyCodeLine{00022     std::cout << \textcolor{stringliteral}{"{} z = "{}} <<  z << std::endl;}
-\DoxyCodeLine{00023     std::cout << \textcolor{stringliteral}{"{}\&x = "{}} << \&x << std::endl;}
-\DoxyCodeLine{00024     std::cout << \textcolor{stringliteral}{"{}\&y = "{}} << \&y << std::endl;}
-\DoxyCodeLine{00025     std::cout << \textcolor{stringliteral}{"{}\&z = "{}} << \&z << std::endl;}
-\DoxyCodeLine{00026 }
-\DoxyCodeLine{00027     \textcolor{comment}{// References cannot be reassigned !}}
-\DoxyCodeLine{00028     \textcolor{comment}{// reference = value; // not valid}}
-\DoxyCodeLine{00029 }
-\DoxyCodeLine{00030 }
-\DoxyCodeLine{00033     \textcolor{keywordflow}{return} 0;}
-\DoxyCodeLine{00034 \}}
+\DoxyCodeLine{00015            \{}
+\DoxyCodeLine{00016 }
+\DoxyCodeLine{00017     \textcolor{keywordtype}{int} value \{5\};}
+\DoxyCodeLine{00018 }
+\DoxyCodeLine{00020     \textcolor{keywordtype}{int} \&reference\{ value \}; \textcolor{comment}{// "{}reference to"{} value}}
+\DoxyCodeLine{00021     \textcolor{comment}{//int\& reference\{ value \}; // valid}}
+\DoxyCodeLine{00022     \textcolor{comment}{//int \& reference\{ value \}; // valid}}
+\DoxyCodeLine{00023 }
+\DoxyCodeLine{00024     \textcolor{keywordtype}{int} x\{ 5 \}; \textcolor{comment}{// normal integer}}
+\DoxyCodeLine{00025     \textcolor{keywordtype}{int} \&y\{ x \}; \textcolor{comment}{// y is a reference to x}}
+\DoxyCodeLine{00026     \textcolor{keywordtype}{int} \&z\{ y \}; \textcolor{comment}{// z is also a reference to x}}
+\DoxyCodeLine{00027 }
+\DoxyCodeLine{00028     std::cout << \textcolor{stringliteral}{"{} x = "{}} <<  x << std::endl;}
+\DoxyCodeLine{00029     std::cout << \textcolor{stringliteral}{"{} y = "{}} <<  y << std::endl;}
+\DoxyCodeLine{00030     std::cout << \textcolor{stringliteral}{"{} z = "{}} <<  z << std::endl;}
+\DoxyCodeLine{00031     std::cout << \textcolor{stringliteral}{"{}\&x = "{}} << \&x << std::endl;}
+\DoxyCodeLine{00032     std::cout << \textcolor{stringliteral}{"{}\&y = "{}} << \&y << std::endl;}
+\DoxyCodeLine{00033     std::cout << \textcolor{stringliteral}{"{}\&z = "{}} << \&z << std::endl;}
+\DoxyCodeLine{00034 }
+\DoxyCodeLine{00035     \textcolor{comment}{// References cannot be reassigned !}}
+\DoxyCodeLine{00036     \textcolor{comment}{// reference = value; // not valid}}
+\DoxyCodeLine{00037 }
+\DoxyCodeLine{00038 }
+\DoxyCodeLine{00041     \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{00042 \}}
 
 \end{DoxyCode}

@@ -219,9 +219,10 @@ Generating docs for file learningCpp/Basics/CommandLineArg/Users/Michi/Desktop/C
 <unknown>:63: warning: unable to resolve reference to 'Receiver::Command()' for \ref command
 <unknown>:63: warning: unable to resolve reference to 'Ack()' for \ref command
 /Users/Michi/Desktop/Cpp_template_project/learningCpp/Basics/Pointers.cpp:82: warning: found subsection command (id: 'ssec1') outside of section context!
-/Users/Michi/Desktop/Cpp_template_project/learningCpp/Errors/ErrorHandling.h:27: warning: Unsupported xml/html tag <cstdlib> found
-/Users/Michi/Desktop/Cpp_template_project/learningCpp/Errors/ErrorHandling.h:27: warning: Unsupported xml/html tag <cstdlib> found
+/Users/Michi/Desktop/Cpp_template_project/learningCpp/Errors/ErrorHandling.h:56: warning: Unsupported xml/html tag <cstdlib> found
+/Users/Michi/Desktop/Cpp_template_project/learningCpp/Errors/ErrorHandling.h:56: warning: Unsupported xml/html tag <cstdlib> found
 /Users/Michi/Desktop/Cpp_template_project/documents/Markdown.md:174: warning: explicit link request to 'bugID' could not be resolved
+/Users/Michi/Desktop/Cpp_template_project/learningCpp/OOP/Timer.h:12: warning: Unsupported xml/html tag <chrono> found
 uments.cpp...
 Generating docs for file learningCpp/Basics/Functions.cpp...
 Generating call graph for function countDown
@@ -479,5 +480,5 @@ Patching output file 62/65
 Patching output file 63/65
 Patching output file 64/65
 Patching output file 65/65
-lookup cache used 139/65536 hits=705 misses=141
+lookup cache used 140/65536 hits=714 misses=142
 finished...

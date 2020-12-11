@@ -21,7 +21,7 @@
 	<div id="banner">
 		<div class="logo">
 			<span class="subtitle">
-				API Documentation for learningCpp/Basics/Functions.h File Reference
+				API Documentation for C++ template project
 			</span>
 			<!-- <span class="search">
 				<input type="text" placeholder="Search" onkeydown="search(this,event);">
@@ -151,37 +151,37 @@ Functions</h2></td></tr>
 <tr class="separator:a3f4ae913e2a7b3479faa6afe7c6948cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h1><a class="anchor" id="autotoc_md102"></a>
+<div class="textblock"><h1><a class="anchor" id="autotoc_md123"></a>
 Function parameters and arguments</h1>
-<h2><a class="anchor" id="autotoc_md103"></a>
+<h2><a class="anchor" id="autotoc_md124"></a>
 Pass by value</h2>
 <p>By default, non-pointer arguments in C++ are passed by value. When an argument is <b>passed by value</b>, the argument's value is copied into the value of the corresponding function parameter. Therefore the original argument can not be modified by the function!</p>
-<h3><a class="anchor" id="autotoc_md104"></a>
+<h3><a class="anchor" id="autotoc_md125"></a>
 Pros</h3>
 <ul>
 <li>Arguments can be anything</li>
 <li>Arguments are never changed by the function (prevents possibly unwanted side effects)</li>
 </ul>
-<h3><a class="anchor" id="autotoc_md105"></a>
+<h3><a class="anchor" id="autotoc_md126"></a>
 Cons</h3>
 <ul>
 <li>Copying classes and structs can incur a significant performance penalty</li>
 </ul>
-<h3><a class="anchor" id="autotoc_md106"></a>
+<h3><a class="anchor" id="autotoc_md127"></a>
 When to use</h3>
 <ul>
 <li>When passing fundamental data type and enumerators, and the function does not need to change the argument.</li>
 </ul>
-<h3><a class="anchor" id="autotoc_md107"></a>
+<h3><a class="anchor" id="autotoc_md128"></a>
 When not to use</h3>
 <ul>
 <li>When passing structs or classes (including std::array, std::vector, and std::string)</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md108"></a>
+<h2><a class="anchor" id="autotoc_md129"></a>
 Pass by reference</h2>
 <p>To <b>pass</b> a variable <b>by reference</b>, simply declare the function parameters as references. When the function is called the function parameter becomes a reference to the argument being called with, so that any changes made to the reference are passed through to the argument!</p>
 <p>Since functions can have only one return value, references or rather reference function parameters can be used to return multiple values.</p>
-<h3><a class="anchor" id="autotoc_md109"></a>
+<h3><a class="anchor" id="autotoc_md130"></a>
 read-only pass by reference</h3>
 <p>If it is undesirable to change an argument, make it read-only by passing it as <b>const reference</b>, so that an error occurs if the function tries to change the argument.</p>
 <p>That's useful, since</p><ul>
@@ -190,7 +190,7 @@ read-only pass by reference</h3>
 <li>You can’t pass a const argument to a non-const reference parameter. Using const parameters ensures you can pass both non-const and const arguments to the function.</li>
 <li>Const references can accept any type of argument, including non-const l-values, const l-values, and r-values.</li>
 </ul>
-<h3><a class="anchor" id="autotoc_md110"></a>
+<h3><a class="anchor" id="autotoc_md131"></a>
 Pros</h3>
 <ul>
 <li>References allow a function to change the value of the argument, which is sometimes useful. Otherwise, const references can be used to guarantee the function won’t change the argument.</li>
@@ -198,61 +198,61 @@ Pros</h3>
 <li>References can be used to return multiple values from a function (via out parameters).</li>
 <li>References must be initialized, so there’s no worry about null values.</li>
 </ul>
-<h3><a class="anchor" id="autotoc_md111"></a>
+<h3><a class="anchor" id="autotoc_md132"></a>
 Cons</h3>
 <ul>
 <li>Because a non-const reference cannot be initialized with a const l-value or an r-value (e.g. a literal or an expression), arguments to non-const reference parameters must be normal variables.</li>
 <li>It can be hard to tell whether an argument passed by non-const reference is meant to be input, output, or both. Judicious use of const and a naming suffix for out variables can help.</li>
 <li>It’s impossible to tell from the function call whether the argument may change. An argument passed by value and passed by reference looks the same. We can only tell whether an argument is passed by value or reference by looking at the function declaration. This can lead to situations where the programmer does not realize a function will change the value of the argument.</li>
 </ul>
-<h3><a class="anchor" id="autotoc_md112"></a>
+<h3><a class="anchor" id="autotoc_md133"></a>
 When to use</h3>
 <ul>
 <li>When passing structs or classes (const if read-only is wanted)</li>
 <li>When the function needs to modify an argument</li>
 <li>When the type information of a fixed array is required</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md113"></a>
+<h2><a class="anchor" id="autotoc_md134"></a>
 Pass by address</h2>
 <p>There is one more way to pass variables to functions, and that is by address. <b>Passing an argument by address</b> involves passing the address of the argument variable rather than the argument variable itself. Because the argument is an address, the function parameter must be a pointer. The function can then dereference the pointer to access or change the value being pointed to.</p>
 <p><b>Remember that fixed arrays decay into pointers when passed to a function</b>, therefore the length of the array has to be passed separately.</p>
 <p>Addresses are actually passed by value, so by changing the function parameter itself, the original pointer argument will not be changed.</p>
 <p>To change the address an argument points to, just pass the addresses by reference.</p>
-<h3><a class="anchor" id="autotoc_md114"></a>
+<h3><a class="anchor" id="autotoc_md135"></a>
 read-only pass by address</h3>
 <p>If it is undesirable to change an argument, make it read-only by passing it as <b>const pointer</b>, so that an error occurs if the function tries to change the argument.</p>
-<h3><a class="anchor" id="autotoc_md115"></a>
+<h3><a class="anchor" id="autotoc_md136"></a>
 Pros</h3>
 <ul>
 <li>Pass by address allows a function to change the value of the argument, which is sometimes useful. Otherwise, const can be used to guarantee the function won’t change the argument. (However, if you want to do this with a non-pointer, you should use pass by reference instead).</li>
 <li>Because a copy of the argument is not made, it is fast, even when used with large structs or classes.</li>
 <li>We can return multiple values from a function via out parameters.</li>
 </ul>
-<h3><a class="anchor" id="autotoc_md116"></a>
+<h3><a class="anchor" id="autotoc_md137"></a>
 Cons</h3>
 <ul>
 <li>Because literals (excepting C-style string literals) and expressions do not have addresses, pointer arguments must be normal variables.</li>
 <li>All values must be checked to see whether they are null. Trying to dereference a null value will result in a crash. It is easy to forget to do this.</li>
 <li>Because dereferencing a pointer is slower than accessing a value directly, accessing arguments passed by address is slower than accessing arguments passed by value.</li>
 </ul>
-<h3><a class="anchor" id="autotoc_md117"></a>
+<h3><a class="anchor" id="autotoc_md138"></a>
 When to use</h3>
 <ul>
 <li>When passing built-in arrays (if you’re okay with the fact that they’ll decay into a pointer).</li>
 <li>When passing a pointer and nullptr is a valid argument logically.</li>
 </ul>
-<h3><a class="anchor" id="autotoc_md118"></a>
+<h3><a class="anchor" id="autotoc_md139"></a>
 When not to use</h3>
 <ul>
 <li>When passing a pointer and nullptr is not a valid argument logically (use pass by reference).</li>
 <li>When passing structs or classes (use pass by reference).</li>
 <li>When passing fundamental types (use pass by value).</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md119"></a>
+<h2><a class="anchor" id="autotoc_md140"></a>
 Returning values by value, reference and address</h2>
 <p>This is quite similar to passing arguments to functions. In fact, returning values from a function to its caller by value, address or reference <b>works almost exactly the same way as passing arguments to a function, with the same upsides and downsides</b>.</p>
 <p><b>Attention</b>: Since local variables in a function go out of scope and are destroyed, this needs to be considered!</p>
-<h3><a class="anchor" id="autotoc_md120"></a>
+<h3><a class="anchor" id="autotoc_md141"></a>
 Return by value</h3>
 <p>To use, when</p><ul>
 <li>returning variables that were declared inside the function</li>
@@ -262,7 +262,7 @@ Return by value</h3>
 <li>returning a built-in array or pointer (use return by address instead!)</li>
 <li>returning a large struct or class (use return by reference instead!)</li>
 </ul>
-<h3><a class="anchor" id="autotoc_md121"></a>
+<h3><a class="anchor" id="autotoc_md142"></a>
 Return by address</h3>
 <p>Not possible for literals or expressions (no address)!</p>
 <p>To use, when</p><ul>
@@ -273,7 +273,7 @@ Return by address</h3>
 <li>returning variables declared inside the function or parameters passed by value (use return by value instead!)</li>
 <li>returning a large struct or class that was passed by reference (use return by refernce instead!)</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md122"></a>
+<h2><a class="anchor" id="autotoc_md143"></a>
 Return by reference</h2>
 <p>Not possible for literals or expressions (no address)!</p>
 <p>To use, when</p><ul>
@@ -285,20 +285,20 @@ Return by reference</h2>
 <li>returning variables declared inside the function or parameters passed by value (use return by value instead!)</li>
 <li>returning a built-in array or pointer value (use return by address)</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md123"></a>
+<h2><a class="anchor" id="autotoc_md144"></a>
 Returning multiple values</h2>
 <p>To return multiple values</p><ul>
 <li>a struct (or in principle a class)</li>
 <li>std::tuple can be used!</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md124"></a>
+<h1><a class="anchor" id="autotoc_md145"></a>
 Function overloading</h1>
 <p><b>Function overloading is a feature of C++ that allows us to create multiple functions with the same name, so long as they have different parameters.</b></p>
 <p><b>Attention:</b> Function return types are not considered distinct!</p>
-<h1><a class="anchor" id="autotoc_md125"></a>
+<h1><a class="anchor" id="autotoc_md146"></a>
 Default arguments</h1>
 <p>A default argument is a default value provided for a function parameter. If the user does not supply an explicit argument for a parameter with a default argument, the default value will be used. If the user does supply an argument for the parameter, the user-supplied argument is used. Because the user can choose whether to supply a specific argument value, or use the default, a parameter with a default value provided is often called an optional parameter.</p>
-<h1><a class="anchor" id="autotoc_md126"></a>
+<h1><a class="anchor" id="autotoc_md147"></a>
 Function pointers</h1>
 <p><b>Function pointers</b> point to functions!</p>
 <ul>
@@ -308,7 +308,7 @@ Function pointers</h1>
 <li>using std::function (from e.g. &lt;functional&gt;): std::function&lt;bool(int, int)&gt; fcn</li>
 </ul>
 <p>Using function pointers, functions can be passed to other functions as arguments.</p>
-<h1><a class="anchor" id="autotoc_md127"></a>
+<h1><a class="anchor" id="autotoc_md148"></a>
 The stack and the heap</h1>
 <p>The memory a program uses is divided into:</p>
 <ul>
@@ -318,20 +318,20 @@ The stack and the heap</h1>
 <li>The heap, where dynamically allocated variables are allocated from.</li>
 <li>The call stack, where function parameters, local variables, and other function-related information are stored.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md128"></a>
+<h2><a class="anchor" id="autotoc_md149"></a>
 Heap</h2>
 <p>The heap segment (also known as the “free store”) keeps track of memory used for dynamic memory allocation (when using <em>new</em> and <em>delete</em>).</p>
-<h2><a class="anchor" id="autotoc_md129"></a>
+<h2><a class="anchor" id="autotoc_md150"></a>
 Stack</h2>
 <p>The call stack (usually referred to as “the stack”) has a much more interesting role to play. The call stack keeps track of all the active functions (those that have been called but have not yet terminated) from the start of the program to the current point of execution, and handles allocation of all function parameters and local variables.</p>
-<h1><a class="anchor" id="autotoc_md130"></a>
+<h1><a class="anchor" id="autotoc_md151"></a>
 Recursion</h1>
 <p>Recursive functions are functions that call themselves.</p>
-<h1><a class="anchor" id="autotoc_md131"></a>
+<h1><a class="anchor" id="autotoc_md152"></a>
 Variable number of parameters - Ellipsis</h1>
 <p>All parameters a function will take must be known in advance (even if they have default values). However, there are certain cases where it can be useful to be able to pass a variable number of parameters to a function. C++ provides a special specifier known as ellipsis *...*.</p>
 <p><b>Avoid using ellipsis, for many reasons ... !</b></p>
-<h1><a class="anchor" id="autotoc_md132"></a>
+<h1><a class="anchor" id="autotoc_md153"></a>
 Lambdas - anonymous functions</h1>
 <p>See <a href="https://www.learncpp.com/cpp-tutorial/introduction-to-lambdas-anonymous-functions/">Lambdas</a> for reference!</p>
 <p>A <b>lambda expression</b> (also <em>lambda</em> or <em>closure</em>) allows to define an anonymous function inside another function.</p>
@@ -343,7 +343,7 @@ Lambdas - anonymous functions</h1>
 </div><!-- fragment --><p>Consequently a trivial lambda looks like: <code>[]() {}</code>.</p>
 <p>In actuality, lambdas aren’t functions (which is part of how they avoid the limitation of C++ not supporting nested functions). They’re a special kind of object called a <b>functor</b>. <b>Functors</b> are objects that contain an overloaded operator() that make them callable like a function.</p>
 <p><b>Use auto when initializing variables with lambdas, and std::function if you can’t initialize the variable with the lambda.</b></p>
-<h1><a class="anchor" id="autotoc_md133"></a>
+<h1><a class="anchor" id="autotoc_md154"></a>
 Function templates</h1>
 
 <p class="definition">Definition in file <a class="el" href="_functions_8h_source.html">Functions.h</a>.</p>
@@ -795,7 +795,7 @@ template&lt;typename T &gt; </div>
 <!-- start footer part -->
   <hr class="footer"/><address class="footer"><small>
     Cpp concept project  - learningCpp/Basics/Functions.h File Reference<br />
-    Generated on Fri Dec 11 2020 11:06:56 by <a href="http://www.doxygen.org/index.html">Doxygen</a> 1.8.20
+    Generated on Fri Dec 11 2020 12:03:31 by <a href="http://www.doxygen.org/index.html">Doxygen</a> 1.8.20
   </small></address>
 </body>
 </html>
