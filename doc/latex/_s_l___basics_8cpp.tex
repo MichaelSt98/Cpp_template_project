@@ -1,10 +1,11 @@
-\hypertarget{_s_l___basics_8cpp}{}\doxysection{learning\+Cpp/\+S\+L\+\_\+\+Basics.cpp File Reference}
-\label{_s_l___basics_8cpp}\index{learningCpp/SL\_Basics.cpp@{learningCpp/SL\_Basics.cpp}}
+\hypertarget{_s_l___basics_8cpp}{}\doxysection{learning\+Cpp/\+Standard\+Library/\+S\+L\+\_\+\+Basics.cpp File Reference}
+\label{_s_l___basics_8cpp}\index{learningCpp/StandardLibrary/SL\_Basics.cpp@{learningCpp/StandardLibrary/SL\_Basics.cpp}}
 {\ttfamily \#include $<$iostream$>$}\newline
 {\ttfamily \#include $<$array$>$}\newline
 {\ttfamily \#include $<$vector$>$}\newline
 {\ttfamily \#include $<$string$>$}\newline
-Include dependency graph for S\+L\+\_\+\+Basics.\+cpp\+:\nopagebreak
+Include dependency graph for S\+L\+\_\+\+Basics.\+cpp\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -25,11 +26,59 @@ int \mbox{\hyperlink{_s_l___basics_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}
 \doxysubsubsection{\texorpdfstring{main()}{main()}}
 {\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-\hypertarget{_s_l___basics_8cpp_autotoc_md107}{}\doxysubsection{Introduction to the standard library}\label{_s_l___basics_8cpp_autotoc_md107}
-\hypertarget{SL_Basics.cpp_autotoc_md108}{}\doxysubsubsection{std\+::array}\label{SL_Basics.cpp_autotoc_md108}
-\hypertarget{SL_Basics.cpp_autotoc_md109}{}\doxysubsubsection{std\+::vector}\label{SL_Basics.cpp_autotoc_md109}
-\hypertarget{SL_Basics.cpp_autotoc_md110}{}\doxysubsubsection{std\+::string}\label{SL_Basics.cpp_autotoc_md110}
-\hypertarget{SL_Basics.cpp_autotoc_md111}{}\doxysubsubsection{Algorithms}\label{SL_Basics.cpp_autotoc_md111}
+\hypertarget{_s_l___basics_8cpp_autotoc_md174}{}\doxysubsection{Introduction to the standard library}\label{_s_l___basics_8cpp_autotoc_md174}
+The Standard library contains a collection of classes that provide templated containers, algorithms, and iterators. If you need a common class or algorithm, odds are the standard library has it. The upside is that you can take advantage of these classes without having to write and debug the classes yourself, and the standard library does a good job providing reasonably efficient versions of these classes. The downside is that the standard library is complex, and can be a little intimidating since everything is templated.\hypertarget{_s_l___basics_8cpp_autotoc_md175}{}\doxysubsubsection{S\+T\+L containers}\label{_s_l___basics_8cpp_autotoc_md175}
+There are three basic container categories\+:
+
+
+\begin{DoxyItemize}
+\item {\bfseries{Sequence containers}} maintaining the ordering of elements within the container
+\begin{DoxyItemize}
+\item std\+::vector\+: dynamic array capable of growing, fast insertion and removing at the end
+\item std\+::deque\+: double-\/ended queue class, implemented as a dynamic array that can grow from both ends
+\item std\+::array
+\item std\+::list
+\item std\+::forward\+\_\+list
+\item std\+::basic\+\_\+string
+\end{DoxyItemize}
+\item {\bfseries{Associative containers}} automatically sorting the inputs when those inputs are inserted into the container
+\begin{DoxyItemize}
+\item set\+: storing unique elements
+\item mulitset\+: duplicate elements allowed
+\item map (or associative array)\+: each element is a pair, called a key/value pair, key must be unique
+\item multimap (or dictionary)\+: map allowing duplicate keys
+\end{DoxyItemize}
+\item {\bfseries{Container adapters}}\+: are special predefined containers that are adapted to specific uses
+\begin{DoxyItemize}
+\item stack\+: elements operate in a L\+I\+FO (Last In, First Out)
+\item queue\+: elements operate in a F\+I\+FO (First In, First Out)
+\item priority queue\+: elements are kept sorted (via operator$<$)
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{_s_l___basics_8cpp_autotoc_md176}{}\doxysubsubsection{S\+T\+L iterators}\label{_s_l___basics_8cpp_autotoc_md176}
+
+\begin{DoxyItemize}
+\item {\bfseries{Operator$\ast$ $\ast$$\ast$ Dereferencing the iterator returns the element that the iterator is currently pointing at}}
+\item {\bfseries{$\ast$$\ast$\+Operator++}} Moves the iterator to the next element in the container.
+\item Most iterators also provide Operator-- to move to the previous element.
+\item Operator== and Operator!= -- Basic comparison operators to determine if two iterators point to the same element. To compare the values that two iterators are pointing at, dereference the iterators first, and then use a comparison operator.
+\item Operator= -- Assign the iterator to a new position (typically the start or end of the container’s elements). To assign the value of the element the iterator is pointing at, dereference the iterator first, then use the assign operator.
+\end{DoxyItemize}
+
+Each container includes four basic member functions for use with {\bfseries{Operator=\+:}}
+\begin{DoxyItemize}
+\item {\itshape begin()} returns an iterator representing the beginning of the elements in the container. {\itshape end()} returns an iterator representing the element just past the end of the elements. {\itshape cbegin()} returns a const (read-\/only) iterator representing the beginning of the elements in the container. {\itshape cend()} returns a const (read-\/only) iterator representing the element just past the end of the elements.
+\end{DoxyItemize}
+
+All containers provide (at least) two types of iterators\+:
+\begin{DoxyItemize}
+\item {\bfseries{container\+::iterator}} provides a read/write iterator
+\item {\bfseries{container\+::const\+\_\+iterator}} provides a read-\/only iterator
+\end{DoxyItemize}\hypertarget{_s_l___basics_8cpp_autotoc_md177}{}\doxysubsubsection{Formatting output}\label{_s_l___basics_8cpp_autotoc_md177}
+See \href{https://www.learncpp.com/cpp-tutorial/183-output-with-ostream-and-ios/}{\texttt{ ostream}}\hypertarget{_s_l___basics_8cpp_autotoc_md178}{}\doxysubsubsection{File IO}\label{_s_l___basics_8cpp_autotoc_md178}
+See \href{https://www.learncpp.com/cpp-tutorial/186-basic-file-io/}{\texttt{ Basic file IO}} \hypertarget{SL_Basics.cpp_autotoc_md179}{}\doxysubsubsection{std\+::array}\label{SL_Basics.cpp_autotoc_md179}
+\hypertarget{SL_Basics.cpp_autotoc_md180}{}\doxysubsubsection{std\+::vector}\label{SL_Basics.cpp_autotoc_md180}
+\hypertarget{SL_Basics.cpp_autotoc_md181}{}\doxysubsubsection{std\+::string}\label{SL_Basics.cpp_autotoc_md181}
+\hypertarget{SL_Basics.cpp_autotoc_md182}{}\doxysubsubsection{Algorithms}\label{SL_Basics.cpp_autotoc_md182}
 
 \begin{DoxyItemize}
 \item {\bfseries{Inspectors}} are used to view (not modify) data in container (including searching and counting)
@@ -37,28 +86,28 @@ int \mbox{\hyperlink{_s_l___basics_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}
 \item {\bfseries{Facilitators}} are used to generate a result based on values of the data members
 \end{DoxyItemize}
 
-Definition at line \mbox{\hyperlink{_s_l___basics_8cpp_source_l00014}{14}} of file \mbox{\hyperlink{_s_l___basics_8cpp_source}{S\+L\+\_\+\+Basics.\+cpp}}.
+Definition at line \mbox{\hyperlink{_s_l___basics_8cpp_source_l00075}{75}} of file \mbox{\hyperlink{_s_l___basics_8cpp_source}{S\+L\+\_\+\+Basics.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00014            \{}
-\DoxyCodeLine{00016     \textcolor{comment}{//std::array<int, 5> myArray = \{ 9, 7, 5, 3, 1 \}; // initializer list}}
-\DoxyCodeLine{00017     std::array<int, 5> my\_array\{9, 7, 5, 3, 1\}; \textcolor{comment}{// list initialization}}
-\DoxyCodeLine{00018     my\_array[0] = 10; \textcolor{comment}{// standard accessing}}
-\DoxyCodeLine{00019     my\_array.at(1) = 8; \textcolor{comment}{// other possibility}}
-\DoxyCodeLine{00020     std::cout << \textcolor{stringliteral}{"{}size of my\_array: "{}} << my\_array.size() << std::endl;}
-\DoxyCodeLine{00024     \textcolor{comment}{// dynamic arrays without the need of dynamically allocating memory}}
-\DoxyCodeLine{00025 }
-\DoxyCodeLine{00026     \textcolor{comment}{//std::vector<int> vec\_array;}}
-\DoxyCodeLine{00027     \textcolor{comment}{//std::vector<int> vec\_array = \{ 9, 7, 5, 3, 1 \}; // use initializer list to initialize array (Before C++11)}}
-\DoxyCodeLine{00028     std::vector<int> vec\_array \{ 9, 7, 5, 3, 1 \}; \textcolor{comment}{// use uniform initialization to initialize array}}
-\DoxyCodeLine{00029     vec\_array[0] = 10; \textcolor{comment}{// standard accessing}}
-\DoxyCodeLine{00030     vec\_array.at(1) = 8; \textcolor{comment}{// other possibility}}
-\DoxyCodeLine{00031     std::cout << \textcolor{stringliteral}{"{}size of vec\_array: "{}} << vec\_array.size() << std::endl;}
-\DoxyCodeLine{00032     \textcolor{comment}{// resize}}
-\DoxyCodeLine{00033     vec\_array.resize(10);}
-\DoxyCodeLine{00034     std::cout << \textcolor{stringliteral}{"{}size of vec\_array (after resize): "{}} << vec\_array.size() << std::endl;}
-\DoxyCodeLine{00057     \textcolor{keywordflow}{return} 0;}
-\DoxyCodeLine{00058 \}}
+\DoxyCodeLine{00075            \{}
+\DoxyCodeLine{00077     \textcolor{comment}{//std::array<int, 5> myArray = \{ 9, 7, 5, 3, 1 \}; // initializer list}}
+\DoxyCodeLine{00078     std::array<int, 5> my\_array\{9, 7, 5, 3, 1\}; \textcolor{comment}{// list initialization}}
+\DoxyCodeLine{00079     my\_array[0] = 10; \textcolor{comment}{// standard accessing}}
+\DoxyCodeLine{00080     my\_array.at(1) = 8; \textcolor{comment}{// other possibility}}
+\DoxyCodeLine{00081     std::cout << \textcolor{stringliteral}{"{}size of my\_array: "{}} << my\_array.size() << std::endl;}
+\DoxyCodeLine{00085     \textcolor{comment}{// dynamic arrays without the need of dynamically allocating memory}}
+\DoxyCodeLine{00086 }
+\DoxyCodeLine{00087     \textcolor{comment}{//std::vector<int> vec\_array;}}
+\DoxyCodeLine{00088     \textcolor{comment}{//std::vector<int> vec\_array = \{ 9, 7, 5, 3, 1 \}; // use initializer list to initialize array (Before C++11)}}
+\DoxyCodeLine{00089     std::vector<int> vec\_array \{ 9, 7, 5, 3, 1 \}; \textcolor{comment}{// use uniform initialization to initialize array}}
+\DoxyCodeLine{00090     vec\_array[0] = 10; \textcolor{comment}{// standard accessing}}
+\DoxyCodeLine{00091     vec\_array.at(1) = 8; \textcolor{comment}{// other possibility}}
+\DoxyCodeLine{00092     std::cout << \textcolor{stringliteral}{"{}size of vec\_array: "{}} << vec\_array.size() << std::endl;}
+\DoxyCodeLine{00093     \textcolor{comment}{// resize}}
+\DoxyCodeLine{00094     vec\_array.resize(10);}
+\DoxyCodeLine{00095     std::cout << \textcolor{stringliteral}{"{}size of vec\_array (after resize): "{}} << vec\_array.size() << std::endl;}
+\DoxyCodeLine{00118     \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{00119 \}}
 
 \end{DoxyCode}

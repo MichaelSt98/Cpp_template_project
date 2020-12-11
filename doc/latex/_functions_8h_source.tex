@@ -1,18 +1,50 @@
 \hypertarget{_functions_8h_source}{}\doxysection{Functions.\+h}
-\label{_functions_8h_source}\index{learningCpp/Functions.h@{learningCpp/Functions.h}}
+\label{_functions_8h_source}\index{learningCpp/Basics/Functions.h@{learningCpp/Basics/Functions.h}}
 
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00001 \textcolor{comment}{//}}
 \DoxyCodeLine{00002 \textcolor{comment}{// Created by Michael Staneker on 08.12.20.}}
 \DoxyCodeLine{00003 \textcolor{comment}{//}}
 \DoxyCodeLine{00004 }
-\DoxyCodeLine{00005 \textcolor{preprocessor}{\#ifndef CPP\_TEMPLATE\_PROJECT\_FUNCTIONS\_H}}
-\DoxyCodeLine{00006 \textcolor{preprocessor}{\#define CPP\_TEMPLATE\_PROJECT\_FUNCTIONS\_H}}
+\DoxyCodeLine{00005 \textcolor{preprocessor}{\#include <array>}}
+\DoxyCodeLine{00006 \textcolor{preprocessor}{\#include <iostream>}}
 \DoxyCodeLine{00007 }
-\DoxyCodeLine{00036 \textcolor{comment}{// \(\backslash\)fn void pass\_by\_value(int)}}
-\DoxyCodeLine{00037 }
-\DoxyCodeLine{00041 \textcolor{keywordtype}{void} \mbox{\hyperlink{_functions_8h_ab03b2c624ca6c439631e510210919808}{pass\_by\_value}}(\textcolor{keywordtype}{int});}
-\DoxyCodeLine{00042 }
-\DoxyCodeLine{00043 \textcolor{preprocessor}{\#endif //CPP\_TEMPLATE\_PROJECT\_FUNCTIONS\_H}}
+\DoxyCodeLine{00008 \textcolor{preprocessor}{\#ifndef CPP\_TEMPLATE\_PROJECT\_FUNCTIONS\_H}}
+\DoxyCodeLine{00009 \textcolor{preprocessor}{\#define CPP\_TEMPLATE\_PROJECT\_FUNCTIONS\_H}}
+\DoxyCodeLine{00010 }
+\DoxyCodeLine{00273 \textcolor{comment}{// \(\backslash\)fn void pass\_by\_value(int)}}
+\DoxyCodeLine{00274 }
+\DoxyCodeLine{00278 \textcolor{keywordtype}{void} \mbox{\hyperlink{_functions_8h_af889c468d4cc52789ef37bf08716b68a}{pass\_by\_value}}(\textcolor{keywordtype}{int} x);}
+\DoxyCodeLine{00279 }
+\DoxyCodeLine{00283 \textcolor{keywordtype}{void} \mbox{\hyperlink{_functions_8h_a5ec956d71e1eccd51ef422341e5f3049}{pass\_by\_reference}}(\textcolor{keywordtype}{int} \&x);}
+\DoxyCodeLine{00284 }
+\DoxyCodeLine{00288 \textcolor{keywordtype}{void} \mbox{\hyperlink{_functions_8h_a9ae15f6bff98d72da855b7b7816c8af3}{pass\_by\_address}}(\textcolor{keywordtype}{int} *x);}
+\DoxyCodeLine{00289 }
+\DoxyCodeLine{00290 }
+\DoxyCodeLine{00294 \textcolor{keywordtype}{int} \mbox{\hyperlink{_functions_8h_af8c77c8db78c984abd2c2d9526586d6a}{return\_by\_value}}();}
+\DoxyCodeLine{00295 }
+\DoxyCodeLine{00299 \textcolor{keywordtype}{int}\& \mbox{\hyperlink{_functions_8h_ae748ac036cd3cb10bbb279962e5e9a7c}{return\_by\_reference}}();}
+\DoxyCodeLine{00300 }
+\DoxyCodeLine{00304 \textcolor{keywordtype}{int}* \mbox{\hyperlink{_functions_8h_a3281d80fbae3ea726d13d7f2bdf21a3a}{return\_by\_address}}();}
+\DoxyCodeLine{00305 }
+\DoxyCodeLine{00309 \textcolor{keywordtype}{int} \mbox{\hyperlink{_functions_8h_a8a24400242b18720c6ffef03116f165e}{overload\_add}}(\textcolor{keywordtype}{int} a, \textcolor{keywordtype}{int} b);}
+\DoxyCodeLine{00310 }
+\DoxyCodeLine{00314 \textcolor{keywordtype}{int} \mbox{\hyperlink{_functions_8h_a8a24400242b18720c6ffef03116f165e}{overload\_add}}(\textcolor{keywordtype}{int} a, \textcolor{keywordtype}{int} b, \textcolor{keywordtype}{int} c);}
+\DoxyCodeLine{00315 }
+\DoxyCodeLine{00316 }
+\DoxyCodeLine{00320 \textcolor{keywordtype}{void} \mbox{\hyperlink{_functions_8h_a8346e6426fc45cf4b2a1142c2b24e987}{func\_default\_arg}}(\textcolor{keywordtype}{int} x, \textcolor{keywordtype}{int} y=10);}
+\DoxyCodeLine{00321 }
+\DoxyCodeLine{00325 \textcolor{keywordtype}{void} \mbox{\hyperlink{_functions_8h_a5efc0d291d6f7ee1784b2c23409adbf5}{countDown}}(\textcolor{keywordtype}{int} count);}
+\DoxyCodeLine{00326 }
+\DoxyCodeLine{00330 \textcolor{keywordtype}{void} \mbox{\hyperlink{_functions_8h_a69c7a90f893a6d7838dc10248edd16f2}{ellipsis\_example}}(\textcolor{keywordtype}{int} count, ...);}
+\DoxyCodeLine{00331 }
+\DoxyCodeLine{00335 \textcolor{keywordtype}{void} \mbox{\hyperlink{_functions_8h_abd9a6c9fecee433db5438afa8cae8670}{lambda\_example}}(std::array<std::string\_view, 4> arr);}
+\DoxyCodeLine{00336 }
+\DoxyCodeLine{00340 \textcolor{keyword}{template} <\textcolor{keyword}{typename} T> T \mbox{\hyperlink{_functions_8h_a3f4ae913e2a7b3479faa6afe7c6948cd}{max}}(T x, T y);}
+\DoxyCodeLine{00341 }
+\DoxyCodeLine{00342 }
+\DoxyCodeLine{00343 }
+\DoxyCodeLine{00344 }
+\DoxyCodeLine{00345 \textcolor{preprocessor}{\#endif //CPP\_TEMPLATE\_PROJECT\_FUNCTIONS\_H}}
 
 \end{DoxyCode}

@@ -1,0 +1,31 @@
+\hypertarget{_command_line_arguments_8cpp_source}{}\doxysection{Command\+Line\+Arguments.\+cpp}
+\label{_command_line_arguments_8cpp_source}\index{learningCpp/Basics/CommandLineArguments.cpp@{learningCpp/Basics/CommandLineArguments.cpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001 \textcolor{comment}{//}}
+\DoxyCodeLine{00002 \textcolor{comment}{// Created by Michael Staneker on 09.12.20.}}
+\DoxyCodeLine{00003 \textcolor{comment}{//}}
+\DoxyCodeLine{00004 }
+\DoxyCodeLine{00005 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{00006 }
+\DoxyCodeLine{\Hypertarget{_command_line_arguments_8cpp_source_l00021}\mbox{\hyperlink{_command_line_arguments_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{00021}} \textcolor{keywordtype}{int} \mbox{\hyperlink{_command_line_arguments_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main}}(\textcolor{keywordtype}{int} argc, \textcolor{keywordtype}{char} *argv[])}
+\DoxyCodeLine{00022 \{}
+\DoxyCodeLine{00023     std::cout << \textcolor{stringliteral}{"{}There are "{}} << argc << \textcolor{stringliteral}{"{} arguments:\(\backslash\)n"{}};}
+\DoxyCodeLine{00024 }
+\DoxyCodeLine{00025     \textcolor{comment}{// Loop through each argument and print its number and value}}
+\DoxyCodeLine{00026     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} count\{ 0 \}; count < argc; ++count)}
+\DoxyCodeLine{00027     \{}
+\DoxyCodeLine{00028         std::cout << count << \textcolor{charliteral}{' '} << argv[count] << \textcolor{charliteral}{'\(\backslash\)n'};}
+\DoxyCodeLine{00029     \}}
+\DoxyCodeLine{00030 }
+\DoxyCodeLine{00031     \textcolor{comment}{// handle numeric values}}
+\DoxyCodeLine{00032     \textcolor{comment}{//std::stringstream convert\{ argv[1] \}; // set up a stringstream variable named convert, initialized with the input from argv[1]}}
+\DoxyCodeLine{00033     \textcolor{comment}{//int myint\{\};}}
+\DoxyCodeLine{00034     \textcolor{comment}{//if (!(convert >> myint)) // do the conversion}}
+\DoxyCodeLine{00035     \textcolor{comment}{//    myint = 0; // if conversion fails, set myint to a default value}}
+\DoxyCodeLine{00036     \textcolor{comment}{//std::cout << "{}Got integer: "{} << myint << '\(\backslash\)n';}}
+\DoxyCodeLine{00037 }
+\DoxyCodeLine{00038     \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{00039 \}}
+
+\end{DoxyCode}

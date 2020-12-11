@@ -1,0 +1,81 @@
+\hypertarget{_sample_class_8cpp}{}\doxysection{learning\+Cpp/\+O\+O\+P/\+Sample\+Class.cpp File Reference}
+\label{_sample_class_8cpp}\index{learningCpp/OOP/SampleClass.cpp@{learningCpp/OOP/SampleClass.cpp}}
+{\ttfamily \#include \char`\"{}Sample\+Class.\+h\char`\"{}}\newline
+Include dependency graph for Sample\+Class.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=253pt]{_sample_class_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_sample_class_8cpp_a3025b3c39479f066492495ef355443ca}{friend\+\_\+function}} (\mbox{\hyperlink{class_sample_class}{Sample\+Class}} \&sample\+\_\+class)
+\item 
+\mbox{\hyperlink{class_sample_class}{Sample\+Class}} \mbox{\hyperlink{_sample_class_8cpp_a8766ccb542c75224a4d14f1df4cc73af}{operator+}} (const \mbox{\hyperlink{class_sample_class}{Sample\+Class}} \&s\+\_\+1, const \mbox{\hyperlink{class_sample_class}{Sample\+Class}} \&s\+\_\+2)
+\item 
+std\+::ostream \& \mbox{\hyperlink{_sample_class_8cpp_a733f5b8fc64b6863c3b1354166a88a74}{operator$<$$<$}} (std\+::ostream \&out, const \mbox{\hyperlink{class_sample_class}{Sample\+Class}} \&sample\+\_\+class)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_sample_class_8cpp_a3025b3c39479f066492495ef355443ca}\label{_sample_class_8cpp_a3025b3c39479f066492495ef355443ca}} 
+\index{SampleClass.cpp@{SampleClass.cpp}!friend\_function@{friend\_function}}
+\index{friend\_function@{friend\_function}!SampleClass.cpp@{SampleClass.cpp}}
+\doxysubsubsection{\texorpdfstring{friend\_function()}{friend\_function()}}
+{\footnotesize\ttfamily void friend\+\_\+function (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sample_class}{Sample\+Class}} \&}]{sample\+\_\+class }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_sample_class_8cpp_source_l00073}{73}} of file \mbox{\hyperlink{_sample_class_8cpp_source}{Sample\+Class.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00073                                                 \{}
+\DoxyCodeLine{00074     std::cout << \textcolor{stringliteral}{"{}This is a friend function"{}} << std::endl;}
+\DoxyCodeLine{00075     std::cout << \textcolor{stringliteral}{"{}Accessing private member member\_a: "{}} << sample\_class.\mbox{\hyperlink{class_sample_class_a2be82adf335b43ac896fca216ac3fea8}{member\_a}} << std::endl;}
+\DoxyCodeLine{00076 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{_sample_class_8cpp_a8766ccb542c75224a4d14f1df4cc73af}\label{_sample_class_8cpp_a8766ccb542c75224a4d14f1df4cc73af}} 
+\index{SampleClass.cpp@{SampleClass.cpp}!operator+@{operator+}}
+\index{operator+@{operator+}!SampleClass.cpp@{SampleClass.cpp}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sample_class}{Sample\+Class}} operator+ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_sample_class}{Sample\+Class}} \&}]{s\+\_\+1,  }\item[{const \mbox{\hyperlink{class_sample_class}{Sample\+Class}} \&}]{s\+\_\+2 }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_sample_class_8cpp_source_l00078}{78}} of file \mbox{\hyperlink{_sample_class_8cpp_source}{Sample\+Class.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00078                                                                       \{}
+\DoxyCodeLine{00079     std::cout << \textcolor{stringliteral}{"{}overloaded operator+ for SampleClass!"{}} << std::endl;}
+\DoxyCodeLine{00080     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_sample_class}{SampleClass}}(s\_1.\mbox{\hyperlink{class_sample_class_a2be82adf335b43ac896fca216ac3fea8}{member\_a}} + s\_2.\mbox{\hyperlink{class_sample_class_a2be82adf335b43ac896fca216ac3fea8}{member\_a}}, s\_1.\mbox{\hyperlink{class_sample_class_a7eadeb5bc798055f2fa3b3b7e380368d}{member\_b}} + s\_2.\mbox{\hyperlink{class_sample_class_a7eadeb5bc798055f2fa3b3b7e380368d}{member\_b}});}
+\DoxyCodeLine{00081 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{_sample_class_8cpp_a733f5b8fc64b6863c3b1354166a88a74}\label{_sample_class_8cpp_a733f5b8fc64b6863c3b1354166a88a74}} 
+\index{SampleClass.cpp@{SampleClass.cpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!SampleClass.cpp@{SampleClass.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out,  }\item[{const \mbox{\hyperlink{class_sample_class}{Sample\+Class}} \&}]{sample\+\_\+class }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_sample_class_8cpp_source_l00083}{83}} of file \mbox{\hyperlink{_sample_class_8cpp_source}{Sample\+Class.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00083                                                                           \{}
+\DoxyCodeLine{00084 }
+\DoxyCodeLine{00085     out << std::endl}
+\DoxyCodeLine{00086         << \textcolor{stringliteral}{"{}member\_a = "{}} << sample\_class.\mbox{\hyperlink{class_sample_class_a2be82adf335b43ac896fca216ac3fea8}{member\_a}} << std::endl}
+\DoxyCodeLine{00087         << \textcolor{stringliteral}{"{}member\_b = "{}} << sample\_class.\mbox{\hyperlink{class_sample_class_a7eadeb5bc798055f2fa3b3b7e380368d}{member\_b}} << std::endl;}
+\DoxyCodeLine{00088 }
+\DoxyCodeLine{00089     \textcolor{keywordflow}{return} out;}
+\DoxyCodeLine{00090 \}}
+
+\end{DoxyCode}

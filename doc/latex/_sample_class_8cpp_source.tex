@@ -1,0 +1,100 @@
+\hypertarget{_sample_class_8cpp_source}{}\doxysection{Sample\+Class.\+cpp}
+\label{_sample_class_8cpp_source}\index{learningCpp/OOP/SampleClass.cpp@{learningCpp/OOP/SampleClass.cpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001 \textcolor{comment}{//}}
+\DoxyCodeLine{00002 \textcolor{comment}{// Created by Michael Staneker on 09.12.20.}}
+\DoxyCodeLine{00003 \textcolor{comment}{//}}
+\DoxyCodeLine{00004 }
+\DoxyCodeLine{00005 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_sample_class_8h}{SampleClass.h}}"{}}}
+\DoxyCodeLine{00006 }
+\DoxyCodeLine{\Hypertarget{_sample_class_8cpp_source_l00007}\mbox{\hyperlink{class_sample_class_aba24256ca86c5044feed70ca621a576a}{00007}} \mbox{\hyperlink{class_sample_class_aba24256ca86c5044feed70ca621a576a}{SampleClass::SampleClass}}() \{}
+\DoxyCodeLine{00008     std::cout << \textcolor{stringliteral}{"{}Default constructor was called ..."{}} << std::endl;}
+\DoxyCodeLine{00009     \mbox{\hyperlink{class_sample_class_a2be82adf335b43ac896fca216ac3fea8}{member\_a}} = 0;}
+\DoxyCodeLine{00010     \mbox{\hyperlink{class_sample_class_a7eadeb5bc798055f2fa3b3b7e380368d}{member\_b}} = 0;}
+\DoxyCodeLine{00011 \}}
+\DoxyCodeLine{00012 }
+\DoxyCodeLine{00013 \textcolor{keywordtype}{int} \mbox{\hyperlink{class_sample_class_aee9cfe6c985f0fc2b8e22adddce0bad4}{SampleClass::static\_member\_variable}} = 5;}
+\DoxyCodeLine{00014 }
+\DoxyCodeLine{00015 \textcolor{comment}{//SampleClass::SampleClass(int a, int b) \{}}
+\DoxyCodeLine{00016 \textcolor{comment}{//    std::cout << "{}Constructor: SampleClass("{} << a << "{}, "{} << b << "{}) ..."{} << std::endl;}}
+\DoxyCodeLine{00017 \textcolor{comment}{//    member\_a = a;}}
+\DoxyCodeLine{00018 \textcolor{comment}{//    member\_b = b;}}
+\DoxyCodeLine{00019 \textcolor{comment}{//\}}}
+\DoxyCodeLine{00020 \textcolor{comment}{// equivalent implementation using an initialization list}}
+\DoxyCodeLine{\Hypertarget{_sample_class_8cpp_source_l00021}\mbox{\hyperlink{class_sample_class_a67529904a1d7bdd463014039b5270c4c}{00021}} \mbox{\hyperlink{class_sample_class_aba24256ca86c5044feed70ca621a576a}{SampleClass::SampleClass}}(\textcolor{keywordtype}{int} a, \textcolor{keywordtype}{int} b)}
+\DoxyCodeLine{00022 : member\_a\{ a \}, member\_b\{ b \}}
+\DoxyCodeLine{00023 \{}
+\DoxyCodeLine{00024     std::cout << \textcolor{stringliteral}{"{}Constructor: SampleClass("{}} << a << \textcolor{stringliteral}{"{}, "{}} << b << \textcolor{stringliteral}{"{}) ..."{}} << std::endl;}
+\DoxyCodeLine{00025 \}}
+\DoxyCodeLine{00026 }
+\DoxyCodeLine{\Hypertarget{_sample_class_8cpp_source_l00027}\mbox{\hyperlink{class_sample_class_a94fd59ecb6dc5f6631ff06ee7f3f1815}{00027}} \mbox{\hyperlink{class_sample_class_aba24256ca86c5044feed70ca621a576a}{SampleClass::SampleClass}}(\textcolor{keywordtype}{int} a, \textcolor{keywordtype}{int} b, \textcolor{keywordtype}{int} c): \mbox{\hyperlink{class_sample_class}{SampleClass}}\{ a, b \} \{}
+\DoxyCodeLine{00028     std::cout << \textcolor{stringliteral}{"{}Constructor: SampleClass("{}} << a << \textcolor{stringliteral}{"{}, "{}} << b << \textcolor{stringliteral}{"{}, "{}} << c << \textcolor{stringliteral}{"{}) ..."{}} << std::endl;}
+\DoxyCodeLine{00029 \}}
+\DoxyCodeLine{00030 }
+\DoxyCodeLine{00031 \textcolor{comment}{//Destructor}}
+\DoxyCodeLine{\Hypertarget{_sample_class_8cpp_source_l00032}\mbox{\hyperlink{class_sample_class_a53b606377a69b2a8cead08a70cd4a968}{00032}} \mbox{\hyperlink{class_sample_class_a53b606377a69b2a8cead08a70cd4a968}{SampleClass::\string~SampleClass}}() \{}
+\DoxyCodeLine{00033     std::cout << \textcolor{stringliteral}{"{}Destructor was called"{}} << std::endl;}
+\DoxyCodeLine{00034 \}}
+\DoxyCodeLine{00035 }
+\DoxyCodeLine{\Hypertarget{_sample_class_8cpp_source_l00036}\mbox{\hyperlink{class_sample_class_a4942fbaa8e2695586ca10ebfe37171a0}{00036}} \mbox{\hyperlink{class_sample_class_aba24256ca86c5044feed70ca621a576a}{SampleClass::SampleClass}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_sample_class}{SampleClass}} \&sample\_class) :}
+\DoxyCodeLine{00037         member\_a(sample\_class.member\_a), member\_b(sample\_class.member\_b)}
+\DoxyCodeLine{00038 \{}
+\DoxyCodeLine{00039     std::cout << \textcolor{stringliteral}{"{}Copy constructor called\(\backslash\)n"{}}; \textcolor{comment}{// just to prove it works}}
+\DoxyCodeLine{00040 \}}
+\DoxyCodeLine{00041 }
+\DoxyCodeLine{\Hypertarget{_sample_class_8cpp_source_l00042}\mbox{\hyperlink{class_sample_class_aac05872f64d1ad469be42ec2953d58e9}{00042}} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_sample_class_aac05872f64d1ad469be42ec2953d58e9}{SampleClass::get\_member\_a}}() \{}
+\DoxyCodeLine{00043     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_sample_class_a2be82adf335b43ac896fca216ac3fea8}{member\_a}};}
+\DoxyCodeLine{00044 \}}
+\DoxyCodeLine{00045 }
+\DoxyCodeLine{\Hypertarget{_sample_class_8cpp_source_l00046}\mbox{\hyperlink{class_sample_class_a426110fd2f56d347cc32cbd054c739c8}{00046}} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_sample_class_a426110fd2f56d347cc32cbd054c739c8}{SampleClass::get\_member\_b}}() \{}
+\DoxyCodeLine{00047     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_sample_class_a7eadeb5bc798055f2fa3b3b7e380368d}{member\_b}};}
+\DoxyCodeLine{00048 \}}
+\DoxyCodeLine{00049 }
+\DoxyCodeLine{\Hypertarget{_sample_class_8cpp_source_l00050}\mbox{\hyperlink{class_sample_class_a87b15c57b23df6f1e9aae977ded417b7}{00050}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_sample_class_a87b15c57b23df6f1e9aae977ded417b7}{SampleClass::set\_member\_a}}(\textcolor{keywordtype}{int} a) \{}
+\DoxyCodeLine{00051     std::cout << \textcolor{stringliteral}{"{}set member\_a to: "{}} << a << std::endl;}
+\DoxyCodeLine{00052     \mbox{\hyperlink{class_sample_class_a2be82adf335b43ac896fca216ac3fea8}{member\_a}} = a;}
+\DoxyCodeLine{00053 \}}
+\DoxyCodeLine{00054 }
+\DoxyCodeLine{\Hypertarget{_sample_class_8cpp_source_l00055}\mbox{\hyperlink{class_sample_class_a5e89723eb00d7dcfac12b071ba71f576}{00055}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_sample_class_a5e89723eb00d7dcfac12b071ba71f576}{SampleClass::set\_member\_b}}(\textcolor{keywordtype}{int} b) \{}
+\DoxyCodeLine{00056     std::cout << \textcolor{stringliteral}{"{}set member\_b to: "{}} << b << std::endl;}
+\DoxyCodeLine{00057     \mbox{\hyperlink{class_sample_class_a7eadeb5bc798055f2fa3b3b7e380368d}{member\_b}} = b;}
+\DoxyCodeLine{00058 \}}
+\DoxyCodeLine{00059 }
+\DoxyCodeLine{\Hypertarget{_sample_class_8cpp_source_l00060}\mbox{\hyperlink{class_sample_class_a91229fa4bda0931e3ff49c55f87b66cd}{00060}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_sample_class_a91229fa4bda0931e3ff49c55f87b66cd}{SampleClass::set\_members\_using\_this}}(\textcolor{keywordtype}{int} member\_a, \textcolor{keywordtype}{int} member\_b) \{}
+\DoxyCodeLine{00061     this-\/>member\_a = \mbox{\hyperlink{class_sample_class_a2be82adf335b43ac896fca216ac3fea8}{member\_a}};}
+\DoxyCodeLine{00062     this-\/>member\_b = \mbox{\hyperlink{class_sample_class_a7eadeb5bc798055f2fa3b3b7e380368d}{member\_b}};}
+\DoxyCodeLine{00063 \}}
+\DoxyCodeLine{00064 }
+\DoxyCodeLine{\Hypertarget{_sample_class_8cpp_source_l00065}\mbox{\hyperlink{class_sample_class_a8e96bbc14c85d95012a2f2abbd2eead1}{00065}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_sample_class_a8e96bbc14c85d95012a2f2abbd2eead1}{SampleClass::const\_member\_function}}()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{00066     std::cout << \textcolor{stringliteral}{"{}This is a const member function!"{}} << std::endl;}
+\DoxyCodeLine{00067 \}}
+\DoxyCodeLine{00068 }
+\DoxyCodeLine{\Hypertarget{_sample_class_8cpp_source_l00069}\mbox{\hyperlink{class_sample_class_a7a6e1b362fd61270e54c13334c50af5c}{00069}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_sample_class_a7a6e1b362fd61270e54c13334c50af5c}{SampleClass::static\_member\_function}}() \{}
+\DoxyCodeLine{00070     std::cout << \textcolor{stringliteral}{"{}This is a static member function"{}} << std::endl;}
+\DoxyCodeLine{00071 \}}
+\DoxyCodeLine{00072 }
+\DoxyCodeLine{\Hypertarget{_sample_class_8cpp_source_l00073}\mbox{\hyperlink{_sample_class_8cpp_a3025b3c39479f066492495ef355443ca}{00073}} \textcolor{keywordtype}{void} \mbox{\hyperlink{_sample_class_8cpp_a3025b3c39479f066492495ef355443ca}{friend\_function}}(\mbox{\hyperlink{class_sample_class}{SampleClass}} \&sample\_class) \{}
+\DoxyCodeLine{00074     std::cout << \textcolor{stringliteral}{"{}This is a friend function"{}} << std::endl;}
+\DoxyCodeLine{00075     std::cout << \textcolor{stringliteral}{"{}Accessing private member member\_a: "{}} << sample\_class.\mbox{\hyperlink{class_sample_class_a2be82adf335b43ac896fca216ac3fea8}{member\_a}} << std::endl;}
+\DoxyCodeLine{00076 \}}
+\DoxyCodeLine{00077 }
+\DoxyCodeLine{\Hypertarget{_sample_class_8cpp_source_l00078}\mbox{\hyperlink{_sample_class_8cpp_a8766ccb542c75224a4d14f1df4cc73af}{00078}} \mbox{\hyperlink{class_sample_class}{SampleClass}} \mbox{\hyperlink{_sample_class_8cpp_a8766ccb542c75224a4d14f1df4cc73af}{operator+}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_sample_class}{SampleClass}} \&s\_1, \textcolor{keyword}{const} \mbox{\hyperlink{class_sample_class}{SampleClass}} \&s\_2) \{}
+\DoxyCodeLine{00079     std::cout << \textcolor{stringliteral}{"{}overloaded operator+ for SampleClass!"{}} << std::endl;}
+\DoxyCodeLine{00080     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_sample_class}{SampleClass}}(s\_1.\mbox{\hyperlink{class_sample_class_a2be82adf335b43ac896fca216ac3fea8}{member\_a}} + s\_2.\mbox{\hyperlink{class_sample_class_a2be82adf335b43ac896fca216ac3fea8}{member\_a}}, s\_1.\mbox{\hyperlink{class_sample_class_a7eadeb5bc798055f2fa3b3b7e380368d}{member\_b}} + s\_2.\mbox{\hyperlink{class_sample_class_a7eadeb5bc798055f2fa3b3b7e380368d}{member\_b}});}
+\DoxyCodeLine{00081 \}}
+\DoxyCodeLine{00082 }
+\DoxyCodeLine{\Hypertarget{_sample_class_8cpp_source_l00083}\mbox{\hyperlink{_sample_class_8cpp_a733f5b8fc64b6863c3b1354166a88a74}{00083}} std::ostream\& \mbox{\hyperlink{_sample_class_8cpp_a733f5b8fc64b6863c3b1354166a88a74}{operator<< }}(std::ostream \&out, \textcolor{keyword}{const} \mbox{\hyperlink{class_sample_class}{SampleClass}} \&sample\_class) \{}
+\DoxyCodeLine{00084 }
+\DoxyCodeLine{00085     out << std::endl}
+\DoxyCodeLine{00086         << \textcolor{stringliteral}{"{}member\_a = "{}} << sample\_class.\mbox{\hyperlink{class_sample_class_a2be82adf335b43ac896fca216ac3fea8}{member\_a}} << std::endl}
+\DoxyCodeLine{00087         << \textcolor{stringliteral}{"{}member\_b = "{}} << sample\_class.\mbox{\hyperlink{class_sample_class_a7eadeb5bc798055f2fa3b3b7e380368d}{member\_b}} << std::endl;}
+\DoxyCodeLine{00088 }
+\DoxyCodeLine{00089     \textcolor{keywordflow}{return} out;}
+\DoxyCodeLine{00090 \}}
+\DoxyCodeLine{00091 }
+\DoxyCodeLine{\Hypertarget{_sample_class_8cpp_source_l00092}\mbox{\hyperlink{class_sample_class_acf52fbe3048bd1e467c909692cab4401}{00092}} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_sample_class_acf52fbe3048bd1e467c909692cab4401}{SampleClass::operator()}}(\textcolor{keywordtype}{int} i) \{}
+\DoxyCodeLine{00093     \textcolor{keywordflow}{return} (\mbox{\hyperlink{class_sample_class_a2be82adf335b43ac896fca216ac3fea8}{member\_a}} += i);}
+\DoxyCodeLine{00094 \}}
+
+\end{DoxyCode}

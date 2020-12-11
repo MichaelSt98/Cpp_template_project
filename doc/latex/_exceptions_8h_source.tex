@@ -1,0 +1,58 @@
+\hypertarget{_exceptions_8h_source}{}\doxysection{Exceptions.\+h}
+\label{_exceptions_8h_source}\index{learningCpp/Errors/Exceptions.h@{learningCpp/Errors/Exceptions.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001 \textcolor{comment}{//}}
+\DoxyCodeLine{00002 \textcolor{comment}{// Created by Michael Staneker on 10.12.20.}}
+\DoxyCodeLine{00003 \textcolor{comment}{//}}
+\DoxyCodeLine{00096 \textcolor{comment}{}\textcolor{preprocessor}{\#ifndef CPP\_TEMPLATE\_PROJECT\_EXCEPTIONS\_H}}
+\DoxyCodeLine{00097 \textcolor{preprocessor}{\#define CPP\_TEMPLATE\_PROJECT\_EXCEPTIONS\_H}}
+\DoxyCodeLine{00098 }
+\DoxyCodeLine{00099 \textcolor{preprocessor}{\#include <cmath>}}
+\DoxyCodeLine{00100 \textcolor{preprocessor}{\#include <exception>} \textcolor{comment}{// for std::exception}}
+\DoxyCodeLine{00101 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{00102 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{00103 \textcolor{preprocessor}{\#include <string\_view>}}
+\DoxyCodeLine{00104 }
+\DoxyCodeLine{\Hypertarget{_exceptions_8h_source_l00105}\mbox{\hyperlink{class_array_exception}{00105}} \textcolor{keyword}{class }\mbox{\hyperlink{class_array_exception}{ArrayException}} : \textcolor{keyword}{public} std::exception}
+\DoxyCodeLine{00106 \{}
+\DoxyCodeLine{00107 \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_exceptions_8h_source_l00108}\mbox{\hyperlink{class_array_exception_ab0b4567e88f78f313e702eac00ff32fd}{00108}}     std::string \mbox{\hyperlink{class_array_exception_ab0b4567e88f78f313e702eac00ff32fd}{m\_error}}\{\};}
+\DoxyCodeLine{00109 }
+\DoxyCodeLine{00110 \textcolor{keyword}{public}:}
+\DoxyCodeLine{00111     \mbox{\hyperlink{class_array_exception_a580e9f660a3293c41154f291369f8c35}{ArrayException}}(std::string\_view error);}
+\DoxyCodeLine{00112     \textcolor{comment}{// return the std::string as a const C-\/style string}}
+\DoxyCodeLine{\Hypertarget{_exceptions_8h_source_l00113}\mbox{\hyperlink{class_array_exception_a87cd11416e58d1e8398d04937e6a8d9e}{00113}}     \textcolor{keyword}{const} \textcolor{keywordtype}{char}* \mbox{\hyperlink{class_array_exception_a87cd11416e58d1e8398d04937e6a8d9e}{what}}() const noexcept\textcolor{keyword}{ override }\{}
+\DoxyCodeLine{00114         \textcolor{keywordflow}{return} \mbox{\hyperlink{class_array_exception_ab0b4567e88f78f313e702eac00ff32fd}{m\_error}}.c\_str();}
+\DoxyCodeLine{00115     \}}
+\DoxyCodeLine{00116 \};}
+\DoxyCodeLine{00117 }
+\DoxyCodeLine{\Hypertarget{_exceptions_8h_source_l00118}\mbox{\hyperlink{class_int_array}{00118}} \textcolor{keyword}{class }\mbox{\hyperlink{class_int_array}{IntArray}}}
+\DoxyCodeLine{00119 \{}
+\DoxyCodeLine{00120 \textcolor{keyword}{private}:}
+\DoxyCodeLine{00121 }
+\DoxyCodeLine{\Hypertarget{_exceptions_8h_source_l00122}\mbox{\hyperlink{class_int_array_a12bf6a5b99c14e1b7b40d995b2217459}{00122}}     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_int_array_a12bf6a5b99c14e1b7b40d995b2217459}{m\_data}}[3]; \textcolor{comment}{// assume array is length 3 for simplicity}}
+\DoxyCodeLine{00123 \textcolor{keyword}{public}:}
+\DoxyCodeLine{00124 }
+\DoxyCodeLine{\Hypertarget{_exceptions_8h_source_l00125}\mbox{\hyperlink{class_int_array_a07b52d3e5b0cfc4462bb17f12b6dd317}{00125}}     \mbox{\hyperlink{class_int_array_a07b52d3e5b0cfc4462bb17f12b6dd317}{IntArray}}() \{\}}
+\DoxyCodeLine{00126 }
+\DoxyCodeLine{00127     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_int_array_aaf27d810e59c5a77bf7340b03496148d}{getLength}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{00128 }
+\DoxyCodeLine{00129     \textcolor{keywordtype}{int}\& \mbox{\hyperlink{class_int_array_acfd056b7a25e0614d2f01e4525a74295}{operator[]}}(\textcolor{keyword}{const} \textcolor{keywordtype}{int} index);}
+\DoxyCodeLine{00130 }
+\DoxyCodeLine{00131 \};}
+\DoxyCodeLine{00132 }
+\DoxyCodeLine{\Hypertarget{_exceptions_8h_source_l00133}\mbox{\hyperlink{class_s_q_r_t}{00133}} \textcolor{keyword}{class }\mbox{\hyperlink{class_s_q_r_t}{SQRT}} \{}
+\DoxyCodeLine{00134 \textcolor{keyword}{public}:}
+\DoxyCodeLine{00135     \textcolor{keyword}{static} \textcolor{keywordtype}{double} \mbox{\hyperlink{class_s_q_r_t_ad38eaa006bce8d7bfc20c54ce915af60}{mySqrt}}(\textcolor{keywordtype}{double} x);}
+\DoxyCodeLine{00136 \};}
+\DoxyCodeLine{00137 }
+\DoxyCodeLine{00138 }
+\DoxyCodeLine{\Hypertarget{_exceptions_8h_source_l00139}\mbox{\hyperlink{class_exceptions}{00139}} \textcolor{keyword}{class }\mbox{\hyperlink{class_exceptions}{Exceptions}} \{}
+\DoxyCodeLine{00140 }
+\DoxyCodeLine{00141 \};}
+\DoxyCodeLine{00142 }
+\DoxyCodeLine{00143 }
+\DoxyCodeLine{00144 \textcolor{preprocessor}{\#endif //CPP\_TEMPLATE\_PROJECT\_EXCEPTIONS\_H}}
+
+\end{DoxyCode}

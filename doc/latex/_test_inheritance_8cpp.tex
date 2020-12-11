@@ -1,0 +1,57 @@
+\hypertarget{_test_inheritance_8cpp}{}\doxysection{learning\+Cpp/\+O\+O\+P/\+Test\+Inheritance.cpp File Reference}
+\label{_test_inheritance_8cpp}\index{learningCpp/OOP/TestInheritance.cpp@{learningCpp/OOP/TestInheritance.cpp}}
+{\ttfamily \#include \char`\"{}Inheritance.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+Include dependency graph for Test\+Inheritance.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=262pt]{_test_inheritance_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{_test_inheritance_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_test_inheritance_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{_test_inheritance_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{TestInheritance.cpp@{TestInheritance.cpp}!main@{main}}
+\index{main@{main}!TestInheritance.cpp@{TestInheritance.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_test_inheritance_8cpp_source_l00009}{9}} of file \mbox{\hyperlink{_test_inheritance_8cpp_source}{Test\+Inheritance.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00010 \{}
+\DoxyCodeLine{00011     \mbox{\hyperlink{class_derived}{Derived}} derived\{ 1.3, 5, 1, 2, 3\};}
+\DoxyCodeLine{00012     std::cout << \textcolor{stringliteral}{"{}Id: "{}} << derived.\mbox{\hyperlink{class_base_a3e8ae0959487139411f93fc2513953f1}{getId}}() << \textcolor{charliteral}{'\(\backslash\)n'};}
+\DoxyCodeLine{00013     std::cout << \textcolor{stringliteral}{"{}Cost: "{}} << derived.getCost() << \textcolor{charliteral}{'\(\backslash\)n'};}
+\DoxyCodeLine{00014     \textcolor{comment}{//std::cout << "{}private: "{} << derived.m\_private << '\(\backslash\)n';}}
+\DoxyCodeLine{00015     std::cout << \textcolor{stringliteral}{"{}private: "{}} << derived.getPrivate() << \textcolor{charliteral}{'\(\backslash\)n'};}
+\DoxyCodeLine{00016     std::cout << \textcolor{stringliteral}{"{}protected: "{}} << derived.getProtected() << \textcolor{charliteral}{'\(\backslash\)n'};}
+\DoxyCodeLine{00017     std::cout << \textcolor{stringliteral}{"{}public: "{}} << derived.m\_public << \textcolor{charliteral}{'\(\backslash\)n'};}
+\DoxyCodeLine{00018 }
+\DoxyCodeLine{00019     \mbox{\hyperlink{class_base}{Base}} \&rBase\{ derived \};}
+\DoxyCodeLine{00020     derived.\mbox{\hyperlink{class_base_a22a5b0b0eb0c28b3abce3465c11deef3}{print}}();}
+\DoxyCodeLine{00021 }
+\DoxyCodeLine{00022 }
+\DoxyCodeLine{00023     \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{00024 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=221pt]{_test_inheritance_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph}
+\end{center}
+\end{figure}

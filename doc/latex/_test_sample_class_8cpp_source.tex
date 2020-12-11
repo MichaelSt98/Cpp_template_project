@@ -1,0 +1,75 @@
+\hypertarget{_test_sample_class_8cpp_source}{}\doxysection{Test\+Sample\+Class.\+cpp}
+\label{_test_sample_class_8cpp_source}\index{learningCpp/OOP/TestSampleClass.cpp@{learningCpp/OOP/TestSampleClass.cpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001 \textcolor{comment}{//}}
+\DoxyCodeLine{00002 \textcolor{comment}{// Created by Michael Staneker on 09.12.20.}}
+\DoxyCodeLine{00003 \textcolor{comment}{//}}
+\DoxyCodeLine{00004 }
+\DoxyCodeLine{00005 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_sample_class_8h}{SampleClass.h}}"{}}}
+\DoxyCodeLine{00006 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_timer_8h}{Timer.h}}"{}}}
+\DoxyCodeLine{00007 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{00008 }
+\DoxyCodeLine{\Hypertarget{_test_sample_class_8cpp_source_l00009}\mbox{\hyperlink{_test_sample_class_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{00009}} \textcolor{keywordtype}{int} \mbox{\hyperlink{_test_sample_class_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}}() \{}
+\DoxyCodeLine{00010 }
+\DoxyCodeLine{00011     \mbox{\hyperlink{class_timer}{Timer}} t;}
+\DoxyCodeLine{00012 }
+\DoxyCodeLine{00013     \textcolor{comment}{// call default constructor}}
+\DoxyCodeLine{00014     \textcolor{comment}{//SampleClass sample\_class;}}
+\DoxyCodeLine{00015 }
+\DoxyCodeLine{00016     \textcolor{comment}{// call constructor with arguments}}
+\DoxyCodeLine{00017     \textcolor{comment}{// copy direct initialization}}
+\DoxyCodeLine{00018     \textcolor{comment}{//SampleClass sample\_class = SampleClass(5, 10); //equivalent to}}
+\DoxyCodeLine{00019     \textcolor{comment}{// copy list initialization}}
+\DoxyCodeLine{00020     \textcolor{comment}{//SampleClass sample\_class = SampleClass\{5, 10\}; //equivalent to}}
+\DoxyCodeLine{00021     \textcolor{comment}{// direct initialization}}
+\DoxyCodeLine{00022     \textcolor{comment}{//SampleClass sample\_class(5, 10); // equivalent to}}
+\DoxyCodeLine{00023     \textcolor{comment}{// list initialization}}
+\DoxyCodeLine{00024     \mbox{\hyperlink{class_sample_class}{SampleClass}} sample\_class\{5, 10\};}
+\DoxyCodeLine{00025 }
+\DoxyCodeLine{00026     \mbox{\hyperlink{class_sample_class}{SampleClass}} copy\_sample\_class(sample\_class);}
+\DoxyCodeLine{00027 }
+\DoxyCodeLine{00028     \textcolor{comment}{// call with default value for member\_b}}
+\DoxyCodeLine{00029     \textcolor{comment}{//SampleClass sample\_class\{5\};}}
+\DoxyCodeLine{00030 }
+\DoxyCodeLine{00031     \textcolor{comment}{// call with three arguments (ex. for delegating constructors)}}
+\DoxyCodeLine{00032     \textcolor{comment}{//SampleClass sample\_class\{5, 10, 15\};}}
+\DoxyCodeLine{00033 }
+\DoxyCodeLine{00034     std::cout << \textcolor{stringliteral}{"{}sample\_class.member\_a = "{}} << sample\_class.get\_member\_a() << std::endl;}
+\DoxyCodeLine{00035     std::cout << \textcolor{stringliteral}{"{}sample\_class.member\_b = "{}} << sample\_class.get\_member\_b() << std::endl;}
+\DoxyCodeLine{00036 }
+\DoxyCodeLine{00037     sample\_class.set\_member\_a(2);}
+\DoxyCodeLine{00038     sample\_class.set\_member\_b(4);}
+\DoxyCodeLine{00039 }
+\DoxyCodeLine{00040     std::cout << \textcolor{stringliteral}{"{}sample\_class.member\_a = "{}} << sample\_class.get\_member\_a() << std::endl;}
+\DoxyCodeLine{00041     std::cout << \textcolor{stringliteral}{"{}sample\_class.member\_b = "{}} << sample\_class.get\_member\_b() << std::endl;}
+\DoxyCodeLine{00042 }
+\DoxyCodeLine{00043     \textcolor{comment}{// allocate a SampleClass dynamically}}
+\DoxyCodeLine{00044     \mbox{\hyperlink{class_sample_class}{SampleClass}} *dyn\_sample\_class \{ \textcolor{keyword}{new} \mbox{\hyperlink{class_sample_class}{SampleClass}}\{ 1, 6\}\};}
+\DoxyCodeLine{00045     std::cout << \textcolor{stringliteral}{"{}dyn\_sample\_class.member\_a = "{}} << dyn\_sample\_class-\/>\mbox{\hyperlink{class_sample_class_aac05872f64d1ad469be42ec2953d58e9}{get\_member\_a}}() << std::endl;}
+\DoxyCodeLine{00046     std::cout << \textcolor{stringliteral}{"{}dyn\_sample\_class.member\_b = "{}} << dyn\_sample\_class-\/>get\_member\_b() << std::endl;}
+\DoxyCodeLine{00047     \textcolor{comment}{//delete dyn\_sample\_class;}}
+\DoxyCodeLine{00048 }
+\DoxyCodeLine{00049     \textcolor{comment}{// set static counter}}
+\DoxyCodeLine{00050     std::cout << \textcolor{stringliteral}{"{}(static) counter = "{}} << \mbox{\hyperlink{class_sample_class_aee9cfe6c985f0fc2b8e22adddce0bad4}{SampleClass::static\_member\_variable}} << std::endl;}
+\DoxyCodeLine{00051     std::cout << \textcolor{stringliteral}{"{}(static) counter = "{}} << sample\_class.static\_member\_variable << std::endl;}
+\DoxyCodeLine{00052 }
+\DoxyCodeLine{00053     \mbox{\hyperlink{class_sample_class_a7a6e1b362fd61270e54c13334c50af5c}{SampleClass::static\_member\_function}}();}
+\DoxyCodeLine{00054     sample\_class.static\_member\_function();}
+\DoxyCodeLine{00055 }
+\DoxyCodeLine{00056     \mbox{\hyperlink{_sample_class_8cpp_a3025b3c39479f066492495ef355443ca}{friend\_function}}(sample\_class);}
+\DoxyCodeLine{00057 }
+\DoxyCodeLine{00058     \mbox{\hyperlink{class_sample_class}{SampleClass}} s\_1 \{2, 2\};}
+\DoxyCodeLine{00059     \mbox{\hyperlink{class_sample_class}{SampleClass}} s\_2 \{4, 5\};}
+\DoxyCodeLine{00060     \mbox{\hyperlink{class_sample_class}{SampleClass}} s\_3 = s\_1 + s\_2;}
+\DoxyCodeLine{00061 }
+\DoxyCodeLine{00062     std::cout << \textcolor{stringliteral}{"{}s\_3: "{}} << s\_3 << std::endl;}
+\DoxyCodeLine{00063 }
+\DoxyCodeLine{00064     std::cout << \textcolor{stringliteral}{"{}s\_3(10): "{}} << s\_3(10) << std::endl;}
+\DoxyCodeLine{00065 }
+\DoxyCodeLine{00066     std::cout << \textcolor{stringliteral}{"{}Time taken: "{}} << t.\mbox{\hyperlink{class_timer_a6a89a613c2af9b0d1e5f7e4ba9e46c54}{elapsed}}() << \textcolor{stringliteral}{"{} seconds\(\backslash\)n"{}};}
+\DoxyCodeLine{00067 }
+\DoxyCodeLine{00068     \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{00069 \}}
+
+\end{DoxyCode}

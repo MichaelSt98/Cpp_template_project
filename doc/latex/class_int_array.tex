@@ -1,0 +1,112 @@
+\hypertarget{class_int_array}{}\doxysection{Int\+Array Class Reference}
+\label{class_int_array}\index{IntArray@{IntArray}}
+
+
+{\ttfamily \#include \char`\"{}Exceptions.\+h\char`\"{}}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_int_array_a07b52d3e5b0cfc4462bb17f12b6dd317}{Int\+Array}} ()
+\item 
+int \mbox{\hyperlink{class_int_array_aaf27d810e59c5a77bf7340b03496148d}{get\+Length}} () const
+\item 
+int \& \mbox{\hyperlink{class_int_array_acfd056b7a25e0614d2f01e4525a74295}{operator\mbox{[}$\,$\mbox{]}}} (const int index)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_int_array_a12bf6a5b99c14e1b7b40d995b2217459}{m\+\_\+data}} \mbox{[}3\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{_exceptions_8h_source_l00118}{118}} of file \mbox{\hyperlink{_exceptions_8h_source}{Exceptions.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_int_array_a07b52d3e5b0cfc4462bb17f12b6dd317}\label{class_int_array_a07b52d3e5b0cfc4462bb17f12b6dd317}} 
+\index{IntArray@{IntArray}!IntArray@{IntArray}}
+\index{IntArray@{IntArray}!IntArray@{IntArray}}
+\doxysubsubsection{\texorpdfstring{IntArray()}{IntArray()}}
+{\footnotesize\ttfamily Int\+Array\+::\+Int\+Array (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_exceptions_8h_source_l00125}{125}} of file \mbox{\hyperlink{_exceptions_8h_source}{Exceptions.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00125 \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_int_array_aaf27d810e59c5a77bf7340b03496148d}\label{class_int_array_aaf27d810e59c5a77bf7340b03496148d}} 
+\index{IntArray@{IntArray}!getLength@{getLength}}
+\index{getLength@{getLength}!IntArray@{IntArray}}
+\doxysubsubsection{\texorpdfstring{getLength()}{getLength()}}
+{\footnotesize\ttfamily int Int\+Array\+::get\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line \mbox{\hyperlink{_exceptions_8cpp_source_l00015}{15}} of file \mbox{\hyperlink{_exceptions_8cpp_source}{Exceptions.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00015                               \{}
+\DoxyCodeLine{00016     \textcolor{keywordflow}{return} 3;}
+\DoxyCodeLine{00017 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_int_array_acfd056b7a25e0614d2f01e4525a74295}\label{class_int_array_acfd056b7a25e0614d2f01e4525a74295}} 
+\index{IntArray@{IntArray}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!IntArray@{IntArray}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily int \& Int\+Array\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{const int}]{index }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_exceptions_8cpp_source_l00019}{19}} of file \mbox{\hyperlink{_exceptions_8cpp_source}{Exceptions.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00020 \{}
+\DoxyCodeLine{00021     \textcolor{keywordflow}{if} (index < 0 || index >= \mbox{\hyperlink{class_int_array_aaf27d810e59c5a77bf7340b03496148d}{getLength}}())}
+\DoxyCodeLine{00022         \textcolor{keywordflow}{throw} \mbox{\hyperlink{class_array_exception}{ArrayException}}(\textcolor{stringliteral}{"{}Invalid index"{}});}
+\DoxyCodeLine{00023 }
+\DoxyCodeLine{00024     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_int_array_a12bf6a5b99c14e1b7b40d995b2217459}{m\_data}}[index];}
+\DoxyCodeLine{00025 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{class_int_array_acfd056b7a25e0614d2f01e4525a74295_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_int_array_a12bf6a5b99c14e1b7b40d995b2217459}\label{class_int_array_a12bf6a5b99c14e1b7b40d995b2217459}} 
+\index{IntArray@{IntArray}!m\_data@{m\_data}}
+\index{m\_data@{m\_data}!IntArray@{IntArray}}
+\doxysubsubsection{\texorpdfstring{m\_data}{m\_data}}
+{\footnotesize\ttfamily int Int\+Array\+::m\+\_\+data\mbox{[}3\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_exceptions_8h_source_l00122}{122}} of file \mbox{\hyperlink{_exceptions_8h_source}{Exceptions.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+learning\+Cpp/\+Errors/\mbox{\hyperlink{_exceptions_8h}{Exceptions.\+h}}\item 
+learning\+Cpp/\+Errors/\mbox{\hyperlink{_exceptions_8cpp}{Exceptions.\+cpp}}\end{DoxyCompactItemize}

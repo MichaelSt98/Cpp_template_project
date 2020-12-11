@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['main_61',['main',['../_basics_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;Basics.cpp'],['../_bit_manipulation_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;BitManipulation.cpp'],['../_functions_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;Functions.cpp'],['../_iterators_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;Iterators.cpp'],['../_macros_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;Macros.cpp'],['../_pointers_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;Pointers.cpp'],['../_reference_variables_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;ReferenceVariables.cpp'],['../_s_l___basics_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;SL_Basics.cpp'],['../_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;Main.cpp'],['../tester_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;tester.cpp']]]
+  ['base_176',['Base',['../class_base.html#a17de5b19f85e3a3d5f348160391eafcb',1,'Base']]]
 ];

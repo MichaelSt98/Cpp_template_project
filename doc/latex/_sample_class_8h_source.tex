@@ -1,0 +1,69 @@
+\hypertarget{_sample_class_8h_source}{}\doxysection{Sample\+Class.\+h}
+\label{_sample_class_8h_source}\index{learningCpp/OOP/SampleClass.h@{learningCpp/OOP/SampleClass.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001 \textcolor{comment}{//}}
+\DoxyCodeLine{00002 \textcolor{comment}{// Created by Michael Staneker on 09.12.20.}}
+\DoxyCodeLine{00003 \textcolor{comment}{//}}
+\DoxyCodeLine{00004 }
+\DoxyCodeLine{00005 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{00006 }
+\DoxyCodeLine{00007 \textcolor{preprocessor}{\#ifndef CPP\_TEMPLATE\_PROJECT\_SAMPLECLASS\_H}}
+\DoxyCodeLine{00008 \textcolor{preprocessor}{\#define CPP\_TEMPLATE\_PROJECT\_SAMPLECLASS\_H}}
+\DoxyCodeLine{00009 }
+\DoxyCodeLine{\Hypertarget{_sample_class_8h_source_l00128}\mbox{\hyperlink{class_sample_class}{00128}} \textcolor{keyword}{class }\mbox{\hyperlink{class_sample_class}{SampleClass}} \{}
+\DoxyCodeLine{00129 \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_sample_class_8h_source_l00130}\mbox{\hyperlink{class_sample_class_a2be82adf335b43ac896fca216ac3fea8}{00130}}     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_sample_class_a2be82adf335b43ac896fca216ac3fea8}{member\_a}}\{ 0 \};}
+\DoxyCodeLine{\Hypertarget{_sample_class_8h_source_l00131}\mbox{\hyperlink{class_sample_class_a7eadeb5bc798055f2fa3b3b7e380368d}{00131}}     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_sample_class_a7eadeb5bc798055f2fa3b3b7e380368d}{member\_b}}\{ 0 \};}
+\DoxyCodeLine{00132 \textcolor{keyword}{public}:}
+\DoxyCodeLine{00133     \textcolor{comment}{//static variables are shared by all objects/instants of the class}}
+\DoxyCodeLine{\Hypertarget{_sample_class_8h_source_l00134}\mbox{\hyperlink{class_sample_class_aee9cfe6c985f0fc2b8e22adddce0bad4}{00134}}     \textcolor{keyword}{static} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_sample_class_aee9cfe6c985f0fc2b8e22adddce0bad4}{static\_member\_variable}};}
+\DoxyCodeLine{00135     \textcolor{comment}{// getter}}
+\DoxyCodeLine{00136     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_sample_class_aac05872f64d1ad469be42ec2953d58e9}{get\_member\_a}}();}
+\DoxyCodeLine{00137     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_sample_class_a426110fd2f56d347cc32cbd054c739c8}{get\_member\_b}}();}
+\DoxyCodeLine{00138     \textcolor{comment}{// setter}}
+\DoxyCodeLine{00139     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_sample_class_a87b15c57b23df6f1e9aae977ded417b7}{set\_member\_a}}(\textcolor{keywordtype}{int} a);}
+\DoxyCodeLine{00140     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_sample_class_a5e89723eb00d7dcfac12b071ba71f576}{set\_member\_b}}(\textcolor{keywordtype}{int} b);}
+\DoxyCodeLine{00141 }
+\DoxyCodeLine{00142     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_sample_class_a91229fa4bda0931e3ff49c55f87b66cd}{set\_members\_using\_this}}(\textcolor{keywordtype}{int} \mbox{\hyperlink{class_sample_class_a2be82adf335b43ac896fca216ac3fea8}{member\_a}}, \textcolor{keywordtype}{int} \mbox{\hyperlink{class_sample_class_a7eadeb5bc798055f2fa3b3b7e380368d}{member\_b}});}
+\DoxyCodeLine{00143 }
+\DoxyCodeLine{00144     \textcolor{comment}{// const member function that cannot change member variables}}
+\DoxyCodeLine{00145     \textcolor{comment}{// can be overwritten with a non const function}}
+\DoxyCodeLine{00146     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_sample_class_a8e96bbc14c85d95012a2f2abbd2eead1}{const\_member\_function}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{00147 }
+\DoxyCodeLine{00148     \textcolor{comment}{// default constructor}}
+\DoxyCodeLine{00149     \mbox{\hyperlink{class_sample_class_aba24256ca86c5044feed70ca621a576a}{SampleClass}}();}
+\DoxyCodeLine{00150     \textcolor{comment}{// constructor with arguments}}
+\DoxyCodeLine{00151     \mbox{\hyperlink{class_sample_class_aba24256ca86c5044feed70ca621a576a}{SampleClass}}(\textcolor{keywordtype}{int} a, \textcolor{keywordtype}{int} b = 0);}
+\DoxyCodeLine{00152 }
+\DoxyCodeLine{00153     \textcolor{comment}{//example for delegating constructors}}
+\DoxyCodeLine{00154     \mbox{\hyperlink{class_sample_class_aba24256ca86c5044feed70ca621a576a}{SampleClass}}(\textcolor{keywordtype}{int} a, \textcolor{keywordtype}{int} b, \textcolor{keywordtype}{int} c);}
+\DoxyCodeLine{00155 }
+\DoxyCodeLine{00156     \textcolor{comment}{// Copy constructor}}
+\DoxyCodeLine{00157     \textcolor{comment}{// prevent copies by making the copy constructor private}}
+\DoxyCodeLine{00158     \mbox{\hyperlink{class_sample_class_aba24256ca86c5044feed70ca621a576a}{SampleClass}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_sample_class}{SampleClass}} \&sample\_class);}
+\DoxyCodeLine{00159 }
+\DoxyCodeLine{00160     \mbox{\hyperlink{class_sample_class_a53b606377a69b2a8cead08a70cd4a968}{\string~SampleClass}}();}
+\DoxyCodeLine{00161 }
+\DoxyCodeLine{00162     \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_sample_class_a7a6e1b362fd61270e54c13334c50af5c}{static\_member\_function}}();}
+\DoxyCodeLine{00163 }
+\DoxyCodeLine{00164     \textcolor{keyword}{friend} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_sample_class_a3025b3c39479f066492495ef355443ca}{friend\_function}}(\mbox{\hyperlink{class_sample_class}{SampleClass}} \&sample\_class);}
+\DoxyCodeLine{00165 }
+\DoxyCodeLine{00166     \textcolor{keyword}{friend} \mbox{\hyperlink{class_sample_class}{SampleClass}} \mbox{\hyperlink{class_sample_class_a8766ccb542c75224a4d14f1df4cc73af}{operator+}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_sample_class}{SampleClass}} \&s\_1, \textcolor{keyword}{const} \mbox{\hyperlink{class_sample_class}{SampleClass}} \&s\_2);}
+\DoxyCodeLine{00167     \textcolor{keyword}{friend} std::ostream\& \mbox{\hyperlink{class_sample_class_a733f5b8fc64b6863c3b1354166a88a74}{operator<< }}(std::ostream \&out, \textcolor{keyword}{const} \mbox{\hyperlink{class_sample_class}{SampleClass}} \&sample\_class);}
+\DoxyCodeLine{00168 }
+\DoxyCodeLine{00169     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_sample_class_acf52fbe3048bd1e467c909692cab4401}{operator() }}(\textcolor{keywordtype}{int} i);}
+\DoxyCodeLine{00170 }
+\DoxyCodeLine{00171     \textcolor{comment}{// it is possible to have nested types within classes}}
+\DoxyCodeLine{\Hypertarget{_sample_class_8h_source_l00172}\mbox{\hyperlink{class_sample_class_a7259b81aea2ccf394d0723335adc02c8}{00172}}     \textcolor{keyword}{enum} \mbox{\hyperlink{class_sample_class_a7259b81aea2ccf394d0723335adc02c8}{FruitType}} \{}
+\DoxyCodeLine{\Hypertarget{_sample_class_8h_source_l00173}\mbox{\hyperlink{class_sample_class_a7259b81aea2ccf394d0723335adc02c8ab04e008f17f3669d8381c4eef0864407}{00173}}         \mbox{\hyperlink{class_sample_class_a7259b81aea2ccf394d0723335adc02c8ab04e008f17f3669d8381c4eef0864407}{APPLE}},}
+\DoxyCodeLine{\Hypertarget{_sample_class_8h_source_l00174}\mbox{\hyperlink{class_sample_class_a7259b81aea2ccf394d0723335adc02c8a1d8da3f78829dc212a9d464cb4a70699}{00174}}         \mbox{\hyperlink{class_sample_class_a7259b81aea2ccf394d0723335adc02c8a1d8da3f78829dc212a9d464cb4a70699}{BANANA}},}
+\DoxyCodeLine{00175         \mbox{\hyperlink{class_sample_class_a7259b81aea2ccf394d0723335adc02c8a2f50539bfb5660f7c3b664f8a8d2435b}{CHERRY}}}
+\DoxyCodeLine{\Hypertarget{_sample_class_8h_source_l00176}\mbox{\hyperlink{class_sample_class_a7259b81aea2ccf394d0723335adc02c8a2f50539bfb5660f7c3b664f8a8d2435b}{00176}}     \};}
+\DoxyCodeLine{00177 \};}
+\DoxyCodeLine{00178 }
+\DoxyCodeLine{00179 }
+\DoxyCodeLine{00180 }
+\DoxyCodeLine{00181 \textcolor{preprocessor}{\#endif //CPP\_TEMPLATE\_PROJECT\_SAMPLECLASS\_H}}
+
+\end{DoxyCode}

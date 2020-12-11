@@ -1,0 +1,58 @@
+\hypertarget{_command_line_arguments_8cpp}{}\doxysection{learning\+Cpp/\+Basics/\+Command\+Line\+Arguments.cpp File Reference}
+\label{_command_line_arguments_8cpp}\index{learningCpp/Basics/CommandLineArguments.cpp@{learningCpp/Basics/CommandLineArguments.cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+Include dependency graph for Command\+Line\+Arguments.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{_command_line_arguments_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{_command_line_arguments_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_command_line_arguments_8cpp_a0ddf1224851353fc92bfbff6f499fa97}\label{_command_line_arguments_8cpp_a0ddf1224851353fc92bfbff6f499fa97}} 
+\index{CommandLineArguments.cpp@{CommandLineArguments.cpp}!main@{main}}
+\index{main@{main}!CommandLineArguments.cpp@{CommandLineArguments.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+\hypertarget{_command_line_arguments_8cpp_autotoc_md101}{}\doxysubsection{Command line arguments}\label{_command_line_arguments_8cpp_autotoc_md101}
+In order to pass command line arguments to the program use
+\begin{DoxyItemize}
+\item {\ttfamily int \mbox{\hyperlink{_command_line_arguments_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main(int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})}}}
+\item {\ttfamily int main(int argc, char$\ast$$\ast$ argv)} both are treated identically!
+\item {\bfseries{argc}} is an integer parameter containing a count of the number of arguments passed to the program, whereas {\bfseries{argc}} is always at least 1, since the first argument is always the name of the program itself
+\item {\bfseries{argv}} is where the actual arguments are stored (within an array of C-\/style strings) 
+\end{DoxyItemize}
+
+Definition at line \mbox{\hyperlink{_command_line_arguments_8cpp_source_l00021}{21}} of file \mbox{\hyperlink{_command_line_arguments_8cpp_source}{Command\+Line\+Arguments.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00022 \{}
+\DoxyCodeLine{00023     std::cout << \textcolor{stringliteral}{"{}There are "{}} << argc << \textcolor{stringliteral}{"{} arguments:\(\backslash\)n"{}};}
+\DoxyCodeLine{00024 }
+\DoxyCodeLine{00025     \textcolor{comment}{// Loop through each argument and print its number and value}}
+\DoxyCodeLine{00026     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} count\{ 0 \}; count < argc; ++count)}
+\DoxyCodeLine{00027     \{}
+\DoxyCodeLine{00028         std::cout << count << \textcolor{charliteral}{' '} << argv[count] << \textcolor{charliteral}{'\(\backslash\)n'};}
+\DoxyCodeLine{00029     \}}
+\DoxyCodeLine{00030 }
+\DoxyCodeLine{00031     \textcolor{comment}{// handle numeric values}}
+\DoxyCodeLine{00032     \textcolor{comment}{//std::stringstream convert\{ argv[1] \}; // set up a stringstream variable named convert, initialized with the input from argv[1]}}
+\DoxyCodeLine{00033     \textcolor{comment}{//int myint\{\};}}
+\DoxyCodeLine{00034     \textcolor{comment}{//if (!(convert >> myint)) // do the conversion}}
+\DoxyCodeLine{00035     \textcolor{comment}{//    myint = 0; // if conversion fails, set myint to a default value}}
+\DoxyCodeLine{00036     \textcolor{comment}{//std::cout << "{}Got integer: "{} << myint << '\(\backslash\)n';}}
+\DoxyCodeLine{00037 }
+\DoxyCodeLine{00038     \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{00039 \}}
+
+\end{DoxyCode}

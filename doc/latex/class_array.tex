@@ -1,0 +1,147 @@
+\hypertarget{class_array}{}\doxysection{Array$<$ T $>$ Class Template Reference}
+\label{class_array}\index{Array$<$ T $>$@{Array$<$ T $>$}}
+
+
+{\ttfamily \#include \char`\"{}Template\+Class.\+h\char`\"{}}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_array_ac97db0e89ad8d7b9ff4d34d473e95fff}{Array}} (int length)
+\item 
+\mbox{\hyperlink{class_array_ad8267377bcf950d431400017a911b46c}{Array}} (const \mbox{\hyperlink{class_array}{Array}} \&)=delete
+\item 
+\mbox{\hyperlink{class_array}{Array}} \& \mbox{\hyperlink{class_array_af0ab2768c37754f83b0b3918491b53bb}{operator=}} (const \mbox{\hyperlink{class_array}{Array}} \&)=delete
+\item 
+\mbox{\hyperlink{class_array_aab89a85b1ddb86864096acdcc0db439e}{$\sim$\+Array}} ()
+\item 
+void \mbox{\hyperlink{class_array_a7fc61060ca39c60978dd4942c37a6db3}{Erase}} ()
+\item 
+T \& \mbox{\hyperlink{class_array_a7f15ca8d0886da1d65ef79df0285bf0a}{operator\mbox{[}$\,$\mbox{]}}} (int index)
+\item 
+int \mbox{\hyperlink{class_array_a4a238a7b4cf67159eaea62929c0fee51}{get\+Length}} () const
+\item 
+void \mbox{\hyperlink{class_array_a8e6bfa38c221bc5f936937f16085b940}{print}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_array_a220b22f8391b01221755f1fb03dd1de5}{m\+\_\+length}} \{\}
+\item 
+T $\ast$ \mbox{\hyperlink{class_array_affdd730a7c84d9e654415493071f0b9f}{m\+\_\+data}} \{\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+class Array$<$ T $>$}
+
+\hypertarget{class_array_autotoc_md170}{}\doxysubsection{Class templates}\label{class_array_autotoc_md170}
+In order to create classes for different data types use {\bfseries{template classes}}.\hypertarget{class_array_autotoc_md171}{}\doxysubsubsection{Specialization}\label{class_array_autotoc_md171}
+\hypertarget{class_array_autotoc_md172}{}\doxyparagraph{Function specialization}\label{class_array_autotoc_md172}
+It is possible to overwrite (individual) member function for
+
+
+\begin{DoxyItemize}
+\item different data types
+\item pointer (types)
+\item ...
+\end{DoxyItemize}\hypertarget{class_array_autotoc_md173}{}\doxyparagraph{Class specialization}\label{class_array_autotoc_md173}
+It is possible to overwrite an entire template class for specific data types.
+
+See \href{https://www.learncpp.com/cpp-tutorial/136-class-template-specialization/}{\texttt{ class specialization}} for reference. 
+
+Definition at line \mbox{\hyperlink{_template_class_8h_source_l00036}{36}} of file \mbox{\hyperlink{_template_class_8h_source}{Template\+Class.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_array_ac97db0e89ad8d7b9ff4d34d473e95fff}\label{class_array_ac97db0e89ad8d7b9ff4d34d473e95fff}} 
+\index{Array$<$ T $>$@{Array$<$ T $>$}!Array@{Array}}
+\index{Array@{Array}!Array$<$ T $>$@{Array$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Array()}{Array()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{class_array}{Array}}$<$ T $>$\+::\mbox{\hyperlink{class_array}{Array}} (\begin{DoxyParamCaption}\item[{int}]{length }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_array_ad8267377bcf950d431400017a911b46c}\label{class_array_ad8267377bcf950d431400017a911b46c}} 
+\index{Array$<$ T $>$@{Array$<$ T $>$}!Array@{Array}}
+\index{Array@{Array}!Array$<$ T $>$@{Array$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Array()}{Array()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{class_array}{Array}}$<$ T $>$\+::\mbox{\hyperlink{class_array}{Array}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_array}{Array}}$<$ T $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_array_aab89a85b1ddb86864096acdcc0db439e}\label{class_array_aab89a85b1ddb86864096acdcc0db439e}} 
+\index{Array$<$ T $>$@{Array$<$ T $>$}!````~Array@{$\sim$Array}}
+\index{````~Array@{$\sim$Array}!Array$<$ T $>$@{Array$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$Array()}{~Array()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{class_array}{Array}}$<$ T $>$\+::$\sim$\mbox{\hyperlink{class_array}{Array}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_array_a7fc61060ca39c60978dd4942c37a6db3}\label{class_array_a7fc61060ca39c60978dd4942c37a6db3}} 
+\index{Array$<$ T $>$@{Array$<$ T $>$}!Erase@{Erase}}
+\index{Erase@{Erase}!Array$<$ T $>$@{Array$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Erase()}{Erase()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{class_array}{Array}}$<$ T $>$\+::Erase (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_array_a4a238a7b4cf67159eaea62929c0fee51}\label{class_array_a4a238a7b4cf67159eaea62929c0fee51}} 
+\index{Array$<$ T $>$@{Array$<$ T $>$}!getLength@{getLength}}
+\index{getLength@{getLength}!Array$<$ T $>$@{Array$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getLength()}{getLength()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+int \mbox{\hyperlink{class_array}{Array}}$<$ T $>$\+::get\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_array_af0ab2768c37754f83b0b3918491b53bb}\label{class_array_af0ab2768c37754f83b0b3918491b53bb}} 
+\index{Array$<$ T $>$@{Array$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!Array$<$ T $>$@{Array$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{class_array}{Array}}\& \mbox{\hyperlink{class_array}{Array}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_array}{Array}}$<$ T $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_array_a7f15ca8d0886da1d65ef79df0285bf0a}\label{class_array_a7f15ca8d0886da1d65ef79df0285bf0a}} 
+\index{Array$<$ T $>$@{Array$<$ T $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Array$<$ T $>$@{Array$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T\& \mbox{\hyperlink{class_array}{Array}}$<$ T $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_array_a8e6bfa38c221bc5f936937f16085b940}\label{class_array_a8e6bfa38c221bc5f936937f16085b940}} 
+\index{Array$<$ T $>$@{Array$<$ T $>$}!print@{print}}
+\index{print@{print}!Array$<$ T $>$@{Array$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{class_array}{Array}}$<$ T $>$\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_array_affdd730a7c84d9e654415493071f0b9f}\label{class_array_affdd730a7c84d9e654415493071f0b9f}} 
+\index{Array$<$ T $>$@{Array$<$ T $>$}!m\_data@{m\_data}}
+\index{m\_data@{m\_data}!Array$<$ T $>$@{Array$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{m\_data}{m\_data}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T$\ast$ \mbox{\hyperlink{class_array}{Array}}$<$ T $>$\+::m\+\_\+data \{\}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_template_class_8h_source_l00040}{40}} of file \mbox{\hyperlink{_template_class_8h_source}{Template\+Class.\+h}}.
+
+\mbox{\Hypertarget{class_array_a220b22f8391b01221755f1fb03dd1de5}\label{class_array_a220b22f8391b01221755f1fb03dd1de5}} 
+\index{Array$<$ T $>$@{Array$<$ T $>$}!m\_length@{m\_length}}
+\index{m\_length@{m\_length}!Array$<$ T $>$@{Array$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{m\_length}{m\_length}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+int \mbox{\hyperlink{class_array}{Array}}$<$ T $>$\+::m\+\_\+length \{\}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_template_class_8h_source_l00039}{39}} of file \mbox{\hyperlink{_template_class_8h_source}{Template\+Class.\+h}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+learning\+Cpp/\+O\+O\+P/\mbox{\hyperlink{_template_class_8h}{Template\+Class.\+h}}\end{DoxyCompactItemize}

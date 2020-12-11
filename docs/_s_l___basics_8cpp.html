@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=9"/>
 	<meta name="generator" content="Doxygen 1.8.20"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
-	<title>Cpp concept project: learningCpp/SL_Basics.cpp File Reference</title>
+	<title>Cpp concept project: learningCpp/StandardLibrary/SL_Basics.cpp File Reference</title>
 	<link href="tabs.css" rel="stylesheet" type="text/css"/>
 	<script type="text/javascript" src="jquery.js"></script>
 	<script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
 	<div id="banner">
 		<div class="logo">
 			<span class="subtitle">
-				API Documentation for learningCpp/SL_Basics.cpp File Reference
+				API Documentation for learningCpp/StandardLibrary/SL_Basics.cpp File Reference
 			</span>
 			<!-- <span class="search">
 				<input type="text" placeholder="Search" onkeydown="search(this,event);">
@@ -73,7 +73,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_94b3207fdcdf159a761ccdefa33582c9.html">learningCpp</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_94b3207fdcdf159a761ccdefa33582c9.html">learningCpp</a></li><li class="navelem"><a class="el" href="dir_f6fd33784e643e262079128e46b14705.html">StandardLibrary</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -90,13 +90,13 @@ $(function() {
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for SL_Basics.cpp:</div>
 <div class="dyncontent">
-<div class="center"><img src="_s_l___basics_8cpp__incl.png" border="0" usemap="#alearning_cpp_2_s_l___basics_8cpp" alt=""/></div>
-<map name="learning_cpp_2_s_l___basics_8cpp" id="alearning_cpp_2_s_l___basics_8cpp">
-<area shape="rect" title=" " alt="" coords="74,5,257,32"/>
-<area shape="rect" title=" " alt="" coords="5,80,77,107"/>
-<area shape="rect" title=" " alt="" coords="101,80,152,107"/>
-<area shape="rect" title=" " alt="" coords="176,80,235,107"/>
-<area shape="rect" title=" " alt="" coords="259,80,314,107"/>
+<div class="center"><img src="_s_l___basics_8cpp__incl.png" border="0" usemap="#alearning_cpp_2_standard_library_2_s_l___basics_8cpp" alt=""/></div>
+<map name="learning_cpp_2_standard_library_2_s_l___basics_8cpp" id="alearning_cpp_2_standard_library_2_s_l___basics_8cpp">
+<area shape="rect" title=" " alt="" coords="72,5,259,47"/>
+<area shape="rect" title=" " alt="" coords="5,95,77,121"/>
+<area shape="rect" title=" " alt="" coords="101,95,152,121"/>
+<area shape="rect" title=" " alt="" coords="176,95,235,121"/>
+<area shape="rect" title=" " alt="" coords="259,95,314,121"/>
 </map>
 </div>
 </div>
@@ -122,15 +122,65 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<h1><a class="anchor" id="autotoc_md107"></a>
+<h1><a class="anchor" id="autotoc_md174"></a>
 Introduction to the standard library</h1>
-<h2><a class="anchor" id="autotoc_md108"></a>
+<p>The Standard library contains a collection of classes that provide templated containers, algorithms, and iterators. If you need a common class or algorithm, odds are the standard library has it. The upside is that you can take advantage of these classes without having to write and debug the classes yourself, and the standard library does a good job providing reasonably efficient versions of these classes. The downside is that the standard library is complex, and can be a little intimidating since everything is templated.</p>
+<h2><a class="anchor" id="autotoc_md175"></a>
+STL containers</h2>
+<p>There are three basic container categories:</p>
+<ul>
+<li><b>Sequence containers</b> maintaining the ordering of elements within the container<ul>
+<li>std::vector: dynamic array capable of growing, fast insertion and removing at the end</li>
+<li>std::deque: double-ended queue class, implemented as a dynamic array that can grow from both ends</li>
+<li>std::array</li>
+<li>std::list</li>
+<li>std::forward_list</li>
+<li>std::basic_string</li>
+</ul>
+</li>
+<li><b>Associative containers</b> automatically sorting the inputs when those inputs are inserted into the container<ul>
+<li>set: storing unique elements</li>
+<li>mulitset: duplicate elements allowed</li>
+<li>map (or associative array): each element is a pair, called a key/value pair, key must be unique</li>
+<li>multimap (or dictionary): map allowing duplicate keys</li>
+</ul>
+</li>
+<li><b>Container adapters</b>: are special predefined containers that are adapted to specific uses<ul>
+<li>stack: elements operate in a LIFO (Last In, First Out)</li>
+<li>queue: elements operate in a FIFO (First In, First Out)</li>
+<li>priority queue: elements are kept sorted (via operator&lt;)</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md176"></a>
+STL iterators</h2>
+<ul>
+<li><b>Operator* ** Dereferencing the iterator returns the element that the iterator is currently pointing at</b></li>
+<li><b>**Operator++</b> Moves the iterator to the next element in the container.</li>
+<li>Most iterators also provide Operator&ndash; to move to the previous element.</li>
+<li>Operator== and Operator!= &ndash; Basic comparison operators to determine if two iterators point to the same element. To compare the values that two iterators are pointing at, dereference the iterators first, and then use a comparison operator.</li>
+<li>Operator= &ndash; Assign the iterator to a new position (typically the start or end of the container’s elements). To assign the value of the element the iterator is pointing at, dereference the iterator first, then use the assign operator.</li>
+</ul>
+<p>Each container includes four basic member functions for use with <b>Operator=:</b></p><ul>
+<li><em>begin()</em> returns an iterator representing the beginning of the elements in the container. <em>end()</em> returns an iterator representing the element just past the end of the elements. <em>cbegin()</em> returns a const (read-only) iterator representing the beginning of the elements in the container. <em>cend()</em> returns a const (read-only) iterator representing the element just past the end of the elements.</li>
+</ul>
+<p>All containers provide (at least) two types of iterators:</p><ul>
+<li><b>container::iterator</b> provides a read/write iterator</li>
+<li><b>container::const_iterator</b> provides a read-only iterator</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md177"></a>
+Formatting output</h2>
+<p>See <a href="https://www.learncpp.com/cpp-tutorial/183-output-with-ostream-and-ios/">ostream</a></p>
+<h2><a class="anchor" id="autotoc_md178"></a>
+File IO</h2>
+<p>See <a href="https://www.learncpp.com/cpp-tutorial/186-basic-file-io/">Basic file IO</a> </p>
+<h2><a class="anchor" id="autotoc_md179"></a>
 std::array</h2>
-<h2><a class="anchor" id="autotoc_md109"></a>
+<h2><a class="anchor" id="autotoc_md180"></a>
 std::vector</h2>
-<h2><a class="anchor" id="autotoc_md110"></a>
+<h2><a class="anchor" id="autotoc_md181"></a>
 std::string</h2>
-<h2><a class="anchor" id="autotoc_md111"></a>
+<h2><a class="anchor" id="autotoc_md182"></a>
 Algorithms</h2>
 <ul>
 <li><b>Inspectors</b> are used to view (not modify) data in container (including searching and counting)</li>
@@ -138,34 +188,34 @@ Algorithms</h2>
 <li><b>Facilitators</b> are used to generate a result based on values of the data members</li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_s_l___basics_8cpp_source.html#l00014">14</a> of file <a class="el" href="_s_l___basics_8cpp_source.html">SL_Basics.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;           {</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="comment">//std::array&lt;int, 5&gt; myArray = { 9, 7, 5, 3, 1 }; // initializer list</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    std::array&lt;int, 5&gt; my_array{9, 7, 5, 3, 1}; <span class="comment">// list initialization</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    my_array[0] = 10; <span class="comment">// standard accessing</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    my_array.at(1) = 8; <span class="comment">// other possibility</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;size of my_array: &quot;</span> &lt;&lt; my_array.size() &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="comment">// dynamic arrays without the need of dynamically allocating memory</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="comment">//std::vector&lt;int&gt; vec_array;</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="comment">//std::vector&lt;int&gt; vec_array = { 9, 7, 5, 3, 1 }; // use initializer list to initialize array (Before C++11)</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    std::vector&lt;int&gt; vec_array { 9, 7, 5, 3, 1 }; <span class="comment">// use uniform initialization to initialize array</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    vec_array[0] = 10; <span class="comment">// standard accessing</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    vec_array.at(1) = 8; <span class="comment">// other possibility</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;size of vec_array: &quot;</span> &lt;&lt; vec_array.size() &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="comment">// resize</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    vec_array.resize(10);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;size of vec_array (after resize): &quot;</span> &lt;&lt; vec_array.size() &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="_s_l___basics_8cpp_source.html#l00075">75</a> of file <a class="el" href="_s_l___basics_8cpp_source.html">SL_Basics.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;           {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="comment">//std::array&lt;int, 5&gt; myArray = { 9, 7, 5, 3, 1 }; // initializer list</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    std::array&lt;int, 5&gt; my_array{9, 7, 5, 3, 1}; <span class="comment">// list initialization</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    my_array[0] = 10; <span class="comment">// standard accessing</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    my_array.at(1) = 8; <span class="comment">// other possibility</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;size of my_array: &quot;</span> &lt;&lt; my_array.size() &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="comment">// dynamic arrays without the need of dynamically allocating memory</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="comment">//std::vector&lt;int&gt; vec_array;</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="comment">//std::vector&lt;int&gt; vec_array = { 9, 7, 5, 3, 1 }; // use initializer list to initialize array (Before C++11)</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    std::vector&lt;int&gt; vec_array { 9, 7, 5, 3, 1 }; <span class="comment">// use uniform initialization to initialize array</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    vec_array[0] = 10; <span class="comment">// standard accessing</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    vec_array.at(1) = 8; <span class="comment">// other possibility</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;size of vec_array: &quot;</span> &lt;&lt; vec_array.size() &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="comment">// resize</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    vec_array.resize(10);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;size of vec_array (after resize): &quot;</span> &lt;&lt; vec_array.size() &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
   <hr class="footer"/><address class="footer"><small>
-    Cpp concept project  - learningCpp/SL_Basics.cpp File Reference<br />
-    Generated on Tue Dec 8 2020 15:24:04 by <a href="http://www.doxygen.org/index.html">Doxygen</a> 1.8.20
+    Cpp concept project  - learningCpp/StandardLibrary/SL_Basics.cpp File Reference<br />
+    Generated on Fri Dec 11 2020 11:06:56 by <a href="http://www.doxygen.org/index.html">Doxygen</a> 1.8.20
   </small></address>
 </body>
 </html>

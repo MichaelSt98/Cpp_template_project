@@ -1,0 +1,57 @@
+\hypertarget{_inheritance_8cpp_source}{}\doxysection{Inheritance.\+cpp}
+\label{_inheritance_8cpp_source}\index{learningCpp/OOP/Inheritance.cpp@{learningCpp/OOP/Inheritance.cpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001 \textcolor{comment}{//}}
+\DoxyCodeLine{00002 \textcolor{comment}{// Created by Michael Staneker on 10.12.20.}}
+\DoxyCodeLine{00003 \textcolor{comment}{//}}
+\DoxyCodeLine{00004 }
+\DoxyCodeLine{00005 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_inheritance_8h}{Inheritance.h}}"{}}}
+\DoxyCodeLine{00006 }
+\DoxyCodeLine{\Hypertarget{_inheritance_8cpp_source_l00007}\mbox{\hyperlink{class_base_a17de5b19f85e3a3d5f348160391eafcb}{00007}} \mbox{\hyperlink{class_base_a17de5b19f85e3a3d5f348160391eafcb}{Base::Base}}(\textcolor{keywordtype}{int} \textcolor{keywordtype}{id}, \textcolor{keywordtype}{int} var\_private, \textcolor{keywordtype}{int} var\_protected, \textcolor{keywordtype}{int} var\_public)}
+\DoxyCodeLine{00008         : m\_id\{ \textcolor{keywordtype}{id} \}, m\_private\{ var\_private \}, m\_protected\{ var\_protected \},}
+\DoxyCodeLine{00009           m\_public\{ var\_public \}}
+\DoxyCodeLine{00010 \{}
+\DoxyCodeLine{00011     std::cout << \textcolor{stringliteral}{"{}Base constructor called ..."{}} << std::endl;}
+\DoxyCodeLine{00012 \}}
+\DoxyCodeLine{00013 }
+\DoxyCodeLine{\Hypertarget{_inheritance_8cpp_source_l00014}\mbox{\hyperlink{class_base_a3e8ae0959487139411f93fc2513953f1}{00014}} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_base_a3e8ae0959487139411f93fc2513953f1}{Base::getId}}()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{00015     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_base_a7565777894d190c6c82d8eb9cf519236}{m\_id}};}
+\DoxyCodeLine{00016 \}}
+\DoxyCodeLine{00017 }
+\DoxyCodeLine{\Hypertarget{_inheritance_8cpp_source_l00018}\mbox{\hyperlink{class_base_a027bf63501cd4c4207b315f3400e5650}{00018}} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_base_a027bf63501cd4c4207b315f3400e5650}{Base::getPrivate}}()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{00019     std::cout << \textcolor{stringliteral}{"{}getPrivate() from Base"{}} << std::endl;}
+\DoxyCodeLine{00020     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_base_a928485c705e04c94b4cd111fab11e9aa}{m\_private}};}
+\DoxyCodeLine{00021 \}}
+\DoxyCodeLine{00022 }
+\DoxyCodeLine{\Hypertarget{_inheritance_8cpp_source_l00023}\mbox{\hyperlink{class_base_a22a5b0b0eb0c28b3abce3465c11deef3}{00023}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_base_a22a5b0b0eb0c28b3abce3465c11deef3}{Base::print}}() \{}
+\DoxyCodeLine{00024     std::cout << \textcolor{stringliteral}{"{}Print from Base class!"{}} << std::endl;}
+\DoxyCodeLine{00025 \}}
+\DoxyCodeLine{00026 }
+\DoxyCodeLine{00027 }
+\DoxyCodeLine{00028 }
+\DoxyCodeLine{\Hypertarget{_inheritance_8cpp_source_l00029}\mbox{\hyperlink{class_derived_ac2ebd3353411bdbfbdf0c4bdb103452c}{00029}} \mbox{\hyperlink{class_derived_ac2ebd3353411bdbfbdf0c4bdb103452c}{Derived::Derived}}(\textcolor{keywordtype}{double} cost, \textcolor{keywordtype}{int} \textcolor{keywordtype}{id}, \textcolor{keywordtype}{int} var\_private, \textcolor{keywordtype}{int} var\_protected, \textcolor{keywordtype}{int} var\_public)}
+\DoxyCodeLine{00030         : \mbox{\hyperlink{class_base}{Base}}\{ id, var\_private, var\_protected, var\_public \}, \textcolor{comment}{// Call Base(int) constructor with value id!}}
+\DoxyCodeLine{00031           m\_cost\{ cost \}}
+\DoxyCodeLine{00032 \{}
+\DoxyCodeLine{00033     std::cout << \textcolor{stringliteral}{"{}Derived constructor called ..."{}} << std::endl;}
+\DoxyCodeLine{00034 \}}
+\DoxyCodeLine{00035 }
+\DoxyCodeLine{\Hypertarget{_inheritance_8cpp_source_l00036}\mbox{\hyperlink{class_derived_a35546674a57038ffd7294b5d6a918774}{00036}} \textcolor{keywordtype}{double} \mbox{\hyperlink{class_derived_a35546674a57038ffd7294b5d6a918774}{Derived::getCost}}()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{00037     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_derived_a17a17cf985386f23f7aa69c82b9a9771}{m\_cost}};}
+\DoxyCodeLine{00038 \}}
+\DoxyCodeLine{00039 }
+\DoxyCodeLine{\Hypertarget{_inheritance_8cpp_source_l00040}\mbox{\hyperlink{class_derived_a4a1400a4ffcf196872dfe85b52a85d00}{00040}} \textcolor{keywordtype}{double} \mbox{\hyperlink{class_derived_a4a1400a4ffcf196872dfe85b52a85d00}{Derived::getProtected}}()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{00041     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_base_a024f7ffb4472874b15cbd55dbe85eb24}{m\_protected}};}
+\DoxyCodeLine{00042 \}}
+\DoxyCodeLine{00043 }
+\DoxyCodeLine{\Hypertarget{_inheritance_8cpp_source_l00044}\mbox{\hyperlink{class_derived_a684a2d0df8738a2ea6f62497776f2e8f}{00044}} \textcolor{keywordtype}{double} \mbox{\hyperlink{class_derived_a684a2d0df8738a2ea6f62497776f2e8f}{Derived::getPrivate}}()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{00045     std::cout << \textcolor{stringliteral}{"{}getPrivate() from Derived"{}} << std::endl;}
+\DoxyCodeLine{00046     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_base_a027bf63501cd4c4207b315f3400e5650}{Base::getPrivate}}();}
+\DoxyCodeLine{00047 \}}
+\DoxyCodeLine{00048 }
+\DoxyCodeLine{\Hypertarget{_inheritance_8cpp_source_l00049}\mbox{\hyperlink{class_derived_a31e743f99f9335f51a570390f3cc10c2}{00049}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_derived_a31e743f99f9335f51a570390f3cc10c2}{Derived::print}}() \{}
+\DoxyCodeLine{00050     std::cout << \textcolor{stringliteral}{"{}Print from Derived class!"{}} << std::endl;}
+\DoxyCodeLine{00051 \}}
+
+\end{DoxyCode}

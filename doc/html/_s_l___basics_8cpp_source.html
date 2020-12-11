@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=9"/>
 	<meta name="generator" content="Doxygen 1.8.20"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
-	<title>Cpp concept project: learningCpp/SL_Basics.cpp Source File</title>
+	<title>Cpp concept project: learningCpp/StandardLibrary/SL_Basics.cpp Source File</title>
 	<link href="tabs.css" rel="stylesheet" type="text/css"/>
 	<script type="text/javascript" src="jquery.js"></script>
 	<script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
 	<div id="banner">
 		<div class="logo">
 			<span class="subtitle">
-				API Documentation for learningCpp/SL_Basics.cpp Source File
+				API Documentation for learningCpp/StandardLibrary/SL_Basics.cpp Source File
 			</span>
 			<!-- <span class="search">
 				<input type="text" placeholder="Search" onkeydown="search(this,event);">
@@ -73,7 +73,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_94b3207fdcdf159a761ccdefa33582c9.html">learningCpp</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_94b3207fdcdf159a761ccdefa33582c9.html">learningCpp</a></li><li class="navelem"><a class="el" href="dir_f6fd33784e643e262079128e46b14705.html">StandardLibrary</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -90,31 +90,31 @@ $(function() {
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;array&gt;</span> <span class="comment">// C++ built in fixed arrays in a safer and more usable form</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span> <span class="comment">// makes working with dynamic arrays safer and easier</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span> <span class="comment">//TODO: section about std::string</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="_s_l___basics_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">   14</a></span>&#160;<span class="comment"></span><span class="keywordtype">int</span> <a class="code" href="_s_l___basics_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>() {</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="comment">//std::array&lt;int, 5&gt; myArray = { 9, 7, 5, 3, 1 }; // initializer list</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    std::array&lt;int, 5&gt; my_array{9, 7, 5, 3, 1}; <span class="comment">// list initialization</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    my_array[0] = 10; <span class="comment">// standard accessing</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    my_array.at(1) = 8; <span class="comment">// other possibility</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;size of my_array: &quot;</span> &lt;&lt; my_array.size() &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="comment">// dynamic arrays without the need of dynamically allocating memory</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="comment">//std::vector&lt;int&gt; vec_array;</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="comment">//std::vector&lt;int&gt; vec_array = { 9, 7, 5, 3, 1 }; // use initializer list to initialize array (Before C++11)</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    std::vector&lt;int&gt; vec_array { 9, 7, 5, 3, 1 }; <span class="comment">// use uniform initialization to initialize array</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    vec_array[0] = 10; <span class="comment">// standard accessing</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    vec_array.at(1) = 8; <span class="comment">// other possibility</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;size of vec_array: &quot;</span> &lt;&lt; vec_array.size() &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="comment">// resize</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    vec_array.resize(10);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;size of vec_array (after resize): &quot;</span> &lt;&lt; vec_array.size() &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="_s_l___basics_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">   75</a></span>&#160;<span class="comment"></span><span class="keywordtype">int</span> <a class="code" href="_s_l___basics_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>() {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="comment">//std::array&lt;int, 5&gt; myArray = { 9, 7, 5, 3, 1 }; // initializer list</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    std::array&lt;int, 5&gt; my_array{9, 7, 5, 3, 1}; <span class="comment">// list initialization</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    my_array[0] = 10; <span class="comment">// standard accessing</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    my_array.at(1) = 8; <span class="comment">// other possibility</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;size of my_array: &quot;</span> &lt;&lt; my_array.size() &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="comment">// dynamic arrays without the need of dynamically allocating memory</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="comment">//std::vector&lt;int&gt; vec_array;</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="comment">//std::vector&lt;int&gt; vec_array = { 9, 7, 5, 3, 1 }; // use initializer list to initialize array (Before C++11)</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    std::vector&lt;int&gt; vec_array { 9, 7, 5, 3, 1 }; <span class="comment">// use uniform initialization to initialize array</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    vec_array[0] = 10; <span class="comment">// standard accessing</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    vec_array.at(1) = 8; <span class="comment">// other possibility</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;size of vec_array: &quot;</span> &lt;&lt; vec_array.size() &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="comment">// resize</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    vec_array.resize(10);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;size of vec_array (after resize): &quot;</span> &lt;&lt; vec_array.size() &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="a_s_l___basics_8cpp_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="_s_l___basics_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdef"><b>Definition:</b> <a href="_s_l___basics_8cpp_source.html#l00014">SL_Basics.cpp:14</a></div></div>
+<div class="ttc" id="a_s_l___basics_8cpp_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="_s_l___basics_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdef"><b>Definition:</b> <a href="_s_l___basics_8cpp_source.html#l00075">SL_Basics.cpp:75</a></div></div>
 <!-- start footer part -->
   <hr class="footer"/><address class="footer"><small>
-    Cpp concept project  - learningCpp/SL_Basics.cpp Source File<br />
-    Generated on Tue Dec 8 2020 15:24:03 by <a href="http://www.doxygen.org/index.html">Doxygen</a> 1.8.20
+    Cpp concept project  - learningCpp/StandardLibrary/SL_Basics.cpp Source File<br />
+    Generated on Fri Dec 11 2020 11:06:56 by <a href="http://www.doxygen.org/index.html">Doxygen</a> 1.8.20
   </small></address>
 </body>
 </html>

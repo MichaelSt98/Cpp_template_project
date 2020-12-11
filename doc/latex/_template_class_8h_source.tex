@@ -1,0 +1,59 @@
+\hypertarget{_template_class_8h_source}{}\doxysection{Template\+Class.\+h}
+\label{_template_class_8h_source}\index{learningCpp/OOP/TemplateClass.h@{learningCpp/OOP/TemplateClass.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001 \textcolor{comment}{//}}
+\DoxyCodeLine{00002 \textcolor{comment}{// Created by Michael Staneker on 10.12.20.}}
+\DoxyCodeLine{00003 \textcolor{comment}{//}}
+\DoxyCodeLine{00004 }
+\DoxyCodeLine{00029 \textcolor{preprocessor}{\#ifndef CPP\_TEMPLATE\_PROJECT\_TEMPLATECLASS\_H}}
+\DoxyCodeLine{00030 \textcolor{preprocessor}{\#define CPP\_TEMPLATE\_PROJECT\_TEMPLATECLASS\_H}}
+\DoxyCodeLine{00031 }
+\DoxyCodeLine{00032 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{00033 \textcolor{preprocessor}{\#include <cassert>}}
+\DoxyCodeLine{00034 }
+\DoxyCodeLine{00035 \textcolor{keyword}{template} <\textcolor{keyword}{class} T>}
+\DoxyCodeLine{\Hypertarget{_template_class_8h_source_l00036}\mbox{\hyperlink{class_array}{00036}} \textcolor{keyword}{class }\mbox{\hyperlink{class_array}{Array}}}
+\DoxyCodeLine{00037 \{}
+\DoxyCodeLine{00038 \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_template_class_8h_source_l00039}\mbox{\hyperlink{class_array_a220b22f8391b01221755f1fb03dd1de5}{00039}}     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_array_a220b22f8391b01221755f1fb03dd1de5}{m\_length}}\{\};}
+\DoxyCodeLine{\Hypertarget{_template_class_8h_source_l00040}\mbox{\hyperlink{class_array_affdd730a7c84d9e654415493071f0b9f}{00040}}     T *\mbox{\hyperlink{class_array_affdd730a7c84d9e654415493071f0b9f}{m\_data}}\{\};}
+\DoxyCodeLine{00041 \textcolor{keyword}{public}:}
+\DoxyCodeLine{00042 }
+\DoxyCodeLine{\Hypertarget{_template_class_8h_source_l00043}\mbox{\hyperlink{class_array_ac97db0e89ad8d7b9ff4d34d473e95fff}{00043}}     \mbox{\hyperlink{class_array_ac97db0e89ad8d7b9ff4d34d473e95fff}{Array}}(\textcolor{keywordtype}{int} length);}
+\DoxyCodeLine{00044 }
+\DoxyCodeLine{\Hypertarget{_template_class_8h_source_l00045}\mbox{\hyperlink{class_array_ad8267377bcf950d431400017a911b46c}{00045}}     \mbox{\hyperlink{class_array_ad8267377bcf950d431400017a911b46c}{Array}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_array}{Array}}\&) = \textcolor{keyword}{delete};}
+\DoxyCodeLine{00046 }
+\DoxyCodeLine{\Hypertarget{_template_class_8h_source_l00047}\mbox{\hyperlink{class_array_af0ab2768c37754f83b0b3918491b53bb}{00047}}     \mbox{\hyperlink{class_array}{Array}}\& \mbox{\hyperlink{class_array_af0ab2768c37754f83b0b3918491b53bb}{operator=}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_array}{Array}}\&) = \textcolor{keyword}{delete};}
+\DoxyCodeLine{00048 }
+\DoxyCodeLine{\Hypertarget{_template_class_8h_source_l00049}\mbox{\hyperlink{class_array_aab89a85b1ddb86864096acdcc0db439e}{00049}}     \mbox{\hyperlink{class_array_aab89a85b1ddb86864096acdcc0db439e}{\string~Array}}();}
+\DoxyCodeLine{00050 }
+\DoxyCodeLine{\Hypertarget{_template_class_8h_source_l00051}\mbox{\hyperlink{class_array_a7fc61060ca39c60978dd4942c37a6db3}{00051}}     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_array_a7fc61060ca39c60978dd4942c37a6db3}{Erase}}();}
+\DoxyCodeLine{00052 }
+\DoxyCodeLine{\Hypertarget{_template_class_8h_source_l00053}\mbox{\hyperlink{class_array_a7f15ca8d0886da1d65ef79df0285bf0a}{00053}}     T\& \mbox{\hyperlink{class_array_a7f15ca8d0886da1d65ef79df0285bf0a}{operator[]}}(\textcolor{keywordtype}{int} index);}
+\DoxyCodeLine{00054 }
+\DoxyCodeLine{\Hypertarget{_template_class_8h_source_l00055}\mbox{\hyperlink{class_array_a4a238a7b4cf67159eaea62929c0fee51}{00055}}     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_array_a4a238a7b4cf67159eaea62929c0fee51}{getLength}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{00056 }
+\DoxyCodeLine{\Hypertarget{_template_class_8h_source_l00057}\mbox{\hyperlink{class_array_a8e6bfa38c221bc5f936937f16085b940}{00057}}     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_array_a8e6bfa38c221bc5f936937f16085b940}{print}}();}
+\DoxyCodeLine{00058 }
+\DoxyCodeLine{00059 \};}
+\DoxyCodeLine{00060 }
+\DoxyCodeLine{00061 }
+\DoxyCodeLine{00062 \textcolor{keyword}{template} <\textcolor{keyword}{class} T, \textcolor{keywordtype}{int} size> \textcolor{comment}{// size is the non-\/type parameter}}
+\DoxyCodeLine{\Hypertarget{_template_class_8h_source_l00063}\mbox{\hyperlink{class_static_array}{00063}} \textcolor{keyword}{class }\mbox{\hyperlink{class_static_array}{StaticArray}}}
+\DoxyCodeLine{00064 \{}
+\DoxyCodeLine{00065 \textcolor{keyword}{private}:}
+\DoxyCodeLine{00066     \textcolor{comment}{// The non-\/type parameter controls the size of the array}}
+\DoxyCodeLine{\Hypertarget{_template_class_8h_source_l00067}\mbox{\hyperlink{class_static_array_a3dc3d69ae71ed5d508eba0a37256646a}{00067}}     T \mbox{\hyperlink{class_static_array_a3dc3d69ae71ed5d508eba0a37256646a}{m\_array}}[size];}
+\DoxyCodeLine{00068 }
+\DoxyCodeLine{00069 \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_template_class_8h_source_l00070}\mbox{\hyperlink{class_static_array_a1c9a4ff2318574e44840da5af22aa654}{00070}}     T* \mbox{\hyperlink{class_static_array_a1c9a4ff2318574e44840da5af22aa654}{getArray}}();}
+\DoxyCodeLine{00071 }
+\DoxyCodeLine{\Hypertarget{_template_class_8h_source_l00072}\mbox{\hyperlink{class_static_array_aeaf8831489dbbac83c968e8bb6e53563}{00072}}     T\& \mbox{\hyperlink{class_static_array_aeaf8831489dbbac83c968e8bb6e53563}{operator[]}}(\textcolor{keywordtype}{int} index);}
+\DoxyCodeLine{00073 \};}
+\DoxyCodeLine{00074 }
+\DoxyCodeLine{00075 \textcolor{preprocessor}{\#include "{}TemplateClass.inl"{}}}
+\DoxyCodeLine{00076 }
+\DoxyCodeLine{00077 \textcolor{preprocessor}{\#endif //CPP\_TEMPLATE\_PROJECT\_TEMPLATECLASS\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,40 @@
+\hypertarget{_exceptions_8cpp_source}{}\doxysection{Exceptions.\+cpp}
+\label{_exceptions_8cpp_source}\index{learningCpp/Errors/Exceptions.cpp@{learningCpp/Errors/Exceptions.cpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001 \textcolor{comment}{//}}
+\DoxyCodeLine{00002 \textcolor{comment}{// Created by Michael Staneker on 10.12.20.}}
+\DoxyCodeLine{00003 \textcolor{comment}{//}}
+\DoxyCodeLine{00004 }
+\DoxyCodeLine{00005 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_exceptions_8h}{Exceptions.h}}"{}}}
+\DoxyCodeLine{00006 }
+\DoxyCodeLine{00007 }
+\DoxyCodeLine{\Hypertarget{_exceptions_8cpp_source_l00008}\mbox{\hyperlink{class_array_exception_a580e9f660a3293c41154f291369f8c35}{00008}} \mbox{\hyperlink{class_array_exception_a580e9f660a3293c41154f291369f8c35}{ArrayException::ArrayException}}(std::string\_view error)}
+\DoxyCodeLine{00009         : m\_error\{error\}}
+\DoxyCodeLine{00010 \{}
+\DoxyCodeLine{00011 \}}
+\DoxyCodeLine{00012 }
+\DoxyCodeLine{00013 }
+\DoxyCodeLine{00014 }
+\DoxyCodeLine{\Hypertarget{_exceptions_8cpp_source_l00015}\mbox{\hyperlink{class_int_array_aaf27d810e59c5a77bf7340b03496148d}{00015}} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_int_array_aaf27d810e59c5a77bf7340b03496148d}{IntArray::getLength}}()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{00016     \textcolor{keywordflow}{return} 3;}
+\DoxyCodeLine{00017 \}}
+\DoxyCodeLine{00018 }
+\DoxyCodeLine{\Hypertarget{_exceptions_8cpp_source_l00019}\mbox{\hyperlink{class_int_array_acfd056b7a25e0614d2f01e4525a74295}{00019}} \textcolor{keywordtype}{int}\& \mbox{\hyperlink{class_int_array_acfd056b7a25e0614d2f01e4525a74295}{IntArray::operator[]}}(\textcolor{keyword}{const} \textcolor{keywordtype}{int} index)}
+\DoxyCodeLine{00020 \{}
+\DoxyCodeLine{00021     \textcolor{keywordflow}{if} (index < 0 || index >= \mbox{\hyperlink{class_int_array_aaf27d810e59c5a77bf7340b03496148d}{getLength}}())}
+\DoxyCodeLine{00022         \textcolor{keywordflow}{throw} \mbox{\hyperlink{class_array_exception}{ArrayException}}(\textcolor{stringliteral}{"{}Invalid index"{}});}
+\DoxyCodeLine{00023 }
+\DoxyCodeLine{00024     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_int_array_a12bf6a5b99c14e1b7b40d995b2217459}{m\_data}}[index];}
+\DoxyCodeLine{00025 \}}
+\DoxyCodeLine{00026 }
+\DoxyCodeLine{00027 }
+\DoxyCodeLine{\Hypertarget{_exceptions_8cpp_source_l00028}\mbox{\hyperlink{class_s_q_r_t_ad38eaa006bce8d7bfc20c54ce915af60}{00028}} \textcolor{keywordtype}{double} \mbox{\hyperlink{class_s_q_r_t_ad38eaa006bce8d7bfc20c54ce915af60}{SQRT::mySqrt}}(\textcolor{keywordtype}{double} x) \{}
+\DoxyCodeLine{00029     \textcolor{comment}{// If the user entered a negative number, this is an error condition}}
+\DoxyCodeLine{00030     \textcolor{keywordflow}{if} (x < 0.0)}
+\DoxyCodeLine{00031         \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"{}Can not take sqrt of negative number"{}}; \textcolor{comment}{// throw exception of type const char*}}
+\DoxyCodeLine{00032 }
+\DoxyCodeLine{00033     \textcolor{keywordflow}{return} sqrt(x);}
+\DoxyCodeLine{00034 \}}
+
+\end{DoxyCode}

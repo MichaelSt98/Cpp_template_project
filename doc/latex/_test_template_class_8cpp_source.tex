@@ -1,0 +1,54 @@
+\hypertarget{_test_template_class_8cpp_source}{}\doxysection{Test\+Template\+Class.\+cpp}
+\label{_test_template_class_8cpp_source}\index{learningCpp/OOP/TestTemplateClass.cpp@{learningCpp/OOP/TestTemplateClass.cpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001 \textcolor{comment}{//}}
+\DoxyCodeLine{00002 \textcolor{comment}{// Created by Michael Staneker on 10.12.20.}}
+\DoxyCodeLine{00003 \textcolor{comment}{//}}
+\DoxyCodeLine{00004 }
+\DoxyCodeLine{00005 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_template_class_8h}{TemplateClass.h}}"{}}}
+\DoxyCodeLine{00006 }
+\DoxyCodeLine{00007 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{00008 }
+\DoxyCodeLine{\Hypertarget{_test_template_class_8cpp_source_l00009}\mbox{\hyperlink{_test_template_class_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{00009}} \textcolor{keywordtype}{int} \mbox{\hyperlink{_test_template_class_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}}()}
+\DoxyCodeLine{00010 \{}
+\DoxyCodeLine{00011     \mbox{\hyperlink{class_array}{Array<int>}} intArray(12);}
+\DoxyCodeLine{00012     \mbox{\hyperlink{class_array}{Array<double>}} doubleArray(12);}
+\DoxyCodeLine{00013 }
+\DoxyCodeLine{00014     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} count\{ 0 \}; count < intArray.\mbox{\hyperlink{class_array_a4a238a7b4cf67159eaea62929c0fee51}{getLength}}(); ++count)}
+\DoxyCodeLine{00015     \{}
+\DoxyCodeLine{00016         intArray[count] = count;}
+\DoxyCodeLine{00017         doubleArray[count] = count + 0.5;}
+\DoxyCodeLine{00018     \}}
+\DoxyCodeLine{00019 }
+\DoxyCodeLine{00020     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} count\{ intArray.\mbox{\hyperlink{class_array_a4a238a7b4cf67159eaea62929c0fee51}{getLength}}() -\/ 1 \}; count >= 0; -\/-\/count)}
+\DoxyCodeLine{00021         std::cout << intArray[count] << \textcolor{charliteral}{'\(\backslash\)t'} << doubleArray[count] << \textcolor{charliteral}{'\(\backslash\)n'};}
+\DoxyCodeLine{00022 }
+\DoxyCodeLine{00023     intArray.\mbox{\hyperlink{class_array_a8e6bfa38c221bc5f936937f16085b940}{print}}();}
+\DoxyCodeLine{00024     doubleArray.\mbox{\hyperlink{class_array_a8e6bfa38c221bc5f936937f16085b940}{print}}();}
+\DoxyCodeLine{00025 }
+\DoxyCodeLine{00026     \textcolor{comment}{// declare an integer array with room for 12 integers}}
+\DoxyCodeLine{00027     \mbox{\hyperlink{class_static_array}{StaticArray<int, 12>}} staticintArray;}
+\DoxyCodeLine{00028 }
+\DoxyCodeLine{00029     \textcolor{comment}{// Fill it up in order, then print it backwards}}
+\DoxyCodeLine{00030     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} count=0; count < 12; ++count)}
+\DoxyCodeLine{00031         staticintArray[count] = count;}
+\DoxyCodeLine{00032 }
+\DoxyCodeLine{00033     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} count=11; count >= 0; -\/-\/count)}
+\DoxyCodeLine{00034         std::cout << staticintArray[count] << \textcolor{stringliteral}{"{} "{}};}
+\DoxyCodeLine{00035     std::cout << \textcolor{charliteral}{'\(\backslash\)n'};}
+\DoxyCodeLine{00036 }
+\DoxyCodeLine{00037     \textcolor{comment}{// declare a double buffer with room for 4 doubles}}
+\DoxyCodeLine{00038     \mbox{\hyperlink{class_static_array}{StaticArray<double, 4>}} staticdoubleArray;}
+\DoxyCodeLine{00039 }
+\DoxyCodeLine{00040     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} count=0; count < 4; ++count)}
+\DoxyCodeLine{00041         staticdoubleArray[count] = 4.4 + 0.1*count;}
+\DoxyCodeLine{00042 }
+\DoxyCodeLine{00043     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} count=0; count < 4; ++count)}
+\DoxyCodeLine{00044         std::cout << staticdoubleArray[count] << \textcolor{charliteral}{' '};}
+\DoxyCodeLine{00045 }
+\DoxyCodeLine{00046     \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{00047 \}}
+\DoxyCodeLine{00048 }
+
+\end{DoxyCode}

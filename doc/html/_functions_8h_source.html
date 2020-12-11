@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=9"/>
 	<meta name="generator" content="Doxygen 1.8.20"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
-	<title>Cpp concept project: learningCpp/Functions.h Source File</title>
+	<title>Cpp concept project: learningCpp/Basics/Functions.h Source File</title>
 	<link href="tabs.css" rel="stylesheet" type="text/css"/>
 	<script type="text/javascript" src="jquery.js"></script>
 	<script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
 	<div id="banner">
 		<div class="logo">
 			<span class="subtitle">
-				API Documentation for learningCpp/Functions.h Source File
+				API Documentation for learningCpp/Basics/Functions.h Source File
 			</span>
 			<!-- <span class="search">
 				<input type="text" placeholder="Search" onkeydown="search(this,event);">
@@ -73,7 +73,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_94b3207fdcdf159a761ccdefa33582c9.html">learningCpp</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_94b3207fdcdf159a761ccdefa33582c9.html">learningCpp</a></li><li class="navelem"><a class="el" href="dir_e505aaa46ea9b50afa27cb8407da5c18.html">Basics</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -85,20 +85,63 @@ $(function() {
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// Created by Michael Staneker on 08.12.20.</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef CPP_TEMPLATE_PROJECT_FUNCTIONS_H</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define CPP_TEMPLATE_PROJECT_FUNCTIONS_H</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;array&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">// \fn void pass_by_value(int)</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_functions_8h.html#ab03b2c624ca6c439631e510210919808">pass_by_value</a>(<span class="keywordtype">int</span>);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#endif //CPP_TEMPLATE_PROJECT_FUNCTIONS_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef CPP_TEMPLATE_PROJECT_FUNCTIONS_H</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define CPP_TEMPLATE_PROJECT_FUNCTIONS_H</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;<span class="comment">// \fn void pass_by_value(int)</span></div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160; </div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_functions_8h.html#af889c468d4cc52789ef37bf08716b68a">pass_by_value</a>(<span class="keywordtype">int</span> x);</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160; </div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_functions_8h.html#a5ec956d71e1eccd51ef422341e5f3049">pass_by_reference</a>(<span class="keywordtype">int</span> &amp;x);</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160; </div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_functions_8h.html#a9ae15f6bff98d72da855b7b7816c8af3">pass_by_address</a>(<span class="keywordtype">int</span> *x);</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160; </div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160; </div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;<span class="keywordtype">int</span> <a class="code" href="_functions_8h.html#af8c77c8db78c984abd2c2d9526586d6a">return_by_value</a>();</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160; </div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;<span class="keywordtype">int</span>&amp; <a class="code" href="_functions_8h.html#ae748ac036cd3cb10bbb279962e5e9a7c">return_by_reference</a>();</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160; </div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;<span class="keywordtype">int</span>* <a class="code" href="_functions_8h.html#a3281d80fbae3ea726d13d7f2bdf21a3a">return_by_address</a>();</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160; </div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;<span class="keywordtype">int</span> <a class="code" href="_functions_8h.html#a8a24400242b18720c6ffef03116f165e">overload_add</a>(<span class="keywordtype">int</span> a, <span class="keywordtype">int</span> b);</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160; </div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;<span class="keywordtype">int</span> <a class="code" href="_functions_8h.html#a8a24400242b18720c6ffef03116f165e">overload_add</a>(<span class="keywordtype">int</span> a, <span class="keywordtype">int</span> b, <span class="keywordtype">int</span> c);</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160; </div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160; </div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_functions_8h.html#a8346e6426fc45cf4b2a1142c2b24e987">func_default_arg</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y=10);</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160; </div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_functions_8h.html#a5efc0d291d6f7ee1784b2c23409adbf5">countDown</a>(<span class="keywordtype">int</span> count);</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160; </div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_functions_8h.html#a69c7a90f893a6d7838dc10248edd16f2">ellipsis_example</a>(<span class="keywordtype">int</span> count, ...);</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160; </div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_functions_8h.html#abd9a6c9fecee433db5438afa8cae8670">lambda_example</a>(std::array&lt;std::string_view, 4&gt; arr);</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160; </div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; T <a class="code" href="_functions_8h.html#a3f4ae913e2a7b3479faa6afe7c6948cd">max</a>(T x, T y);</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160; </div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160; </div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160; </div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160; </div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;<span class="preprocessor">#endif //CPP_TEMPLATE_PROJECT_FUNCTIONS_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="a_functions_8h_html_ab03b2c624ca6c439631e510210919808"><div class="ttname"><a href="_functions_8h.html#ab03b2c624ca6c439631e510210919808">pass_by_value</a></div><div class="ttdeci">void pass_by_value(int)</div><div class="ttdoc">Function passing argument by value.</div><div class="ttdef"><b>Definition:</b> <a href="_functions_8cpp_source.html#l00009">Functions.cpp:9</a></div></div>
+<div class="ttc" id="a_functions_8h_html_af8c77c8db78c984abd2c2d9526586d6a"><div class="ttname"><a href="_functions_8h.html#af8c77c8db78c984abd2c2d9526586d6a">return_by_value</a></div><div class="ttdeci">int return_by_value()</div><div class="ttdoc">Function returning value by value.</div><div class="ttdef"><b>Definition:</b> <a href="_functions_8cpp_source.html#l00024">Functions.cpp:24</a></div></div>
+<div class="ttc" id="a_functions_8h_html_a5efc0d291d6f7ee1784b2c23409adbf5"><div class="ttname"><a href="_functions_8h.html#a5efc0d291d6f7ee1784b2c23409adbf5">countDown</a></div><div class="ttdeci">void countDown(int count)</div><div class="ttdoc">A simple recursive function.</div><div class="ttdef"><b>Definition:</b> <a href="_functions_8cpp_source.html#l00057">Functions.cpp:57</a></div></div>
+<div class="ttc" id="a_functions_8h_html_a3281d80fbae3ea726d13d7f2bdf21a3a"><div class="ttname"><a href="_functions_8h.html#a3281d80fbae3ea726d13d7f2bdf21a3a">return_by_address</a></div><div class="ttdeci">int * return_by_address()</div><div class="ttdoc">Function returning value by address.</div><div class="ttdef"><b>Definition:</b> <a href="_functions_8cpp_source.html#l00036">Functions.cpp:36</a></div></div>
+<div class="ttc" id="a_functions_8h_html_a8a24400242b18720c6ffef03116f165e"><div class="ttname"><a href="_functions_8h.html#a8a24400242b18720c6ffef03116f165e">overload_add</a></div><div class="ttdeci">int overload_add(int a, int b)</div><div class="ttdoc">Function adding two values.</div><div class="ttdef"><b>Definition:</b> <a href="_functions_8cpp_source.html#l00042">Functions.cpp:42</a></div></div>
+<div class="ttc" id="a_functions_8h_html_a69c7a90f893a6d7838dc10248edd16f2"><div class="ttname"><a href="_functions_8h.html#a69c7a90f893a6d7838dc10248edd16f2">ellipsis_example</a></div><div class="ttdeci">void ellipsis_example(int count,...)</div><div class="ttdoc">A simple function using ellipsis.</div><div class="ttdef"><b>Definition:</b> <a href="_functions_8cpp_source.html#l00083">Functions.cpp:83</a></div></div>
+<div class="ttc" id="a_functions_8h_html_abd9a6c9fecee433db5438afa8cae8670"><div class="ttname"><a href="_functions_8h.html#abd9a6c9fecee433db5438afa8cae8670">lambda_example</a></div><div class="ttdeci">void lambda_example(std::array&lt; std::string_view, 4 &gt; arr)</div><div class="ttdoc">A simple lambda function.</div><div class="ttdef"><b>Definition:</b> <a href="_functions_8cpp_source.html#l00067">Functions.cpp:67</a></div></div>
+<div class="ttc" id="a_functions_8h_html_a9ae15f6bff98d72da855b7b7816c8af3"><div class="ttname"><a href="_functions_8h.html#a9ae15f6bff98d72da855b7b7816c8af3">pass_by_address</a></div><div class="ttdeci">void pass_by_address(int *x)</div><div class="ttdoc">Function passing argument by address.</div><div class="ttdef"><b>Definition:</b> <a href="_functions_8cpp_source.html#l00018">Functions.cpp:18</a></div></div>
+<div class="ttc" id="a_functions_8h_html_ae748ac036cd3cb10bbb279962e5e9a7c"><div class="ttname"><a href="_functions_8h.html#ae748ac036cd3cb10bbb279962e5e9a7c">return_by_reference</a></div><div class="ttdeci">int &amp; return_by_reference()</div><div class="ttdoc">Function returning value by reference.</div><div class="ttdef"><b>Definition:</b> <a href="_functions_8cpp_source.html#l00030">Functions.cpp:30</a></div></div>
+<div class="ttc" id="a_functions_8h_html_a5ec956d71e1eccd51ef422341e5f3049"><div class="ttname"><a href="_functions_8h.html#a5ec956d71e1eccd51ef422341e5f3049">pass_by_reference</a></div><div class="ttdeci">void pass_by_reference(int &amp;x)</div><div class="ttdoc">Function passing argument by reference.</div><div class="ttdef"><b>Definition:</b> <a href="_functions_8cpp_source.html#l00012">Functions.cpp:12</a></div></div>
+<div class="ttc" id="a_functions_8h_html_a8346e6426fc45cf4b2a1142c2b24e987"><div class="ttname"><a href="_functions_8h.html#a8346e6426fc45cf4b2a1142c2b24e987">func_default_arg</a></div><div class="ttdeci">void func_default_arg(int x, int y=10)</div><div class="ttdoc">Function with default argument (optional parameter)</div><div class="ttdef"><b>Definition:</b> <a href="_functions_8cpp_source.html#l00052">Functions.cpp:52</a></div></div>
+<div class="ttc" id="a_functions_8h_html_a3f4ae913e2a7b3479faa6afe7c6948cd"><div class="ttname"><a href="_functions_8h.html#a3f4ae913e2a7b3479faa6afe7c6948cd">max</a></div><div class="ttdeci">T max(T x, T y)</div><div class="ttdoc">A simple template function.</div><div class="ttdef"><b>Definition:</b> <a href="_functions_8cpp_source.html#l00109">Functions.cpp:109</a></div></div>
+<div class="ttc" id="a_functions_8h_html_af889c468d4cc52789ef37bf08716b68a"><div class="ttname"><a href="_functions_8h.html#af889c468d4cc52789ef37bf08716b68a">pass_by_value</a></div><div class="ttdeci">void pass_by_value(int x)</div><div class="ttdoc">Function passing argument by value.</div><div class="ttdef"><b>Definition:</b> <a href="_functions_8cpp_source.html#l00007">Functions.cpp:7</a></div></div>
 <!-- start footer part -->
   <hr class="footer"/><address class="footer"><small>
-    Cpp concept project  - learningCpp/Functions.h Source File<br />
-    Generated on Tue Dec 8 2020 15:24:03 by <a href="http://www.doxygen.org/index.html">Doxygen</a> 1.8.20
+    Cpp concept project  - learningCpp/Basics/Functions.h Source File<br />
+    Generated on Fri Dec 11 2020 11:06:56 by <a href="http://www.doxygen.org/index.html">Doxygen</a> 1.8.20
   </small></address>
 </body>
 </html>

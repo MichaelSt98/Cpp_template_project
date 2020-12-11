@@ -1,0 +1,177 @@
+\hypertarget{class_derived}{}\doxysection{Derived Class Reference}
+\label{class_derived}\index{Derived@{Derived}}
+
+
+{\ttfamily \#include \char`\"{}Inheritance.\+h\char`\"{}}
+
+
+
+Inheritance diagram for Derived\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=130pt]{class_derived__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Derived\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=130pt]{class_derived__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_derived_ac2ebd3353411bdbfbdf0c4bdb103452c}{Derived}} (double cost=0.\+0, int id=0, int var\+\_\+private=0, int var\+\_\+protected=0, int var\+\_\+public=0)
+\item 
+double \mbox{\hyperlink{class_derived_a35546674a57038ffd7294b5d6a918774}{get\+Cost}} () const
+\item 
+double \mbox{\hyperlink{class_derived_a4a1400a4ffcf196872dfe85b52a85d00}{get\+Protected}} () const
+\item 
+double \mbox{\hyperlink{class_derived_a684a2d0df8738a2ea6f62497776f2e8f}{get\+Private}} () const
+\item 
+virtual void \mbox{\hyperlink{class_derived_a31e743f99f9335f51a570390f3cc10c2}{print}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_derived_a17a17cf985386f23f7aa69c82b9a9771}{m\+\_\+cost}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{_inheritance_8h_source_l00117}{117}} of file \mbox{\hyperlink{_inheritance_8h_source}{Inheritance.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_derived_ac2ebd3353411bdbfbdf0c4bdb103452c}\label{class_derived_ac2ebd3353411bdbfbdf0c4bdb103452c}} 
+\index{Derived@{Derived}!Derived@{Derived}}
+\index{Derived@{Derived}!Derived@{Derived}}
+\doxysubsubsection{\texorpdfstring{Derived()}{Derived()}}
+{\footnotesize\ttfamily Derived\+::\+Derived (\begin{DoxyParamCaption}\item[{double}]{cost = {\ttfamily 0.0},  }\item[{int}]{id = {\ttfamily 0},  }\item[{int}]{var\+\_\+private = {\ttfamily 0},  }\item[{int}]{var\+\_\+protected = {\ttfamily 0},  }\item[{int}]{var\+\_\+public = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_inheritance_8cpp_source_l00029}{29}} of file \mbox{\hyperlink{_inheritance_8cpp_source}{Inheritance.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00030         : \mbox{\hyperlink{class_base}{Base}}\{ id, var\_private, var\_protected, var\_public \}, \textcolor{comment}{// Call Base(int) constructor with value id!}}
+\DoxyCodeLine{00031           \mbox{\hyperlink{class_derived_a17a17cf985386f23f7aa69c82b9a9771}{m\_cost}}\{ cost \}}
+\DoxyCodeLine{00032 \{}
+\DoxyCodeLine{00033     std::cout << \textcolor{stringliteral}{"{}Derived constructor called ..."{}} << std::endl;}
+\DoxyCodeLine{00034 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_derived_a35546674a57038ffd7294b5d6a918774}\label{class_derived_a35546674a57038ffd7294b5d6a918774}} 
+\index{Derived@{Derived}!getCost@{getCost}}
+\index{getCost@{getCost}!Derived@{Derived}}
+\doxysubsubsection{\texorpdfstring{getCost()}{getCost()}}
+{\footnotesize\ttfamily double Derived\+::get\+Cost (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line \mbox{\hyperlink{_inheritance_8cpp_source_l00036}{36}} of file \mbox{\hyperlink{_inheritance_8cpp_source}{Inheritance.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00036                               \{}
+\DoxyCodeLine{00037     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_derived_a17a17cf985386f23f7aa69c82b9a9771}{m\_cost}};}
+\DoxyCodeLine{00038 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_derived_a684a2d0df8738a2ea6f62497776f2e8f}\label{class_derived_a684a2d0df8738a2ea6f62497776f2e8f}} 
+\index{Derived@{Derived}!getPrivate@{getPrivate}}
+\index{getPrivate@{getPrivate}!Derived@{Derived}}
+\doxysubsubsection{\texorpdfstring{getPrivate()}{getPrivate()}}
+{\footnotesize\ttfamily double Derived\+::get\+Private (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line \mbox{\hyperlink{_inheritance_8cpp_source_l00044}{44}} of file \mbox{\hyperlink{_inheritance_8cpp_source}{Inheritance.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00044                                  \{}
+\DoxyCodeLine{00045     std::cout << \textcolor{stringliteral}{"{}getPrivate() from Derived"{}} << std::endl;}
+\DoxyCodeLine{00046     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_base_a027bf63501cd4c4207b315f3400e5650}{Base::getPrivate}}();}
+\DoxyCodeLine{00047 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{class_derived_a684a2d0df8738a2ea6f62497776f2e8f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_derived_a4a1400a4ffcf196872dfe85b52a85d00}\label{class_derived_a4a1400a4ffcf196872dfe85b52a85d00}} 
+\index{Derived@{Derived}!getProtected@{getProtected}}
+\index{getProtected@{getProtected}!Derived@{Derived}}
+\doxysubsubsection{\texorpdfstring{getProtected()}{getProtected()}}
+{\footnotesize\ttfamily double Derived\+::get\+Protected (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line \mbox{\hyperlink{_inheritance_8cpp_source_l00040}{40}} of file \mbox{\hyperlink{_inheritance_8cpp_source}{Inheritance.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00040                                    \{}
+\DoxyCodeLine{00041     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_base_a024f7ffb4472874b15cbd55dbe85eb24}{m\_protected}};}
+\DoxyCodeLine{00042 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_derived_a31e743f99f9335f51a570390f3cc10c2}\label{class_derived_a31e743f99f9335f51a570390f3cc10c2}} 
+\index{Derived@{Derived}!print@{print}}
+\index{print@{print}!Derived@{Derived}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Derived\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_base_a22a5b0b0eb0c28b3abce3465c11deef3}{Base}}.
+
+
+
+Definition at line \mbox{\hyperlink{_inheritance_8cpp_source_l00049}{49}} of file \mbox{\hyperlink{_inheritance_8cpp_source}{Inheritance.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00049                     \{}
+\DoxyCodeLine{00050     std::cout << \textcolor{stringliteral}{"{}Print from Derived class!"{}} << std::endl;}
+\DoxyCodeLine{00051 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_derived_a17a17cf985386f23f7aa69c82b9a9771}\label{class_derived_a17a17cf985386f23f7aa69c82b9a9771}} 
+\index{Derived@{Derived}!m\_cost@{m\_cost}}
+\index{m\_cost@{m\_cost}!Derived@{Derived}}
+\doxysubsubsection{\texorpdfstring{m\_cost}{m\_cost}}
+{\footnotesize\ttfamily double Derived\+::m\+\_\+cost\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_inheritance_8h_source_l00120}{120}} of file \mbox{\hyperlink{_inheritance_8h_source}{Inheritance.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+learning\+Cpp/\+O\+O\+P/\mbox{\hyperlink{_inheritance_8h}{Inheritance.\+h}}\item 
+learning\+Cpp/\+O\+O\+P/\mbox{\hyperlink{_inheritance_8cpp}{Inheritance.\+cpp}}\end{DoxyCompactItemize}

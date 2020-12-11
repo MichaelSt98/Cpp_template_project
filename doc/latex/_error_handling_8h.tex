@@ -1,0 +1,134 @@
+\hypertarget{_error_handling_8h}{}\doxysection{learning\+Cpp/\+Errors/\+Error\+Handling.h File Reference}
+\label{_error_handling_8h}\index{learningCpp/Errors/ErrorHandling.h@{learningCpp/Errors/ErrorHandling.h}}
+{\ttfamily \#include $<$cstdlib$>$}\newline
+{\ttfamily \#include $<$cassert$>$}\newline
+Include dependency graph for Error\+Handling.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{_error_handling_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{_error_handling_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_error_handling_8h_aa79a6ee4a3e8e8782f22d3601d4f58db}{C\+P\+P\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+P\+R\+O\+J\+E\+C\+T\+\_\+\+E\+R\+R\+O\+R\+H\+A\+N\+D\+L\+I\+N\+G\+\_\+H}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{_error_handling_8h_ad15d37e61e932478e010a9ed80674249}{returning\+\_\+error\+\_\+code}} ()
+\item 
+void \mbox{\hyperlink{_error_handling_8h_a69f3e56d755ff37eee83d3397b512bf5}{write\+\_\+error\+\_\+message}} ()
+\item 
+void \mbox{\hyperlink{_error_handling_8h_a690799eb172e4ef8ffc1a6fb3867d513}{exit\+\_\+program}} ()
+\item 
+void \mbox{\hyperlink{_error_handling_8h_a8e77321fc70d9d389fe05f0017da1f0b}{assert\+\_\+example}} (int x)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_error_handling_8h_aa79a6ee4a3e8e8782f22d3601d4f58db}\label{_error_handling_8h_aa79a6ee4a3e8e8782f22d3601d4f58db}} 
+\index{ErrorHandling.h@{ErrorHandling.h}!CPP\_TEMPLATE\_PROJECT\_ERRORHANDLING\_H@{CPP\_TEMPLATE\_PROJECT\_ERRORHANDLING\_H}}
+\index{CPP\_TEMPLATE\_PROJECT\_ERRORHANDLING\_H@{CPP\_TEMPLATE\_PROJECT\_ERRORHANDLING\_H}!ErrorHandling.h@{ErrorHandling.h}}
+\doxysubsubsection{\texorpdfstring{CPP\_TEMPLATE\_PROJECT\_ERRORHANDLING\_H}{CPP\_TEMPLATE\_PROJECT\_ERRORHANDLING\_H}}
+{\footnotesize\ttfamily \#define C\+P\+P\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+P\+R\+O\+J\+E\+C\+T\+\_\+\+E\+R\+R\+O\+R\+H\+A\+N\+D\+L\+I\+N\+G\+\_\+H}
+
+
+
+Definition at line \mbox{\hyperlink{_error_handling_8h_source_l00009}{9}} of file \mbox{\hyperlink{_error_handling_8h_source}{Error\+Handling.\+h}}.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_error_handling_8h_a8e77321fc70d9d389fe05f0017da1f0b}\label{_error_handling_8h_a8e77321fc70d9d389fe05f0017da1f0b}} 
+\index{ErrorHandling.h@{ErrorHandling.h}!assert\_example@{assert\_example}}
+\index{assert\_example@{assert\_example}!ErrorHandling.h@{ErrorHandling.h}}
+\doxysubsubsection{\texorpdfstring{assert\_example()}{assert\_example()}}
+{\footnotesize\ttfamily void assert\+\_\+example (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_error_handling_8cpp_source_l00022}{22}} of file \mbox{\hyperlink{_error_handling_8cpp_source}{Error\+Handling.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00022                            \{}
+\DoxyCodeLine{00023     std::cout << \textcolor{stringliteral}{"{}assert() example"{}} << std::endl;}
+\DoxyCodeLine{00024     std::cout << \textcolor{stringliteral}{"{}x = "{}} << x << std::endl;}
+\DoxyCodeLine{00025     \textcolor{comment}{//terminates if assert evaluates to true}}
+\DoxyCodeLine{00026     assert(x > 0);}
+\DoxyCodeLine{00027 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{_error_handling_8h_a690799eb172e4ef8ffc1a6fb3867d513}\label{_error_handling_8h_a690799eb172e4ef8ffc1a6fb3867d513}} 
+\index{ErrorHandling.h@{ErrorHandling.h}!exit\_program@{exit\_program}}
+\index{exit\_program@{exit\_program}!ErrorHandling.h@{ErrorHandling.h}}
+\doxysubsubsection{\texorpdfstring{exit\_program()}{exit\_program()}}
+{\footnotesize\ttfamily void exit\+\_\+program (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_error_handling_8cpp_source_l00017}{17}} of file \mbox{\hyperlink{_error_handling_8cpp_source}{Error\+Handling.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00017                     \{}
+\DoxyCodeLine{00018     std::cout << \textcolor{stringliteral}{"{}exiting with error number 2 to OS"{}} << std::endl;}
+\DoxyCodeLine{00019     std::exit(2);}
+\DoxyCodeLine{00020 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{_error_handling_8h_ad15d37e61e932478e010a9ed80674249}\label{_error_handling_8h_ad15d37e61e932478e010a9ed80674249}} 
+\index{ErrorHandling.h@{ErrorHandling.h}!returning\_error\_code@{returning\_error\_code}}
+\index{returning\_error\_code@{returning\_error\_code}!ErrorHandling.h@{ErrorHandling.h}}
+\doxysubsubsection{\texorpdfstring{returning\_error\_code()}{returning\_error\_code()}}
+{\footnotesize\ttfamily int returning\+\_\+error\+\_\+code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hypertarget{_error_handling_8h_autotoc_md134}{}\doxysubsection{Error handling}\label{_error_handling_8h_autotoc_md134}
+Errors fall into two categories\+:
+\begin{DoxyItemize}
+\item {\bfseries{Syntax errors}} occurring when a statement is not valid according to the grammar of the C++ language
+\item {\bfseries{Semantic errors}} occurring when a statement is syntactically valid, but does not do what the programmer intended
+\end{DoxyItemize}\hypertarget{_error_handling_8h_autotoc_md135}{}\doxysubsubsection{Assert statements}\label{_error_handling_8h_autotoc_md135}
+An assert statement is a preprocessor macro that evaluates a conditional expression at runtime. If the conditional expression is true, the assert statement does nothing. If the conditional expression evaluates to false, an error message is displayed and the program is terminated. This error message contains the conditional expression that failed, along with the name of the code file and the line number of the assert.\hypertarget{_error_handling_8h_autotoc_md136}{}\doxyparagraph{assert()}\label{_error_handling_8h_autotoc_md136}
+Include $<$cstdlib$>$ for {\ttfamily assert()}, operating at runtime, which comes with a small performance cost that is incurred each time the assert condition is checked, which can be disabled by defining the {\bfseries{N\+D\+E\+B\+UG}} macro.\hypertarget{_error_handling_8h_autotoc_md137}{}\doxyparagraph{static\+\_\+assert()}\label{_error_handling_8h_autotoc_md137}
+Another type of assert is {\ttfamily static\+\_\+assert$<$condition, diagnostic\+\_\+message$>$}, designed to operate at compile time.
+
+{\bfseries{Attention}} There is no chance for cleanup after terminating with exit() or assert()! 
+
+Definition at line \mbox{\hyperlink{_error_handling_8cpp_source_l00009}{9}} of file \mbox{\hyperlink{_error_handling_8cpp_source}{Error\+Handling.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00009                            \{}
+\DoxyCodeLine{00010     \textcolor{keywordflow}{return} -\/1;}
+\DoxyCodeLine{00011 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{_error_handling_8h_a69f3e56d755ff37eee83d3397b512bf5}\label{_error_handling_8h_a69f3e56d755ff37eee83d3397b512bf5}} 
+\index{ErrorHandling.h@{ErrorHandling.h}!write\_error\_message@{write\_error\_message}}
+\index{write\_error\_message@{write\_error\_message}!ErrorHandling.h@{ErrorHandling.h}}
+\doxysubsubsection{\texorpdfstring{write\_error\_message()}{write\_error\_message()}}
+{\footnotesize\ttfamily void write\+\_\+error\+\_\+message (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_error_handling_8cpp_source_l00013}{13}} of file \mbox{\hyperlink{_error_handling_8cpp_source}{Error\+Handling.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00013                            \{}
+\DoxyCodeLine{00014     std::cerr << \textcolor{stringliteral}{"{}This is an error message!"{}} << std::endl;}
+\DoxyCodeLine{00015 \}}
+
+\end{DoxyCode}

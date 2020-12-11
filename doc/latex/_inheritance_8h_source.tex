@@ -1,0 +1,49 @@
+\hypertarget{_inheritance_8h_source}{}\doxysection{Inheritance.\+h}
+\label{_inheritance_8h_source}\index{learningCpp/OOP/Inheritance.h@{learningCpp/OOP/Inheritance.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001 \textcolor{comment}{//}}
+\DoxyCodeLine{00002 \textcolor{comment}{// Created by Michael Staneker on 10.12.20.}}
+\DoxyCodeLine{00003 \textcolor{comment}{//}}
+\DoxyCodeLine{00004 }
+\DoxyCodeLine{00093 \textcolor{preprocessor}{\#ifndef CPP\_TEMPLATE\_PROJECT\_INHERITANCE\_H}}
+\DoxyCodeLine{00094 \textcolor{preprocessor}{\#define CPP\_TEMPLATE\_PROJECT\_INHERITANCE\_H}}
+\DoxyCodeLine{00095 }
+\DoxyCodeLine{00096 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{00097 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{00098 }
+\DoxyCodeLine{\Hypertarget{_inheritance_8h_source_l00099}\mbox{\hyperlink{class_base}{00099}} \textcolor{keyword}{class }\mbox{\hyperlink{class_base}{Base}}}
+\DoxyCodeLine{00100 \{}
+\DoxyCodeLine{00101 \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_inheritance_8h_source_l00102}\mbox{\hyperlink{class_base_a7565777894d190c6c82d8eb9cf519236}{00102}}     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_base_a7565777894d190c6c82d8eb9cf519236}{m\_id}};}
+\DoxyCodeLine{\Hypertarget{_inheritance_8h_source_l00103}\mbox{\hyperlink{class_base_a928485c705e04c94b4cd111fab11e9aa}{00103}}     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_base_a928485c705e04c94b4cd111fab11e9aa}{m\_private}};}
+\DoxyCodeLine{00104 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{\Hypertarget{_inheritance_8h_source_l00105}\mbox{\hyperlink{class_base_a024f7ffb4472874b15cbd55dbe85eb24}{00105}}     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_base_a024f7ffb4472874b15cbd55dbe85eb24}{m\_protected}};}
+\DoxyCodeLine{00106     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_base_a027bf63501cd4c4207b315f3400e5650}{getPrivate}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{00107 \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_inheritance_8h_source_l00108}\mbox{\hyperlink{class_base_aa425326b541252ae61b92f6ed246a69a}{00108}}     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_base_aa425326b541252ae61b92f6ed246a69a}{m\_public}};}
+\DoxyCodeLine{00109 }
+\DoxyCodeLine{00110     \mbox{\hyperlink{class_base_a17de5b19f85e3a3d5f348160391eafcb}{Base}}(\textcolor{keywordtype}{int} \textcolor{keywordtype}{id}=0, \textcolor{keywordtype}{int} var\_private=0, \textcolor{keywordtype}{int} var\_protected=0, \textcolor{keywordtype}{int} var\_public=0);}
+\DoxyCodeLine{00111 }
+\DoxyCodeLine{00112     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_base_a3e8ae0959487139411f93fc2513953f1}{getId}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{00113 }
+\DoxyCodeLine{00114     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_base_a22a5b0b0eb0c28b3abce3465c11deef3}{print}}();}
+\DoxyCodeLine{00115 \};}
+\DoxyCodeLine{00116 }
+\DoxyCodeLine{\Hypertarget{_inheritance_8h_source_l00117}\mbox{\hyperlink{class_derived}{00117}} \textcolor{keyword}{class }\mbox{\hyperlink{class_derived}{Derived}}: \textcolor{keyword}{public} \mbox{\hyperlink{class_base}{Base}}}
+\DoxyCodeLine{00118 \{}
+\DoxyCodeLine{00119 \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_inheritance_8h_source_l00120}\mbox{\hyperlink{class_derived_a17a17cf985386f23f7aa69c82b9a9771}{00120}}     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_derived_a17a17cf985386f23f7aa69c82b9a9771}{m\_cost}};}
+\DoxyCodeLine{00121 }
+\DoxyCodeLine{00122 \textcolor{keyword}{public}:}
+\DoxyCodeLine{00123     \mbox{\hyperlink{class_derived_ac2ebd3353411bdbfbdf0c4bdb103452c}{Derived}}(\textcolor{keywordtype}{double} cost=0.0, \textcolor{keywordtype}{int} \textcolor{keywordtype}{id}=0, \textcolor{keywordtype}{int} var\_private=0, \textcolor{keywordtype}{int} var\_protected=0, \textcolor{keywordtype}{int} var\_public=0);}
+\DoxyCodeLine{00124     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_derived_a35546674a57038ffd7294b5d6a918774}{getCost}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{00125     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_derived_a4a1400a4ffcf196872dfe85b52a85d00}{getProtected}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{00126     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_derived_a684a2d0df8738a2ea6f62497776f2e8f}{getPrivate}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{00127 }
+\DoxyCodeLine{00128     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_derived_a31e743f99f9335f51a570390f3cc10c2}{print}}();}
+\DoxyCodeLine{00129 \};}
+\DoxyCodeLine{00130 }
+\DoxyCodeLine{00131 \textcolor{preprocessor}{\#endif //CPP\_TEMPLATE\_PROJECT\_INHERITANCE\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,237 @@
+\hypertarget{class_base}{}\doxysection{Base Class Reference}
+\label{class_base}\index{Base@{Base}}
+
+
+{\ttfamily \#include \char`\"{}Inheritance.\+h\char`\"{}}
+
+
+
+Inheritance diagram for Base\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=130pt]{class_base__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_base_a17de5b19f85e3a3d5f348160391eafcb}{Base}} (int id=0, int var\+\_\+private=0, int var\+\_\+protected=0, int var\+\_\+public=0)
+\item 
+int \mbox{\hyperlink{class_base_a3e8ae0959487139411f93fc2513953f1}{get\+Id}} () const
+\item 
+virtual void \mbox{\hyperlink{class_base_a22a5b0b0eb0c28b3abce3465c11deef3}{print}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_base_aa425326b541252ae61b92f6ed246a69a}{m\+\_\+public}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_base_a027bf63501cd4c4207b315f3400e5650}{get\+Private}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_base_a024f7ffb4472874b15cbd55dbe85eb24}{m\+\_\+protected}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_base_a7565777894d190c6c82d8eb9cf519236}{m\+\_\+id}}
+\item 
+int \mbox{\hyperlink{class_base_a928485c705e04c94b4cd111fab11e9aa}{m\+\_\+private}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\hypertarget{class_base_autotoc_md148}{}\doxysubsection{Inheritance}\label{class_base_autotoc_md148}
+\hypertarget{class_base_autotoc_md149}{}\doxysubsubsection{Access specifiers}\label{class_base_autotoc_md149}
+There are three access specifiers
+
+
+\begin{DoxyItemize}
+\item {\bfseries{public}}\+: accessible from base and derived class, and from outside
+\item {\bfseries{protected}}\+: accessible from base class and derived class
+\item {\bfseries{private}}\+: accessible from base class
+\end{DoxyItemize}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ \{C++\}}
+\DoxyCodeLine{\textcolor{keyword}{class }\mbox{\hyperlink{class_derived}{Derived}}: <access specifier> \mbox{\hyperlink{class_base}{Base}}}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\}}
+\end{DoxyCode}
+\hypertarget{class_base_autotoc_md150}{}\doxyparagraph{Public inheritance}\label{class_base_autotoc_md150}
+
+\begin{DoxyItemize}
+\item public -\/-\/$>$ public
+\item protected -\/-\/$>$ protected
+\item private -\/-\/$>$ inaccessible
+\end{DoxyItemize}\hypertarget{class_base_autotoc_md151}{}\doxyparagraph{Protected inheritance}\label{class_base_autotoc_md151}
+
+\begin{DoxyItemize}
+\item public -\/-\/$>$ protected
+\item protected -\/-\/$>$ protected
+\item private -\/-\/$>$ inaccessible
+\end{DoxyItemize}\hypertarget{class_base_autotoc_md152}{}\doxyparagraph{Private Inheritance}\label{class_base_autotoc_md152}
+
+\begin{DoxyItemize}
+\item public -\/-\/$>$ private
+\item protected -\/-\/$>$ private
+\item private -\/-\/$>$ inaccessible
+\end{DoxyItemize}\hypertarget{class_base_autotoc_md153}{}\doxysubsubsection{Multiple inheritance}\label{class_base_autotoc_md153}
+C++ supports {\bfseries{multiple inheritance}}, but many problems can occur. Since most of the problems solvable with multiple inheritance can be solved without multiple inheritance, prefer solutions without multiple inheritance.
+
+{\bfseries{Avoid multiple inheritance unless alternatives lead to more complexity.}}\hypertarget{class_base_autotoc_md154}{}\doxysubsubsection{Virtual functions and Polymorphism}\label{class_base_autotoc_md154}
+A {\bfseries{virtual function}} is a special type of function that, when called, resolves to the most-\/derived version of the function that exists between the base and derived class. This capability is known as {\bfseries{polymorphism}}.
+
+{\bfseries{Attention}}\+: Resolving a virtual function call takes longer than resolving a regular one. Furthermore, the compiler also has to allocate an extra pointer for each class object that has one or more virtual functions.
+
+When dealing with inheritance, (overwritten) {\bfseries{destructors}} should always be virtual!\hypertarget{class_base_autotoc_md155}{}\doxysubsubsection{Override and final specifiers}\label{class_base_autotoc_md155}
+To help address the issue of functions that are meant to be overrides but aren’t, C++11 introduced the {\bfseries{override}} specifier. The override specifier can be applied to any override function by placing the specifier in the same place const would go.
+
+There may be cases where you don’t want someone to be able to override a virtual function, or inherit from a class. The {\bfseries{final}} specifier can be used to tell the compiler to enforce this. If the user tries to override a function or inherit from a class that has been specified as final, the compiler will give a compile error.\hypertarget{class_base_autotoc_md156}{}\doxysubsubsection{Pure virtual functions, abstract base classes and interface classes}\label{class_base_autotoc_md156}
+\hypertarget{class_base_autotoc_md157}{}\doxyparagraph{Pure virtual functions}\label{class_base_autotoc_md157}
+C++ allows to create a special kind of virtual function called a pure virtual function (or abstract function) that has no body at all! A pure virtual function simply acts as a placeholder that is meant to be redefined by derived classes.
+
+{\bfseries{Any class with at least one pure virtual function becomes an abstract base class and cannot be instantiated}}\hypertarget{class_base_autotoc_md158}{}\doxyparagraph{Abstract base classes}\label{class_base_autotoc_md158}
+{\bfseries{Abstract base classes}} can not be instantiated!\hypertarget{class_base_autotoc_md159}{}\doxyparagraph{Interface classes}\label{class_base_autotoc_md159}
+An {\bfseries{interface class}} has no member variables and only pure virtual (member) functions. Thus, interface classes are pure definitions and have no actual implementations. 
+
+Definition at line \mbox{\hyperlink{_inheritance_8h_source_l00099}{99}} of file \mbox{\hyperlink{_inheritance_8h_source}{Inheritance.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_base_a17de5b19f85e3a3d5f348160391eafcb}\label{class_base_a17de5b19f85e3a3d5f348160391eafcb}} 
+\index{Base@{Base}!Base@{Base}}
+\index{Base@{Base}!Base@{Base}}
+\doxysubsubsection{\texorpdfstring{Base()}{Base()}}
+{\footnotesize\ttfamily Base\+::\+Base (\begin{DoxyParamCaption}\item[{int}]{id = {\ttfamily 0},  }\item[{int}]{var\+\_\+private = {\ttfamily 0},  }\item[{int}]{var\+\_\+protected = {\ttfamily 0},  }\item[{int}]{var\+\_\+public = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_inheritance_8cpp_source_l00007}{7}} of file \mbox{\hyperlink{_inheritance_8cpp_source}{Inheritance.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00008         : \mbox{\hyperlink{class_base_a7565777894d190c6c82d8eb9cf519236}{m\_id}}\{ \textcolor{keywordtype}{id} \}, \mbox{\hyperlink{class_base_a928485c705e04c94b4cd111fab11e9aa}{m\_private}}\{ var\_private \}, \mbox{\hyperlink{class_base_a024f7ffb4472874b15cbd55dbe85eb24}{m\_protected}}\{ var\_protected \},}
+\DoxyCodeLine{00009           \mbox{\hyperlink{class_base_aa425326b541252ae61b92f6ed246a69a}{m\_public}}\{ var\_public \}}
+\DoxyCodeLine{00010 \{}
+\DoxyCodeLine{00011     std::cout << \textcolor{stringliteral}{"{}Base constructor called ..."{}} << std::endl;}
+\DoxyCodeLine{00012 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_base_a3e8ae0959487139411f93fc2513953f1}\label{class_base_a3e8ae0959487139411f93fc2513953f1}} 
+\index{Base@{Base}!getId@{getId}}
+\index{getId@{getId}!Base@{Base}}
+\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
+{\footnotesize\ttfamily int Base\+::get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line \mbox{\hyperlink{_inheritance_8cpp_source_l00014}{14}} of file \mbox{\hyperlink{_inheritance_8cpp_source}{Inheritance.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00014                       \{}
+\DoxyCodeLine{00015     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_base_a7565777894d190c6c82d8eb9cf519236}{m\_id}};}
+\DoxyCodeLine{00016 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_base_a027bf63501cd4c4207b315f3400e5650}\label{class_base_a027bf63501cd4c4207b315f3400e5650}} 
+\index{Base@{Base}!getPrivate@{getPrivate}}
+\index{getPrivate@{getPrivate}!Base@{Base}}
+\doxysubsubsection{\texorpdfstring{getPrivate()}{getPrivate()}}
+{\footnotesize\ttfamily int Base\+::get\+Private (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \mbox{\hyperlink{_inheritance_8cpp_source_l00018}{18}} of file \mbox{\hyperlink{_inheritance_8cpp_source}{Inheritance.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00018                            \{}
+\DoxyCodeLine{00019     std::cout << \textcolor{stringliteral}{"{}getPrivate() from Base"{}} << std::endl;}
+\DoxyCodeLine{00020     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_base_a928485c705e04c94b4cd111fab11e9aa}{m\_private}};}
+\DoxyCodeLine{00021 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_base_a22a5b0b0eb0c28b3abce3465c11deef3}\label{class_base_a22a5b0b0eb0c28b3abce3465c11deef3}} 
+\index{Base@{Base}!print@{print}}
+\index{print@{print}!Base@{Base}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Base\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_derived_a31e743f99f9335f51a570390f3cc10c2}{Derived}}.
+
+
+
+Definition at line \mbox{\hyperlink{_inheritance_8cpp_source_l00023}{23}} of file \mbox{\hyperlink{_inheritance_8cpp_source}{Inheritance.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00023                  \{}
+\DoxyCodeLine{00024     std::cout << \textcolor{stringliteral}{"{}Print from Base class!"{}} << std::endl;}
+\DoxyCodeLine{00025 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_base_a7565777894d190c6c82d8eb9cf519236}\label{class_base_a7565777894d190c6c82d8eb9cf519236}} 
+\index{Base@{Base}!m\_id@{m\_id}}
+\index{m\_id@{m\_id}!Base@{Base}}
+\doxysubsubsection{\texorpdfstring{m\_id}{m\_id}}
+{\footnotesize\ttfamily int Base\+::m\+\_\+id\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_inheritance_8h_source_l00102}{102}} of file \mbox{\hyperlink{_inheritance_8h_source}{Inheritance.\+h}}.
+
+\mbox{\Hypertarget{class_base_a928485c705e04c94b4cd111fab11e9aa}\label{class_base_a928485c705e04c94b4cd111fab11e9aa}} 
+\index{Base@{Base}!m\_private@{m\_private}}
+\index{m\_private@{m\_private}!Base@{Base}}
+\doxysubsubsection{\texorpdfstring{m\_private}{m\_private}}
+{\footnotesize\ttfamily int Base\+::m\+\_\+private\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_inheritance_8h_source_l00103}{103}} of file \mbox{\hyperlink{_inheritance_8h_source}{Inheritance.\+h}}.
+
+\mbox{\Hypertarget{class_base_a024f7ffb4472874b15cbd55dbe85eb24}\label{class_base_a024f7ffb4472874b15cbd55dbe85eb24}} 
+\index{Base@{Base}!m\_protected@{m\_protected}}
+\index{m\_protected@{m\_protected}!Base@{Base}}
+\doxysubsubsection{\texorpdfstring{m\_protected}{m\_protected}}
+{\footnotesize\ttfamily int Base\+::m\+\_\+protected\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \mbox{\hyperlink{_inheritance_8h_source_l00105}{105}} of file \mbox{\hyperlink{_inheritance_8h_source}{Inheritance.\+h}}.
+
+\mbox{\Hypertarget{class_base_aa425326b541252ae61b92f6ed246a69a}\label{class_base_aa425326b541252ae61b92f6ed246a69a}} 
+\index{Base@{Base}!m\_public@{m\_public}}
+\index{m\_public@{m\_public}!Base@{Base}}
+\doxysubsubsection{\texorpdfstring{m\_public}{m\_public}}
+{\footnotesize\ttfamily int Base\+::m\+\_\+public}
+
+
+
+Definition at line \mbox{\hyperlink{_inheritance_8h_source_l00108}{108}} of file \mbox{\hyperlink{_inheritance_8h_source}{Inheritance.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+learning\+Cpp/\+O\+O\+P/\mbox{\hyperlink{_inheritance_8h}{Inheritance.\+h}}\item 
+learning\+Cpp/\+O\+O\+P/\mbox{\hyperlink{_inheritance_8cpp}{Inheritance.\+cpp}}\end{DoxyCompactItemize}

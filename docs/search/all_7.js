@@ -1,10 +1,7 @@
 var searchData=
 [
-  ['macros_2ecpp_19',['Macros.cpp',['../_macros_8cpp.html',1,'']]],
-  ['main_20',['main',['../_basics_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;Basics.cpp'],['../_bit_manipulation_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;BitManipulation.cpp'],['../_functions_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;Functions.cpp'],['../_iterators_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;Iterators.cpp'],['../_macros_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;Macros.cpp'],['../_pointers_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;Pointers.cpp'],['../_reference_variables_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;ReferenceVariables.cpp'],['../_s_l___basics_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;SL_Basics.cpp'],['../_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;Main.cpp'],['../tester_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;tester.cpp']]],
-  ['main_2ecpp_21',['Main.cpp',['../_main_8cpp.html',1,'']]],
-  ['markdown_2emd_22',['Markdown.md',['../_markdown_8md.html',1,'']]],
-  ['markdown_20cheatsheet_23',['Markdown cheatsheet',['../md_documents__markdown.html',1,'']]],
-  ['member_5fa_24',['member_a',['../class_concept_class.html#a09e8dd98900c642018454465d2246374',1,'ConceptClass']]],
-  ['member_5fb_25',['member_b',['../class_concept_class.html#a84388fb91f2e8fc093f4eebbf0565bdb',1,'ConceptClass']]]
+  ['inheritance_2ecpp_52',['Inheritance.cpp',['../_inheritance_8cpp.html',1,'']]],
+  ['inheritance_2eh_53',['Inheritance.h',['../_inheritance_8h.html',1,'']]],
+  ['intarray_54',['IntArray',['../class_int_array.html',1,'IntArray'],['../class_int_array.html#a07b52d3e5b0cfc4462bb17f12b6dd317',1,'IntArray::IntArray()']]],
+  ['iterators_2ecpp_55',['Iterators.cpp',['../_iterators_8cpp.html',1,'']]]
 ];

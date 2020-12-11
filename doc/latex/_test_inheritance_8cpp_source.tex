@@ -1,0 +1,30 @@
+\hypertarget{_test_inheritance_8cpp_source}{}\doxysection{Test\+Inheritance.\+cpp}
+\label{_test_inheritance_8cpp_source}\index{learningCpp/OOP/TestInheritance.cpp@{learningCpp/OOP/TestInheritance.cpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001 \textcolor{comment}{//}}
+\DoxyCodeLine{00002 \textcolor{comment}{// Created by Michael Staneker on 10.12.20.}}
+\DoxyCodeLine{00003 \textcolor{comment}{//}}
+\DoxyCodeLine{00004 }
+\DoxyCodeLine{00005 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_inheritance_8h}{Inheritance.h}}"{}}}
+\DoxyCodeLine{00006 }
+\DoxyCodeLine{00007 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{00008 }
+\DoxyCodeLine{\Hypertarget{_test_inheritance_8cpp_source_l00009}\mbox{\hyperlink{_test_inheritance_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{00009}} \textcolor{keywordtype}{int} \mbox{\hyperlink{_test_inheritance_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}}()}
+\DoxyCodeLine{00010 \{}
+\DoxyCodeLine{00011     \mbox{\hyperlink{class_derived}{Derived}} derived\{ 1.3, 5, 1, 2, 3\};}
+\DoxyCodeLine{00012     std::cout << \textcolor{stringliteral}{"{}Id: "{}} << derived.\mbox{\hyperlink{class_base_a3e8ae0959487139411f93fc2513953f1}{getId}}() << \textcolor{charliteral}{'\(\backslash\)n'};}
+\DoxyCodeLine{00013     std::cout << \textcolor{stringliteral}{"{}Cost: "{}} << derived.getCost() << \textcolor{charliteral}{'\(\backslash\)n'};}
+\DoxyCodeLine{00014     \textcolor{comment}{//std::cout << "{}private: "{} << derived.m\_private << '\(\backslash\)n';}}
+\DoxyCodeLine{00015     std::cout << \textcolor{stringliteral}{"{}private: "{}} << derived.getPrivate() << \textcolor{charliteral}{'\(\backslash\)n'};}
+\DoxyCodeLine{00016     std::cout << \textcolor{stringliteral}{"{}protected: "{}} << derived.getProtected() << \textcolor{charliteral}{'\(\backslash\)n'};}
+\DoxyCodeLine{00017     std::cout << \textcolor{stringliteral}{"{}public: "{}} << derived.m\_public << \textcolor{charliteral}{'\(\backslash\)n'};}
+\DoxyCodeLine{00018 }
+\DoxyCodeLine{00019     \mbox{\hyperlink{class_base}{Base}} \&rBase\{ derived \};}
+\DoxyCodeLine{00020     derived.\mbox{\hyperlink{class_base_a22a5b0b0eb0c28b3abce3465c11deef3}{print}}();}
+\DoxyCodeLine{00021 }
+\DoxyCodeLine{00022 }
+\DoxyCodeLine{00023     \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{00024 \}}
+
+\end{DoxyCode}

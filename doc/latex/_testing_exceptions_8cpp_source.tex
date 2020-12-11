@@ -1,0 +1,95 @@
+\hypertarget{_testing_exceptions_8cpp_source}{}\doxysection{Testing\+Exceptions.\+cpp}
+\label{_testing_exceptions_8cpp_source}\index{learningCpp/Errors/TestingExceptions.cpp@{learningCpp/Errors/TestingExceptions.cpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001 \textcolor{comment}{//}}
+\DoxyCodeLine{00002 \textcolor{comment}{// Created by Michael Staneker on 10.12.20.}}
+\DoxyCodeLine{00003 \textcolor{comment}{//}}
+\DoxyCodeLine{00004 }
+\DoxyCodeLine{00005 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_exceptions_8h}{Exceptions.h}}"{}}}
+\DoxyCodeLine{00006 }
+\DoxyCodeLine{00007 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{00008 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{00009 \textcolor{preprocessor}{\#include <exception>}}
+\DoxyCodeLine{00010 }
+\DoxyCodeLine{\Hypertarget{_testing_exceptions_8cpp_source_l00011}\mbox{\hyperlink{_testing_exceptions_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{00011}} \textcolor{keywordtype}{int} \mbox{\hyperlink{_testing_exceptions_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}}() \{}
+\DoxyCodeLine{00012 }
+\DoxyCodeLine{00013     \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00014     \{}
+\DoxyCodeLine{00015         \textcolor{comment}{// Statements that may throw exceptions you want to handle go here}}
+\DoxyCodeLine{00016         \textcolor{keywordflow}{throw} -\/1; \textcolor{comment}{// here's a trivial example}}
+\DoxyCodeLine{00017     \}}
+\DoxyCodeLine{00018     \textcolor{keywordflow}{catch} (\textcolor{keywordtype}{int} x)}
+\DoxyCodeLine{00019     \{}
+\DoxyCodeLine{00020         \textcolor{comment}{// Any exceptions of type int thrown within the above try block get sent here}}
+\DoxyCodeLine{00021         std::cerr << \textcolor{stringliteral}{"{}We caught an int exception with value: "{}} << x << \textcolor{charliteral}{'\(\backslash\)n'};}
+\DoxyCodeLine{00022     \}}
+\DoxyCodeLine{00023     \textcolor{keywordflow}{catch} (\textcolor{keywordtype}{double}) \textcolor{comment}{// no variable name since we don't use the exception itself in the catch block below}}
+\DoxyCodeLine{00024     \{}
+\DoxyCodeLine{00025         \textcolor{comment}{// Any exceptions of type double thrown within the above try block get sent here}}
+\DoxyCodeLine{00026         std::cerr << \textcolor{stringliteral}{"{}We caught an exception of type double"{}} << \textcolor{charliteral}{'\(\backslash\)n'};}
+\DoxyCodeLine{00027     \}}
+\DoxyCodeLine{00028     \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::string \&str) \textcolor{comment}{// catch classes by const reference}}
+\DoxyCodeLine{00029     \{}
+\DoxyCodeLine{00030         \textcolor{comment}{// Any exceptions of type std::string thrown within the above try block get sent here}}
+\DoxyCodeLine{00031         std::cerr << \textcolor{stringliteral}{"{}We caught an exception of type std::string"{}} << \textcolor{charliteral}{'\(\backslash\)n'};}
+\DoxyCodeLine{00032     \}}
+\DoxyCodeLine{00033 }
+\DoxyCodeLine{00034     std::cout << \textcolor{stringliteral}{"{}Continuing on our merry way\(\backslash\)n"{}};}
+\DoxyCodeLine{00035 }
+\DoxyCodeLine{00036 }
+\DoxyCodeLine{00037     \textcolor{keywordtype}{double} x\{ -\/1 \};}
+\DoxyCodeLine{00038 }
+\DoxyCodeLine{00039     \textcolor{keywordflow}{try} \textcolor{comment}{// Look for exceptions that occur within try block and route to attached catch block(s)}}
+\DoxyCodeLine{00040     \{}
+\DoxyCodeLine{00041         \textcolor{keywordtype}{double} d = \mbox{\hyperlink{class_s_q_r_t_ad38eaa006bce8d7bfc20c54ce915af60}{SQRT::mySqrt}}(x);}
+\DoxyCodeLine{00042         std::cout << \textcolor{stringliteral}{"{}The sqrt of "{}} << x << \textcolor{stringliteral}{"{} is "{}} << d << \textcolor{charliteral}{'\(\backslash\)n'};}
+\DoxyCodeLine{00043     \}}
+\DoxyCodeLine{00044     \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} \textcolor{keywordtype}{char}* exception) \textcolor{comment}{// catch exceptions of type const char*}}
+\DoxyCodeLine{00045     \{}
+\DoxyCodeLine{00046         std::cerr << \textcolor{stringliteral}{"{}Error: "{}} << exception << std::endl;}
+\DoxyCodeLine{00047     \}}
+\DoxyCodeLine{00048 }
+\DoxyCodeLine{00049     \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00050     \{}
+\DoxyCodeLine{00051         \textcolor{comment}{// Your code using standard library goes here}}
+\DoxyCodeLine{00052         \textcolor{comment}{// We'll trigger one of these exceptions intentionally for the sake of example}}
+\DoxyCodeLine{00053         std::string s;}
+\DoxyCodeLine{00054         s.resize(-\/1); \textcolor{comment}{// will trigger a std::length\_error}}
+\DoxyCodeLine{00055     \}}
+\DoxyCodeLine{00056         \textcolor{comment}{// This handler will catch std::exception and all the derived exceptions too}}
+\DoxyCodeLine{00057     \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception \&exception)}
+\DoxyCodeLine{00058     \{}
+\DoxyCodeLine{00059         std::cerr << \textcolor{stringliteral}{"{}Standard exception: "{}} << exception.what() << \textcolor{charliteral}{'\(\backslash\)n'};}
+\DoxyCodeLine{00060     \}}
+\DoxyCodeLine{00061 }
+\DoxyCodeLine{00062     \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00063     \{}
+\DoxyCodeLine{00064         \textcolor{keywordflow}{throw} std::runtime\_error(\textcolor{stringliteral}{"{}Bad things happened"{}});}
+\DoxyCodeLine{00065     \}}
+\DoxyCodeLine{00066         \textcolor{comment}{// This handler will catch std::exception and all the derived exceptions too}}
+\DoxyCodeLine{00067     \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception \&exception)}
+\DoxyCodeLine{00068     \{}
+\DoxyCodeLine{00069         std::cerr << \textcolor{stringliteral}{"{}Standard exception: "{}} << exception.what() << \textcolor{charliteral}{'\(\backslash\)n'};}
+\DoxyCodeLine{00070     \}}
+\DoxyCodeLine{00071 }
+\DoxyCodeLine{00072     \mbox{\hyperlink{class_int_array}{IntArray}} array;}
+\DoxyCodeLine{00073 }
+\DoxyCodeLine{00074     \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00075     \{}
+\DoxyCodeLine{00076         \textcolor{keywordtype}{int} value\{ array[5] \};}
+\DoxyCodeLine{00077     \}}
+\DoxyCodeLine{00078     \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} \mbox{\hyperlink{class_array_exception}{ArrayException}} \&exception) \textcolor{comment}{// derived catch blocks go first}}
+\DoxyCodeLine{00079     \{}
+\DoxyCodeLine{00080         std::cerr << \textcolor{stringliteral}{"{}An array exception occurred ("{}} << exception.\mbox{\hyperlink{class_array_exception_a87cd11416e58d1e8398d04937e6a8d9e}{what}}() << \textcolor{stringliteral}{"{})\(\backslash\)n"{}};}
+\DoxyCodeLine{00081     \}}
+\DoxyCodeLine{00082     \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception \&exception)}
+\DoxyCodeLine{00083     \{}
+\DoxyCodeLine{00084         std::cerr << \textcolor{stringliteral}{"{}Some other std::exception occurred ("{}} << exception.what() << \textcolor{stringliteral}{"{})\(\backslash\)n"{}};}
+\DoxyCodeLine{00085     \}}
+\DoxyCodeLine{00086 }
+\DoxyCodeLine{00087     \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{00088 \}}
+\DoxyCodeLine{00089 }
+
+\end{DoxyCode}

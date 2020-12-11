@@ -1,4 +1,15 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,56,32"/>
-<area shape="rect" id="node2" href="$_functions_8cpp.html#af889c468d4cc52789ef37bf08716b68a" title="Function passing argument by value." alt="" coords="104,5,213,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,308,56,335"/>
+<area shape="rect" id="node2" href="$_functions_8cpp.html#a5efc0d291d6f7ee1784b2c23409adbf5" title="A simple recursive function." alt="" coords="129,29,217,56"/>
+<area shape="rect" id="node3" href="$_functions_8cpp.html#a69c7a90f893a6d7838dc10248edd16f2" title="A simple function using ellipsis." alt="" coords="113,80,232,107"/>
+<area shape="rect" id="node4" href="$_functions_8cpp.html#a053706b86da2cf3c4275be130dfcfd1d" title="Function with default argument (optional parameter)" alt="" coords="113,131,232,157"/>
+<area shape="rect" id="node5" href="$_functions_8cpp.html#abd9a6c9fecee433db5438afa8cae8670" title="A simple lambda function." alt="" coords="113,181,233,208"/>
+<area shape="rect" id="node6" href="$_functions_8cpp.html#a3f4ae913e2a7b3479faa6afe7c6948cd" title="A simple template function." alt="" coords="149,232,196,259"/>
+<area shape="rect" id="node7" href="$_functions_8cpp.html#a8a24400242b18720c6ffef03116f165e" title="Function adding two values." alt="" coords="123,283,222,309"/>
+<area shape="rect" id="node8" href="$_functions_8cpp.html#a20f774a659684ced489bff98351171a6" title="Function passing argument by address." alt="" coords="111,333,235,360"/>
+<area shape="rect" id="node9" href="$_functions_8cpp.html#a5ec956d71e1eccd51ef422341e5f3049" title="Function passing argument by reference." alt="" coords="107,384,239,411"/>
+<area shape="rect" id="node10" href="$_functions_8cpp.html#af889c468d4cc52789ef37bf08716b68a" title="Function passing argument by value." alt="" coords="118,435,227,461"/>
+<area shape="rect" id="node11" href="$_functions_8cpp.html#a3281d80fbae3ea726d13d7f2bdf21a3a" title="Function returning value by address." alt="" coords="108,485,237,512"/>
+<area shape="rect" id="node12" href="$_functions_8cpp.html#ae748ac036cd3cb10bbb279962e5e9a7c" title="Function returning value by reference." alt="" coords="104,536,241,563"/>
+<area shape="rect" id="node13" href="$_functions_8cpp.html#af8c77c8db78c984abd2c2d9526586d6a" title="Function returning value by value." alt="" coords="115,587,230,613"/>
 </map>
