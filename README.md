@@ -2,6 +2,8 @@
 
 See the [Documentation](https://michaelst98.github.io/Cpp_template_project/)!
 
+Adapted from [Learn C++](https://www.learncpp.com/).
+
 ## Idea
 
 **This project serves as sample/concept project for further projects** \emoji :thumbsup:
