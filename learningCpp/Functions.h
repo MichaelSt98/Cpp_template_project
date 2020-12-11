@@ -266,6 +266,8 @@
  * **Use auto when initializing variables with lambdas, and std::function
  * if you can’t initialize the variable with the lambda.**
  *
+ * # Function templates
+ *
  */
 
 // \fn void pass_by_value(int)
@@ -327,7 +329,15 @@ void countDown(int count);
  */
 void ellipsis_example(int count, ...);
 
+/**
+ * \brief A simple lambda function
+ */
 void lambda_example(std::array<std::string_view, 4> arr);
+
+/**
+ * \brief A simple template function.
+ */
+template <typename T> T max(T x, T y);
 
 
 

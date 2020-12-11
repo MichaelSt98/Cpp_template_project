@@ -106,6 +106,10 @@ void ellipsis_example(int count, ...) {
     std::cout << "average = " << sum / count << std::endl;
 }
 
+template <typename T> T max(T x, T y) {
+    return (x > y) ? x : y;
+}
+
 
 int main() {
 
@@ -167,6 +171,16 @@ int main() {
     std::cout << "lambda_example()" << std::endl;
     std::array<std::string_view, 4> arr{ "apple", "banana", "walnut", "lemon" };
     lambda_example(arr);
+
+    int int_1 = 1;
+    int int_2 = 2;
+    int int_max = max(int_1, int_2);
+    std::cout << "max integer = " << int_max << std::endl;
+
+    double double_1 = 4.7;
+    double double_2 = 7.9;
+    double double_max = max(double_1, double_2);
+    std::cout << "max double = " << double_max << std::endl;
 
     return 0;
 }

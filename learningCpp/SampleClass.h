@@ -36,6 +36,92 @@
  * * friend classes
  * * ...
  *
+ * ## Overloading operators
+ *
+ * [Overloading assignment operator](https://www.learncpp.com/cpp-tutorial/9-14-overloading-the-assignment-operator/)
+ *
+ * ## Shallow vs. deep copy
+ *
+ * The default copy mechanism for classes is **memberwise** copy (also called **shallow copy**),
+ * which works for simple classes, without dynamically reserved memory, very good.
+ *
+ * However, a **deep copy** allocates memory for the copy and then copies
+ * the actual value, so that the copy lives in distinct memory from the source.
+ * This requires to write copy constructors and overloaded assignment operators.
+ *
+ * * The default copy constructor and default assignment operators do shallow copies,
+ *   which is fine for classes that contain no dynamically allocated variables.
+ * * Classes with dynamically allocated variables need to have a copy constructor and
+ *   assignment operator that do a deep copy.
+ * * Favor using classes in the standard library over doing your own memory management.
+ *
+ * ## Object relations
+ *
+ * | Property/type                      | Composition   | Composition   | Composition   | Composition   |
+ * | ---------------------------------- |---------------|---------------|---------------|---------------|
+ * | relationship                       | whole/part    | whole/part    | unrelated     | unrelated     |
+ * | members belong to multiple classes | No            | Yes           | Yes           | Yes           |
+ * | members existence managed by class | Yes           | No            | No            | No            |
+ * | directionality                     | Uni           | Uni           | Uni or bi     | Uni           |
+ * | relationship verb                  | part-of       | has-a         | uses-a        | depends-on    |
+ *
+ * ### Composition
+ *
+ * To qualify as a composition, an object and a part must have the following relationship:
+ *
+ * * The part (member) is part of the object (class)
+ * * The part (member) can only belong to one object (class) at a time
+ * * The part (member) has its existence managed by the object (class)
+ * * The part (member) does not know about the existence of the object (class)
+ *
+ * Therefore:
+ *
+ * * Typically use normal member variables
+ * * Can use pointer members if the class handles object allocation/deallocation itself
+ * * Responsible for creation/destruction of parts
+ *
+ *
+ * ### Aggregation
+ *
+ * To qualify as an aggregation, a whole object and its parts must have the following relationship:
+ *
+ * * The part (member) is part of the object (class)
+ * * The part (member) can belong to more than one object (class) at a time
+ * * The part (member) does not have its existence managed by the object (class)
+ * * The part (member) does not know about the existence of the object (class)
+ *
+ * Therefore:
+ *
+ * * Typically use pointer or reference members that point to or reference objects that live outside the
+ *   scope of the aggregate class
+ * * Not responsible for creating/destroying parts
+ *
+ *
+ * ### Association
+ *
+ * * To qualify as an association, an object and another object must have the following relationship:
+ * * The associated object (member) is otherwise unrelated to the object (class)
+ * * The associated object (member) can belong to more than one object (class) at a time
+ * * The associated object (member) does not have its existence managed by the object (class)*
+ * * The associated object (member) may or may not know about the existence of the object (class)
+ *
+ *
+ * ## Container classes
+ *
+ * See [Container classes](https://www.learncpp.com/cpp-tutorial/106-container-classes/)
+ *
+ * Container classes typically implement a fairly standardized minimal set of functionality.
+ * Most well-defined containers will include functions that:
+ *
+ * * Create an empty container (via a constructor)
+ * * Insert a new object into the container
+ * * Remove an object from the container
+ * * Report the number of objects currently in the container
+ * * Empty the container of all objects
+ * * Provide access to the stored objects
+ * * Sort the elements (optional)
+ *
+ *
  */
 
 
