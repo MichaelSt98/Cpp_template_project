@@ -8,9 +8,7 @@
 #include <thread>
 #include <array>
 
-/** # C++ Basics */
-
-/** ## Global variables */
+/** Global variables */
 // global variables have file scope
 int g_global_integer { 1 };
 // AVOID using non-constant global variables!
@@ -25,32 +23,14 @@ static int g_x_1; // adding static makes them internal linkage
 extern const int g_x_2 { 2 }; // making const external
 /** */
 
-/** ## include order
- *
- * The following include order is recommended:
- *
- * * user-defined headers (alphabetically)
- * * third-party library headers (alphabetically)
- * * standard library header (alphabetically)
- */
+/** include order */
+// user-defined headers (alphabetically)
+// third-party library headers (alphabetically)
+// standard library header (alphabetically)
 
 int main() {
 
-    /** ## Initialization
-     *
-     * ```cpp
-     * // copy initialization
-     * int a = 1;
-     * // direct initialization
-     * int b(1);
-     * // list (uniform/brace) initialization
-     * //direct
-     * int c_1{1};
-     * //copy
-     * int c_2 = {1};
-     * ```
-     * */
-
+    /** Initialization */
     // copy initialization
     int a = 1;
     // direct initialization
@@ -62,27 +42,7 @@ int main() {
     int c_2 = {1};
     /** */
 
-    /** ## Fundamental data types
-     *
-     * ### floating point
-     *
-     * * float
-     * * double
-     * * long double
-     *
-     * ### Integral characters
-     *
-     * * char
-     * * w_chart_t
-     * * char8_t, char16_t, char32_t
-     *
-     * ### Integers
-     *
-     * * short
-     * * int
-     * * long
-     * * long long
-     * */
+    /** Fundamental data types */
     // floating point
     float float_a = 3.14159; // at least 4 bytes
     double float_b = 3.14159; // at least 8 bytes
@@ -153,9 +113,7 @@ int main() {
     // and whose initializer is known at compile-time
     /** */
 
-    /** ## escape sequences
-     * \code
-     * */
+    /** escape sequences */
     for (int i = 0; i < 5; i++) {
         std::this_thread::sleep_for(std::chrono::milliseconds(250));
         std::cout << "\a"; // makes an alert
@@ -169,34 +127,29 @@ int main() {
     std::cout << "Single quote \' or double quote \"" << std::endl;
     std::cout << "Octal number \12" << std::endl;
     std::cout << "Hex number \x14" << std::endl;
+    /** */
 
-    /**
-     * \endcode
-     * */
-
-    /** ## Conditional operator */
+    /** Conditional operator */
     int x_1 = 2;
     int x_2 = 3;
     int max_x = (x_1 > x_2) ? x_1 : x_2;
-    std::cout << "max_x = " << max_x << std::endl;
     /** */
 
-    /** ## Namespaces
-     *
-     * ```cpp
-     * // define a namespace
-     * namespace namespace_1 {
-     * //nested namespace
-     *      namespace namespace_1_nested {
-     *      }
-     * }
-     * // accessible using "::"
-     * // namespace alias
-     * namespace nested_namespace = namespace_1::namespace_1_nested;
-     * ```
-     */
+    /** Namespaces */
+    // define a namespace
+    //namespace namespace_1 {
+    //    //nested namespace
+    //    namespace namespace_1_nested {
 
-    /** ## Static local variables */
+    //    }
+    //}
+    // accessible using "::"
+
+    // namespace alias
+    // namespace nested_namespace = namespace_1::namespace_1_nested;
+    /** */
+
+    /** Static local variables */
 
     // static local variables are not destroyed when out of scope (in contrast to automatic)
     static int var_1 { 1 };
@@ -204,7 +157,7 @@ int main() {
     /** */
 
 
-    /** ## Typedefs and type aliases */
+    /** Typedefs and type aliases */
     typedef double distance_t; // define distance_t as an alias for type double
     //which is equivalent to: using distance_t = double;
     // The following two statements are equivalent:
@@ -213,7 +166,7 @@ int main() {
     /** */
 
 
-    /** ## Type conversion */
+    /** Type conversion */
 
     // IMPLICIT type conversion (coercion)
     float f_int { 3 }; // initializing floating point variable with int 3
@@ -227,7 +180,7 @@ int main() {
 
     /** */
 
-    /** ## Enumerations */
+    /** Enumerations */
     enum Color
     {
         color_black, // assigned 0
@@ -251,7 +204,7 @@ int main() {
     Fruit fruit{ Fruit::banana }; // note: banana is not directly accessible any more, we have to use Fruit::banana
     /** */
 
-    /** ## Structs */
+    /** Structs */
     struct Employee
     {
         short id;
@@ -281,7 +234,7 @@ int main() {
     Company myCompany{{ 1, 42, 60000.0 }, 5 };
     /** */
 
-    /** ## Control flows */
+    /** Control flows */
     // halt (using <cstdlib>)
     //std::exit(0); // terminate and return 0 to operating system
     // ATTENTION: be aware of leaking resources
@@ -360,7 +313,7 @@ int main() {
     // continue jumps to the end of the loop body for the current iteration
     /** */
 
-    /** ## Arrays */
+    /** Arrays */
     //int prime[5]{}; // hold the first 5 prime numbers
     //prime[0] = 2; // The first element has index 0
     //prime[1] = 3;

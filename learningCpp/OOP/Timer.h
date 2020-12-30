@@ -7,11 +7,6 @@
 #ifndef CPP_TEMPLATE_PROJECT_TIMER_H
 #define CPP_TEMPLATE_PROJECT_TIMER_H
 
-/**
- * # Timer class
- *
- * Simple timer class using *<chrono>*.
- */
 
 class Timer {
 private:

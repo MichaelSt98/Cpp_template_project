@@ -19,7 +19,7 @@
  *
  * A throw statement is used to signal that an exception or error case has occurred, e.g.:
  *
- * ```cpp
+ * ```C++
  * throw -1; // throw a literal integer value
  * throw ENUM_INVALID_INDEX; // throw an enum value
  * throw "Can not take square root of negative number"; // throw a literal C-style (const char*) string
@@ -31,7 +31,7 @@
  *
  * **Try blocks** act as observers, looking for any exceptions that are thrown within the block, e.g.:
  *
- * ```cpp
+ * ```C++
  * try
  * {
  * // Statements that may throw exceptions you want to handle go here
@@ -45,7 +45,7 @@
  * The catch keyword is used to define a block of code (called a catch block)
  * that handles exceptions for a single data type, e.g.:
  *
- * ```cpp
+ * ```C++
  * catch (int x)
  * {
  * // Handle an exception of type int here
@@ -61,7 +61,7 @@
  *
  * To catch uncaught exceptions, not regarding the type of exception:
  *
- * ```cpp
+ * ```C++
  * catch (...) // catch-all handler
  * {
  *     std::cout << "We caught an exception of an undetermined type\n";

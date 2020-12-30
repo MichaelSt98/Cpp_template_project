@@ -1,0 +1,34 @@
+\hypertarget{_s_l___basics_8cpp_source}{}\doxysection{S\+L\+\_\+\+Basics.\+cpp}
+\label{_s_l___basics_8cpp_source}\index{learningCpp/SL\_Basics.cpp@{learningCpp/SL\_Basics.cpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001 \textcolor{comment}{//}}
+\DoxyCodeLine{00002 \textcolor{comment}{// Created by Michael Staneker on 03.12.20.}}
+\DoxyCodeLine{00003 \textcolor{comment}{//}}
+\DoxyCodeLine{00004 }
+\DoxyCodeLine{00005 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{00006 }
+\DoxyCodeLine{00007 \textcolor{preprocessor}{\#include <array>} \textcolor{comment}{// C++ built in fixed arrays in a safer and more usable form}}
+\DoxyCodeLine{00008 \textcolor{preprocessor}{\#include <vector>} \textcolor{comment}{// makes working with dynamic arrays safer and easier}}
+\DoxyCodeLine{00009 \textcolor{preprocessor}{\#include <string>} \textcolor{comment}{//TODO: section about std::string}}
+\DoxyCodeLine{\Hypertarget{_s_l___basics_8cpp_source_l00014}\mbox{\hyperlink{_s_l___basics_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{00014}} \textcolor{comment}{}\textcolor{keywordtype}{int} \mbox{\hyperlink{_s_l___basics_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}}() \{}
+\DoxyCodeLine{00016     \textcolor{comment}{//std::array<int, 5> myArray = \{ 9, 7, 5, 3, 1 \}; // initializer list}}
+\DoxyCodeLine{00017     std::array<int, 5> my\_array\{9, 7, 5, 3, 1\}; \textcolor{comment}{// list initialization}}
+\DoxyCodeLine{00018     my\_array[0] = 10; \textcolor{comment}{// standard accessing}}
+\DoxyCodeLine{00019     my\_array.at(1) = 8; \textcolor{comment}{// other possibility}}
+\DoxyCodeLine{00020     std::cout << \textcolor{stringliteral}{"{}size of my\_array: "{}} << my\_array.size() << std::endl;}
+\DoxyCodeLine{00024     \textcolor{comment}{// dynamic arrays without the need of dynamically allocating memory}}
+\DoxyCodeLine{00025 }
+\DoxyCodeLine{00026     \textcolor{comment}{//std::vector<int> vec\_array;}}
+\DoxyCodeLine{00027     \textcolor{comment}{//std::vector<int> vec\_array = \{ 9, 7, 5, 3, 1 \}; // use initializer list to initialize array (Before C++11)}}
+\DoxyCodeLine{00028     std::vector<int> vec\_array \{ 9, 7, 5, 3, 1 \}; \textcolor{comment}{// use uniform initialization to initialize array}}
+\DoxyCodeLine{00029     vec\_array[0] = 10; \textcolor{comment}{// standard accessing}}
+\DoxyCodeLine{00030     vec\_array.at(1) = 8; \textcolor{comment}{// other possibility}}
+\DoxyCodeLine{00031     std::cout << \textcolor{stringliteral}{"{}size of vec\_array: "{}} << vec\_array.size() << std::endl;}
+\DoxyCodeLine{00032     \textcolor{comment}{// resize}}
+\DoxyCodeLine{00033     vec\_array.resize(10);}
+\DoxyCodeLine{00034     std::cout << \textcolor{stringliteral}{"{}size of vec\_array (after resize): "{}} << vec\_array.size() << std::endl;}
+\DoxyCodeLine{00057     \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{00058 \}}
+
+\end{DoxyCode}

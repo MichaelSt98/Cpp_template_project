@@ -37,32 +37,12 @@
  *
  */
 
-/**
- * \brief Example function returning an error code.
- *
- * \return int
- */
 int returning_error_code();
 
-/**
- * \brief Example function writing an error message.
- *
- * \return
- */
 void write_error_message();
 
-/**
- * \brief Example function exiting the program.
- *
- * \return
- */
 void exit_program();
 
-/**
- * \brief Example function ussing an assert.
- *
- * \return
- */
 void assert_example(int x);
 
 #endif //CPP_TEMPLATE_PROJECT_ERRORHANDLING_H
